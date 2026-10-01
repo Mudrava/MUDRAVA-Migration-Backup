@@ -1,0 +1,59 @@
+name: Nightly
+
+# PARKED: no free Actions minutes. Manual run only (Actions -> Nightly ->
+# Run workflow). To re-enable, restore:
+#   on:
+#     schedule:
+#       - cron: '17 4 * * *'
+#     workflow_dispatch:
+on:
+  workflow_dispatch:
+
+jobs:
+  beta-php:
+    name: PHP ${{ matrix.php }} (bleeding edge)
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    strategy:
+      matrix:
+        php: ['8.4', '8.5']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          extensions: sodium, openssl, zlib, mysqli
+          coverage: none
+      - run: composer install --no-interaction --prefer-dist
+      - run: vendor/bin/phpunit --no-coverage
+
+  lab-matrix:
+    name: Lab on ${{ matrix.db }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        db: ['mariadb:10.11', 'mariadb:11.4', 'mysql:8.0']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm ci
+      - name: Patch compose DB image
+        run: |
+          IMAGE='${{ matrix.db }}'
+          sed -i "s|image: mariadb:10.11|image: $IMAGE|" compose.yaml
+          if [[ "$IMAGE" == mysql:* ]]; then
+            sed -i 's|test: \["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"\]|test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-proot"]|' compose.yaml
+            sed -i 's|MARIADB_DATABASE:|MYSQL_DATABASE:|; s|MARIADB_USER:|MYSQL_USER:|; s|MARIADB_PASSWORD:|MYSQL_PASSWORD:|; s|MARIADB_ROOT_PASSWORD:|MYSQL_ROOT_PASSWORD:|' compose.yaml
+          fi
+      - name: Bring up lab
+        run: bin/lab-up.sh
+      - name: E2E
+        run: npx playwright test --reporter=line
+        env:
+          SOURCE_URL: http://localhost:8081
+          TARGET_URL: http://localhost:8082
+          SOURCE_ADMIN_PASSWORD: test-only-password
+          TARGET_ADMIN_PASSWORD: test-only-password

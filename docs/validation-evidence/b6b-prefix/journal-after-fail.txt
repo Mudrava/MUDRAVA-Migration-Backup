@@ -1,0 +1,7 @@
+-rw------- 1 www-data www-data 234 Sep 30 02:34 /tmp/mudrava-backups-cfc3b5a8989c014f/import-journal-5dfc8d89f72970b98cbaa7827b4f7b741e661f341d7eea4cbbf6b70258a0889e.jsonl
+LINES
+1 /tmp/mudrava-backups-cfc3b5a8989c014f/import-journal-5dfc8d89f72970b98cbaa7827b4f7b741e661f341d7eea4cbbf6b70258a0889e.jsonl
+RECORD_TYPES
+file=0 table=0 baseline=1
+FIRST_200
+{"type":"baseline","tables":["wp_commentmeta","wp_comments","wp_links","wp_mud_keyset","wp_mud_nopk","wp_options","wp_postmeta","wp_posts","wp_term_relationships","wp_term_taxonomy","wp_termmeta","wp_

@@ -1,0 +1,15 @@
+includes:
+    - vendor/szepeviktor/phpstan-wordpress/extension.neon
+parameters:
+    level: 8
+    phpVersion: 70400
+    paths:
+        - includes
+        - mudrava-migration-backup.php
+        - uninstall.php
+    excludePaths:
+        - includes/Admin/assets.php
+    scanDirectories:
+        - tests/stubs
+    checkMissingIterableValueType: true
+    treatPhpDocTypesAsCertain: false

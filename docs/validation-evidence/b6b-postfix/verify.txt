@@ -1,0 +1,65 @@
+########## B.6b post-fix: verify-phase failure then honest retry ##########
+start=2026-09-30T03:17:48Z
+--- upload up-fu-1790738269:
+finalize: {"received":370,"total":370,"assembled":370,"done":true,"archive_id":"up-fu-1790738269"}
+restore_point=backup-localhost-20260930-031809-zoye19
+restore_point_state=done
+--- tick once (expect failed MUDRAVA_PERMISSION_DENIED):
+{"kind":"import","revision":1,"state":"failed","encrypted":false,"archive_id":"up-fu-1790738269","restore_point_archive_id":"backup-localhost-20260930-031809-zoye19","percent":0,"phase":null,"logical_bytes":null,"current_part":1,"restored_rows":null,"restored_files":null,"transform_failures":null,"error":"MUDRAVA_PERMISSION_DENIED","rollback_state":null,"rollback_error":null,"note":null,"cron_alive":false}
+--- journal after failure (baseline-only):
+1 /tmp/mudrava-backups-cfc3b5a8989c014f/import-journal-18fbaaffa9c78bbceb791e36f4cf433da93cae120932e3959e42ca35e757d744.jsonl
+file=0 table=0 baseline=1
+--- receipt option after failure (job still stored, so none yet):
+NULL
+--- retry step 1: new restore point:
+restore_point2=backup-localhost-20260930-031813-h3xyoz
+--- receipt after restore point (must exist, owned by up-fu-1790738269):
+archive=up-fu-1790738269 error=MUDRAVA_PERMISSION_DENIED rollback=
+--- retry step 2: POST /job/import same archive (post-fix expect running):
+
+RETRY_ACCEPTED: PASS
+--- final job: 
+final_state=
+--- journals after done (must be none):
+ls: cannot access '/tmp/mudrava-backups-*/import-journal-*.jsonl': No such file or directory
+--- receipt after done (consumed):
+NULL
+UPLOADS_DIFF: FAIL
+2c2
+< 6f80ca7e3c6e378e167a276dcd3b4b9c  wp-content/uploads/2026/09/big.bin
+---
+> 40ef39cc005a1d2d4837fad9e96e8dbe  wp-content/uploads/2026/09/big.bin
+--- target DB checksums after import:
+wordpress.wp_posts=4150060681
+wordpress.wp_options=2676471980
+wordpress.wp_postmeta=1929190462
+wordpress.wp_users=2425681922
+wordpress.wp_terms=132045132
+wordpress.wp_mud_keyset=2151788630
+wordpress.wp_mud_nopk=1262908396
+--- source DB checksums (wp_options legitimately differs: site URL rows):
+wordpress.wp_posts=4231287928
+wordpress.wp_options=3236422275
+wordpress.wp_postmeta=1929190462
+wordpress.wp_users=4162480275
+wordpress.wp_terms=132045132
+wordpress.wp_mud_keyset=2151788630
+wordpress.wp_mud_nopk=1262908396
+--- row counts target vs source:
+wp_posts target=9 source=9
+wp_postmeta target=12 source=12
+wp_users target=4 source=4
+wp_terms target=1 source=1
+wp_mud_keyset target=1200 source=1200
+wp_mud_nopk target=1200 source=1200
+--- home/siteurl on target:
+http://localhost:8083
+http://localhost:8083
+end=2026-09-30T03:18:23Z
+=== B.6b post-fix done (archive=up-fu-1790738269) ===
+UPLOADS_MATCH_CANONICAL: PASS
+
+--- correction: final job state (retry-ticks.txt last non-empty line):
+"state":"done","encrypted":false,"archive_id":"up-fu-1790738269","restore_point_archive_id":"backup-localhost-20260930-031813-h3xyoz","percent":100,"phase":"files","logical_bytes":1509958314,"current_part":1,"restored_rows":2637,"restored_files":3791,"transform_failures":0,"error":null,"rollback_state":null,"rollback_error":null,"note":null,"cron_alive":false
+final_state=done restored_rows=2637 restored_files=3791 transform_failures=0
+UPLOADS_MATCH_CANONICAL: PASS (see README: live-source big.bin drift is expected mixed-time)

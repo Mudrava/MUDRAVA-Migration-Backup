@@ -1,0 +1,4 @@
+manifest_row_count=2637
+manifest_file_count=3791
+table wp_mud_keyset rows=1200 uniq=1200 content_md5=15ca139ece24b531a7b0414301c60240
+table wp_mud_nopk rows=1200 uniq=1200 content_md5=42c7c48b913fbb5b851a7551483e9840

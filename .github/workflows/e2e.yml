@@ -1,0 +1,40 @@
+name: E2E (migration lab)
+
+# PARKED: no free Actions minutes. Manual run only (Actions -> E2E -> Run
+# workflow). To re-enable, restore:
+#   on:
+#     pull_request:
+#     push:
+#       branches: [main]
+on:
+  workflow_dispatch:
+
+jobs:
+  migration:
+    name: source -> target migration
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm ci
+      - name: Install browsers
+        run: npx playwright install --with-deps chromium
+      - name: Bring up lab
+        run: |
+          docker compose up -d db-source db-target source target
+          bin/lab-up.sh
+      - name: Run Playwright suite
+        run: npx playwright test --reporter=line
+        env:
+          SOURCE_URL: http://localhost:8081
+          TARGET_URL: http://localhost:8082
+          SOURCE_ADMIN_PASSWORD: test-only-password
+          TARGET_ADMIN_PASSWORD: test-only-password
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 7

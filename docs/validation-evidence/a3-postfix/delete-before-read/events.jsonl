@@ -1,0 +1,4 @@
+{"event":"start","scenario":"delete-before-read","archive_id":"backup-localhost-20260930-041520-rovhbf"}
+{"event":"mutation","scenario":"delete-before-read","deleted":"stable.txt","ino":10271,"during_offset":8388608}
+{"event":"export_done","step":7658,"mutated":true,"peak_mb":71.4}
+{"event":"terminal","state":"done","verified":true,"error":null,"verify_ticks":1}

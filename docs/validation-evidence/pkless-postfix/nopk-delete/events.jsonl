@@ -1,0 +1,19 @@
+{"event":"start","scenario":"nopk-delete","archive_id":"backup-localhost-20260930-044519-bsad2w"}
+{"event":"cursor","step":1,"table":"","pk":null,"row_count":0}
+{"event":"cursor","step":2,"table":"wp_commentmeta","pk":null,"row_count":0}
+{"event":"cursor","step":3,"table":"","pk":"0","row_count":0}
+{"event":"cursor","step":4,"table":"wp_comments","pk":null,"row_count":0}
+{"event":"cursor","step":5,"table":"wp_comments","pk":"1","row_count":1}
+{"event":"cursor","step":6,"table":"","pk":"0","row_count":1}
+{"event":"cursor","step":7,"table":"wp_links","pk":null,"row_count":1}
+{"event":"cursor","step":8,"table":"","pk":"0","row_count":1}
+{"event":"cursor","step":9,"table":"wp_mud_keyset","pk":null,"row_count":1}
+{"event":"cursor","step":10,"table":"wp_mud_keyset","pk":"500","row_count":501}
+{"event":"cursor","step":11,"table":"wp_mud_keyset","pk":"1000","row_count":1001}
+{"event":"cursor","step":12,"table":"wp_mud_keyset","pk":"1200","row_count":1201}
+{"event":"cursor","step":13,"table":"","pk":"0","row_count":1201}
+{"event":"cursor","step":14,"table":"wp_mud_nopk","pk":"0","row_count":1201}
+{"event":"cursor","step":15,"table":"wp_mud_nopk","pk":"500","row_count":1701}
+{"event":"mutation","scenario":"nopk-delete","before":{"step":15,"table":"wp_mud_nopk","pk_cursor":"500","row_count":1701},"info":{"deleted_range":"1-60","count_now":1140}}
+{"event":"step_fatal","step":15,"mutated":true,"error":"RuntimeException: MUDRAVA_DB_TABLE_CHANGED: PK-less table shifted during export","safe":"MUDRAVA_DB_TABLE_CHANGED"}
+TERMINAL failed

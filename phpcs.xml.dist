@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<ruleset name="MUDRAVA">
+    <description>
+        Coding standards for MUDRAVA Migration &amp; Backup.
+
+        Formatting follows PSR-12 (spaces, camelCase, class-named files) -
+        the deliberate style of this codebase, shared by most modern
+        WordPress plugins that ship PSR-4 autoloaded classes. WP.org does
+        not require WordPress-Core formatting. What IS enforced from
+        WordPress are the security-relevant sniffs (escaping, prepared SQL,
+        nonces, discouraged functions) plus the PHP 7.4 compatibility floor.
+    </description>
+
+    <file>includes</file>
+    <file>mudrava-migration-backup.php</file>
+    <file>uninstall.php</file>
+
+    <arg name="extensions" value="php"/>
+    <arg value="sp"/>
+
+    <exclude-pattern>*/vendor/*</exclude-pattern>
+    <exclude-pattern>*/node_modules/*</exclude-pattern>
+
+    <!-- PSR-12 formatting: the project's actual, deliberate style. -->
+    <rule ref="PSR12"/>
+
+    <!-- PHP version floor: must run on PHP 7.4 shared hosts. -->
+    <config name="testVersion" value="7.4-"/>
+    <rule ref="PHPCompatibilityWP"/>
+
+    <!-- Security-relevant WordPress sniffs (the ones that matter). -->
+    <rule ref="WordPress.Security.EscapeOutput"/>
+    <rule ref="WordPress.Security.NonceVerification"/>
+    <rule ref="WordPress.Security.ValidatedSanitizedInput"/>
+    <rule ref="WordPress.DB.PreparedSQL"/>
+    <rule ref="WordPress.PHP.DevelopmentFunctions"/>
+    <rule ref="WordPress.PHP.DiscouragedPHPFunctions"/>
+    <rule ref="WordPress.WP.DiscouragedConstants"/>
+
+    <!--
+        Deliberate deviations, each justified:
+
+        - NoSilencedErrors: the engine uses @ on filesystem calls whose
+          return value is always checked immediately (fopen/mkdir/unlink);
+          silencing prevents PHP warnings leaking paths to the browser.
+        - PSR1.SideEffects: every class file defines its MUDRAVA_MB_*
+          constant next to the class (self-contained autoload); this is
+          the standard WordPress bootstrap idiom, not a bug.
+        - EscapeOutput.ExceptionNotEscaped: the flagged calls are
+          `throw new MigrationException(...)` inside the engine. An
+          exception is not browser output; the REST layer renders only
+          stable error codes, never raw messages.
+        - DB.PreparedSQL.NotPrepared (WpDatabase* only): every interpolated
+          identifier passes through the ident() allow-list
+          (/^[A-Za-z0-9_]+$/); all values go through $wpdb->prepare().
+    -->
+    <rule ref="WordPress.PHP.NoSilencedErrors.Discouraged">
+        <exclude-pattern>.*</exclude-pattern>
+    </rule>
+    <rule ref="PSR1.Files.SideEffects.FoundWithSymbols">
+        <exclude-pattern>.*</exclude-pattern>
+    </rule>
+    <rule ref="WordPress.Security.EscapeOutput.ExceptionNotEscaped">
+        <exclude-pattern>.*</exclude-pattern>
+    </rule>
+    <rule ref="WordPress.DB.PreparedSQL.NotPrepared">
+        <exclude-pattern>includes/Database/WpDatabaseSource.php</exclude-pattern>
+        <exclude-pattern>includes/Database/WpDatabaseTarget.php</exclude-pattern>
+    </rule>
+    <rule ref="Generic.Files.LineLength">
+        <properties>
+            <property name="lineLimit" value="160"/>
+            <property name="absoluteLineLimit" value="200"/>
+        </properties>
+    </rule>
+</ruleset>

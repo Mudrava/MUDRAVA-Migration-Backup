@@ -1,0 +1,89 @@
+name: mudrava-dev
+
+services:
+  db-source:
+    image: mariadb:10.11
+    environment:
+      MARIADB_DATABASE: wordpress
+      MARIADB_USER: wordpress
+      MARIADB_PASSWORD: wordpress
+      MARIADB_ROOT_PASSWORD: root
+    volumes:
+      - db_source:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+
+  source:
+    build: ./docker/wp
+    depends_on:
+      db-source:
+        condition: service_healthy
+    environment:
+      WORDPRESS_DB_HOST: db-source
+      WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: wordpress
+    ports:
+      - "8081:80"
+    volumes:
+      - wp_source:/var/www/html
+      - ./:/var/www/html/wp-content/plugins/mudrava-migration-backup
+
+  db-target:
+    image: mariadb:10.11
+    environment:
+      MARIADB_DATABASE: wordpress
+      MARIADB_USER: wordpress
+      MARIADB_PASSWORD: wordpress
+      MARIADB_ROOT_PASSWORD: root
+    volumes:
+      - db_target:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+
+  target:
+    build: ./docker/wp
+    depends_on:
+      db-target:
+        condition: service_healthy
+    environment:
+      WORDPRESS_DB_HOST: db-target
+      WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: wordpress
+    ports:
+      - "8082:80"
+    volumes:
+      - wp_target:/var/www/html
+      - ./:/var/www/html/wp-content/plugins/mudrava-migration-backup
+
+  e2e:
+    image: mcr.microsoft.com/playwright:v1.63.0-noble
+    profiles: ["e2e"]
+    working_dir: /workspace
+    ipc: host
+    depends_on:
+      - source
+      - target
+    volumes:
+      - ./:/workspace
+    environment:
+      SOURCE_URL: http://source
+      TARGET_URL: http://target
+      SOURCE_ADMIN_USER: admin
+      SOURCE_ADMIN_PASSWORD: test-only-password
+      TARGET_ADMIN_USER: admin
+      TARGET_ADMIN_PASSWORD: test-only-password
+    command: ["npx", "playwright", "test"]
+
+volumes:
+  db_source:
+  db_target:
+  wp_source:
+  wp_target:

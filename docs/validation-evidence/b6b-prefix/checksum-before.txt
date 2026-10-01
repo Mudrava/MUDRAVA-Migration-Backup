@@ -1,0 +1,7 @@
+wordpress.wp_posts=4150060681
+wordpress.wp_options=1490933231
+wordpress.wp_postmeta=1929190462
+wordpress.wp_users=2425681922
+wordpress.wp_terms=132045132
+wordpress.wp_mud_keyset=2151788630
+wordpress.wp_mud_nopk=1262908396

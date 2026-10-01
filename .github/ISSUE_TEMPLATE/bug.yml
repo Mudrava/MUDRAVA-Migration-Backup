@@ -1,0 +1,40 @@
+name: Bug report
+description: Something does not work as documented
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For security issues use SECURITY.md, not this form.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+    validations: { required: true }
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations: { required: true }
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+    validations: { required: true }
+  - type: textarea
+    id: env
+    attributes:
+      label: Environment
+      description: WordPress version, PHP version, host, error code shown (MUDRAVA_*), plugin version.
+      value: |
+        WordPress:
+        PHP:
+        Host:
+        Plugin version:
+        Error code (if any):
+    validations: { required: true }
+  - type: dropdown
+    id: operation
+    attributes:
+      label: Operation
+      options: [Export, Download, Upload, Import, Preflight, Other]

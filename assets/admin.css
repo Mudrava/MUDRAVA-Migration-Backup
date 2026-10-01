@@ -1,0 +1,944 @@
+/* MUDRAVA admin styles. No framework or build step.
+ * Design language: charcoal and amber, generous whitespace, crisp
+ * 1px borders. Flat fills only - no gradients. Corners are square.
+ * Spacing is one 8px scale; card padding is identical on all four sides.
+ * Type: five sizes (12/13/14/16/22), three weights (400/600/700). */
+
+.mudrava-wrap {
+    --mv-ink: #20242c;
+    --mv-ink-2: #4b525e;
+    --mv-ink-3: #656d79;
+    --mv-line: #e1e3e7;
+    --mv-surface: #ffffff;
+    --mv-bg: #f5f5f3;
+    --mv-accent: #8a6100;
+    --mv-accent-2: #9a6b00;
+    --mv-accent-soft: #fff7e4;
+    --mv-danger: #b42318;
+    --mv-danger-soft: #fef3f2;
+    --mv-warn: #b54708;
+    --mv-warn-soft: #fffaeb;
+    --mv-ok: #067647;
+    --mv-ok-soft: #ecfdf3;
+    --mv-shadow: 0 1px 2px rgba(14, 23, 38, .05), 0 8px 24px -12px rgba(14, 23, 38, .12);
+    /* One interactive-control height everywhere: tabs, inputs, chips,
+     * buttons, download links. */
+    --mv-control: 40px;
+    max-width: 880px;
+    margin-top: 24px;
+    color: var(--mv-ink);
+}
+/* [hidden] must mean hidden everywhere in this UI. Many controls carry an
+ * author display (buttons inline-flex, notices grid), which defeats the UA
+ * [hidden] rule and leaves terminal dialog buttons on screen: that is how
+ * a done export showed both Cancel and Close. */
+.mudrava-wrap [hidden] { display: none !important; }
+
+/* ---------- Hero ---------- */
+.mudrava-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding: 24px;
+    border-radius: 0;
+    background: #20242c;
+    color: #f8fafc;
+    box-shadow: var(--mv-shadow);
+}
+.mudrava-hero-brand { display: flex; align-items: center; gap: 16px; min-width: 0; }
+.mudrava-logo { flex: none; display: block; width: 64px; height: 64px; }
+.mudrava-footer { display: flex; justify-content: flex-end; padding: 0 0 16px; }
+.mudrava-footer a { display: inline-flex; padding: 4px; }
+.mudrava-footer img { display: block; width: 120px; height: 24px; }
+.mudrava-footer a:focus-visible { outline: 2px solid var(--mv-accent); outline-offset: 3px; }
+.mudrava-hero h1 {
+    margin: 0;
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: inherit;
+}
+.mudrava-hero h1 span { font-weight: 400; color: #e2e3e6; }
+.mudrava-tagline { margin: 4px 0 0; font-size: 13px; color: #bdc3cd; }
+.mudrava-hero-meta { display: flex; align-items: center; gap: 8px; }
+.mudrava-pill {
+    padding: 4px 12px;
+    border-radius: 0;
+    font-size: 12px;
+    font-weight: 600;
+    color: #cbd5e1;
+    background: rgba(255, 255, 255, .08);
+    border: 1px solid rgba(255, 255, 255, .14);
+}
+.mudrava-pill-free {
+    color: #f6c85f;
+    background: rgba(246, 200, 95, .12);
+    border-color: rgba(246, 200, 95, .4);
+}
+
+/* ---------- Notices ---------- */
+/* margin is 16px on BOTH axes: a notice is always a block of its own and
+ * never touches the control below it. */
+.mudrava-notice {
+    margin: 16px 0;
+    padding: 12px 16px;
+    border-radius: 0;
+    font-size: 13px;
+    line-height: 1.5;
+    border: 1px solid var(--mv-line);
+    background: var(--mv-surface);
+}
+.mudrava-notice strong { margin-right: 6px; }
+.mudrava-notice-warn {
+    background: var(--mv-warn-soft);
+    border-color: #fedf89;
+    color: var(--mv-warn);
+}
+.mudrava-notice-ok {
+    background: var(--mv-ok-soft);
+    border-color: #abefc6;
+    color: var(--mv-ok);
+}
+.mudrava-notice-danger {
+    background: var(--mv-danger-soft);
+    border-color: #fecdca;
+    color: var(--mv-danger);
+}
+
+/* ---------- Cards ---------- */
+/* One padding value, all four sides, every card. */
+.mudrava-card {
+    background: var(--mv-surface);
+    border: 1px solid var(--mv-line);
+    border-radius: 0;
+    padding: 24px;
+    margin: 16px 0;
+    box-shadow: var(--mv-shadow);
+}
+/* Optical alignment: a normal line-box floats the glyph tops ~3.5px below
+ * the box top (half-leading + ascender gap), so the heading looked further
+ * from the card edge than the left padding. Tight line-height plus a
+ * negative top margin puts the glyph top exactly on the 24px inset. */
+.mudrava-card h2 { margin: -0.22em 0 8px; font-size: 16px; line-height: 1; font-weight: 700; }
+.mudrava-sub { margin: 0 0 16px; color: var(--mv-ink-2); font-size: 13px; line-height: 1.5; }
+
+/* ---------- Environment ---------- */
+.mudrava-linkbtn {
+    background: none; border: none; padding: 4px 6px; cursor: pointer;
+    color: var(--mv-accent); font-size: 13px; font-weight: 600;
+}
+.mudrava-linkbtn:hover { text-decoration: underline; }
+.mudrava-checks { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.mudrava-checks li {
+    position: relative;
+    display: grid;
+    grid-template-columns: 20px auto 1fr auto;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    padding: 8px;
+    border-radius: 0;
+    background: #f8fafc;
+    border: 1px solid var(--mv-line);
+}
+.mudrava-checks li:focus-visible { outline: 2px solid var(--mv-accent-2); outline-offset: -2px; }
+.mudrava-checks li strong { font-weight: 600; color: var(--mv-ink); }
+.mudrava-check-detail { color: var(--mv-ink-2); }
+/* The "i" affordance: the marker itself is the tooltip trigger, and
+ * the only thing that should feel "helpful" under the cursor. */
+.mudrava-more {
+    width: 16px; height: 16px;
+    display: inline-grid; place-items: center;
+    border: 1px solid #cfd7e3; border-radius: 0;
+    background: #fff;
+    font-size: 11px; font-weight: 700; font-style: italic; line-height: 1;
+    color: var(--mv-ink-3);
+    cursor: help;
+}
+.mudrava-more:focus-visible { outline: 2px solid var(--mv-accent-2); outline-offset: 1px; }
+.mudrava-more:hover { border-color: var(--mv-accent-2); color: var(--mv-accent); }
+/* Tooltip: hidden until hover/focus. Dark ink panel, square corners,
+ * matching the design system. The last row flips above so the panel
+ * never spills past the card. */
+.mudrava-tip {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 28px;
+    width: min(480px, calc(100% - 28px));
+    box-sizing: border-box;
+    z-index: 30;
+    padding: 10px 12px;
+    background: var(--mv-ink);
+    color: #fff;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: left;
+    cursor: default;
+    box-shadow: 0 8px 24px -12px rgba(14, 23, 38, .4);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-2px);
+    transition: opacity .12s ease, transform .12s ease, visibility .12s;
+    pointer-events: none;
+}
+.mudrava-tip::before {
+    content: "";
+    position: absolute;
+    top: -4px; left: 32px;
+    width: 8px; height: 8px;
+    background: var(--mv-ink);
+    transform: rotate(45deg);
+}
+.mudrava-checks li:last-child .mudrava-tip {
+    top: auto;
+    bottom: calc(100% + 8px);
+    transform: translateY(2px);
+}
+.mudrava-checks li:last-child .mudrava-tip::before {
+    top: auto; bottom: -4px;
+}
+/* The tooltip opens only from its own marker. Hovering the row or the
+ * label text must not cover the controls below - the marker is small
+ * and deliberate. Keyboard: a focused marker (labels) or a focused
+ * row (checks) opens it too. */
+.mudrava-more:hover + .mudrava-tip,
+.mudrava-more:focus + .mudrava-tip,
+.mudrava-checks li:focus .mudrava-tip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+/* Field-label tooltips: anchored to the label, flush left. The label
+ * is a flex line so the marker sits on the text's optical center
+ * (specificity must beat .mudrava-field label's display:block). */
+.mudrava-lab { position: relative; }
+.mudrava-field .mudrava-lab { display: flex; align-items: center; gap: 6px; }
+.mudrava-lab .mudrava-tip { left: 0; width: min(480px, 100%); }
+.mudrava-lab .mudrava-tip::before { left: 20px; }
+.mudrava-check-icon {
+    width: 18px; height: 18px; border-radius: 0;
+    display: inline-grid; place-items: center;
+    font-size: 12px; font-weight: 700; line-height: 1;
+}
+.mudrava-checks li.ok .mudrava-check-icon { background: #d1fadf; color: var(--mv-ok); }
+.mudrava-checks li.ok .mudrava-check-icon::before { content: "\2713"; }
+.mudrava-checks li.fail .mudrava-check-icon { background: #fee4e2; color: var(--mv-danger); }
+.mudrava-checks li.fail .mudrava-check-icon::before { content: "\2715"; }
+.mudrava-checks li.fail { background: var(--mv-danger-soft); border-color: #fecdca; }
+.mudrava-warn {
+    margin: 16px 0 0; padding: 12px 16px;
+    background: var(--mv-warn-soft); border-left: 3px solid #f79009;
+    border-radius: 0; color: var(--mv-warn); font-size: 13px;
+}
+
+/* ---------- Tabs ---------- */
+.mudrava-tabs {
+    display: flex; gap: 4px; margin: 8px 0 0;
+    background: #d9e0ea;
+    border-radius: 0;
+    padding: 4px;
+    width: fit-content;
+}
+.mudrava-tab {
+    appearance: none;
+    border: none;
+    background: transparent;
+    height: var(--mv-control);
+    padding: 0 24px;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--mv-ink-2);
+    cursor: pointer;
+    transition: background .15s, color .15s;
+}
+.mudrava-tab:hover { color: var(--mv-ink); }
+.mudrava-tab.is-active {
+    background: var(--mv-surface);
+    color: var(--mv-ink);
+    box-shadow: 0 1px 2px rgba(14, 23, 38, .1);
+}
+/* The panel is a card: its own 8px top margin is the tabs-to-panel gap,
+ * matching the 8px hero-to-tabs gap above. */
+.mudrava-panel { margin-top: 8px; }
+
+/* ---------- Form fields ---------- */
+/* Every field: 16px below. Every label: 8px above its control. Same
+ * numbers everywhere, so the form reads as a grid. */
+.mudrava-field { margin: 0 0 16px; }
+.mudrava-field label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--mv-ink);
+}
+.mudrava-wrap input[type="password"],
+.mudrava-wrap input[type="number"],
+.mudrava-wrap input[type="url"],
+.mudrava-wrap input[type="text"] {
+    width: 100%;
+    max-width: 460px;
+    height: var(--mv-control);
+    box-sizing: border-box;
+    border-radius: 0;
+    border: 1px solid #cfd7e3;
+    padding: 0 12px;
+    font-size: 14px;
+    line-height: 1.4;
+    color: var(--mv-ink);
+    background: #fbfcfe;
+    box-shadow: none;
+    transition: border-color .15s, box-shadow .15s;
+}
+.mudrava-wrap input:focus {
+    outline: none;
+    border-color: var(--mv-accent-2);
+    box-shadow: 0 0 0 3px rgba(138, 97, 0, .18);
+    background: #fff;
+}
+.mudrava-wrap .description { font-size: 13px; color: var(--mv-ink-3); margin-top: 8px; line-height: 1.5; }
+.mudrava-grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 0 16px; }
+@media (max-width: 640px) { .mudrava-grid2 { grid-template-columns: 1fr; } }
+
+/* ---------- Split control ---------- */
+/* The Custom number input spells its unit (MB) inside the control, so
+ * the value can never be read as GB or bytes. */
+.mudrava-split-row { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.mudrava-chips { display: inline-flex; gap: 4px; background: #eef1f6; border-radius: 0; padding: 4px; }
+.mudrava-chip {
+    appearance: none; border: none; cursor: pointer;
+    height: var(--mv-control);
+    padding: 0 16px;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 0;
+    font-size: 13px; font-weight: 600; color: var(--mv-ink-2);
+    background: transparent;
+    transition: background .15s, color .15s;
+}
+.mudrava-chip:hover { color: var(--mv-ink); }
+.mudrava-chip.is-active {
+    background: var(--mv-surface); color: var(--mv-accent);
+    box-shadow: 0 1px 2px rgba(14, 23, 38, .12);
+}
+/* Custom split: number + explicit unit selector, so the typed value can
+ * never be read as the wrong magnitude. The select matches the input's
+ * control height and border language. */
+.mudrava-customwrap { display: inline-flex; align-items: center; gap: 8px; }
+.mudrava-customwrap input[type="number"] { width: 110px; }
+.mudrava-customwrap select {
+    height: var(--mv-control);
+    border: 1px solid #cfd7e3; border-radius: 0;
+    padding: 0 8px;
+    font-size: 14px; font-weight: 600;
+    color: var(--mv-ink);
+    background: #fbfcfe;
+    cursor: pointer;
+}
+.mudrava-customwrap select:focus {
+    outline: none;
+    border-color: var(--mv-accent-2);
+    box-shadow: 0 0 0 3px rgba(138, 97, 0, .18);
+}
+
+/* ---------- Export sections ---------- */
+/* The export card reads as three titled sections (encryption, content,
+ * splitting) separated by hairlines - no accordion: everything the
+ * operator can change is visible where it is used. */
+.mudrava-section { margin: 24px 0; padding-top: 24px; border-top: 1px solid var(--mv-line); }
+.mudrava-section-h { margin: 0 0 4px; font-size: 14px; font-weight: 700; }
+.mudrava-section-sub { margin: 0 0 16px; font-size: 13px; color: var(--mv-ink-3); line-height: 1.5; }
+/* Collapsed-by-default content section: the head row keeps the live
+ * summary visible while the pickers stay hidden until asked for. */
+.mudrava-section-head {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 16px; flex-wrap: wrap;
+}
+.mudrava-section-titles { min-width: 0; }
+.mudrava-section-head .mudrava-section-sub { margin: 0; }
+.mudrava-btn-ghost {
+    appearance: none; cursor: pointer; flex: none;
+    height: 32px; padding: 0 16px;
+    border: 1px solid #cfd7e3; border-radius: 0;
+    background: #fff; color: var(--mv-accent);
+    font-size: 13px; font-weight: 600;
+    transition: border-color .15s, background .15s;
+}
+.mudrava-btn-ghost:hover { border-color: var(--mv-accent-2); background: var(--mv-accent-soft); }
+
+/* ---------- Content pickers ---------- */
+/* Two live lists (tables / wp-content folders) side by side; they stack
+ * on narrow screens. Each list scrolls inside a fixed height so a site
+ * with 300 tables never turns the card into a wall. */
+.mudrava-pickers { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+@media (max-width: 720px) { .mudrava-pickers { grid-template-columns: 1fr; } }
+.mudrava-picker {
+    min-width: 0;
+    border: 1px solid var(--mv-line);
+    border-radius: 0;
+    background: #fbfcfe;
+    padding: 16px;
+}
+.mudrava-picker-head {
+    display: flex; align-items: center; gap: 8px;
+    margin-bottom: 12px;
+}
+.mudrava-picker-head h4 { margin: 0; font-size: 13px; font-weight: 700; }
+.mudrava-picker-count {
+    margin-left: auto;
+    font-size: 12px; font-weight: 600; color: var(--mv-ink-3);
+    white-space: nowrap;
+}
+.mudrava-picker-refresh {
+    appearance: none; border: 1px solid #cfd7e3; border-radius: 0;
+    width: 26px; height: 26px; flex: none;
+    display: grid; place-items: center;
+    background: #fff; color: var(--mv-ink-3);
+    font-size: 14px; line-height: 1; cursor: pointer;
+    transition: border-color .15s, color .15s;
+}
+.mudrava-picker-refresh:hover { border-color: var(--mv-accent-2); color: var(--mv-accent); }
+.mudrava-picker-allrow { margin: 0 0 8px; font-weight: 600; }
+.mudrava-filter {
+    width: 100%;
+    box-sizing: border-box;
+    height: 32px;
+    margin: 0 0 8px;
+    border: 1px solid #cfd7e3; border-radius: 0;
+    padding: 0 10px;
+    font-size: 13px;
+    color: var(--mv-ink);
+    background: #fff;
+    box-shadow: none;
+}
+.mudrava-filter:focus {
+    outline: none;
+    border-color: var(--mv-accent-2);
+    box-shadow: 0 0 0 3px rgba(138, 97, 0, .18);
+}
+.mudrava-picker-list {
+    max-height: 260px;
+    overflow-y: auto;
+    border: 1px solid var(--mv-line);
+    background: #fff;
+    padding: 4px 0;
+}
+.mudrava-picker-loading { margin: 0; padding: 12px; font-size: 13px; color: var(--mv-ink-3); }
+.mudrava-prow {
+    display: grid;
+    grid-template-columns: 18px minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 12px;
+    font-size: 13px;
+    cursor: pointer;
+}
+.mudrava-prow:hover { background: var(--mv-accent-soft); }
+.mudrava-prow.is-locked { cursor: default; color: var(--mv-ink-3); }
+.mudrava-prow.is-locked:hover { background: #f8fafc; }
+.mudrava-prow-name {
+    min-width: 0;
+    display: flex; align-items: center; gap: 6px;
+    overflow-wrap: anywhere;
+}
+.mudrava-prow-meta {
+    justify-self: end;
+    font-size: 12px; color: var(--mv-ink-3);
+    white-space: nowrap;
+}
+.mudrava-tag-core {
+    flex: none;
+    padding: 1px 6px;
+    font-size: 10px; font-weight: 700; letter-spacing: .4px;
+    color: var(--mv-accent); background: var(--mv-accent-soft);
+    border: 1px solid #ead6a4;
+}
+.mudrava-picker-foot { margin: 8px 0 0; font-size: 12px; color: var(--mv-ink-3); line-height: 1.5; }
+
+/* ---------- PRO fieldset ---------- */
+.mudrava-pro-field { border: none; margin: 16px 0 0; padding: 0; }
+.mudrava-pro-field legend { font-size: 13px; font-weight: 600; margin-bottom: 8px; }
+.mudrava-pro-opt { display: block; font-size: 13px; color: var(--mv-ink-3); padding: 4px 0; }
+.mudrava-badge-pro {
+    display: inline-block; margin-left: 8px; padding: 2px 8px;
+    border-radius: 0; font-size: 12px; font-weight: 700; letter-spacing: .5px;
+    color: #7c3aed; background: #f3e8ff; border: 1px solid #e9d5ff;
+}
+
+/* ---------- Buttons ---------- */
+.mudrava-btn {
+    appearance: none; cursor: pointer;
+    display: inline-flex; align-items: center; gap: 8px;
+    box-sizing: border-box;
+    height: var(--mv-control);
+    border-radius: 0; padding: 0 24px;
+    font-size: 14px; font-weight: 700;
+    border: 1px solid transparent;
+    transition: background .15s;
+}
+.mudrava-btn[disabled] { opacity: .5; cursor: not-allowed; }
+.mudrava-btn-primary { color: #20242c; background: #f6c85f; }
+.mudrava-btn-primary:hover:not([disabled]) { background: #edb83e; }
+.mudrava-wrap a.mudrava-btn-primary,
+.mudrava-wrap a.mudrava-btn-primary:visited,
+.mudrava-wrap a.mudrava-btn-primary:hover,
+.mudrava-wrap a.mudrava-btn-primary:focus {
+    color: #20242c;
+    text-decoration: none;
+}
+.mudrava-wrap a.mudrava-btn-primary:hover { background: #edb83e; }
+.mudrava-wrap a.mudrava-btn-primary:focus-visible {
+    outline: 2px solid #174ea6;
+    outline-offset: 3px;
+}
+.mudrava-btn-danger { color: #fff; background: var(--mv-danger); }
+.mudrava-btn-danger:hover:not([disabled]) { background: #92201a; }
+
+/* ---------- Dropzone ---------- */
+#mudrava-file { position: absolute; width: 1px; height: 1px; opacity: 0; overflow: hidden; clip: rect(0 0 0 0); }
+.mudrava-dropzone {
+    display: grid;
+    place-items: center;
+    gap: 4px;
+    padding: 32px 24px;
+    border: 2px dashed #c3cddd;
+    border-radius: 0;
+    background: #f8fafc;
+    color: var(--mv-ink-2);
+    text-align: center;
+    cursor: pointer;
+    transition: border-color .15s, background .15s;
+}
+.mudrava-dropzone:hover, .mudrava-dropzone.is-over {
+    border-color: var(--mv-accent-2);
+    background: var(--mv-accent-soft);
+}
+.mudrava-dropzone.is-armed { border-style: solid; border-color: var(--mv-accent); background: var(--mv-accent-soft); color: var(--mv-accent); }
+.mudrava-drop-icon { font-size: 24px; line-height: 1; color: var(--mv-accent); }
+.mudrava-dropzone strong { font-size: 14px; }
+.mudrava-drop-sub { font-size: 13px; color: var(--mv-ink-3); }
+
+/* ---------- Restore safety ---------- */
+/* Shared checkbox look: WP core sets appearance:none on inputs, which
+ * without a drawn checked state renders an empty dark-bordered box.
+ * Draw it to match the design system: square, 1px line border, teal
+ * fill + white tick. Same control on Restore and on Export encrypt. */
+.mudrava-checkline {
+    display: flex; align-items: center; gap: 8px;
+    margin: 0 0 16px;
+    font-size: 13px; line-height: 1.5; color: var(--mv-ink);
+    cursor: pointer;
+}
+/* The 18px box on a 19.5px text line: center-align optically by
+ * matching the box center to the text's cap center, not the line box. */
+.mudrava-checkline input[type="checkbox"] { margin-top: 1px; }
+.mudrava-checkline input[type="checkbox"],
+.mudrava-check input[type="checkbox"],
+.mudrava-prow input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    flex: none;
+    width: 18px;
+    height: 18px;
+    box-sizing: border-box;
+    display: grid;
+    place-items: center;
+    border: 1px solid #cfd7e3;
+    border-radius: 0;
+    background: #fbfcfe;
+    cursor: pointer;
+    transition: background .15s, border-color .15s;
+}
+.mudrava-check input[type="checkbox"] { margin: 1px 0 0; }
+.mudrava-checkline input[type="checkbox"]:hover,
+.mudrava-check input[type="checkbox"]:hover,
+.mudrava-prow input[type="checkbox"]:hover { border-color: var(--mv-accent-2); }
+.mudrava-checkline input[type="checkbox"]:focus-visible,
+.mudrava-check input[type="checkbox"]:focus-visible,
+.mudrava-prow input[type="checkbox"]:focus-visible {
+    outline: none;
+    border-color: var(--mv-accent-2);
+    box-shadow: 0 0 0 3px rgba(138, 97, 0, .18);
+}
+.mudrava-checkline input[type="checkbox"]:checked,
+.mudrava-check input[type="checkbox"]:checked,
+.mudrava-prow input[type="checkbox"]:checked {
+    background: var(--mv-accent);
+    border-color: var(--mv-accent);
+}
+/* The tick: a white SVG path as background, centered by the background
+ * engine itself - no pseudo-element geometry to drift. */
+.mudrava-checkline input[type="checkbox"]:checked,
+.mudrava-check input[type="checkbox"]:checked,
+.mudrava-prow input[type="checkbox"]:checked {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4.5 12.5l5 5L19.5 7'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 12px 12px;
+}
+/* "Select all" between states: appearance:none kills the native dash, so
+ * draw it - a white bar on the accent fill, same language as the tick. */
+.mudrava-checkline input[type="checkbox"]:indeterminate,
+.mudrava-prow input[type="checkbox"]:indeterminate {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='3.5' stroke-linecap='round'%3E%3Cpath d='M5 12h14'/%3E%3C/svg%3E");
+    background-color: var(--mv-accent);
+    border-color: var(--mv-accent);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 12px 12px;
+}
+/* Locked (core) checkboxes: checked and immovable - dimmed so the
+ * operator reads them as fixed, not as an accident. */
+.mudrava-prow input[type="checkbox"]:disabled {
+    opacity: .55;
+    cursor: default;
+}
+.mudrava-field-error {
+    margin: 8px 0 0;
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--mv-danger);
+}
+/* Password field with the standard show/hide eye inside the control. */
+.mudrava-pwwrap { position: relative; max-width: 460px; }
+.mudrava-pwwrap input { padding-right: 40px; }
+.mudrava-eye {
+    appearance: none;
+    position: absolute; right: 8px; top: 50%; transform: translateY(-50%);
+    width: 26px; height: 26px;
+    display: grid; place-items: center;
+    border: none; border-radius: 0; background: none; padding: 0;
+    color: var(--mv-ink-3);
+    cursor: pointer;
+    transition: color .15s;
+}
+.mudrava-eye:hover { color: var(--mv-accent); }
+.mudrava-eye:focus-visible { outline: 2px solid var(--mv-accent-2); outline-offset: 1px; }
+.mudrava-eye .mv-eye-off { display: none; }
+.mudrava-eye[aria-pressed="true"] .mv-eye-open { display: none; }
+.mudrava-eye[aria-pressed="true"] .mv-eye-off { display: block; }
+.mudrava-wrap input[aria-invalid="true"] {
+    border-color: var(--mv-danger);
+    box-shadow: 0 0 0 3px rgba(180, 35, 24, .12);
+}
+.mudrava-check {
+    display: flex; align-items: flex-start; gap: 8px;
+    margin: 16px 0; padding: 12px 16px;
+    border: 1px solid var(--mv-line); border-radius: 0;
+    background: #fbfcfe;
+    font-size: 13px; line-height: 1.5; color: var(--mv-ink-2);
+}
+
+/* ---------- Progress rail ---------- */
+.mudrava-prog-head {
+    display: flex; justify-content: space-between; align-items: baseline;
+    margin-bottom: 8px; gap: 16px;
+}
+#mudrava-phase { font-size: 14px; font-weight: 700; text-transform: capitalize; }
+#mudrava-rate { font-size: 13px; color: var(--mv-ink-3); white-space: nowrap; }
+.mudrava-bar {
+    background: #eaeef4; border-radius: 0; height: 8px; overflow: hidden;
+}
+#mudrava-bar-fill {
+    background: var(--mv-accent);
+    height: 100%; width: 0; border-radius: 0;
+    transition: width .4s ease;
+}
+.mudrava-bar.is-indeterminate #mudrava-bar-fill {
+    width: 30% !important;
+    animation: mudrava-indeterminate 1.5s ease-in-out infinite alternate;
+}
+@keyframes mudrava-indeterminate {
+    from { transform: translateX(0); }
+    to { transform: translateX(233%); }
+}
+@media (prefers-reduced-motion: reduce) {
+    .mudrava-bar.is-indeterminate #mudrava-bar-fill { animation: none; }
+}
+#mudrava-status { margin: 16px 0 0; font-size: 13px; color: var(--mv-ink-2); word-break: break-word; }
+.mudrava-close-note {
+    margin: 8px 0 0; font-size: 13px; color: var(--mv-ok);
+    background: var(--mv-ok-soft); border: 1px solid #abefc6; border-radius: 0; padding: 8px 16px;
+}
+
+/* ---------- Archive cards ---------- */
+/* One row per archive: icon | identity | action, all on the first row,
+ * so the primary "download" sits beside the name instead of hanging
+ * under the metadata. Split sets do not print their part numbers on the
+ * face of the card: a native <details> panel (row two) opens a compact
+ * chip grid on demand, keeping a 23-part set a tidy two-line card. */
+.mudrava-archives { display: grid; gap: 8px; margin-top: 16px; }
+.mudrava-archives .mudrava-empty { color: var(--mv-ink-3); font-size: 13px; }
+.mudrava-arc {
+    display: flex; flex-direction: column;
+    padding: 16px;
+    border: 1px solid var(--mv-line); border-radius: 0;
+    background: #fbfcfe;
+}
+.mudrava-arc-top {
+    display: flex; align-items: flex-start; gap: 16px;
+}
+.mudrava-arc-icon {
+    flex: none;
+    display: grid; place-items: center;
+    width: 40px; height: 40px; border-radius: 0;
+    background: var(--mv-accent-soft); color: var(--mv-accent);
+    font-size: 12px; font-weight: 700;
+}
+.mudrava-arc-main { flex: 1 1 auto; min-width: 0; }
+.mudrava-arc-name {
+    font-weight: 700; font-size: 14px;
+    overflow-wrap: anywhere;
+}
+.mudrava-arc-meta {
+    font-size: 13px; color: var(--mv-ink-3); margin-top: 4px;
+    display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px;
+    line-height: 1.5;
+}
+.mudrava-arc-meta .mudrava-tag {
+    display: inline-block; max-width: 100%; padding: 1px 8px;
+    border-radius: 0; font-size: 12px; font-weight: 600;
+    overflow-wrap: anywhere;
+}
+.mudrava-arc-meta .mudrava-tag-lock { background: var(--mv-danger-soft); color: var(--mv-danger); border: 1px solid #fecdca; }
+.mudrava-arc-meta .mudrava-tag-parts { background: #eff8ff; color: #175cd3; border: 1px solid #b2ddff; }
+.mudrava-arc-meta .mudrava-tag-warn { background: var(--mv-warn-soft); color: var(--mv-warn); border: 1px solid #fedf89; }
+.mudrava-arc-meta .mudrava-tag-src { background: var(--mv-accent-soft); color: var(--mv-accent); border: 1px solid #ead6a4; }
+.mudrava-arc-info { color: var(--mv-ink-3); }
+.mudrava-arc-dot { color: #c3cddd; }
+/* The hint is a quiet second line, not a fourth " - " fragment of one
+ * long run-on meta string. */
+.mudrava-arc-hint {
+    margin: 4px 0 0; font-size: 12px; color: var(--mv-ink-3);
+    overflow-wrap: anywhere;
+}
+.mudrava-arc-actions { flex: none; }
+/* Part chips: compact numbers inside the collapsed panel, sized so a
+ * long set reads as a tidy grid of digits, not a wall of buttons. */
+.mudrava-dl {
+    appearance: none; cursor: pointer;
+    display: inline-flex; align-items: center; justify-content: center;
+    box-sizing: border-box;
+    min-width: 30px; height: 30px;
+    padding: 0 8px;
+    border: 1px solid #cfd7e3; border-radius: 0;
+    font-family: inherit; font-size: 12px; font-weight: 600;
+    text-decoration: none;
+    color: var(--mv-accent); background: #fff;
+    transition: border-color .15s, background .15s, opacity .15s;
+}
+.mudrava-dl:hover { border-color: var(--mv-accent-2); background: var(--mv-accent-soft); }
+/* "Download all" runs while the parts stream: inert, but still readable. */
+.mudrava-dl[disabled] { opacity: .55; cursor: progress; }
+/* Shared inline-icon behavior: fixed vector, never shrinks, centers
+ * itself on the text baseline inside flex buttons. */
+.mudrava-arc .mudrava-dl svg,
+.mudrava-parts > summary svg {
+    flex: none;
+    display: block;
+}
+/* Single-file archive: the one action becomes a solid primary button,
+ * vertically centered with the name so the eye lands on it directly. */
+.mudrava-arc-actions .mudrava-dl-full {
+    min-width: 0; height: var(--mv-control);
+    padding: 0 16px; font-size: 13px; gap: 8px;
+    color: #20242c; background: #f6c85f; border-color: #f6c85f;
+}
+.mudrava-arc-actions .mudrava-dl-full:hover {
+    color: #20242c; background: #edb83e; border-color: #edb83e;
+}
+/* Split set: the toggle reads like the ghost buttons elsewhere in the
+ * plugin; the SVG chevron rotates when the chip grid opens. */
+.mudrava-parts {
+    margin-top: 12px; padding-top: 12px;
+    border-top: 1px solid var(--mv-line);
+}
+.mudrava-parts > summary {
+    list-style: none; cursor: pointer;
+    display: inline-flex; align-items: center; gap: 8px;
+    height: 32px; padding: 0 12px;
+    border: 1px solid #cfd7e3; border-radius: 0;
+    background: #fff; color: var(--mv-accent);
+    font-size: 13px; font-weight: 600;
+    transition: border-color .15s, background .15s;
+}
+.mudrava-parts > summary::-webkit-details-marker { display: none; }
+.mudrava-parts > summary:hover { border-color: var(--mv-accent-2); background: var(--mv-accent-soft); }
+.mudrava-parts > summary .mudrava-caret {
+    margin-left: 2px; color: var(--mv-ink-3);
+    transition: transform .15s;
+}
+.mudrava-parts[open] > summary { margin-bottom: 12px; }
+.mudrava-parts[open] > summary .mudrava-caret { transform: rotate(180deg); }
+.mudrava-parts-grid {
+    display: flex; flex-wrap: wrap; gap: 6px;
+    padding: 12px;
+    border: 1px solid var(--mv-line); border-radius: 0;
+    background: var(--mv-bg);
+}
+
+/* ---------- Archives pager ---------- */
+/* Client-side paging over the single AJAX payload: prev / numbers /
+ * next. Ends disable instead of vanishing so the row never shifts. */
+.mudrava-pager { display: flex; justify-content: center; margin-top: 16px; }
+.mudrava-pager[hidden] { display: none; }
+.mudrava-pager-nums {
+    display: flex; flex-wrap: wrap; justify-content: center; gap: 4px;
+}
+.mudrava-page {
+    appearance: none;
+    box-sizing: border-box;
+    min-width: 32px; height: 32px;
+    padding: 0 8px;
+    display: inline-flex; align-items: center; justify-content: center;
+    border: 1px solid #cfd7e3; border-radius: 0;
+    background: #fff;
+    font-size: 13px; font-weight: 600; color: var(--mv-ink-2);
+    cursor: pointer;
+    transition: border-color .15s, background .15s, color .15s;
+}
+.mudrava-page:hover:not(:disabled):not(.is-current) {
+    border-color: var(--mv-accent-2); background: var(--mv-accent-soft);
+}
+.mudrava-page.is-current {
+    background: var(--mv-accent); border-color: var(--mv-accent); color: #fff;
+    cursor: default;
+}
+.mudrava-page:disabled { opacity: .4; cursor: default; }
+.mudrava-page-gap {
+    align-self: center;
+    padding: 0 4px;
+    font-size: 13px; color: var(--mv-ink-3);
+}
+
+/* ---------- Progress modal ---------- */
+/* The job dialog is blocking: a fixed backdrop freezes the page (no
+ * scroll, no clicks, no tab jumps) and the card is centered above
+ * everything, including the WP admin bar. On small screens the card
+ * becomes a full-width bottom sheet so the bar and status never get
+ * squeezed. */
+.mudrava-modal {
+    position: fixed; inset: 0; z-index: 100000;
+    display: flex; align-items: center; justify-content: center;
+    padding: 24px;
+}
+.mudrava-modal[hidden] { display: none; }
+.mudrava-modal-backdrop {
+    position: absolute; inset: 0;
+    background: rgba(14, 23, 38, .62);
+}
+.mudrava-modal-card {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%; max-width: 520px;
+    max-height: calc(100vh - 48px); overflow: auto;
+    background: var(--mv-surface);
+    border: 1px solid var(--mv-line);
+    box-shadow: 0 24px 48px rgba(14, 23, 38, .35);
+    padding: 24px;
+}
+.mudrava-modal-foot {
+    display: flex; justify-content: flex-end; gap: 8px;
+    margin-top: 16px;
+}
+.mudrava-resume-controls { margin-top: 16px; }
+.mudrava-resume-controls label { display: block; font-weight: 600; margin-bottom: 8px; }
+.mudrava-resume-row { display: flex; gap: 8px; }
+.mudrava-resume-row input { flex: 1; min-width: 0; height: var(--mv-control); box-sizing: border-box; }
+.mudrava-modal-foot:empty { display: none; }
+/* Freeze the page behind the dialog: no background scroll while the
+ * job owns the screen. */
+body.mudrava-modal-open { overflow: hidden; }
+/* Disabled tabs while the dialog is up: visibly inert, not clickable. */
+.mudrava-tab:disabled, .mudrava-tab.is-locked {
+    cursor: not-allowed;
+    opacity: .45;
+}
+/* Detected rewrite pair, shown inside the dialog while a restore runs. */
+.mudrava-rewrite-line {
+    margin: 12px 0 0; font-size: 13px; color: var(--mv-ink-2);
+    display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px;
+}
+.mudrava-rewrite-label {
+    font-weight: 600; text-transform: uppercase; font-size: 11px;
+    letter-spacing: .4px; color: var(--mv-ink-3);
+}
+.mudrava-rewrite-line code {
+    background: #f1f5f9; border: 1px solid var(--mv-line);
+    padding: 1px 6px; font-size: 12px; overflow-wrap: anywhere;
+}
+@media (max-width: 640px) {
+    .mudrava-modal { padding: 0; align-items: flex-end; }
+    .mudrava-modal-card {
+        max-width: none; max-height: 85vh;
+        border-left: none; border-right: none; border-bottom: none;
+        padding: 16px;
+    }
+}
+
+/* ---------- Mobile checkbox fix ---------- */
+/* WP core (forms.css) paints a dashicon tick via ::before on every
+ * checked checkbox, and at max-width:782px enlarges it to 1.875rem
+ * with negative margins. Our controls draw their own SVG tick as a
+ * background, so on mobile the oversized core dashicon lands on top as
+ * a second, misaligned tick (desktop only looked fine because the two
+ * white ticks happened to overlap). Kill the core pseudo-tick on our
+ * controls at every breakpoint - higher specificity than core's
+ * attribute-only selector, so no !important is needed - and pin our
+ * 18px size against core's mobile resize. */
+.mudrava-checkline input[type="checkbox"]:checked::before,
+.mudrava-check input[type="checkbox"]:checked::before,
+.mudrava-prow input[type="checkbox"]:checked::before {
+    content: none;
+    display: none;
+}
+@media (max-width: 782px) {
+    .mudrava-checkline input[type="checkbox"],
+    .mudrava-check input[type="checkbox"],
+    .mudrava-prow input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+/* ---------- Focus (keyboard) ---------- */
+.mudrava-wrap :focus-visible {
+    outline: 2px solid var(--mv-accent);
+    outline-offset: 2px;
+}
+.mudrava-wrap input[type="password"]:focus-visible,
+.mudrava-wrap input[type="number"]:focus-visible,
+.mudrava-wrap input[type="url"]:focus-visible,
+.mudrava-wrap input[type="text"]:focus-visible { outline: none; }
+
+/* Shared Free previews and installed add-on forms. */
+.mudrava-tabs { flex-wrap: wrap; width: 100%; box-sizing: border-box; }
+.mudrava-tab { padding-left: 12px; padding-right: 12px; }
+.mudrava-preview-fields { border: 0; margin: 24px 0; padding: 0; }
+.mudrava-wrap input[type="time"],
+.mudrava-wrap input[type="email"],
+.mudrava-field select,
+.mudrava-settings-table select {
+    width: 100%; max-width: 460px; height: var(--mv-control);
+    border: 1px solid #cfd7e3; border-radius: 0; padding: 0 12px;
+    background: #fbfcfe; color: var(--mv-ink); font-size: 14px;
+}
+.mudrava-preview-fields input:disabled,
+.mudrava-preview-fields select:disabled { opacity: .65; cursor: not-allowed; }
+.mudrava-pro-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px; }
+.mudrava-settings-table { width: 100%; border-collapse: collapse; margin-top: 24px; }
+.mudrava-settings-table th { text-align: left; width: 190px; font-size: 13px; }
+.mudrava-settings-table th,
+.mudrava-settings-table td { vertical-align: top; padding: 0 16px 16px 0; }
+.mudrava-settings-table select { min-width: 180px; }
+@media (max-width: 640px) {
+    .mudrava-settings-table th,
+    .mudrava-settings-table td { display: block; width: auto; padding-right: 0; }
+}
+.mudrava-feature-list { margin: 24px 0; padding-left: 20px; list-style: disc; }
+.mudrava-feature-list li { margin: 0 0 12px; color: var(--mv-ink-2); line-height: 1.5; }

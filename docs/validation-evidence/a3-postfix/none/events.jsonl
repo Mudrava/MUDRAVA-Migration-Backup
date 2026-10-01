@@ -1,0 +1,3 @@
+{"event":"start","scenario":"none","archive_id":"backup-localhost-20260930-041724-axttu8"}
+{"event":"export_done","step":7657,"mutated":true,"peak_mb":71.4}
+{"event":"terminal","state":"done","verified":true,"error":null,"verify_ticks":1}

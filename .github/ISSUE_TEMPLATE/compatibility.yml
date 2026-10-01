@@ -1,0 +1,32 @@
+name: Compatibility report
+description: Works differently on your PHP/WP/host than documented
+labels: [compatibility]
+body:
+  - type: input
+    id: php
+    attributes:
+      label: PHP version
+    validations: { required: true }
+  - type: input
+    id: wp
+    attributes:
+      label: WordPress version
+    validations: { required: true }
+  - type: input
+    id: db
+    attributes:
+      label: Database (engine + version)
+  - type: input
+    id: host
+    attributes:
+      label: Host / web server
+  - type: textarea
+    id: behavior
+    attributes:
+      label: What differs from expected?
+    validations: { required: true }
+  - type: textarea
+    id: extensions
+    attributes:
+      label: Extensions
+      description: Output of `php -m | grep -E 'sodium|openssl|zlib|mysqli'` if you can run it.

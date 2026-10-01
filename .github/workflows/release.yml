@@ -1,0 +1,42 @@
+name: Release
+
+# PARKED: no free Actions minutes. Manual run only (Actions -> Release ->
+# Run workflow; note it expects a tag context). To re-enable, restore:
+#   on:
+#     push:
+#       tags: ['v*']
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
+          extensions: sodium, openssl, zlib
+          coverage: none
+      - run: composer install --no-interaction --prefer-dist
+      - run: composer check
+      - name: Build dist
+        run: bin/dist.sh
+      - name: Verify dist
+        run: bin/verify-dist.sh
+      - name: Reproducibility check
+        run: bin/verify-reproducible-dist.sh
+      - name: Unzip release for Plugin Check
+        run: |
+          mkdir -p build
+          unzip -q dist/mudrava-migration-backup-*.zip -d build
+      - name: Full Plugin Check
+        uses: wordpress/plugin-check-action@v1
+        with:
+          build-dir: './build/mudrava-migration-backup'
+      - uses: ncipollo/release-action@v1
+        with:
+          artifacts: dist/mudrava-migration-backup-*.zip
+          artifactErrorsFailBuild: true

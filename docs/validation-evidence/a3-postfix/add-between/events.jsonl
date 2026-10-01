@@ -1,0 +1,4 @@
+{"event":"start","scenario":"add-between","archive_id":"backup-localhost-20260930-041500-nw2vrp"}
+{"event":"mutation","scenario":"add-between","added":"added-between.txt","during_offset":8388608}
+{"event":"step_fatal","step":2148,"mutated":true,"error":"RuntimeException: MUDRAVA_ARCHIVE_CHANGED: source tree changed during export, resume position collided with an archived file","safe":"MUDRAVA_ARCHIVE_CHANGED"}
+TERMINAL failed

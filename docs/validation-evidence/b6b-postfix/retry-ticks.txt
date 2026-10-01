@@ -1,0 +1,4 @@
+{"kind":"import","revision":1,"state":"running","encrypted":false,"archive_id":"up-fu-1790738269","restore_point_archive_id":"backup-localhost-20260930-031813-h3xyoz","percent":50,"phase":"verified","logical_bytes":754979157,"current_part":1,"restored_rows":null,"restored_files":null,"transform_failures":null,"error":null,"rollback_state":null,"rollback_error":null,"note":null,"cron_alive":false}
+
+{"kind":"import","revision":4,"state":"done","encrypted":false,"archive_id":"up-fu-1790738269","restore_point_archive_id":"backup-localhost-20260930-031813-h3xyoz","percent":100,"phase":"files","logical_bytes":1509958314,"current_part":1,"restored_rows":2637,"restored_files":3791,"transform_failures":0,"error":null,"rollback_state":null,"rollback_error":null,"note":null,"cron_alive":false}
+

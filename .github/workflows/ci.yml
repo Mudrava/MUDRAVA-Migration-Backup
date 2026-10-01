@@ -1,0 +1,66 @@
+name: CI
+
+# PARKED: no free Actions minutes. Manual run only (Actions -> CI -> Run
+# workflow). To re-enable, restore:
+#   on:
+#     push:
+#       branches: [main]
+#     pull_request:
+on:
+  workflow_dispatch:
+
+jobs:
+  static:
+    name: Static analysis (PHP ${{ matrix.php }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        php: ['7.4', '8.0', '8.1', '8.2', '8.3', '8.4']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          extensions: sodium, openssl, zlib, mysqli
+          coverage: none
+      - run: composer install --no-interaction --prefer-dist
+      - run: composer validate --strict
+      - name: Syntax check
+        run: find includes tests -name '*.php' -print0 | xargs -0 -n1 php -l
+      - name: License headers
+        run: bash bin/check-headers.sh
+      - name: PHPCS
+        if: matrix.php == '8.3'
+        run: vendor/bin/phpcs --report=github
+      - name: PHPStan
+        if: matrix.php == '8.3'
+        run: vendor/bin/phpstan analyse --memory-limit=1G --no-progress
+      - name: PHPUnit
+        run: vendor/bin/phpunit --no-coverage
+
+  plugin-check:
+    name: WordPress Plugin Check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
+          extensions: sodium, openssl, zlib, mysqli
+          coverage: none
+      - run: composer install --no-interaction --prefer-dist
+      - name: Build distributable
+        run: bash bin/dist.sh
+      - name: Verify distributable
+        run: bash bin/verify-dist.sh
+      - name: Verify reproducible distributable
+        run: bash bin/verify-reproducible-dist.sh
+      - name: Unzip build for inspection
+        run: |
+          mkdir -p build
+          unzip -q dist/mudrava-migration-backup-*.zip -d build
+      - name: Plugin Check
+        uses: wordpress/plugin-check-action@v1
+        with:
+          build-dir: './build/mudrava-migration-backup'

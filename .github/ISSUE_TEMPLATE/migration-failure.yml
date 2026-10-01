@@ -1,0 +1,30 @@
+name: Migration failure
+description: An export or import failed and you need help
+labels: [migration-failure]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Include the exact `MUDRAVA_*` error code from the UI - it identifies
+        the failure precisely. Never paste passwords or archive contents.
+  - type: input
+    id: code
+    attributes:
+      label: Error code (MUDRAVA_*)
+    validations: { required: true }
+  - type: textarea
+    id: context
+    attributes:
+      label: Site context
+      description: Site size, host, PHP version, where in the flow it failed (percent / stage).
+    validations: { required: true }
+  - type: textarea
+    id: job
+    attributes:
+      label: Job state (redact secrets)
+      description: Output of `wp option get mudrava_job --format=json`, with any secrets removed.
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs
+      description: debug.log lines mentioning MUDRAVA, if any.

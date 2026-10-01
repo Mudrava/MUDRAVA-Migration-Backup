@@ -1,0 +1,36 @@
+name: Security
+
+# PARKED: no free Actions minutes. Manual run only (Actions -> Security ->
+# Run workflow). To re-enable, restore:
+#   on:
+#     push:
+#       branches: [main]
+#     pull_request:
+on:
+  workflow_dispatch:
+
+jobs:
+  invariants:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
+          coverage: none
+      - name: No outbound HTTP in the engine
+        run: |
+          if grep -rn "wp_remote_\|curl_\|file_get_contents('http\|file_get_contents(\"http" includes/ mudrava-migration-backup.php; then
+            echo "ERROR: outbound HTTP call found - the plugin must never phone home." >&2
+            exit 1
+          fi
+      - name: No eval / create_function
+        run: |
+          if grep -rn "eval(\|create_function" includes/ mudrava-migration-backup.php; then
+            echo "ERROR: dynamic code execution found." >&2
+            exit 1
+          fi
+      - name: Security sniffs (PHPCS)
+        run: |
+          composer install --no-interaction --prefer-dist
+          vendor/bin/phpcs --standard=phpcs.xml.dist --report=github

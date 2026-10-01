@@ -1,0 +1,4 @@
+{"kind":"export","revision":1,"state":"running","encrypted":false,"archive_id":"backup-localhost-20260930-031813-h3xyoz","restore_point_archive_id":"","percent":99,"phase":"verifying","logical_bytes":111149977,"current_part":1,"restored_rows":null,"restored_files":null,"transform_failures":null,"error":null,"rollback_state":null,"rollback_error":null,"note":null,"cron_alive":false}
+
+{"kind":"export","revision":4,"state":"done","encrypted":false,"archive_id":"backup-localhost-20260930-031813-h3xyoz","restore_point_archive_id":"","percent":100,"phase":"finalize","logical_bytes":111149977,"current_part":1,"restored_rows":null,"restored_files":null,"transform_failures":null,"error":null,"rollback_state":null,"rollback_error":null,"note":null,"cron_alive":false}
+

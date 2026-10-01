@@ -1,0 +1,68 @@
+# temp / scratch
+temp/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Node
+node_modules/
+npm-debug.log*
+playwright-report/
+test-results/
+blob-report/
+playwright/.cache/
+.playwright-mcp/
+
+# Composer / PHP
+vendor/
+composer.lock
+.phpunit.result.cache
+.phpunit.cache/
+phpunit.xml
+build/
+dist/
+coverage/
+tools/
+
+# WordPress local / Docker artifacts
+wp-load.php
+wp-config.php
+wp-config-local.php
+wp-content/uploads/
+wp-content/upgrade/
+wp-content/cache/
+wp-content/backups/
+wp-content/mu-plugins/
+wp-content/languages/
+*.log
+docker/data/
+.wporg-svn/
+
+# Secrets and local state - never commit
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p8
+auth.json
+storageState.json
+storage-state.json
+cookies*.json
+browser-state/
+*.mudrava
+*.mudrava.part*
+
+# Databases / archives
+*.sql
+*.sql.gz
+*.zip
+*.tar
+*.tar.gz
+*.gz

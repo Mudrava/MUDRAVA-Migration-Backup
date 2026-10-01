@@ -1,0 +1,42 @@
+########## B.6b pre-fix: verify-phase failure then honest retry ##########
+start=2026-09-30T02:33:59Z
+--- upload up-fu-1790735640:
+finalize: {"received":370,"total":370,"assembled":370,"done":true,"archive_id":"up-fu-1790735640"}
+restore_point=backup-localhost-20260930-023419-rxetcw
+restore_point_state=done
+--- CHECKSUM TABLE before import:
+wordpress.wp_posts=4150060681
+wordpress.wp_options=1490933231
+wordpress.wp_postmeta=1929190462
+wordpress.wp_users=2425681922
+wordpress.wp_terms=132045132
+wordpress.wp_mud_keyset=2151788630
+wordpress.wp_mud_nopk=1262908396
+--- tick once (expect failed MUDRAVA_PERMISSION_DENIED, zero writes):
+{"kind":"import","revision":1,"state":"failed","encrypted":false,"archive_id":"up-fu-1790735640","restore_point_archive_id":"backup-localhost-20260930-023419-rxetcw","percent":0,"phase":null,"logical_bytes":null,"current_part":1,"restored_rows":null,"restored_files":null,"transform_failures":null,"error":"MUDRAVA_PERMISSION_DENIED","rollback_state":null,"rollback_error":null,"note":null,"cron_alive":false}
+--- GET /job (terminal failed):
+{"kind":"import","revision":4,"state":"failed","encrypted":false,"archive_id":"up-fu-1790735640","restore_point_archive_id":"backup-localhost-20260930-023419-rxetcw","percent":0,"phase":null,"logical_bytes":null,"current_part":1,"restored_rows":null,"restored_files":null,"transform_failures":null,"error":"MUDRAVA_PERMISSION_DENIED","rollback_state":null,"rollback_error":null,"note":null,"cron_alive":false}
+--- option mudrava_last_failed_import (pre-fix: must not exist):
+NULL
+--- journal files (expect exactly one, baseline-only):
+--- uploads dir (must be empty; first filesystem mutation boundary):
+total 8
+dr-x------ 2 www-data www-data 4096 Sep 29 20:53 .
+drwxr-xr-x 6 www-data www-data 4096 Sep 29 20:48 ..
+--- CHECKSUM TABLE after failed tick (must equal before):
+wordpress.wp_posts=4150060681
+wordpress.wp_options=1690056459
+wordpress.wp_postmeta=1929190462
+wordpress.wp_users=2425681922
+wordpress.wp_terms=132045132
+wordpress.wp_mud_keyset=2151788630
+wordpress.wp_mud_nopk=1262908396
+DB_BOUNDARY=CHANGED
+--- retry step 1: new restore point (erases failed import job):
+restore_point2=backup-localhost-20260930-023423-svpl4i
+restore_point2_state=done
+--- retry step 2: POST /job/import same archive (pre-fix expect MUDRAVA_RECOVERY_JOURNAL):
+--- journal still present after refusal (must be yes):
+-rw------- 1 www-data www-data 234 Sep 30 02:34 /tmp/mudrava-backups-cfc3b5a8989c014f/import-journal-5dfc8d89f72970b98cbaa7827b4f7b741e661f341d7eea4cbbf6b70258a0889e.jsonl
+end=2026-09-30T02:34:27Z
+=== B.6b pre-fix done (archive=up-fu-1790735640 restore_point=backup-localhost-20260930-023419-rxetcw/backup-localhost-20260930-023423-svpl4i) ===

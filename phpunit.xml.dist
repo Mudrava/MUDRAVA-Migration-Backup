@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.6/phpunit.xsd"
+         bootstrap="tests/bootstrap.php"
+         colors="true"
+         beStrictAboutTestsThatDoNotTestAnything="true"
+         failOnWarning="true"
+         failOnRisky="true">
+    <testsuites>
+        <testsuite name="unit">
+            <directory suffix="Test.php">tests/Unit</directory>
+        </testsuite>
+        <testsuite name="contract">
+            <directory suffix="Test.php">tests/Contract</directory>
+        </testsuite>
+        <testsuite name="golden">
+            <directory suffix="Test.php">tests/GoldenArchives</directory>
+        </testsuite>
+        <testsuite name="fuzz">
+            <directory suffix="Test.php">tests/Fuzz</directory>
+        </testsuite>
+    </testsuites>
+    <coverage>
+        <include>
+            <directory suffix=".php">includes</directory>
+        </include>
+        <exclude>
+            <directory>includes/Admin</directory>
+        </exclude>
+        <report>
+            <text outputFile="php://stdout" showUncoveredFiles="false"/>
+        </report>
+    </coverage>
+</phpunit>

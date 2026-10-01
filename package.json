@@ -1,0 +1,16 @@
+{
+    "name": "mudrava-migration-backup",
+    "private": true,
+    "description": "E2E and frontend tooling for MUDRAVA Migration & Backup",
+    "scripts": {
+        "lint": "node --check assets/admin.js",
+        "build": "node --check assets/admin.js && php bin/make-pot.php",
+        "test:e2e": "playwright test",
+        "test:e2e:report": "playwright show-report"
+    },
+    "devDependencies": {
+        "@playwright/test": "1.63.0",
+        "@types/node": "^22.10.0",
+        "typescript": "^5.7.0"
+    }
+}
