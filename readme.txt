@@ -1,8 +1,8 @@
 === MUDRAVA Migration & Backup ===
 Contributors: mudrava
-Tags: migration, backup, restore, clone, site transfer
+Tags: migration, backup, restore, clone, site transfer, database, staging, export, import, move
 Requires at least: 6.0
-Tested up to: 7.1
+Tested up to: 7.1.3
 Requires PHP: 7.4
 Stable tag: 1.0.0
 License: GPL-2.0-or-later
