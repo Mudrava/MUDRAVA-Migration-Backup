@@ -159,7 +159,7 @@ test.describe('migration lab', () => {
         // sealed, which the wrong-password restore below proves.
         expect(readFileSync(archivePath).subarray(0, 8).toString('binary')).toBe('MUDRAVA\0');
 
-        // ---- Target: restore without password must fail ----
+        // ---- Target: restore without a password parks at the resume prompt ----
         const ctx2 = await page.context().browser()!.newContext();
         const p2 = await ctx2.newPage();
         p2.on('dialog', (d) => d.accept());
@@ -171,15 +171,20 @@ test.describe('migration lab', () => {
         // the moment the file is picked, before any upload.
         await expect(p2.locator('#mudrava-import-pw')).toBeVisible();
         await p2.click('#mudrava-start-restore');
-        await expect(p2.locator('#mudrava-status')).toContainText('Failed:', { timeout: 300_000 });
+        // A missing credential is retryable by contract (StaleJobGuardTest,
+        // WordPressJobRunnerTest): the job parks in password_required and the
+        // UI asks to resume. It never fails destructively or rolls back.
+        await expect(p2.locator('#mudrava-status')).toContainText('Enter the archive password to continue.', { timeout: 300_000 });
+        await expect(p2.locator('#mudrava-resume-password')).toBeVisible();
 
-        // ---- Target: restore with the right password succeeds ----
-        await p2.goto(TARGET + '/wp-admin/admin.php?page=mudrava');
-        await p2.click('.mudrava-tab[data-tab="restore"]');
-        await p2.setInputFiles('#mudrava-file', archivePath);
-        await expect(p2.locator('#mudrava-import-pw')).toBeVisible();
-        await p2.fill('#mudrava-import-password', PASSWORD);
-        await p2.click('#mudrava-start-restore');
+        // ---- Target: a wrong password cannot open the seal either ----
+        await p2.fill('#mudrava-resume-password', 'definitely-wrong');
+        await p2.click('#mudrava-resume-job');
+        await expect(p2.locator('#mudrava-status')).toContainText('Enter the archive password to continue.', { timeout: 300_000 });
+
+        // ---- Target: resuming with the right password succeeds ----
+        await p2.fill('#mudrava-resume-password', PASSWORD);
+        await p2.click('#mudrava-resume-job');
         await expect(p2.locator('#mudrava-status')).toContainText('Done:', { timeout: 300_000 });
 
         // ---- Verify content on target ----

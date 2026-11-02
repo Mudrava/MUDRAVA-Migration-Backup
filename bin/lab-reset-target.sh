@@ -12,10 +12,10 @@ docker compose exec -T db-target bash -c \
   'mysql -uroot -proot -e "DROP DATABASE IF EXISTS wordpress; CREATE DATABASE wordpress; GRANT ALL ON wordpress.* TO wordpress@\"%\";"'
 
 docker compose exec -T target bash -c '
-  rm -rf wp-content/uploads/* wp-content/mudrava-backups wp-content/themes/twenty* 2>/dev/null || true
+  rm -rf wp-content/uploads/* wp-content/mudrava-backups wp-content/themes/twenty* /tmp/mudrava-backups-* 2>/dev/null || true
   rm -f wp-content/.htaccess
   mkdir -p wp-content/mudrava-backups
-  chown -R www-data:www-data /var/www/html
+  chown -R www-data:www-data wp-content/uploads wp-content/mudrava-backups
 '
 
 # Re-install WordPress on the now-empty database and re-activate the plugin.

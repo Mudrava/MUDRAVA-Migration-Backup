@@ -4,7 +4,26 @@ All notable changes to this project are documented here. The format
 follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and
 the project adheres to [Semantic Versioning](https://semver.org/).
 
-## [Unreleased]
+## [1.0.1] - 2026-11-02
+
+### Changed
+
+- Verified compatibility metadata for WordPress 7.1.4: the full E2E migration lab
+  (export and restore, encrypted archive round trip, split archive upload), 580
+  PHPUnit tests, PHPStan and PHPCS were re-run against this exact build on
+  WordPress 7.1.4 and PHP 8.3. The engine code is unchanged.
+- The plugin header and `MUDRAVA_MB_VERSION` are synced to the release version;
+  the constant no longer trails the header.
+
+### Added
+
+- Development lab: `bin/lab-reset-target.sh` scopes its `chown` to the directories
+  it rewrites, so the E2E lab runs on Docker Desktop for macOS, where ownership
+  changes on bind-mounted git object files are denied.
+
+## [1.0.0] - 2026-09-25
+
+Initial release.
 
 ### Fixed
 
@@ -38,10 +57,6 @@ the project adheres to [Semantic Versioning](https://semver.org/).
   `MUDRAVA_DISK_FULL`) is reported instead of being masked.
 - The restore-point endpoints return a typed `409` when private storage
   is unwritable or unsafe, instead of an uncaught HTTP 500.
-
-## [1.0.0] - 2026-09-25
-
-Initial release.
 
 ### Added
 

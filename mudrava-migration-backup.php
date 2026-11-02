@@ -4,7 +4,7 @@
  * Plugin Name:       MUDRAVA Migration & Backup
  * Plugin URI:        https://wordpress.org/plugins/mudrava-migration-backup/
  * Description:       Migrate, back up and restore WordPress sites with one portable .mudrava file, resumable exports and optional encryption.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Requires at least: 6.0
  * Requires PHP:      7.4
  * Author:            MUDRAVA
@@ -33,7 +33,7 @@ namespace Mudrava\Migration;
 
 defined('ABSPATH') || exit;
 
-define('MUDRAVA_MB_VERSION', '1.0.0');
+define('MUDRAVA_MB_VERSION', '1.0.1');
 define('MUDRAVA_MB_PLUGIN_FILE', __FILE__);
 define('MUDRAVA_MB_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('MUDRAVA_MB_PLUGIN_URL', plugin_dir_url(__FILE__));

@@ -2,9 +2,9 @@
 Contributors: mudrava
 Tags: migration, backup, restore, clone, staging
 Requires at least: 6.0
-Tested up to: 7.1.3
+Tested up to: 7.1.4
 Requires PHP: 7.4
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -123,6 +123,10 @@ No. This release provides the local manual migration and backup workflow. It can
 5. Browse local archives, including saved destination restore points.
 
 == Changelog ==
+
+= 1.0.1 =
+* Tested: verified full compatibility with WordPress 7.1.4 - the full E2E migration lab (export and restore, encrypted archive round trip, split archive upload) plus 580 PHPUnit tests, PHPStan and PHPCS were re-run against this exact build on WordPress 7.1.4 and PHP 8.3. No changes to the engine code.
+* Fixed: the plugin version constant now matches the release version.
 
 = 1.0.0 =
 * Initial public release: resumable export and restore, portable archives, optional authenticated encryption, chunked uploads, split sets, exclusions, URL rewriting and archive verification before restore.
