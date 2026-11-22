@@ -28,6 +28,12 @@ final class AdminPage
         $preflight = Preflight::run();
         $legacy_archives = (new \Mudrava\Migration\Support\Paths())->legacyPublicArchiveCount();
         $multisite = is_multisite();
+        // Maintenance numbers are measured fresh on every render: the tab
+        // is a live scale, never a cached promise. CLI headless surface:
+        // wp mudrava maintenance.
+        $maintenance = \Mudrava\Migration\Support\Maintenance::report();
+        $advisories = \Mudrava\Migration\Support\Maintenance::advisories();
+        $extCache = function_exists('wp_using_ext_object_cache') && wp_using_ext_object_cache();
         // Deep-linkable tab: ?tab=… survives reloads and is shareable.
         // Rendered server-side so the right panel shows even without JS.
         // Read-only selector: sanitized, whitelisted below, mutates nothing,
@@ -37,7 +43,7 @@ final class AdminPage
         if (class_exists(ProPreview::class)) {
             $addon_tabs = array_merge(ProPreview::tabs(), $addon_tabs);
         }
-        $valid_tabs = array_merge(['backup', 'restore', 'archives', 'environment'], array_keys($addon_tabs));
+        $valid_tabs = array_merge(['backup', 'restore', 'archives', 'maintenance', 'environment'], array_keys($addon_tabs));
         if (!in_array($tab_slug, $valid_tabs, true)) {
             $tab_slug = 'backup';
         }
@@ -171,6 +177,39 @@ final class AdminPage
             ),
             'archives'     => __('Archives on this site', 'mudrava-migration-backup'),
             'archives_tab' => __('Archives', 'mudrava-migration-backup'),
+            'maintenance_tab' => __('Maintenance', 'mudrava-migration-backup'),
+            'maint_h'      => __('Tidy before you migrate', 'mudrava-migration-backup'),
+            'maint_sub'    => __(
+                'Revisions, spam and expired transients inflate every backup. This screen counts first; nothing is deleted until you apply what you pick.',
+                'mudrava-migration-backup'
+            ),
+            'maint_found'  => __('Found', 'mudrava-migration-backup'),
+            'maint_item'   => __('Item', 'mudrava-migration-backup'),
+            'maint_count'  => __('Count', 'mudrava-migration-backup'),
+            'maint_apply'  => __('Clean selected', 'mudrava-migration-backup'),
+            'maint_pick'   => __('Select at least one item to clean.', 'mudrava-migration-backup'),
+            'maint_note'   => __(
+                'Deletion is permanent and runs in small batches. Unattached media and autoload are measured, never pruned: media needs your own review.',
+                'mudrava-migration-backup'
+            ),
+            'maint_ext_cache' => __(
+                'This site uses an external object cache: transients may live there and are invisible to this count.',
+                'mudrava-migration-backup'
+            ),
+            'maint_unattached' => __(
+                'Unattached media items: reported only. Use the media library to review before deleting.',
+                'mudrava-migration-backup'
+            ),
+            'maint_autoload' => __(
+                'Autoloaded options read on every request: this many rows and bytes load before your code runs.',
+                'mudrava-migration-backup'
+            ),
+            'maint_done'   => __('Cleaned', 'mudrava-migration-backup'),
+            'rows_word'    => __('rows', 'mudrava-migration-backup'),
+            'maint_cli'    => __(
+                'Same surface headless: wp mudrava maintenance --apply --items=revisions,transients',
+                'mudrava-migration-backup'
+            ),
             // Per-check explanation: what the value is, what it affects, why
             // it matters. Rendered as a second line under each check row and
             // mirrored into a title attribute for a hover tooltip.
@@ -252,6 +291,7 @@ final class AdminPage
                 'backup'      => $l['export'],
                 'restore'     => $l['import'],
                 'archives'    => $l['archives_tab'],
+                'maintenance' => $l['maintenance_tab'],
                 'environment' => $l['env'],
             ];
             $environment_tab = ['environment' => $tabs['environment']];
@@ -465,6 +505,12 @@ final class AdminPage
                 <div id="mudrava-import-hold" class="mudrava-notice mudrava-notice-danger" hidden aria-live="assertive"></div>
                 <div id="mudrava-restore-point" class="mudrava-notice" hidden></div>
                 <?php
+                // Environment truth, filled by admin.js from /archive-info:
+                // plugins the archive carries that this site lacks, shown
+                // BEFORE the destructive step, not as blank pages after.
+                ?>
+                <div id="mudrava-env-diff" class="mudrava-notice mudrava-notice-warn" role="status" hidden></div>
+                <?php
                 // Nothing to type here: the source URL is read from the
                 // archive and the destination is always this site, so the
                 // operator never retypes URLs. The detected pair is shown
@@ -518,6 +564,70 @@ final class AdminPage
                 <?php // Filled by admin.js: prev / page numbers / next. ?>
                 <nav id="mudrava-archives-pager" class="mudrava-pager"
                      aria-label="<?php echo esc_attr($l['archives_tab']); ?>" hidden></nav>
+            </div>
+            <?php
+            // Maintenance: counted live on every render, deletions only on
+            // an explicit Apply of explicitly checked items (same gate as
+            // the REST route and wp mudrava maintenance --apply).
+            ?>
+            <div id="mudrava-panel-maintenance" class="mudrava-panel mudrava-card"
+                 role="tabpanel" aria-labelledby="mudrava-tab-maintenance"
+                 <?php echo $tab_slug === 'maintenance' ? '' : 'hidden'; ?>>
+                <h2><?php echo esc_html($l['maint_h']); ?></h2>
+                <p class="mudrava-sub"><?php echo esc_html($l['maint_sub']); ?></p>
+                <table class="mudrava-maint">
+                    <thead>
+                        <tr>
+                            <th scope="col"><span class="screen-reader-text"><?php echo esc_html($l['review']); ?></span></th>
+                            <th scope="col"><?php echo esc_html($l['maint_item']); ?></th>
+                            <th scope="col"><?php echo esc_html($l['maint_count']); ?></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php foreach ($maintenance['items'] as $mItem) : ?>
+                            <tr>
+                                <td>
+                                    <?php if ($mItem['kind'] === 'clean') : ?>
+                                        <input type="checkbox" name="mudrava-maint-item"
+                                               value="<?php echo esc_attr($mItem['key']); ?>"
+                                               id="mudrava-maint-<?php echo esc_attr($mItem['key']); ?>"
+                                               <?php echo $mItem['count'] > 0 ? '' : 'disabled'; ?>>
+                                    <?php endif; ?>
+                                </td>
+                                <td>
+                                    <label for="mudrava-maint-<?php echo esc_attr($mItem['key']); ?>">
+                                        <?php echo esc_html($mItem['label']); ?>
+                                    </label>
+                                </td>
+                                <td data-maint-count="<?php echo esc_attr($mItem['key']); ?>">
+                                    <?php echo esc_html(number_format_i18n((int) $mItem['count'])); ?>
+                                </td>
+                            </tr>
+                        <?php endforeach; ?>
+                    </tbody>
+                </table>
+                <?php if ($extCache) : ?>
+                    <p class="mudrava-warn"><?php echo esc_html($l['maint_ext_cache']); ?></p>
+                <?php endif; ?>
+                <p class="mudrava-warn"><?php echo esc_html(sprintf(
+                    // translators: %s: number of unattached media items.
+                    __('%1$s: %2$s. ', 'mudrava-migration-backup') . $l['maint_unattached'],
+                    $l['maint_found'],
+                    number_format_i18n($advisories['unattached_media'])
+                )); ?></p>
+                <p class="mudrava-warn"><?php echo esc_html(sprintf(
+                    // translators: 1: number of autoloaded option rows, 2: their size in MB.
+                    __('%1$s: %2$s rows, %3$s MB. ', 'mudrava-migration-backup') . $l['maint_autoload'],
+                    $l['maint_found'],
+                    number_format_i18n($advisories['autoload_rows']),
+                    number_format_i18n(round($advisories['autoload_bytes'] / 1048576, 1))
+                )); ?></p>
+                <p class="mudrava-sub"><?php echo esc_html($l['maint_note']); ?></p>
+                <button type="button" class="mudrava-btn mudrava-btn-danger" id="mudrava-maint-apply">
+                    <?php echo esc_html($l['maint_apply']); ?>
+                </button>
+                <span id="mudrava-maint-status" role="status" aria-live="polite"></span>
+                <p class="description"><code>wp mudrava maintenance --apply --items=revisions,transients</code></p>
             </div>
             <?php foreach (array_keys($addon_tabs) as $addon_slug) : ?>
                 <div id="mudrava-panel-<?php echo esc_attr($addon_slug); ?>" class="mudrava-panel mudrava-card"
@@ -606,6 +716,8 @@ final class AdminPage
                         <span aria-hidden="true">&rarr;</span>
                         <code id="mudrava-rewrite-to-label"></code>
                     </p>
+                    <?php // The modal covers the page, so the env warning must be visible inside it too. ?>
+                    <p id="mudrava-env-modal" class="mudrava-close-note" hidden></p>
                     <p id="mudrava-close-note" class="mudrava-close-note" hidden>
                         <?php echo esc_html($l['close_note']); ?>
                     </p>

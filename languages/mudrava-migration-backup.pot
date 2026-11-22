@@ -4,12 +4,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MUDRAVA Migration & Backup 1.0.0\n"
 "Report-Msgid-Bugs-To: https://mudrava.com/en/\n"
-"POT-Creation-Date: 2026-09-30 03:28+0000\n"
+"POT-Creation-Date: 2026-11-02 13:59+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "X-Domain: mudrava-migration-backup\n"
+
+#: includes/Admin/AdminPage.php:620
+msgid "%1$s: %2$s rows, %3$s MB. "
+msgstr ""
+
+#: includes/Admin/AdminPage.php:614
+msgid "%1$s: %2$s. "
+msgstr ""
 
 #: includes/Support/ErrorCode.php:78
 msgid "A database operation failed during the migration."
@@ -31,244 +39,324 @@ msgstr ""
 msgid "Another migration job is already running."
 msgstr ""
 
-#: includes/Admin/AdminPage.php:96
+#: includes/Admin/AdminPage.php:105
 msgid "Anyone who has this archive can read the password hint. Never put the password or part of it here."
 msgstr ""
 
-#: includes/Admin/AdminPage.php:204
+#: includes/Admin/AdminPage.php:246
 msgid "Approximate size of site files. The database is measured when export starts. This helps estimate time and space."
 msgstr ""
 
-#: includes/Admin/AdminPage.php:149
+#: includes/Admin/AdminPage.php:158
 msgid "Archive password"
 msgstr ""
 
-#: includes/Admin/AdminPage.php:99
+#: includes/Admin/AdminPage.php:108
 msgid "Archive splitting"
 msgstr ""
 
-#: includes/Admin/AdminPage.php:170
+#: includes/Admin/AdminPage.php:179
 msgid "Archives"
 msgstr ""
 
-#: includes/Admin/AdminPage.php:169
+#: includes/Admin/AdminPage.php:178
 msgid "Archives on this site"
 msgstr ""
 
-#: includes/Plugin.php:179
+#: includes/Plugin.php:190
 msgid "Assembling archive"
 msgstr ""
 
-#: includes/Admin/AdminPage.php:101
+#: includes/Admin/AdminPage.php:110
 msgid "Auto"
 msgstr ""
 
-#: includes/Plugin.php:207
-msgid "Automatic recovery failed; inspect the restore point"
-msgstr ""
-
-#: includes/Admin/AdminPage.php:159
-msgid "Cancel"
-msgstr ""
-
-#: includes/Plugin.php:180
-msgid "Cancelled."
-msgstr ""
-
-#: includes/Plugin.php:181
-msgid "Cancelling…"
-msgstr ""
-
-#: includes/Admin/AdminPage.php:114
-#: includes/Plugin.php:288
-msgid "Change what is included"
-msgstr ""
-
-#: includes/Plugin.php:158
-msgid "Choose a password, or turn off encryption to export unencrypted."
-msgstr ""
-
-#: includes/Admin/AdminPage.php:83
-msgid "Choose a strong password"
-msgstr ""
-
-#: includes/Admin/AdminPage.php:146
-msgid "Choose archive files to upload"
-msgstr ""
-
-#: includes/Admin/AdminPage.php:160
-msgid "Close"
-msgstr ""
-
-#: includes/Admin/AdminPage.php:136
-msgid "Cloud storage"
-msgstr ""
-
-#: includes/Plugin.php:266
-msgid "Completed"
-msgstr ""
-
-#: includes/Admin/AdminPage.php:591
-msgid "Continue"
-msgstr ""
-
-#: includes/Plugin.php:274
-msgid "Could not load the live inventory. Reload the page to try again."
-msgstr ""
-
-#: includes/Plugin.php:252
-msgid "Could not read the selected files. Select them again."
-msgstr ""
-
-#: includes/Admin/AdminPage.php:140
-#: includes/Plugin.php:151
-msgid "Create backup"
-msgstr ""
-
-#: includes/Admin/AdminPage.php:103
-msgid "Custom"
-msgstr ""
-
-#: includes/Admin/AdminPage.php:120
-msgid "Database"
-msgstr ""
-
-#: includes/Plugin.php:154
-msgid "Done"
-msgstr ""
-
-#: includes/Admin/AdminPage.php:115
-#: includes/Plugin.php:289
-msgid "Done editing"
-msgstr ""
-
-#: includes/Plugin.php:187
-msgid "Download"
-msgstr ""
-
-#: includes/Plugin.php:188
-msgid "Download all"
-msgstr ""
-
-#: includes/Plugin.php:189
-msgid "Download part"
-msgstr ""
-
-#: includes/Admin/AdminPage.php:147
-msgid "Drop .mudrava files here"
+#: includes/Admin/AdminPage.php:204
+msgid "Autoloaded options read on every request: this many rows and bytes load before your code runs."
 msgstr ""
 
 #: includes/Plugin.php:218
-msgid "Duplicate parts selected: %s"
+msgid "Automatic recovery failed; inspect the restore point"
 msgstr ""
 
-#: includes/Admin/AdminPage.php:81
-msgid "Encrypt backup with password"
+#: includes/Admin/ProPreview.php:57
+msgid "Backup and delivery reports"
 msgstr ""
 
-#: includes/Admin/AdminPage.php:90
-msgid "Encrypted with XChaCha20-Poly1305 + Argon2id. Lost passwords cannot be recovered."
+#: includes/Admin/ProPreview.php:35
+msgid "Backup notifications"
 msgstr ""
 
-#: includes/Admin/AdminPage.php:586
-msgid "Enter the archive password to continue"
+#: includes/Admin/AdminPage.php:168
+msgid "Cancel"
 msgstr ""
 
-#: includes/Plugin.php:196
-msgid "Enter the archive password to continue."
+#: includes/Plugin.php:191
+msgid "Cancelled."
 msgstr ""
 
-#: includes/Admin/AdminPage.php:58
-msgid "Environment"
-msgstr ""
-
-#: includes/Admin/AdminPage.php:113
-#: includes/Plugin.php:290
-msgid "Everything included"
-msgstr ""
-
-#: includes/Admin/AdminPage.php:117
-msgid "Everything is included by default. Uncheck only what you are sure this site does not need."
-msgstr ""
-
-#: includes/Plugin.php:291
-msgid "Excluded"
-msgstr ""
-
-#: includes/Admin/AdminPage.php:70
-msgid "Export"
-msgstr ""
-
-#: includes/Admin/AdminPage.php:74
-msgid "Export creates a .mudrava archive. If site cron is inactive, keep this tab open; the progress dialog shows whether it is safe to close."
-msgstr ""
-
-#: includes/Admin/AdminPage.php:72
-msgid "Export this site"
-msgstr ""
-
-#: includes/Admin/AdminPage.php:130
-msgid "Extra paths to skip (optional)"
-msgstr ""
-
-#: includes/Plugin.php:155
-msgid "Failed"
-msgstr ""
-
-#: includes/Admin/AdminPage.php:121
-msgid "Files"
-msgstr ""
-
-#: includes/Plugin.php:214
-msgid "Files from different archives are selected. Pick the parts of ONE archive."
+#: includes/Plugin.php:192
+msgid "Cancelling…"
 msgstr ""
 
 #: includes/Admin/AdminPage.php:123
-msgid "Filter folders…"
+#: includes/Plugin.php:299
+msgid "Change what is included"
 msgstr ""
 
-#: includes/Admin/AdminPage.php:122
-msgid "Filter tables…"
+#: includes/Plugin.php:169
+msgid "Choose a password, or turn off encryption to export unencrypted."
 msgstr ""
 
-#: includes/Admin/AdminPage.php:52
-msgid "Free - host limits apply"
+#: includes/Admin/AdminPage.php:92
+msgid "Choose a strong password"
 msgstr ""
 
-#: includes/Admin/AdminPage.php:200
-msgid "Free space in private storage. A safe restore needs room for the archive and a restore point."
+#: includes/Admin/AdminPage.php:155
+msgid "Choose archive files to upload"
 msgstr ""
 
-#: includes/Admin/AdminPage.php:88
-#: includes/Plugin.php:163
-msgid "Hide password"
+#: includes/Admin/ProPreview.php:58
+msgid "Choose where reports are sent"
 msgstr ""
 
-#: includes/Admin/AdminPage.php:151
-msgid "I understand: restore overwrites this site database and files, and I accept proceeding without a restore point."
+#: includes/Admin/AdminPage.php:189
+msgid "Clean selected"
 msgstr ""
 
-#: includes/Admin/AdminPage.php:71
-msgid "Import"
+#: includes/Admin/AdminPage.php:207
+msgid "Cleaned"
 msgstr ""
 
-#: includes/Admin/AdminPage.php:141
-msgid "Import an archive"
+#: includes/Plugin.php:308
+msgid "Cleaned %s items"
 msgstr ""
 
-#: includes/Plugin.php:190
-msgid "Individual parts"
+#: includes/Plugin.php:310
+msgid "Cleaning failed: %s"
+msgstr ""
+
+#: includes/Plugin.php:306
+msgid "Cleaning…"
+msgstr ""
+
+#: includes/Admin/AdminPage.php:169
+msgid "Close"
+msgstr ""
+
+#: includes/Admin/AdminPage.php:145
+msgid "Cloud storage"
+msgstr ""
+
+#: includes/Plugin.php:277
+msgid "Completed"
+msgstr ""
+
+#: includes/Admin/AdminPage.php:709
+msgid "Continue"
+msgstr ""
+
+#: includes/Plugin.php:285
+msgid "Could not load the live inventory. Reload the page to try again."
+msgstr ""
+
+#: includes/Plugin.php:263
+msgid "Could not read the selected files. Select them again."
+msgstr ""
+
+#: includes/Admin/AdminPage.php:188
+msgid "Count"
+msgstr ""
+
+#: includes/Admin/AdminPage.php:149
+#: includes/Plugin.php:162
+msgid "Create backup"
+msgstr ""
+
+#: includes/Admin/AdminPage.php:112
+msgid "Custom"
+msgstr ""
+
+#: includes/Admin/ProPreview.php:46
+msgid "Daily or weekly backups in your site timezone"
+msgstr ""
+
+#: includes/Admin/AdminPage.php:129
+msgid "Database"
+msgstr ""
+
+#: includes/Plugin.php:305
+msgid "Delete the selected items permanently? This cannot be undone."
+msgstr ""
+
+#: includes/Admin/AdminPage.php:192
+msgid "Deletion is permanent and runs in small batches. Unattached media and autoload are measured, never pruned: media needs your own review."
 msgstr ""
 
 #: includes/Plugin.php:165
+msgid "Done"
+msgstr ""
+
+#: includes/Admin/AdminPage.php:124
+#: includes/Plugin.php:300
+msgid "Done editing"
+msgstr ""
+
+#: includes/Plugin.php:198
+msgid "Download"
+msgstr ""
+
+#: includes/Plugin.php:199
+msgid "Download all"
+msgstr ""
+
+#: includes/Plugin.php:200
+msgid "Download part"
+msgstr ""
+
+#: includes/Admin/AdminPage.php:156
+msgid "Drop .mudrava files here"
+msgstr ""
+
+#: includes/Plugin.php:229
+msgid "Duplicate parts selected: %s"
+msgstr ""
+
+#: includes/Admin/ProPreview.php:56
+msgid "Email alerts for failed backups or delivery"
+msgstr ""
+
+#: includes/Admin/AdminPage.php:90
+msgid "Encrypt backup with password"
+msgstr ""
+
+#: includes/Admin/AdminPage.php:99
+msgid "Encrypted with XChaCha20-Poly1305 + Argon2id. Lost passwords cannot be recovered."
+msgstr ""
+
+#: includes/Admin/AdminPage.php:704
+msgid "Enter the archive password to continue"
+msgstr ""
+
+#: includes/Plugin.php:207
+msgid "Enter the archive password to continue."
+msgstr ""
+
+#: includes/Admin/AdminPage.php:67
+msgid "Environment"
+msgstr ""
+
+#: includes/Admin/AdminPage.php:122
+#: includes/Plugin.php:301
+msgid "Everything included"
+msgstr ""
+
+#: includes/Admin/AdminPage.php:126
+msgid "Everything is included by default. Uncheck only what you are sure this site does not need."
+msgstr ""
+
+#: includes/Plugin.php:302
+msgid "Excluded"
+msgstr ""
+
+#: includes/Admin/ProPreview.php:82
+msgid "Explore Pro"
+msgstr ""
+
+#: includes/Admin/AdminPage.php:79
+msgid "Export"
+msgstr ""
+
+#: includes/Admin/AdminPage.php:83
+msgid "Export creates a .mudrava archive. If site cron is inactive, keep this tab open; the progress dialog shows whether it is safe to close."
+msgstr ""
+
+#: includes/Admin/AdminPage.php:81
+msgid "Export this site"
+msgstr ""
+
+#: includes/Admin/AdminPage.php:139
+msgid "Extra paths to skip (optional)"
+msgstr ""
+
+#: includes/Plugin.php:166
+msgid "Failed"
+msgstr ""
+
+#: includes/Admin/AdminPage.php:130
+msgid "Files"
+msgstr ""
+
+#: includes/Plugin.php:225
+msgid "Files from different archives are selected. Pick the parts of ONE archive."
+msgstr ""
+
+#: includes/Admin/AdminPage.php:132
+msgid "Filter folders…"
+msgstr ""
+
+#: includes/Admin/AdminPage.php:131
+msgid "Filter tables…"
+msgstr ""
+
+#: includes/Admin/AdminPage.php:186
+msgid "Found"
+msgstr ""
+
+#: includes/Admin/ProPreview.php:42
+msgid "Free provides manual migration and restore on unlimited sites. Pro adds automation."
+msgstr ""
+
+#: includes/Admin/AdminPage.php:242
+msgid "Free space in private storage. A safe restore needs room for the archive and a restore point."
+msgstr ""
+
+#: includes/Admin/AdminPage.php:61
+msgid "Free. Host limits apply"
+msgstr ""
+
+#: includes/Admin/AdminPage.php:97
+#: includes/Plugin.php:174
+msgid "Hide password"
+msgstr ""
+
+#: includes/Admin/AdminPage.php:160
+msgid "I understand: restore overwrites this site database and files, and I accept proceeding without a restore point."
+msgstr ""
+
+#: includes/Admin/AdminPage.php:80
+msgid "Import"
+msgstr ""
+
+#: includes/Admin/AdminPage.php:150
+msgid "Import an archive"
+msgstr ""
+
+#: includes/Plugin.php:201
+msgid "Individual parts"
+msgstr ""
+
+#: includes/Admin/AdminPage.php:187
+msgid "Item"
+msgstr ""
+
+#: includes/Admin/ProPreview.php:40
+msgid "Keep backup copies away from the WordPress server you are protecting."
+msgstr ""
+
+#: includes/Plugin.php:176
 msgid "Keep this tab open until the restore finishes - the restore only advances while this page is open."
 msgstr ""
 
-#: includes/Plugin.php:100
+#: includes/Admin/ProPreview.php:41
+msgid "Know when a backup needs attention without checking every site manually."
+msgstr ""
+
+#: includes/Plugin.php:111
 msgid "MUDRAVA"
 msgstr ""
 
-#: includes/Plugin.php:99
+#: includes/Plugin.php:110
 msgid "MUDRAVA Migration"
 msgstr ""
 
@@ -276,19 +364,27 @@ msgstr ""
 msgid "MUDRAVA Migration & Backup cannot run on this server: PHP 7.4+ (64-bit), zlib and JSON are required."
 msgstr ""
 
-#: mudrava-migration-backup.php:69
+#: mudrava-migration-backup.php:67
 msgid "MUDRAVA Migration & Backup requires PHP 7.4 or newer. Please upgrade PHP before activating."
+msgstr ""
+
+#: includes/Admin/ProPreview.php:36
+msgid "MUDRAVA Pro"
 msgstr ""
 
 #: includes/Support/ErrorCode.php:56
 msgid "MUDRAVA cannot write where it needs to. Check folder permissions."
 msgstr ""
 
-#: includes/Plugin.php:272
+#: includes/Admin/AdminPage.php:180
+msgid "Maintenance"
+msgstr ""
+
+#: includes/Plugin.php:283
 msgid "Measuring this site…"
 msgstr ""
 
-#: includes/Admin/AdminPage.php:69
+#: includes/Admin/AdminPage.php:78
 msgid "Migration operations"
 msgstr ""
 
@@ -296,40 +392,48 @@ msgstr ""
 msgid "Migration paused because the disk is full."
 msgstr ""
 
-#: includes/Admin/AdminPage.php:53
+#: includes/Admin/ProPreview.php:47
+msgid "Missed runs handled without creating a backlog"
+msgstr ""
+
+#: includes/Admin/AdminPage.php:62
 msgid "Multisite detected."
 msgstr ""
 
 #: includes/Support/ErrorCode.php:94
-msgid "Multisite migrations are handled by MUDRAVA Pro. This Free edition migrates single sites."
+msgid "Multisite migrations are not supported. MUDRAVA migrates single sites."
 msgstr ""
 
-#: includes/Admin/AdminPage.php:55
-msgid "Network-wide migration is a MUDRAVA Pro capability. The Free edition migrates single sites."
+#: includes/Admin/AdminPage.php:64
+msgid "Network-wide migration is not supported in this release. MUDRAVA currently migrates single sites."
 msgstr ""
 
-#: includes/Plugin.php:183
+#: includes/Plugin.php:194
 msgid "Next page"
 msgstr ""
 
-#: includes/Plugin.php:198
+#: includes/Plugin.php:209
 msgid "No archives on this site yet."
 msgstr ""
 
-#: includes/Plugin.php:260
+#: includes/Plugin.php:271
 msgid "Not enough disk space for a restore point. A failed restore will need another backup to recover. Check the box to accept this risk."
 msgstr ""
 
-#: includes/Admin/AdminPage.php:102
+#: includes/Admin/ProPreview.php:25
+msgid "Notifications"
+msgstr ""
+
+#: includes/Admin/AdminPage.php:111
 msgid "Off"
+msgstr ""
+
+#: includes/Admin/ProPreview.php:34
+msgid "Off-site storage"
 msgstr ""
 
 #: includes/Support/ErrorCode.php:75
 msgid "One of the parts belongs to a different backup."
-msgstr ""
-
-#: includes/Admin/AdminPage.php:51
-msgid "One portable .mudrava file. Streaming. Resumable. Encrypted."
 msgstr ""
 
 #: includes/Support/ErrorCode.php:90
@@ -340,23 +444,27 @@ msgstr ""
 msgid "Other files (wp-content root)"
 msgstr ""
 
-#: includes/Plugin.php:184
+#: includes/Admin/ProPreview.php:48
+msgid "Overlapping jobs prevented; safe review after imports"
+msgstr ""
+
+#: includes/Plugin.php:195
 msgid "Page"
 msgstr ""
 
-#: includes/Plugin.php:243
+#: includes/Plugin.php:254
 msgid "Part %s is not a valid continuation part (renamed or wrong file)."
 msgstr ""
 
-#: includes/Plugin.php:220
+#: includes/Plugin.php:231
 msgid "Part 1 of the set is missing: the plain .mudrava file (no .partNNNN suffix)."
 msgstr ""
 
-#: includes/Admin/AdminPage.php:108
+#: includes/Admin/AdminPage.php:117
 msgid "Part size unit"
 msgstr ""
 
-#: includes/Admin/AdminPage.php:82
+#: includes/Admin/AdminPage.php:91
 msgid "Password"
 msgstr ""
 
@@ -364,20 +472,32 @@ msgstr ""
 msgid "Password encryption is unavailable on this PHP environment."
 msgstr ""
 
-#: includes/Admin/AdminPage.php:93
+#: includes/Admin/AdminPage.php:102
 msgid "Password hint (optional)"
 msgstr ""
 
-#: includes/Admin/AdminPage.php:86
-#: includes/Plugin.php:161
+#: includes/Admin/AdminPage.php:95
+#: includes/Plugin.php:172
 msgid "Passwords do not match."
 msgstr ""
 
-#: includes/Admin/AdminPage.php:78
-msgid "Pause writes during final export. A new file mid-run stops the export with an error; one deleted before it is reached is skipped."
+#: includes/Admin/AdminPage.php:87
+msgid "Pause writes during final export. Changes during the run can stop the export or leave unvisited files out of the backup."
 msgstr ""
 
-#: includes/Plugin.php:182
+#: includes/Admin/ProPreview.php:62
+msgid "Planned annual plans: $59 / 3 sites, $129 / 15 sites, $249 / 50 sites."
+msgstr ""
+
+#: includes/Plugin.php:320
+msgid "Plugins older here than on the source: %s."
+msgstr ""
+
+#: includes/Admin/AdminPage.php:60
+msgid "Portable backups. Resumable exports. Optional encryption."
+msgstr ""
+
+#: includes/Plugin.php:193
 msgid "Previous page"
 msgstr ""
 
@@ -385,109 +505,154 @@ msgstr ""
 msgid "Private backup storage is unsafe or ambiguous. Set MUDRAVA_MB_STORAGE_DIR to one writable directory outside the web root."
 msgstr ""
 
-#: includes/Admin/AdminPage.php:125
+#: includes/Admin/ProPreview.php:26
+msgid "Pro"
+msgstr ""
+
+#: includes/Admin/AdminPage.php:134
 msgid "Reload the live inventory"
 msgstr ""
 
-#: includes/Plugin.php:269
+#: includes/Plugin.php:280
 msgid "Removing files and tables created by the failed import"
 msgstr ""
 
-#: includes/Admin/AdminPage.php:84
+#: includes/Admin/AdminPage.php:93
 msgid "Repeat password"
 msgstr ""
 
-#: includes/Admin/AdminPage.php:85
+#: includes/Admin/AdminPage.php:94
 msgid "Repeat the password"
 msgstr ""
 
-#: includes/Plugin.php:270
+#: includes/Plugin.php:281
 msgid "Restore point reapplied"
 msgstr ""
 
-#: includes/Plugin.php:206
+#: includes/Plugin.php:217
 msgid "Restore point reapplied; verify the site"
 msgstr ""
 
-#: includes/Plugin.php:204
+#: includes/Plugin.php:215
 msgid "Restore point saved"
 msgstr ""
 
-#: includes/Plugin.php:256
+#: includes/Plugin.php:267
 msgid "Restore point: recommended. There is enough free disk to keep a safety copy of this site before overwriting."
 msgstr ""
 
-#: includes/Admin/AdminPage.php:154
-#: includes/Plugin.php:152
+#: includes/Admin/AdminPage.php:163
+#: includes/Plugin.php:163
 msgid "Restore site"
 msgstr ""
 
-#: includes/Plugin.php:268
+#: includes/Plugin.php:279
 msgid "Restoring the previous site"
 msgstr ""
 
-#: includes/Plugin.php:205
+#: includes/Plugin.php:216
 msgid "Restoring the previous site after an import error"
 msgstr ""
 
-#: includes/Plugin.php:195
+#: includes/Plugin.php:206
 msgid "Resuming the interrupted job…"
 msgstr ""
 
-#: includes/Admin/AdminPage.php:63
+#: includes/Admin/ProPreview.php:53
+msgid "Retention rules for older backup copies"
+msgstr ""
+
+#: includes/Admin/AdminPage.php:72
 msgid "Review"
 msgstr ""
 
-#: includes/Admin/AdminPage.php:158
+#: includes/Admin/AdminPage.php:183
+msgid "Revisions, spam and expired transients inflate every backup. This screen counts first; nothing is deleted until you apply what you pick."
+msgstr ""
+
+#: includes/Admin/AdminPage.php:167
 msgid "Rewriting URLs"
 msgstr ""
 
-#: includes/Admin/AdminPage.php:138
-msgid "S3 / SFTP / WebDAV"
+#: includes/Admin/AdminPage.php:147
+msgid "S3 / S3-compatible storage"
 msgstr ""
 
-#: includes/Admin/AdminPage.php:166
-msgid "Safe to close this tab - the job continues on the server and resumes when you return."
+#: includes/Admin/ProPreview.php:51
+msgid "S3 and S3-compatible storage"
 msgstr ""
 
-#: includes/Plugin.php:203
+#: includes/Admin/AdminPage.php:175
+msgid "Safe to close this tab. The job continues on the server and resumes when you return."
+msgstr ""
+
+#: includes/Admin/ProPreview.php:63
+msgid "Same Pro features in every plan. Manual Free restore remains available after expiry."
+msgstr ""
+
+#: includes/Admin/AdminPage.php:210
+msgid "Same surface headless: wp mudrava maintenance --apply --items=revisions,transients"
+msgstr ""
+
+#: includes/Plugin.php:214
 msgid "Saving a restore point of this site"
 msgstr ""
 
-#: includes/Admin/AdminPage.php:139
+#: includes/Admin/ProPreview.php:23
+msgid "Schedule"
+msgstr ""
+
+#: includes/Admin/ProPreview.php:33
+msgid "Scheduled backups"
+msgstr ""
+
+#: includes/Admin/ProPreview.php:61
+msgid "Scheduled backups, off-site storage, retention and notifications"
+msgstr ""
+
+#: includes/Admin/AdminPage.php:148
 msgid "Scheduled exports"
 msgstr ""
 
-#: includes/Admin/AdminPage.php:66
+#: includes/Admin/AdminPage.php:75
 msgid "Security action required: %d old backup files remain in public wp-content. Move them to private storage."
 msgstr ""
 
-#: includes/Admin/AdminPage.php:124
+#: includes/Admin/AdminPage.php:133
 msgid "Select all"
 msgstr ""
 
-#: includes/Admin/AdminPage.php:87
-#: includes/Plugin.php:162
+#: includes/Admin/AdminPage.php:190
+#: includes/Plugin.php:304
+msgid "Select at least one item to clean."
+msgstr ""
+
+#: includes/Admin/ProPreview.php:39
+msgid "Set a backup routine and reduce repetitive work across your sites."
+msgstr ""
+
+#: includes/Admin/AdminPage.php:96
+#: includes/Plugin.php:173
 msgid "Show password"
 msgstr ""
 
-#: includes/Plugin.php:169
+#: includes/Plugin.php:180
 msgid "Site cron is not running. Without visitors, this job may pause until cron returns. Keep this tab open to be sure."
 msgstr ""
 
-#: includes/Plugin.php:283
+#: includes/Plugin.php:294
 msgid "Sizes are approximate on very large sites."
 msgstr ""
 
-#: includes/Admin/AdminPage.php:133
+#: includes/Admin/AdminPage.php:142
 msgid "Skip folders inside wp-content, separated by commas. Example: uploads/2023 skips media from 2023. Use the checkboxes above for whole groups."
 msgstr ""
 
-#: includes/Plugin.php:248
+#: includes/Plugin.php:259
 msgid "Slot %s holds a file that belongs to a different archive or a different part."
 msgstr ""
 
-#: includes/Admin/AdminPage.php:60
+#: includes/Admin/AdminPage.php:69
 msgid "Some environment checks failed. Open the Environment tab for details."
 msgstr ""
 
@@ -495,20 +660,32 @@ msgstr ""
 msgid "Some parts of this backup are missing."
 msgstr ""
 
-#: includes/Admin/AdminPage.php:105
+#: includes/Plugin.php:313
+msgid "Source theme: %1$s. This site: %2$s."
+msgstr ""
+
+#: includes/Admin/AdminPage.php:114
 msgid "Split archives to meet host file limits. Auto uses 7 GB parts. Off makes one file. Custom accepts a size in MB or GB."
 msgstr ""
 
-#: includes/Admin/AdminPage.php:100
+#: includes/Admin/AdminPage.php:109
 msgid "Split presets"
 msgstr ""
 
-#: includes/Admin/AdminPage.php:192
+#: includes/Admin/ProPreview.php:24
+msgid "Storage"
+msgstr ""
+
+#: includes/Admin/AdminPage.php:234
 msgid "The JSON extension. It encodes archive metadata and job status. Without it, the engine cannot describe or resume an archive."
 msgstr ""
 
-#: includes/Admin/AdminPage.php:176
+#: includes/Admin/AdminPage.php:218
 msgid "The PHP version of this site. PHP 7.4 or newer is required for streaming and crypto functions."
+msgstr ""
+
+#: includes/Plugin.php:316
+msgid "The archive carries plugins this site does not have: %s. Install them before restoring, or builder content may not render."
 msgstr ""
 
 #: includes/Support/ErrorCode.php:87
@@ -539,19 +716,19 @@ msgstr ""
 msgid "The database connection was lost."
 msgstr ""
 
-#: includes/Admin/AdminPage.php:188
+#: includes/Admin/AdminPage.php:230
 msgid "The encryption backend protects password-encrypted archives. Without it, unencrypted export still works."
 msgstr ""
 
-#: includes/Plugin.php:238
+#: includes/Plugin.php:249
 msgid "The first file is not a valid .mudrava archive (bad header)."
 msgstr ""
 
-#: includes/Plugin.php:173
+#: includes/Plugin.php:184
 msgid "The hint cannot be the password or part of it. Describe where it is kept instead, e.g. \"company vault\"."
 msgstr ""
 
-#: includes/Plugin.php:230
+#: includes/Plugin.php:241
 msgid "The last selected file is not the end of the archive - part %s is still missing."
 msgstr ""
 
@@ -571,23 +748,27 @@ msgstr ""
 msgid "The remote server took too long to respond. You can resume."
 msgstr ""
 
-#: includes/Plugin.php:225
+#: includes/Plugin.php:236
 msgid "The set is incomplete - missing parts: %s"
 msgstr ""
 
-#: includes/Admin/AdminPage.php:184
+#: includes/Admin/AdminPage.php:226
 msgid "The zlib extension compresses archive frames while streaming. Export requires it."
 msgstr ""
 
-#: includes/Admin/AdminPage.php:162
-msgid "This archive is encrypted - enter its password to restore."
+#: includes/Admin/ProPreview.php:76
+msgid "These capabilities belong to the separate Pro add-on, currently in development. Purchasing is not open yet."
+msgstr ""
+
+#: includes/Admin/AdminPage.php:171
+msgid "This archive is encrypted. Enter its password to restore."
 msgstr ""
 
 #: includes/Support/ErrorCode.php:72
 msgid "This archive uses a newer format. Please update MUDRAVA first."
 msgstr ""
 
-#: includes/Plugin.php:234
+#: includes/Plugin.php:245
 msgid "This is part 1 of a split set, not a complete archive. Select the .mudrava file AND every .mudrava.partNNNN file of this set."
 msgstr ""
 
@@ -607,131 +788,153 @@ msgstr ""
 msgid "This server is missing requirements for the requested operation."
 msgstr ""
 
-#: includes/Admin/AdminPage.php:137
+#: includes/Admin/AdminPage.php:146
 msgid "This site (Free)"
 msgstr ""
 
-#: includes/Plugin.php:156
+#: includes/Admin/AdminPage.php:196
+msgid "This site uses an external object cache: transients may live there and are invisible to this count."
+msgstr ""
+
+#: includes/Plugin.php:167
 msgid "This will overwrite the current site. Are you sure?"
 msgstr ""
 
-#: includes/Plugin.php:210
+#: includes/Admin/AdminPage.php:181
+msgid "Tidy before you migrate"
+msgstr ""
+
+#: includes/Admin/AdminPage.php:200
+msgid "Unattached media items: reported only. Use the media library to review before deleting."
+msgstr ""
+
+#: includes/Plugin.php:221
 msgid "Unrecognized files (must be *.mudrava or *.mudrava.partNNNN): %s"
 msgstr ""
 
-#: includes/Admin/AdminPage.php:143
+#: includes/Admin/AdminPage.php:152
 msgid "Upload a .mudrava archive (or every part of a split set) and restore it onto this site."
 msgstr ""
 
-#: includes/Plugin.php:178
+#: includes/Plugin.php:189
 msgid "Uploading"
 msgstr ""
 
-#: includes/Plugin.php:267
+#: includes/Admin/ProPreview.php:52
+msgid "Verified delivery with retries"
+msgstr ""
+
+#: includes/Plugin.php:278
 msgid "Verifying the restore point"
 msgstr ""
 
-#: includes/Admin/AdminPage.php:112
+#: includes/Admin/AdminPage.php:684
+#: includes/Admin/ProPreview.php:86
+msgid "Visit MUDRAVA"
+msgstr ""
+
+#: includes/Admin/AdminPage.php:121
 msgid "What goes into the archive"
 msgstr ""
 
-#: includes/Admin/AdminPage.php:180
+#: includes/Admin/AdminPage.php:222
 msgid "Whether PHP uses 64-bit integers. Without them, archives over 2 GB cannot be read or written safely."
 msgstr ""
 
-#: includes/Admin/AdminPage.php:196
+#: includes/Admin/AdminPage.php:238
 msgid "Whether the plugin can write to private storage. Archives and restore points need this directory."
 msgstr ""
 
-#: includes/Plugin.php:279
+#: includes/Plugin.php:290
 msgid "WordPress core table - always included"
 msgstr ""
 
-#: includes/Plugin.php:153
+#: includes/Plugin.php:164
 msgid "Working…"
 msgstr ""
 
-#: includes/Admin/AdminPage.php:27
+#: includes/Admin/AdminPage.php:26
 msgid "You do not have permission to run migrations."
 msgstr ""
 
-#: includes/Plugin.php:277
+#: includes/Plugin.php:288
 msgid "all included"
 msgstr ""
 
-#: includes/Plugin.php:263
+#: includes/Plugin.php:274
 msgid "database"
 msgstr ""
 
-#: includes/Admin/AdminPage.php:94
+#: includes/Admin/AdminPage.php:103
 msgid "e.g. company vault / migration"
 msgstr ""
 
-#: includes/Plugin.php:199
+#: includes/Plugin.php:210
 msgid "encrypted"
 msgstr ""
 
-#: includes/Plugin.php:264
-#: includes/Plugin.php:287
+#: includes/Plugin.php:275
+#: includes/Plugin.php:298
 msgid "files"
 msgstr ""
 
-#: includes/Plugin.php:265
+#: includes/Plugin.php:276
 msgid "finalize"
 msgstr ""
 
-#: includes/Plugin.php:200
+#: includes/Plugin.php:211
 msgid "hint"
 msgstr ""
 
-#: includes/Plugin.php:193
+#: includes/Plugin.php:204
 msgid "job"
 msgstr ""
 
-#: includes/Plugin.php:191
+#: includes/Plugin.php:202
 msgid "missing parts"
 msgstr ""
 
-#: includes/Admin/AdminPage.php:148
-msgid "or click to browse - for split sets, select every part"
+#: includes/Admin/AdminPage.php:157
+msgid "or click to browse. For split sets, select every part"
 msgstr ""
 
-#: includes/Plugin.php:185
+#: includes/Plugin.php:196
 msgid "part"
 msgstr ""
 
-#: includes/Plugin.php:186
+#: includes/Plugin.php:197
 msgid "part(s)"
 msgstr ""
 
-#: includes/Plugin.php:201
+#: includes/Plugin.php:212
 msgid "parts"
 msgstr ""
 
-#: includes/Plugin.php:286
+#: includes/Admin/AdminPage.php:208
+#: includes/Plugin.php:297
 msgid "rows"
 msgstr ""
 
-#: includes/Plugin.php:194
+#: includes/Plugin.php:205
 msgid "running"
 msgstr ""
 
-#: includes/Plugin.php:202
+#: includes/Plugin.php:213
 msgid "set complete"
 msgstr ""
 
-#: includes/Plugin.php:192
+#: includes/Plugin.php:203
 msgid "unknown"
 msgstr ""
 
-#: includes/Plugin.php:197
+#: includes/Plugin.php:208
 msgid "upload incomplete"
 msgstr ""
 
-#: includes/Admin/AdminPage.php:131
+#: includes/Admin/AdminPage.php:140
 msgid "uploads/2023, cache"
 msgstr ""
 
-#: includes/Admin/AdminPage.php:127
-msgid "wp-admin, wp-includes and root files always travel - a restored site cannot run without them."
+#: includes/Admin/AdminPage.php:136
+msgid "wp-admin, wp-includes and root files are always included. A restored site needs them to run."
 msgstr ""

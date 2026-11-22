@@ -27,7 +27,7 @@ defined('ABSPATH') || exit;
 final class ArchiveInfo
 {
     /**
-     * @return array{source_url:string,home_url:string,encrypted:bool,hint:string,unreadable:bool}
+     * @return array{source_url:string,home_url:string,encrypted:bool,hint:string,unreadable:bool,software:array<string,mixed>}
      */
     public static function peek(string $basePath, ?string $password = null): array
     {
@@ -37,6 +37,10 @@ final class ArchiveInfo
             'encrypted'  => false,
             'hint'       => '',
             'unreadable' => true,
+            // Software block of the source site (empty for pre-1.1
+            // archives that predate the inventory): lets the destination
+            // show what is missing BEFORE the restore, not after.
+            'software'   => [],
         ];
         $fh = @fopen($basePath, 'rb');
         if ($fh === false) {
@@ -81,6 +85,8 @@ final class ArchiveInfo
                 if (is_array($meta)) {
                     $out['source_url'] = (string) ($meta['site_url'] ?? '');
                     $out['home_url'] = (string) ($meta['home_url'] ?? '');
+                    $software = (array) ($meta['software'] ?? []);
+                    $out['software'] = $software;
                     $out['unreadable'] = false;
                 }
             }

@@ -355,6 +355,84 @@
             .filter(function (s) { return s !== ''; });
     }
 
+    // Maintenance: the counts on screen are server-rendered from a live
+    // query on every page load. This handler deletes exactly the checked
+    // items, then repaints every count cell from the fresh report the
+    // server returns, so the screen never shows numbers the database no
+    // longer holds. Headless twin: wp mudrava maintenance --apply.
+    var maintApply = $('mudrava-maint-apply');
+    var maintStatus = $('mudrava-maint-status');
+    if (maintApply) {
+        maintApply.addEventListener('click', function () {
+            var items = [];
+            Array.prototype.forEach.call(
+                document.querySelectorAll('input[name="mudrava-maint-item"]:checked'),
+                function (cb) { items.push(cb.value); }
+            );
+            if (!items.length) {
+                if (maintStatus) { maintStatus.textContent = T('maintPick', 'Select at least one item to clean.'); }
+                return;
+            }
+            if (!window.confirm(T('maintConfirm', 'Delete the selected items permanently? This cannot be undone.'))) { return; }
+            maintApply.disabled = true;
+            if (maintStatus) { maintStatus.textContent = T('maintWorking', 'Cleaning…'); }
+            api('/maintenance', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ items: items })
+            }).then(function (r) {
+                var total = 0;
+                Object.keys(r.deleted || {}).forEach(function (k) { total += Number(r.deleted[k] || 0); });
+                ((r.report && r.report.items) || []).forEach(function (item) {
+                    var cell = document.querySelector('[data-maint-count="' + item.key + '"]');
+                    if (cell) { cell.textContent = (item.count || 0).toLocaleString(); }
+                    var cb = document.getElementById('mudrava-maint-' + item.key);
+                    if (cb) { cb.checked = false; cb.disabled = !(item.count > 0); }
+                });
+                if (maintStatus) {
+                    maintStatus.textContent = T('maintDone', 'Cleaned %s items').replace('%s', total.toLocaleString());
+                }
+                maintApply.disabled = false;
+            }).catch(function (e) {
+                if (maintStatus) {
+                    maintStatus.textContent = T('maintFailed', 'Cleaning failed: %s').replace('%s', e.message);
+                }
+                maintApply.disabled = false;
+            });
+        });
+    }
+
+    // Environment diff of an archive (source plugins/theme vs this site),
+    // rendered before the first destructive write. Source is /archive-info.
+    function showEnvDiff(env) {
+        var panel = $('mudrava-env-diff');
+        var modal = $('mudrava-env-modal');
+        if (!panel && !modal) { return; }
+        var lines = [];
+        var missing = (env && env.missing) || [];
+        var older = (env && env.older) || [];
+        var theme = (env && env.theme) || {};
+        if (theme.source && theme.installed && theme.source !== theme.installed) {
+            lines.push(T('envDiffTheme', 'Source theme: %1$s. This site: %2$s.')
+                .replace('%1$s', theme.source).replace('%2$s', theme.installed));
+        }
+        if (missing.length) {
+            lines.push(T('envDiffMissing', 'The archive carries plugins this site does not have: %s. Install them before restoring, or builder content may not render.')
+                .replace('%s', missing.map(function (p) {
+                    return p.name + (p.version ? ' ' + p.version : '');
+                }).join(', ')));
+        }
+        if (older.length) {
+            lines.push(T('envDiffOlder', 'Plugins older here than on the source: %s.')
+                .replace('%s', older.map(function (p) {
+                    return p.name + ' (' + p.installed + ' < ' + p.version + ')';
+                }).join(', ')));
+        }
+        var text = lines.join(' ');
+        if (panel) { panel.textContent = text; panel.hidden = text === ''; }
+        if (modal) { modal.textContent = text; modal.hidden = text === ''; }
+    }
+
     // Archives list: one card per logical archive (a split set is ONE
     // backup with N parts, and the card says so). Row one is identity on
     // the left and the single action on the right, so "download" sits
@@ -1488,6 +1566,7 @@
                 if (rewriteToLabel) { rewriteToLabel.textContent = cfg.homeUrl || ''; }
                 rewriteLine.hidden = false;
             }
+            if (info && info.environment) { showEnvDiff(info.environment); }
         }).catch(function () { /* the engine auto-derives; nothing to show */ });
     }
 

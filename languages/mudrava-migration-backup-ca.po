@@ -1,0 +1,705 @@
+# Catalan translations for MUDRAVA Migration & Backup.
+# Copyright (C) 2026 MUDRAVA
+# This file is distributed under the GPL-2.0-or-later license.
+# Hand written by MUDRAVA, one string at a time.
+msgid ""
+msgstr ""
+"Project-Id-Version: MUDRAVA Migration & Backup 1.1.0\n"
+"Report-Msgid-Bugs-To: https://mudrava.com/en/\n"
+"POT-Creation-Date: 2026-11-22 00:00+0000\n"
+"PO-Revision-Date: 2026-11-22 00:00+0000\n"
+"Last-Translator: MUDRAVA <info@mudrava.com>\n"
+"Language-Team: Catalan <ca@li.org>\n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: mudrava-migration-backup\n"
+
+msgid "%1$s: %2$s rows, %3$s MB. "
+msgstr "%1$s: %2$s files, %3$s MB. "
+
+msgid "%1$s: %2$s. "
+msgstr "%1$s: %2$s. "
+
+msgid "A database operation failed during the migration."
+msgstr "Una operació de base de dades ha fallat durant la migració."
+
+msgid "A database row is too large for the backup format. Reduce the row size and retry."
+msgstr "Una fila de la base de dades és massa gran per al format de còpia de seguretat. Redueix-ne la mida i torna-ho a provar."
+
+msgid "A table without a primary key changed during the backup, so rows could be missed. Pause writes to it and re-run the backup."
+msgstr "Una taula sense clau primària ha canviat durant la còpia, i potser en falten files. Atura les escriptures i torna a llançar la còpia."
+
+msgid "An upload chunk was rejected. Please retry."
+msgstr "S'ha rebutjat un fragment de pujada. Torna-ho a provar."
+
+msgid "Another migration job is already running."
+msgstr "Ja s'està executant una altra feina de migració."
+
+msgid "Anyone who has this archive can read the password hint. Never put the password or part of it here."
+msgstr "Qualsevol que tingui aquest arxiu pot llegir el recordatori de la contrasenya. No hi posis mai la contrasenya ni part d'ella."
+
+msgid "Approximate size of site files. The database is measured when export starts. This helps estimate time and space."
+msgstr "Mida aproximada dels fitxers del lloc. La base de dades es mesura quan comença l'exportació. Ajuda a estimar el temps i l'espai."
+
+msgid "Archive password"
+msgstr "Contrasenya de l'arxiu"
+
+msgid "Archive splitting"
+msgstr "Divisió de l'arxiu"
+
+msgid "Archives"
+msgstr "Arxius"
+
+msgid "Archives on this site"
+msgstr "Arxius en aquest lloc"
+
+msgid "Assembling archive"
+msgstr "Muntant l'arxiu"
+
+msgid "Auto"
+msgstr "Automàtic"
+
+msgid "Autoloaded options read on every request: this many rows and bytes load before your code runs."
+msgstr "Les opcions de càrrega automàtica es llegeixen a cada sol·licitud: aquesta quantitat de files i bytes es carrega abans que el teu codi s'executi."
+
+msgid "Automatic recovery failed; inspect the restore point"
+msgstr "La recuperació automàtica ha fallat; inspecciona el punt de restauració"
+
+msgid "Backup and delivery reports"
+msgstr "Informes de còpies i lliurament"
+
+msgid "Backup notifications"
+msgstr "Notificacions de còpies de seguretat"
+
+msgid "Cancel"
+msgstr "Cancel·la"
+
+msgid "Cancelled."
+msgstr "Cancel·lat."
+
+msgid "Cancelling…"
+msgstr "Cancel·lant…"
+
+msgid "Change what is included"
+msgstr "Canvia què s'hi inclou"
+
+msgid "Choose a password, or turn off encryption to export unencrypted."
+msgstr "Tria una contrasenya o desactiva el xifratge per exportar sense xifrar."
+
+msgid "Choose a strong password"
+msgstr "Tria una contrasenya forta"
+
+msgid "Choose archive files to upload"
+msgstr "Tria els fitxers d'arxiu a pujar"
+
+msgid "Choose where reports are sent"
+msgstr "Tria on s'envien els informes"
+
+msgid "Clean selected"
+msgstr "Neteja la selecció"
+
+msgid "Cleaned"
+msgstr "Netejat"
+
+msgid "Cleaned %s items"
+msgstr "%s elements netejats"
+
+msgid "Cleaning failed: %s"
+msgstr "La neteja ha fallat: %s"
+
+msgid "Cleaning…"
+msgstr "Netejant…"
+
+msgid "Close"
+msgstr "Tanca"
+
+msgid "Cloud storage"
+msgstr "Emmagatzematge al núvol"
+
+msgid "Completed"
+msgstr "Completat"
+
+msgid "Continue"
+msgstr "Continua"
+
+msgid "Could not load the live inventory. Reload the page to try again."
+msgstr "No s'ha pogut carregar l'inventari en directe. Torna a carregar la pàgina per tornar-ho a provar."
+
+msgid "Could not read the selected files. Select them again."
+msgstr "No s'han pogut llegir els fitxers seleccionats. Selecciona'ls de nou."
+
+msgid "Count"
+msgstr "Recompte"
+
+msgid "Create backup"
+msgstr "Crea una còpia de seguretat"
+
+msgid "Custom"
+msgstr "Personalitzat"
+
+msgid "Daily or weekly backups in your site timezone"
+msgstr "Còpies diàries o setmanals a la zona horària del teu lloc"
+
+msgid "Database"
+msgstr "Base de dades"
+
+msgid "Delete the selected items permanently? This cannot be undone."
+msgstr "Vols eliminar permanentment els elements seleccionats? Això no es pot desfer."
+
+msgid "Deletion is permanent and runs in small batches. Unattached media and autoload are measured, never pruned: media needs your own review."
+msgstr "L'eliminació és permanent i es fa en lots petits. Els mitjans sense adjunt i la càrrega automàtica només es mesuren, mai s'esborren: els mitjans requereixen la teva pròpia revisió."
+
+msgid "Done"
+msgstr "Fet"
+
+msgid "Done editing"
+msgstr "Edició acabada"
+
+msgid "Download"
+msgstr "Baixa"
+
+msgid "Download all"
+msgstr "Baixa-ho tot"
+
+msgid "Download part"
+msgstr "Baixa la part"
+
+msgid "Drop .mudrava files here"
+msgstr "Deixa aquí els fitxers .mudrava"
+
+msgid "Duplicate parts selected: %s"
+msgstr "Parts duplicades seleccionades: %s"
+
+msgid "Email alerts for failed backups or delivery"
+msgstr "Alertes per correu si fallen còpies o lliuraments"
+
+msgid "Encrypt backup with password"
+msgstr "Xifra la còpia amb contrasenya"
+
+msgid "Encrypted with XChaCha20-Poly1305 + Argon2id. Lost passwords cannot be recovered."
+msgstr "Xifrat amb XChaCha20-Poly1305 + Argon2id. Una contrasenya perduda no es pot recuperar."
+
+msgid "Enter the archive password to continue"
+msgstr "Introdueix la contrasenya de l'arxiu per continuar"
+
+msgid "Enter the archive password to continue."
+msgstr "Introdueix la contrasenya de l'arxiu per continuar."
+
+msgid "Environment"
+msgstr "Entorn"
+
+msgid "Everything included"
+msgstr "Tot inclòs"
+
+msgid "Everything is included by default. Uncheck only what you are sure this site does not need."
+msgstr "Per defecte tot està inclòs. Desmarca només allò de què estiguis segur que aquest lloc no necessita."
+
+msgid "Excluded"
+msgstr "Exclòs"
+
+msgid "Explore Pro"
+msgstr "Descobreix Pro"
+
+msgid "Export"
+msgstr "Exporta"
+
+msgid "Export creates a .mudrava archive. If site cron is inactive, keep this tab open; the progress dialog shows whether it is safe to close."
+msgstr "L'exportació crea un arxiu .mudrava. Si el cron del lloc està inactiu, manté oberta aquesta pestanya; el diàleg de progrés indica si la pots tancar sense risc."
+
+msgid "Export this site"
+msgstr "Exporta aquest lloc"
+
+msgid "Extra paths to skip (optional)"
+msgstr "Camins addicionals a ometre (opcional)"
+
+msgid "Failed"
+msgstr "Ha fallat"
+
+msgid "Files"
+msgstr "Fitxers"
+
+msgid "Files from different archives are selected. Pick the parts of ONE archive."
+msgstr "Hi ha fitxers d'arxius diferents seleccionats. Tria les parts d'un sol arxiu."
+
+msgid "Filter folders…"
+msgstr "Filtra carpetes…"
+
+msgid "Filter tables…"
+msgstr "Filta taules…"
+
+msgid "Found"
+msgstr "Trobat"
+
+msgid "Free provides manual migration and restore on unlimited sites. Pro adds automation."
+msgstr "La versió gratuïta fa migració i restauració manuals en llocs il·limitats. Pro hi afegeix automatització."
+
+msgid "Free space in private storage. A safe restore needs room for the archive and a restore point."
+msgstr "Espai lliure a l'emmagatzematge privat. Una restauració segura necessita lloc per a l'arxiu i un punt de restauració."
+
+msgid "Free. Host limits apply"
+msgstr "Gratuït. S'apliquen els límits de l'allotjament"
+
+msgid "Hide password"
+msgstr "Amaga la contrasenya"
+
+msgid "I understand: restore overwrites this site database and files, and I accept proceeding without a restore point."
+msgstr "Ho entenc: la restauració sobreescriu la base de dades i els fitxers d'aquest lloc, i accepto continuar sense punt de restauració."
+
+msgid "Import"
+msgstr "Importa"
+
+msgid "Import an archive"
+msgstr "Importa un arxiu"
+
+msgid "Individual parts"
+msgstr "Parts individuals"
+
+msgid "Item"
+msgstr "Element"
+
+msgid "Keep backup copies away from the WordPress server you are protecting."
+msgstr "Guarda les còpies de seguretat separades del servidor de WordPress que protegeixes."
+
+msgid "Keep this tab open until the restore finishes - the restore only advances while this page is open."
+msgstr "Manté oberta aquesta pestanya fins que acabi la restauració: només avança mentre aquesta pàgina és oberta."
+
+msgid "Know when a backup needs attention without checking every site manually."
+msgstr "Saps quan una còpia necessita atenció sense revisar cada lloc a mà."
+
+msgid "MUDRAVA"
+msgstr "MUDRAVA"
+
+msgid "MUDRAVA Migration"
+msgstr "MUDRAVA Migració"
+
+msgid "MUDRAVA Migration & Backup cannot run on this server: PHP 7.4+ (64-bit), zlib and JSON are required."
+msgstr "MUDRAVA Migration & Backup no es pot executar en aquest servidor: calen PHP 7.4+ (64 bits), zlib i JSON."
+
+msgid "MUDRAVA Migration & Backup requires PHP 7.4 or newer. Please upgrade PHP before activating."
+msgstr "MUDRAVA Migration & Backup requereix PHP 7.4 o superior. Actualitza PHP abans d'activar."
+
+msgid "MUDRAVA Pro"
+msgstr "MUDRAVA Pro"
+
+msgid "MUDRAVA cannot write where it needs to. Check folder permissions."
+msgstr "MUDRAVA no pot escriure on cal. Comprova els permisos de les carpetes."
+
+msgid "Maintenance"
+msgstr "Manteniment"
+
+msgid "Measuring this site…"
+msgstr "Mesurant aquest lloc…"
+
+msgid "Migration operations"
+msgstr "Operacions de migració"
+
+msgid "Migration paused because the disk is full."
+msgstr "Migració en pausa: el disc és ple."
+
+msgid "Missed runs handled without creating a backlog"
+msgstr "Les execucions perdides es recuperen sense crear endarreriments"
+
+msgid "Multisite detected."
+msgstr "Multilloc detectat."
+
+msgid "Multisite migrations are not supported. MUDRAVA migrates single sites."
+msgstr "Les migracions de multilloc no són compatibles. MUDRAVA migra llocs individuals."
+
+msgid "Network-wide migration is not supported in this release. MUDRAVA currently migrates single sites."
+msgstr "Aquesta versió no admet la migració de tota la xarxa. Ara mateix MUDRAVA migra llocs individuals."
+
+msgid "Next page"
+msgstr "Pàgina següent"
+
+msgid "No archives on this site yet."
+msgstr "Encara no hi ha arxius en aquest lloc."
+
+msgid "Not enough disk space for a restore point. A failed restore will need another backup to recover. Check the box to accept this risk."
+msgstr "No hi ha prou espai en disc per a un punt de restauració. Una restauració fallida necessitaria una altra còpia per recuperar-se. Marca la casella per acceptar aquest risc."
+
+msgid "Notifications"
+msgstr "Notificacions"
+
+msgid "Off"
+msgstr "No"
+
+msgid "Off-site storage"
+msgstr "Emmagatzematge extern"
+
+msgid "One of the parts belongs to a different backup."
+msgstr "Una de les parts pertany a una altra còpia."
+
+msgid "Only a running export can be cancelled."
+msgstr "Només es pot cancel·lar una exportació en curs."
+
+msgid "Other files (wp-content root)"
+msgstr "Altres fitxers (arrel de wp-content)"
+
+msgid "Overlapping jobs prevented; safe review after imports"
+msgstr "Se impedeix el solapament de feines; revisió segura després de les importacions"
+
+msgid "Page"
+msgstr "Pàgina"
+
+msgid "Part %s is not a valid continuation part (renamed or wrong file)."
+msgstr "La part %s no és una continuació vàlida (canviada de nom o fitxer equivocat)."
+
+msgid "Part 1 of the set is missing: the plain .mudrava file (no .partNNNN suffix)."
+msgstr "Falta la part 1 del conjunt: el fitxer .mudrava sense sufix .partNNNN."
+
+msgid "Part size unit"
+msgstr "Unitat de mida de part"
+
+msgid "Password"
+msgstr "Contrasenya"
+
+msgid "Password encryption is unavailable on this PHP environment."
+msgstr "El xifratge amb contrasenya no està disponible en aquest entorn PHP."
+
+msgid "Password hint (optional)"
+msgstr "Recordatori de contrasenya (opcional)"
+
+msgid "Passwords do not match."
+msgstr "Les contrasenyes no coincideixen."
+
+msgid "Pause writes during final export. Changes during the run can stop the export or leave unvisited files out of the backup."
+msgstr "Atura les escriptures durant l'exportació final. Els canvis durant l'execució poden aturar l'exportació o deixar fitxers encara no visitats fora de la còpia."
+
+msgid "Planned annual plans: $59 / 3 sites, $129 / 15 sites, $249 / 50 sites."
+msgstr "Plans anuals prevists: 59 $ / 3 llocs, 129 $ / 15 llocs, 249 $ / 50 llocs."
+
+msgid "Plugins older here than on the source: %s."
+msgstr "Connectors més antics aquí que a l'origen: %s."
+
+msgid "Portable backups. Resumable exports. Optional encryption."
+msgstr "Còpies portables. Exportacions reprensables. Xifratge opcional."
+
+msgid "Previous page"
+msgstr "Pàgina anterior"
+
+msgid "Private backup storage is unsafe or ambiguous. Set MUDRAVA_MB_STORAGE_DIR to one writable directory outside the web root."
+msgstr "L'emmagatzematge privat de còpies no és segur o és ambigu. Defineix MUDRAVA_MB_STORAGE_DIR en un sol directori escribible fora de l'arrel web."
+
+msgid "Pro"
+msgstr "Pro"
+
+msgid "Reload the live inventory"
+msgstr "Torna a carregar l'inventari en directe"
+
+msgid "Removing files and tables created by the failed import"
+msgstr "Eliminant fitxers i taules creats per la importació fallida"
+
+msgid "Repeat password"
+msgstr "Repeteix la contrasenya"
+
+msgid "Repeat the password"
+msgstr "Repeteix la contrasenya"
+
+msgid "Restore point reapplied"
+msgstr "Punt de restauració reaplicat"
+
+msgid "Restore point reapplied; verify the site"
+msgstr "Punt de restauració reaplicat; verifica el lloc"
+
+msgid "Restore point saved"
+msgstr "Punt de restauració desat"
+
+msgid "Restore point: recommended. There is enough free disk to keep a safety copy of this site before overwriting."
+msgstr "Punt de restauració: recomanat. Hi ha prou disc lliure per guardar una còpia de seguretat del lloc abans de sobreescriure."
+
+msgid "Restore site"
+msgstr "Restaura el lloc"
+
+msgid "Restoring the previous site"
+msgstr "Restaurant el lloc anterior"
+
+msgid "Restoring the previous site after an import error"
+msgstr "Restaurant el lloc anterior després d'un error d'importació"
+
+msgid "Resuming the interrupted job…"
+msgstr "Reprenent la feina interrompuda…"
+
+msgid "Retention rules for older backup copies"
+msgstr "Regles de retenció per a les còpies antigues"
+
+msgid "Review"
+msgstr "Revisa"
+
+msgid "Revisions, spam and expired transients inflate every backup. This screen counts first; nothing is deleted until you apply what you pick."
+msgstr "Les revisions, el correu brossa i els transitoris caducats inflen cada còpia. Aquesta pantalla primer compta; no s'elimina res fins que apliquis el que triïs."
+
+msgid "Rewriting URLs"
+msgstr "Reescrivint URLs"
+
+msgid "S3 / S3-compatible storage"
+msgstr "Emmagatzematge S3 / compatible amb S3"
+
+msgid "S3 and S3-compatible storage"
+msgstr "Emmagatzematge S3 i compatible amb S3"
+
+msgid "Safe to close this tab. The job continues on the server and resumes when you return."
+msgstr "Pots tancar aquesta pestanya amb seguretat. La feina continua al servidor i es reprèn quan hi tornis."
+
+msgid "Same Pro features in every plan. Manual Free restore remains available after expiry."
+msgstr "Mateixes funcions Pro en tots els plans. La restauració manual gratuïta continua disponible després del venciment."
+
+msgid "Same surface headless: wp mudrava maintenance --apply --items=revisions,transients"
+msgstr "El mateix sense interfície: wp mudrava maintenance --apply --items=revisions,transients"
+
+msgid "Saving a restore point of this site"
+msgstr "Desant un punt de restauració d'aquest lloc"
+
+msgid "Schedule"
+msgstr "Planificació"
+
+msgid "Scheduled backups"
+msgstr "Còpies programades"
+
+msgid "Scheduled backups, off-site storage, retention and notifications"
+msgstr "Còpies programades, emmagatzematge extern, retenció i notificacions"
+
+msgid "Scheduled exports"
+msgstr "Exportacions programades"
+
+msgid "Security action required: %d old backup files remain in public wp-content. Move them to private storage."
+msgstr "Cal una acció de seguretat: %d còpies antigues segueixen en un wp-content públic. Mou-les a l'emmagatzematge privat."
+
+msgid "Select all"
+msgstr "Selecciona-ho tot"
+
+msgid "Select at least one item to clean."
+msgstr "Selecciona almenys un element a netejar."
+
+msgid "Set a backup routine and reduce repetitive work across your sites."
+msgstr "Defineix una rutina de còpies i redueix la feina repetitiva als teus llocs."
+
+msgid "Show password"
+msgstr "Mostra la contrasenya"
+
+msgid "Site cron is not running. Without visitors, this job may pause until cron returns. Keep this tab open to be sure."
+msgstr "El cron del lloc no s'executa. Sense visitants, aquesta feina pot pausar-se fins que el cron torni. Manté oberta aquesta pestanya per seguretat."
+
+msgid "Sizes are approximate on very large sites."
+msgstr "En llocs molt grans les mides són aproximades."
+
+msgid "Skip folders inside wp-content, separated by commas. Example: uploads/2023 skips media from 2023. Use the checkboxes above for whole groups."
+msgstr "Carpetes dins wp-content, separades per comes. Exemple: uploads/2023 omet els mitjans del 2023. Fes servir les caselles de dalt per a grups sencers."
+
+msgid "Slot %s holds a file that belongs to a different archive or a different part."
+msgstr "L'espai %s conté un fitxer d'un altre arxiu o d'una altra part."
+
+msgid "Some environment checks failed. Open the Environment tab for details."
+msgstr "Algunes comprovacions d'entorn han fallat. Obre la pestanya Entorn per als detalls."
+
+msgid "Some parts of this backup are missing."
+msgstr "Falten parts d'aquesta còpia."
+
+msgid "Source theme: %1$s. This site: %2$s."
+msgstr "Tema d'origen: %1$s. Aquest lloc: %2$s."
+
+msgid "Split archives to meet host file limits. Auto uses 7 GB parts. Off makes one file. Custom accepts a size in MB or GB."
+msgstr "Divideix els arxius per respectar els límits de fitxer de l'allotjament. Automàtic fa parts de 7 GB. No genera un sol fitxer. Personalitzat accepta una mida en MB o GB."
+
+msgid "Split presets"
+msgstr "Mides predefinides"
+
+msgid "Storage"
+msgstr "Emmagatzematge"
+
+msgid "The JSON extension. It encodes archive metadata and job status. Without it, the engine cannot describe or resume an archive."
+msgstr "L'extensió JSON. Codifica les metadades de l'arxiu i l'estat de la feina. Sense ella, el motor no pot descriure ni reprendre un arxiu."
+
+msgid "The PHP version of this site. PHP 7.4 or newer is required for streaming and crypto functions."
+msgstr "La versió de PHP d'aquest lloc. Cal PHP 7.4 o superior per a la transmissió i les funcions criptogràfiques."
+
+msgid "The archive carries plugins this site does not have: %s. Install them before restoring, or builder content may not render."
+msgstr "L'arxiu conté connectors que aquest lloc no té: %s. Installa'ls abans de restaurar, o el contingut dels constructors pot no mostrar-se."
+
+msgid "The archive contains a path that cannot be restored safely."
+msgstr "L'arxiu conté un camí que no es pot restaurar de manera segura."
+
+msgid "The archive did not pass integrity verification."
+msgstr "L'arxiu no ha superat la verificació d'integritat."
+
+msgid "The archive is damaged and cannot be read safely."
+msgstr "L'arxiu està danyat i no es pot llegir de manera segura."
+
+msgid "The archive is incomplete. The transfer may have been interrupted."
+msgstr "L'arxiu és incomplet. La transferència pot haver-se interromput."
+
+msgid "The backup file changed during verification or restore. Upload the original archive again."
+msgstr "El fitxer de còpia ha canviat durant la verificació o la restauració. Torna a pujar l'arxiu original."
+
+msgid "The backup storage folder is not writable by the web server. Fix its ownership (it may have been created by a root shell)."
+msgstr "El servidor web no pot escriure a la carpeta d'emmagatzematge. Corregeix-ne el propietari (potser la va crear un shell de root)."
+
+msgid "The database connection was lost."
+msgstr "S'ha perdut la connexió amb la base de dades."
+
+msgid "The encryption backend protects password-encrypted archives. Without it, unencrypted export still works."
+msgstr "El motor de xifratge protegeix els arxius xifrats amb contrasenya. Sense ell, l'exportació sense xifrar continua funcionant."
+
+msgid "The first file is not a valid .mudrava archive (bad header)."
+msgstr "El primer fitxer no és un arxiu .mudrava vàlid (capçalera incorrecta)."
+
+msgid "The hint cannot be the password or part of it. Describe where it is kept instead, e.g. \"company vault\"."
+msgstr "El recordatori no pot ser la contrasenya ni part d'ella. Descriu millor on es guarda, per exemple «caixa forta de l'empresa»."
+
+msgid "The last selected file is not the end of the archive - part %s is still missing."
+msgstr "L'últim fitxer seleccionat no és el final de l'arxiu: encara falta la part %s."
+
+msgid "The migration could not be completed."
+msgstr "La migració no s'ha pogut completar."
+
+msgid "The password is incorrect. The archive is still intact."
+msgstr "La contrasenya és incorrecta. L'arxiu segueix intacte."
+
+msgid "The remote server could not be reached."
+msgstr "No s'ha pogut contactar amb el servidor remot."
+
+msgid "The remote server took too long to respond. You can resume."
+msgstr "El servidor remot triga massa a respondre. Pots reprendre."
+
+msgid "The set is incomplete - missing parts: %s"
+msgstr "El conjunt és incomplet: falten les parts %s"
+
+msgid "The zlib extension compresses archive frames while streaming. Export requires it."
+msgstr "L'extensió zlib comprimeix els fotogrames de l'arxiu a vol d'ocell. L'exportació la necessita."
+
+msgid "These capabilities belong to the separate Pro add-on, currently in development. Purchasing is not open yet."
+msgstr "Aquestes capacitats pertanyen al complement Pro separat, encara en desenvolupament. La compra no està oberta encara."
+
+msgid "This archive is encrypted. Enter its password to restore."
+msgstr "Aquest arxiu està xifrat. Introdueix-ne la contrasenya per restaurar."
+
+msgid "This archive uses a newer format. Please update MUDRAVA first."
+msgstr "Aquest arxiu fa servir un format més nou. Actualitza primer MUDRAVA."
+
+msgid "This is part 1 of a split set, not a complete archive. Select the .mudrava file AND every .mudrava.partNNNN file of this set."
+msgstr "Aquesta és la part 1 d'un conjunt dividit, no un arxiu complet. Selecciona el fitxer .mudrava i tots els .mudrava.partNNNN d'aquest conjunt."
+
+msgid "This job no longer exists."
+msgstr "Aquesta feina ja no existeix."
+
+msgid "This migration step needs more PHP memory than this server allows."
+msgstr "Aquest pas de la migració necessita més memòria PHP de la que aquest servidor permet."
+
+msgid "This server cannot safely run large migrations."
+msgstr "Aquest servidor no pot executar grans migracions de manera segura."
+
+msgid "This server is missing requirements for the requested operation."
+msgstr "A aquest servidor li falten requisits per a l'operació sol·licitada."
+
+msgid "This site (Free)"
+msgstr "Aquest lloc (gratuït)"
+
+msgid "This site uses an external object cache: transients may live there and are invisible to this count."
+msgstr "Aquest lloc fa servir una caché d'objectes externa: els transitoris poden ser-hi i ser invisibles a aquest recompte."
+
+msgid "This will overwrite the current site. Are you sure?"
+msgstr "Això sobreescriurà el lloc actual. N'estàs segur?"
+
+msgid "Tidy before you migrate"
+msgstr "Fes neteja abans de traslladar-te"
+
+msgid "Unattached media items: reported only. Use the media library to review before deleting."
+msgstr "Mitjans sense adjunt: només es mostren. Revisa'ls a la biblioteca abans d'eliminar-los."
+
+msgid "Unrecognized files (must be *.mudrava or *.mudrava.partNNNN): %s"
+msgstr "Fitxers no reconeguts (han de ser *.mudrava o *.mudrava.partNNNN): %s"
+
+msgid "Upload a .mudrava archive (or every part of a split set) and restore it onto this site."
+msgstr "Puja un arxiu .mudrava (o totes les parts d'un conjunt) i restaura'l en aquest lloc."
+
+msgid "Uploading"
+msgstr "Pujant"
+
+msgid "Verified delivery with retries"
+msgstr "Lliurament verificat amb reintents"
+
+msgid "Verifying the restore point"
+msgstr "Verificant el punt de restauració"
+
+msgid "Visit MUDRAVA"
+msgstr "Visita MUDRAVA"
+
+msgid "What goes into the archive"
+msgstr "Què va a l'arxiu"
+
+msgid "Whether PHP uses 64-bit integers. Without them, archives over 2 GB cannot be read or written safely."
+msgstr "Si PHP fa servir enters de 64 bits. Sense ells, els arxius de més de 2 GB no es poden llegir ni escriure de manera segura."
+
+msgid "Whether the plugin can write to private storage. Archives and restore points need this directory."
+msgstr "Si el connector pot escriure a l'emmagatzematge privat. Els arxius i els punts de restauració necessiten aquest directori."
+
+msgid "WordPress core table - always included"
+msgstr "Taula del nucli de WordPress: sempre inclosa"
+
+msgid "Working…"
+msgstr "Treballant…"
+
+msgid "You do not have permission to run migrations."
+msgstr "No tens permís per executar migracions."
+
+msgid "all included"
+msgstr "tot inclòs"
+
+msgid "database"
+msgstr "base de dades"
+
+msgid "e.g. company vault / migration"
+msgstr "p. ex. caixa forta de l'empresa / trasllat"
+
+msgid "encrypted"
+msgstr "xifrat"
+
+msgid "files"
+msgstr "fitxers"
+
+msgid "finalize"
+msgstr "finalització"
+
+msgid "hint"
+msgstr "recordatori"
+
+msgid "job"
+msgstr "feina"
+
+msgid "missing parts"
+msgstr "parts que falten"
+
+msgid "or click to browse. For split sets, select every part"
+msgstr "o fes clic per explorar. En conjunts dividits, selecciona totes les parts"
+
+msgid "part"
+msgstr "part"
+
+msgid "part(s)"
+msgstr "part(s)"
+
+msgid "parts"
+msgstr "parts"
+
+msgid "rows"
+msgstr "files"
+
+msgid "running"
+msgstr "en execució"
+
+msgid "set complete"
+msgstr "conjunt complet"
+
+msgid "unknown"
+msgstr "desconegut"
+
+msgid "upload incomplete"
+msgstr "pujada incompleta"
+
+msgid "uploads/2023, cache"
+msgstr "uploads/2023, caché"
+
+msgid "wp-admin, wp-includes and root files are always included. A restored site needs them to run."
+msgstr "wp-admin, wp-includes i els fitxers arrel sempre s'inclouen. Un lloc restaurat els necessita per arrencar."

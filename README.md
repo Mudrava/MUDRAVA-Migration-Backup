@@ -117,6 +117,7 @@ For a Docker lab and browser tests, see [development](docs/development.md) and
 [testing](docs/testing.md). CI workflows currently run manually.
 
 Read the [architecture](docs/architecture.md), [archive format](docs/mudrava-format.md),
+the [agent API](docs/agent-api.md) for driving the plugin from `wp mudrava` or REST,
 [contribution guide](CONTRIBUTING.md) and [release process](docs/release.md).
 
 ## License

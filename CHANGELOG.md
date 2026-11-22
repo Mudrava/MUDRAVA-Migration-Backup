@@ -4,6 +4,47 @@ All notable changes to this project are documented here. The format
 follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and
 the project adheres to [Semantic Versioning](https://semver.org/).
 
+## [1.1.0] - 2026-11-22
+
+### Added
+
+- WP-CLI bridge (`wp mudrava`): preflight, inventory, maintenance, export,
+  import, status, resume, abort, archives, archive info and a single
+  machine-readable `report`, behind the exact same safety gates as the
+  browser. JSON by default; exit codes 0 done, 1 refusal, 2 resumable
+  ("still running"). See `docs/agent-api.md`.
+- Maintenance module (screen + CLI): post revisions, spam and trashed
+  comments, auto-drafts, expired transients and orphaned post meta are
+  counted first and deleted only when you apply the selection; unattached
+  media and autoloaded options are measured as advisories, never pruned.
+- Software inventory in `SITE_METADATA` (active theme, every plugin and
+  mu-plugin version) and a pre-restore environment diff that flags plugins
+  the destination lacks, plugins older here than on the source and a
+  different theme.
+- Hand-written interface translations in 27 languages (ca, cs, da, de_DE,
+  el, es_ES, fr_FR, gl, hr, hu, id, it_IT, ja, nb, nl_NL, pl_PL, pt_BR,
+  pt_PT, ro, ru, sk, sl, sr, sv, tr_TR, zh_CN plus the English source).
+
+### Fixed
+
+- The orphaned post meta scan referenced a column name that does not exist
+  on the real `postmeta` schema and an alias that MariaDB reserves;
+  maintenance now counts correctly on MariaDB and MySQL alike.
+- The CLI imported split sets by scanning continuation parts from `0001`,
+  while the format numbers them from `0002`; staging and part counting now
+  follow the format and refuse a numbering gap instead of stopping
+  silently (covered by `tests/Contract/CliSetEnumerationTest`).
+
+### Tested
+
+- Real upgrade path 1.0.1 to 1.1.0 on fresh WordPress 7.1.5 installs
+  (PHP 8.3, MariaDB 10.11): the upgrade keeps the plugin active with zero
+  debug-log notices, maintenance counts match row by row, a
+  password-encrypted 33-part archive exported and restored onto a second
+  clean 7.1.5 site with every URL rewritten and media intact.
+- 594 PHPUnit tests, PHPStan and PHPCS against this exact build; the
+  distributable ZIP reproduces byte-identically across builds.
+
 ## [1.0.1] - 2026-11-02
 
 ### Changed

@@ -1,0 +1,705 @@
+# Simplified Chinese translations for MUDRAVA Migration & Backup.
+# Copyright (C) 2026 MUDRAVA
+# This file is distributed under the GPL-2.0-or-later license.
+# Hand written by MUDRAVA, one string at a time. Simplified Chinese, matching WP core zh_CN wording.
+msgid ""
+msgstr ""
+"Project-Id-Version: MUDRAVA Migration & Backup 1.1.0\n"
+"Report-Msgid-Bugs-To: https://mudrava.com/en/\n"
+"POT-Creation-Date: 2026-11-22 00:00+0000\n"
+"PO-Revision-Date: 2026-11-22 00:00+0000\n"
+"Last-Translator: MUDRAVA <info@mudrava.com>\n"
+"Language-Team: Chinese (China) <zh@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Domain: mudrava-migration-backup\n"
+
+msgid "%1$s: %2$s rows, %3$s MB. "
+msgstr "%1$s：%2$s 行，%3$s MB。 "
+
+msgid "%1$s: %2$s. "
+msgstr "%1$s：%2$s。 "
+
+msgid "A database operation failed during the migration."
+msgstr "迁移过程中一项数据库操作失败。"
+
+msgid "A database row is too large for the backup format. Reduce the row size and retry."
+msgstr "某行数据对备份格式来说过大。请缩小该行后重试。"
+
+msgid "A table without a primary key changed during the backup, so rows could be missed. Pause writes to it and re-run the backup."
+msgstr "备份期间一张没有主键的表发生了变化，可能有行被遗漏。请暂停对它的写入并重新备份。"
+
+msgid "An upload chunk was rejected. Please retry."
+msgstr "一个上传分块被拒绝。请重试。"
+
+msgid "Another migration job is already running."
+msgstr "已有另一个迁移任务正在运行。"
+
+msgid "Anyone who has this archive can read the password hint. Never put the password or part of it here."
+msgstr "任何拿到此归档的人都能阅读密码提示。切勿在此填写密码或其任何部分。"
+
+msgid "Approximate size of site files. The database is measured when export starts. This helps estimate time and space."
+msgstr "站点文件的近似大小。数据库将在导出开始时测量。这有助于估算所需时间和空间。"
+
+msgid "Archive password"
+msgstr "归档密码"
+
+msgid "Archive splitting"
+msgstr "归档分卷"
+
+msgid "Archives"
+msgstr "归档"
+
+msgid "Archives on this site"
+msgstr "本站的归档"
+
+msgid "Assembling archive"
+msgstr "正在组装归档"
+
+msgid "Auto"
+msgstr "自动"
+
+msgid "Autoloaded options read on every request: this many rows and bytes load before your code runs."
+msgstr "自动加载的选项在每次请求时都会读取：在你的代码运行之前，会先加载这些行和字节。"
+
+msgid "Automatic recovery failed; inspect the restore point"
+msgstr "自动恢复失败；请检查还原点"
+
+msgid "Backup and delivery reports"
+msgstr "备份与送达报告"
+
+msgid "Backup notifications"
+msgstr "备份通知"
+
+msgid "Cancel"
+msgstr "取消"
+
+msgid "Cancelled."
+msgstr "已取消。"
+
+msgid "Cancelling…"
+msgstr "正在取消…"
+
+msgid "Change what is included"
+msgstr "更改包含内容"
+
+msgid "Choose a password, or turn off encryption to export unencrypted."
+msgstr "选择一个密码，或关闭加密以不加密导出。"
+
+msgid "Choose a strong password"
+msgstr "选择一个强密码"
+
+msgid "Choose archive files to upload"
+msgstr "选择要上传的归档文件"
+
+msgid "Choose where reports are sent"
+msgstr "选择报告发送到哪里"
+
+msgid "Clean selected"
+msgstr "清理所选项"
+
+msgid "Cleaned"
+msgstr "已清理"
+
+msgid "Cleaned %s items"
+msgstr "已清理 %s 项"
+
+msgid "Cleaning failed: %s"
+msgstr "清理失败：%s"
+
+msgid "Cleaning…"
+msgstr "正在清理…"
+
+msgid "Close"
+msgstr "关闭"
+
+msgid "Cloud storage"
+msgstr "云存储"
+
+msgid "Completed"
+msgstr "已完成"
+
+msgid "Continue"
+msgstr "继续"
+
+msgid "Could not load the live inventory. Reload the page to try again."
+msgstr "无法加载实时清单。请刷新页面重试。"
+
+msgid "Could not read the selected files. Select them again."
+msgstr "无法读取所选文件。请重新选择。"
+
+msgid "Count"
+msgstr "数量"
+
+msgid "Create backup"
+msgstr "创建备份"
+
+msgid "Custom"
+msgstr "自定义"
+
+msgid "Daily or weekly backups in your site timezone"
+msgstr "按站点时区的每日或每周备份"
+
+msgid "Database"
+msgstr "数据库"
+
+msgid "Delete the selected items permanently? This cannot be undone."
+msgstr "要永久删除所选项吗？此操作无法撤销。"
+
+msgid "Deletion is permanent and runs in small batches. Unattached media and autoload are measured, never pruned: media needs your own review."
+msgstr "删除是永久性的，以小批量执行。未关联媒体和自动加载项只测量、绝不删除：媒体需要你亲自审定。"
+
+msgid "Done"
+msgstr "完成"
+
+msgid "Done editing"
+msgstr "完成编辑"
+
+msgid "Download"
+msgstr "下载"
+
+msgid "Download all"
+msgstr "全部下载"
+
+msgid "Download part"
+msgstr "下载分卷"
+
+msgid "Drop .mudrava files here"
+msgstr "将 .mudrava 文件拖到这里"
+
+msgid "Duplicate parts selected: %s"
+msgstr "选择了重复的分卷：%s"
+
+msgid "Email alerts for failed backups or delivery"
+msgstr "备份或送达失败时发送邮件提醒"
+
+msgid "Encrypt backup with password"
+msgstr "用密码加密备份"
+
+msgid "Encrypted with XChaCha20-Poly1305 + Argon2id. Lost passwords cannot be recovered."
+msgstr "使用 XChaCha20-Poly1305 + Argon2id 加密。丢失的密码无法找回。"
+
+msgid "Enter the archive password to continue"
+msgstr "输入归档密码以继续"
+
+msgid "Enter the archive password to continue."
+msgstr "输入归档密码以继续。"
+
+msgid "Environment"
+msgstr "环境"
+
+msgid "Everything included"
+msgstr "全部包含"
+
+msgid "Everything is included by default. Uncheck only what you are sure this site does not need."
+msgstr "默认全部包含。仅取消勾选你确定本站不需要的内容。"
+
+msgid "Excluded"
+msgstr "已排除"
+
+msgid "Explore Pro"
+msgstr "了解专业版"
+
+msgid "Export"
+msgstr "导出"
+
+msgid "Export creates a .mudrava archive. If site cron is inactive, keep this tab open; the progress dialog shows whether it is safe to close."
+msgstr "导出会生成 .mudrava 归档。若站点 cron 未运行，请保持此标签页打开；进度对话框会提示能否安全关闭。"
+
+msgid "Export this site"
+msgstr "导出本站"
+
+msgid "Extra paths to skip (optional)"
+msgstr "额外跳过路径（可选）"
+
+msgid "Failed"
+msgstr "失败"
+
+msgid "Files"
+msgstr "文件"
+
+msgid "Files from different archives are selected. Pick the parts of ONE archive."
+msgstr "所选文件来自不同归档。请只选择同一个归档的全部分卷。"
+
+msgid "Filter folders…"
+msgstr "筛选文件夹…"
+
+msgid "Filter tables…"
+msgstr "筛选数据表…"
+
+msgid "Found"
+msgstr "已发现"
+
+msgid "Free provides manual migration and restore on unlimited sites. Pro adds automation."
+msgstr "免费版可在不限数量的站点上进行手动迁移与还原。专业版增加自动化。"
+
+msgid "Free space in private storage. A safe restore needs room for the archive and a restore point."
+msgstr "私有存储的剩余空间。安全还原需要同时容纳归档和还原点的空间。"
+
+msgid "Free. Host limits apply"
+msgstr "免费。以主机限制为准"
+
+msgid "Hide password"
+msgstr "隐藏密码"
+
+msgid "I understand: restore overwrites this site database and files, and I accept proceeding without a restore point."
+msgstr "我已知悉：还原会覆盖本站的数据库和文件，并接受在无还原点的情况下继续。"
+
+msgid "Import"
+msgstr "导入"
+
+msgid "Import an archive"
+msgstr "从归档还原"
+
+msgid "Individual parts"
+msgstr "单独分卷"
+
+msgid "Item"
+msgstr "项目"
+
+msgid "Keep backup copies away from the WordPress server you are protecting."
+msgstr "备份副本应与受保护的 WordPress 服务器分开存放。"
+
+msgid "Keep this tab open until the restore finishes - the restore only advances while this page is open."
+msgstr "在还原完成前请保持此标签页打开 - 还原仅在页面打开时推进。"
+
+msgid "Know when a backup needs attention without checking every site manually."
+msgstr "无需逐个站点手动检查，也能知道哪个备份需要关注。"
+
+msgid "MUDRAVA"
+msgstr "MUDRAVA"
+
+msgid "MUDRAVA Migration"
+msgstr "MUDRAVA 迁移"
+
+msgid "MUDRAVA Migration & Backup cannot run on this server: PHP 7.4+ (64-bit), zlib and JSON are required."
+msgstr "MUDRAVA Migration & Backup 无法在此服务器运行：需要 PHP 7.4 及以上（64 位）、zlib 和 JSON。"
+
+msgid "MUDRAVA Migration & Backup requires PHP 7.4 or newer. Please upgrade PHP before activating."
+msgstr "MUDRAVA Migration & Backup 需要 PHP 7.4 或更高版本。请先升级 PHP 再启用。"
+
+msgid "MUDRAVA Pro"
+msgstr "MUDRAVA 专业版"
+
+msgid "MUDRAVA cannot write where it needs to. Check folder permissions."
+msgstr "MUDRAVA 无法写入所需位置。请检查文件夹权限。"
+
+msgid "Maintenance"
+msgstr "维护"
+
+msgid "Measuring this site…"
+msgstr "正在测量本站…"
+
+msgid "Migration operations"
+msgstr "迁移操作"
+
+msgid "Migration paused because the disk is full."
+msgstr "磁盘已满，迁移已暂停。"
+
+msgid "Missed runs handled without creating a backlog"
+msgstr "错过的运行会被补齐而不积压"
+
+msgid "Multisite detected."
+msgstr "检测到多站点网络。"
+
+msgid "Multisite migrations are not supported. MUDRAVA migrates single sites."
+msgstr "不支持多站点迁移。MUDRAVA 迁移单个站点。"
+
+msgid "Network-wide migration is not supported in this release. MUDRAVA currently migrates single sites."
+msgstr "当前版本不支持整站网络迁移。MUDRAVA 目前只迁移单个站点。"
+
+msgid "Next page"
+msgstr "下一页"
+
+msgid "No archives on this site yet."
+msgstr "本站尚无归档。"
+
+msgid "Not enough disk space for a restore point. A failed restore will need another backup to recover. Check the box to accept this risk."
+msgstr "磁盘空间不足以创建还原点。若还原失败，将需要另一份备份才能恢复。勾选此框即表示接受该风险。"
+
+msgid "Notifications"
+msgstr "通知"
+
+msgid "Off"
+msgstr "关闭"
+
+msgid "Off-site storage"
+msgstr "站外存储"
+
+msgid "One of the parts belongs to a different backup."
+msgstr "其中一个分卷属于另一份备份。"
+
+msgid "Only a running export can be cancelled."
+msgstr "只能取消正在运行的导出。"
+
+msgid "Other files (wp-content root)"
+msgstr "其他文件（wp-content 根目录）"
+
+msgid "Overlapping jobs prevented; safe review after imports"
+msgstr "可防止任务重叠；导入后可安全复查"
+
+msgid "Page"
+msgstr "页面"
+
+msgid "Part %s is not a valid continuation part (renamed or wrong file)."
+msgstr "分卷 %s 不是有效的后续分卷（被改名或选错文件）。"
+
+msgid "Part 1 of the set is missing: the plain .mudrava file (no .partNNNN suffix)."
+msgstr "缺少整套的第 1 卷：不带 .partNNNN 后缀的 .mudrava 主文件。"
+
+msgid "Part size unit"
+msgstr "分卷大小单位"
+
+msgid "Password"
+msgstr "密码"
+
+msgid "Password encryption is unavailable on this PHP environment."
+msgstr "当前 PHP 环境不支持密码加密。"
+
+msgid "Password hint (optional)"
+msgstr "密码提示（可选）"
+
+msgid "Passwords do not match."
+msgstr "两次输入的密码不一致。"
+
+msgid "Pause writes during final export. Changes during the run can stop the export or leave unvisited files out of the backup."
+msgstr "最终导出期间请暂停写入。运行中的改动可能中断导出，或使未扫描的文件漏出备份。"
+
+msgid "Planned annual plans: $59 / 3 sites, $129 / 15 sites, $249 / 50 sites."
+msgstr "规划中的年付方案：59 美元 / 3 站，129 美元 / 15 站，249 美元 / 50 站。"
+
+msgid "Plugins older here than on the source: %s."
+msgstr "以下插件在本机版本低于源站：%s。"
+
+msgid "Portable backups. Resumable exports. Optional encryption."
+msgstr "可移植备份。可续传的导出。可选加密。"
+
+msgid "Previous page"
+msgstr "上一页"
+
+msgid "Private backup storage is unsafe or ambiguous. Set MUDRAVA_MB_STORAGE_DIR to one writable directory outside the web root."
+msgstr "私有备份存储不安全或指向不明。请将 MUDRAVA_MB_STORAGE_DIR 设为网站根目录之外一个可写目录。"
+
+msgid "Pro"
+msgstr "专业版"
+
+msgid "Reload the live inventory"
+msgstr "重新加载实时清单"
+
+msgid "Removing files and tables created by the failed import"
+msgstr "正在移除失败导入创建的文件和数据表"
+
+msgid "Repeat password"
+msgstr "重复输入密码"
+
+msgid "Repeat the password"
+msgstr "请再次输入密码"
+
+msgid "Restore point reapplied"
+msgstr "已重新应用还原点"
+
+msgid "Restore point reapplied; verify the site"
+msgstr "已重新应用还原点；请核验站点"
+
+msgid "Restore point saved"
+msgstr "还原点已保存"
+
+msgid "Restore point: recommended. There is enough free disk to keep a safety copy of this site before overwriting."
+msgstr "还原点：建议保留。磁盘剩余空间足以在覆盖前留存本站的安全副本。"
+
+msgid "Restore site"
+msgstr "还原站点"
+
+msgid "Restoring the previous site"
+msgstr "正在还原此前的站点"
+
+msgid "Restoring the previous site after an import error"
+msgstr "导入出错，正在还原此前的站点"
+
+msgid "Resuming the interrupted job…"
+msgstr "正在续跑中断的任务…"
+
+msgid "Retention rules for older backup copies"
+msgstr "旧备份的保留规则"
+
+msgid "Review"
+msgstr "复查"
+
+msgid "Revisions, spam and expired transients inflate every backup. This screen counts first; nothing is deleted until you apply what you pick."
+msgstr "修订版本、垃圾评论和过期瞬时变量会让每份备份虚胖。此页面先统计数量；在你应用所选之前不会删除任何内容。"
+
+msgid "Rewriting URLs"
+msgstr "正在重写 URL"
+
+msgid "S3 / S3-compatible storage"
+msgstr "S3 / 兼容 S3 的存储"
+
+msgid "S3 and S3-compatible storage"
+msgstr "S3 及兼容 S3 的存储"
+
+msgid "Safe to close this tab. The job continues on the server and resumes when you return."
+msgstr "可以安全关闭此标签页。任务会在服务器上继续，你回来时自动续跑。"
+
+msgid "Same Pro features in every plan. Manual Free restore remains available after expiry."
+msgstr "所有方案都含相同的专业版功能。到期后仍可进行免费版的手动还原。"
+
+msgid "Same surface headless: wp mudrava maintenance --apply --items=revisions,transients"
+msgstr "同样的操作也可在命令行完成：wp mudrava maintenance --apply --items=revisions,transients"
+
+msgid "Saving a restore point of this site"
+msgstr "正在保存本站的还原点"
+
+msgid "Schedule"
+msgstr "计划"
+
+msgid "Scheduled backups"
+msgstr "计划备份"
+
+msgid "Scheduled backups, off-site storage, retention and notifications"
+msgstr "计划备份、站外存储、保留策略与通知"
+
+msgid "Scheduled exports"
+msgstr "计划导出"
+
+msgid "Security action required: %d old backup files remain in public wp-content. Move them to private storage."
+msgstr "需要安全处置：%d 个旧备份仍留在公开的 wp-content 中。请移至私有存储。"
+
+msgid "Select all"
+msgstr "全选"
+
+msgid "Select at least one item to clean."
+msgstr "请至少选择一个要清理的项目。"
+
+msgid "Set a backup routine and reduce repetitive work across your sites."
+msgstr "设定备份例行流程，减少各站点间的重复劳动。"
+
+msgid "Show password"
+msgstr "显示密码"
+
+msgid "Site cron is not running. Without visitors, this job may pause until cron returns. Keep this tab open to be sure."
+msgstr "站点 cron 未在运行。没有访客时，任务可能暂停直到 cron 恢复。建议保持此标签页打开。"
+
+msgid "Sizes are approximate on very large sites."
+msgstr "在超大站点上，大小仅为近似值。"
+
+msgid "Skip folders inside wp-content, separated by commas. Example: uploads/2023 skips media from 2023. Use the checkboxes above for whole groups."
+msgstr "wp-content 内的文件夹，以逗号分隔。例如 uploads/2023 会跳过 2023 年的媒体。整组内容请使用上方的勾选框。"
+
+msgid "Slot %s holds a file that belongs to a different archive or a different part."
+msgstr "第 %s 号位置的文件属于另一个归档或另一个分卷。"
+
+msgid "Some environment checks failed. Open the Environment tab for details."
+msgstr "部分环境检查未通过。请打开环境标签页查看详情。"
+
+msgid "Some parts of this backup are missing."
+msgstr "此备份缺少某些分卷。"
+
+msgid "Source theme: %1$s. This site: %2$s."
+msgstr "源站主题：%1$s。本站主题：%2$s。"
+
+msgid "Split archives to meet host file limits. Auto uses 7 GB parts. Off makes one file. Custom accepts a size in MB or GB."
+msgstr "对归档分卷以适配主机文件限制。自动按 7 GB 分卷。关闭则生成单个文件。自定义可填 MB 或 GB 大小。"
+
+msgid "Split presets"
+msgstr "分卷预设"
+
+msgid "Storage"
+msgstr "存储"
+
+msgid "The JSON extension. It encodes archive metadata and job status. Without it, the engine cannot describe or resume an archive."
+msgstr "JSON 扩展。它编码归档元数据与任务状态。缺少它，引擎无法描述或续传归档。"
+
+msgid "The PHP version of this site. PHP 7.4 or newer is required for streaming and crypto functions."
+msgstr "本站的 PHP 版本。流式处理与加密功能需要 PHP 7.4 或更高版本。"
+
+msgid "The archive carries plugins this site does not have: %s. Install them before restoring, or builder content may not render."
+msgstr "归档中含有本站未安装的插件：%s。请先安装再还原，否则页面构建器内容可能无法显示。"
+
+msgid "The archive contains a path that cannot be restored safely."
+msgstr "归档包含无法安全还原的路径。"
+
+msgid "The archive did not pass integrity verification."
+msgstr "归档未通过完整性校验。"
+
+msgid "The archive is damaged and cannot be read safely."
+msgstr "归档已损坏，无法安全读取。"
+
+msgid "The archive is incomplete. The transfer may have been interrupted."
+msgstr "归档不完整。传输可能曾中断。"
+
+msgid "The backup file changed during verification or restore. Upload the original archive again."
+msgstr "备份文件在校验或还原期间发生变化。请重新上传原始归档。"
+
+msgid "The backup storage folder is not writable by the web server. Fix its ownership (it may have been created by a root shell)."
+msgstr "Web 服务器对备份存储文件夹没有写权限。请修正属主（该目录可能由 root 在命令行创建）。"
+
+msgid "The database connection was lost."
+msgstr "与数据库的连接已断开。"
+
+msgid "The encryption backend protects password-encrypted archives. Without it, unencrypted export still works."
+msgstr "加密后端保护以密码加密的归档。缺少它时，不加密导出仍可使用。"
+
+msgid "The first file is not a valid .mudrava archive (bad header)."
+msgstr "第一个文件不是有效的 .mudrava 归档（文件头错误）。"
+
+msgid "The hint cannot be the password or part of it. Describe where it is kept instead, e.g. \"company vault\"."
+msgstr "提示不能是密码或其一部分。请改为描述密码的存放处，例如“公司保险柜”。"
+
+msgid "The last selected file is not the end of the archive - part %s is still missing."
+msgstr "最后一个所选文件并非归档的结尾 - 仍缺少分卷 %s。"
+
+msgid "The migration could not be completed."
+msgstr "迁移未能完成。"
+
+msgid "The password is incorrect. The archive is still intact."
+msgstr "密码不正确。归档本身完好无损。"
+
+msgid "The remote server could not be reached."
+msgstr "无法连接到远程服务器。"
+
+msgid "The remote server took too long to respond. You can resume."
+msgstr "远程服务器响应超时。你可以继续续传。"
+
+msgid "The set is incomplete - missing parts: %s"
+msgstr "整套归档不完整 - 缺少分卷：%s"
+
+msgid "The zlib extension compresses archive frames while streaming. Export requires it."
+msgstr "zlib 扩展在流式处理时压缩归档帧。导出需要它。"
+
+msgid "These capabilities belong to the separate Pro add-on, currently in development. Purchasing is not open yet."
+msgstr "这些功能属于独立的专业版扩展，目前仍在开发中。尚未开放购买。"
+
+msgid "This archive is encrypted. Enter its password to restore."
+msgstr "此归档已加密。请输入其密码以还原。"
+
+msgid "This archive uses a newer format. Please update MUDRAVA first."
+msgstr "此归档使用了更新的格式。请先更新 MUDRAVA。"
+
+msgid "This is part 1 of a split set, not a complete archive. Select the .mudrava file AND every .mudrava.partNNNN file of this set."
+msgstr "这是分卷整套的第 1 卷，不是完整归档。请同时选择 .mudrava 主文件和该整套的每一个 .mudrava.partNNNN 文件。"
+
+msgid "This job no longer exists."
+msgstr "此任务已不存在。"
+
+msgid "This migration step needs more PHP memory than this server allows."
+msgstr "此迁移步骤需要的 PHP 内存超出本服务器允许的上限。"
+
+msgid "This server cannot safely run large migrations."
+msgstr "本服务器无法安全运行大型迁移。"
+
+msgid "This server is missing requirements for the requested operation."
+msgstr "本服务器缺少所请求操作的前提条件。"
+
+msgid "This site (Free)"
+msgstr "本站（免费版）"
+
+msgid "This site uses an external object cache: transients may live there and are invisible to this count."
+msgstr "本站使用了外部对象缓存：瞬时变量可能存放其中，本统计无法看到。"
+
+msgid "This will overwrite the current site. Are you sure?"
+msgstr "这将覆盖当前站点。确定继续吗？"
+
+msgid "Tidy before you migrate"
+msgstr "迁移前先瘦身"
+
+msgid "Unattached media items: reported only. Use the media library to review before deleting."
+msgstr "未关联的媒体项：仅作报告。请在媒体库中审定后再删除。"
+
+msgid "Unrecognized files (must be *.mudrava or *.mudrava.partNNNN): %s"
+msgstr "无法识别的文件（须为 *.mudrava 或 *.mudrava.partNNNN）：%s"
+
+msgid "Upload a .mudrava archive (or every part of a split set) and restore it onto this site."
+msgstr "上传 .mudrava 归档（或分卷整套的全部分卷），并将其还原到本站。"
+
+msgid "Uploading"
+msgstr "上传中"
+
+msgid "Verified delivery with retries"
+msgstr "经校验的送达并自动重试"
+
+msgid "Verifying the restore point"
+msgstr "正在校验还原点"
+
+msgid "Visit MUDRAVA"
+msgstr "访问 MUDRAVA"
+
+msgid "What goes into the archive"
+msgstr "归档包含的内容"
+
+msgid "Whether PHP uses 64-bit integers. Without them, archives over 2 GB cannot be read or written safely."
+msgstr "PHP 是否使用 64 位整数。否则超过 2 GB 的归档无法安全读写。"
+
+msgid "Whether the plugin can write to private storage. Archives and restore points need this directory."
+msgstr "插件能否写入私有存储。归档和还原点都需要此目录。"
+
+msgid "WordPress core table - always included"
+msgstr "WordPress 核心数据表 - 始终包含"
+
+msgid "Working…"
+msgstr "处理中…"
+
+msgid "You do not have permission to run migrations."
+msgstr "你没有运行迁移的权限。"
+
+msgid "all included"
+msgstr "全部包含"
+
+msgid "database"
+msgstr "数据库"
+
+msgid "e.g. company vault / migration"
+msgstr "例如：公司保险柜 / 迁移"
+
+msgid "encrypted"
+msgstr "已加密"
+
+msgid "files"
+msgstr "文件"
+
+msgid "finalize"
+msgstr "收尾"
+
+msgid "hint"
+msgstr "提示"
+
+msgid "job"
+msgstr "任务"
+
+msgid "missing parts"
+msgstr "缺少分卷"
+
+msgid "or click to browse. For split sets, select every part"
+msgstr "或点击选择文件。分卷整套请选中全部分卷"
+
+msgid "part"
+msgstr "分卷"
+
+msgid "part(s)"
+msgstr "个分卷"
+
+msgid "parts"
+msgstr "个分卷"
+
+msgid "rows"
+msgstr "行"
+
+msgid "running"
+msgstr "运行中"
+
+msgid "set complete"
+msgstr "整套齐全"
+
+msgid "unknown"
+msgstr "未知"
+
+msgid "upload incomplete"
+msgstr "上传未完成"
+
+msgid "uploads/2023, cache"
+msgstr "uploads/2023, cache"
+
+msgid "wp-admin, wp-includes and root files are always included. A restored site needs them to run."
+msgstr "wp-admin、wp-includes 与根目录文件始终包含。还原后的站点依赖它们运行。"

@@ -1,0 +1,705 @@
+# Croatian translations for MUDRAVA Migration & Backup.
+# Copyright (C) 2026 MUDRAVA
+# This file is distributed under the GPL-2.0-or-later license.
+# Hand written by MUDRAVA, one string at a time.
+msgid ""
+msgstr ""
+"Project-Id-Version: MUDRAVA Migration & Backup 1.1.0\n"
+"Report-Msgid-Bugs-To: https://mudrava.com/en/\n"
+"POT-Creation-Date: 2026-11-22 00:00+0000\n"
+"PO-Revision-Date: 2026-11-22 00:00+0000\n"
+"Last-Translator: MUDRAVA <info@mudrava.com>\n"
+"Language-Team: Croatian <hr@li.org>\n"
+"Language: hr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Domain: mudrava-migration-backup\n"
+
+msgid "%1$s: %2$s rows, %3$s MB. "
+msgstr "%1$s: %2$s redaka, %3$s MB. "
+
+msgid "%1$s: %2$s. "
+msgstr "%1$s: %2$s. "
+
+msgid "A database operation failed during the migration."
+msgstr "Radnja baze podataka nije uspjela tijekom migracije."
+
+msgid "A database row is too large for the backup format. Reduce the row size and retry."
+msgstr "Redak baze podataka prevelik je za format sigurnosne kopije. Smanjite njegovu veličinu i pokušajte ponovno."
+
+msgid "A table without a primary key changed during the backup, so rows could be missed. Pause writes to it and re-run the backup."
+msgstr "Tablica bez primarnog ključa promijenila se tijekom sigurnosnog kopiranja, pa su redci mogli biti preskočeni. Zaustavite upis u nju i ponovno pokrenite kopiranje."
+
+msgid "An upload chunk was rejected. Please retry."
+msgstr "Dio prijenosa je odbijen. Pokušajte ponovno."
+
+msgid "Another migration job is already running."
+msgstr "Već se izvršava drugi posao migracije."
+
+msgid "Anyone who has this archive can read the password hint. Never put the password or part of it here."
+msgstr "Svatko tko ima ovu arhivu može pročitati podsjetnik lozinke. Nikada ne upisujte lozinku ni njezin dio ovdje."
+
+msgid "Approximate size of site files. The database is measured when export starts. This helps estimate time and space."
+msgstr "Približna veličina datoteka web-mjesta. Baza podataka mjeri se pri pokretanju izvoza. To pomaže procijeniti vrijeme i prostor."
+
+msgid "Archive password"
+msgstr "Lozinka arhive"
+
+msgid "Archive splitting"
+msgstr "Rastavljanje arhive"
+
+msgid "Archives"
+msgstr "Arhive"
+
+msgid "Archives on this site"
+msgstr "Arhive na ovom web-mjestu"
+
+msgid "Assembling archive"
+msgstr "Sastavljanje arhive"
+
+msgid "Auto"
+msgstr "Automatski"
+
+msgid "Autoloaded options read on every request: this many rows and bytes load before your code runs."
+msgstr "Opcije s autoloadom čitaju se uz svaki zahtjev: ovoliko redaka i bajtova učitava se prije nego vaš kod počne raditi."
+
+msgid "Automatic recovery failed; inspect the restore point"
+msgstr "Automatski oporavak nije uspio; pregledajte točku vraćanja"
+
+msgid "Backup and delivery reports"
+msgstr "Izvještaji o sigurnosnim kopijama i isporuci"
+
+msgid "Backup notifications"
+msgstr "Obavijesti o sigurnosnim kopijama"
+
+msgid "Cancel"
+msgstr "Odustani"
+
+msgid "Cancelled."
+msgstr "Otkazano."
+
+msgid "Cancelling…"
+msgstr "Otkazivanje…"
+
+msgid "Change what is included"
+msgstr "Promijeni što je uključeno"
+
+msgid "Choose a password, or turn off encryption to export unencrypted."
+msgstr "Odaberite lozinku ili isključite šifriranje da biste izvezli nešifrirano."
+
+msgid "Choose a strong password"
+msgstr "Odaberite jaku lozinku"
+
+msgid "Choose archive files to upload"
+msgstr "Odaberite datoteke arhive za prijenos"
+
+msgid "Choose where reports are sent"
+msgstr "Odaberite kamo se šalju izvještaji"
+
+msgid "Clean selected"
+msgstr "Očisti odabrano"
+
+msgid "Cleaned"
+msgstr "Očišćeno"
+
+msgid "Cleaned %s items"
+msgstr "Očišćeno stavki: %s"
+
+msgid "Cleaning failed: %s"
+msgstr "Čišćenje nije uspjelo: %s"
+
+msgid "Cleaning…"
+msgstr "Čišćenje…"
+
+msgid "Close"
+msgstr "Zatvori"
+
+msgid "Cloud storage"
+msgstr "Skladište u oblaku"
+
+msgid "Completed"
+msgstr "Dovršeno"
+
+msgid "Continue"
+msgstr "Nastavi"
+
+msgid "Could not load the live inventory. Reload the page to try again."
+msgstr "Nije moguće učitati aktualni popis sadržaja. Učitajte stranicu ponovno i pokušajte iznova."
+
+msgid "Could not read the selected files. Select them again."
+msgstr "Odabrane datoteke nije moguće pročitati. Odaberite ih ponovno."
+
+msgid "Count"
+msgstr "Broj"
+
+msgid "Create backup"
+msgstr "Stvori sigurnosnu kopiju"
+
+msgid "Custom"
+msgstr "Prilagođeno"
+
+msgid "Daily or weekly backups in your site timezone"
+msgstr "Dnevne ili tjedne kopije u vremenskoj zoni vašeg web-mjesta"
+
+msgid "Database"
+msgstr "Baza podataka"
+
+msgid "Delete the selected items permanently? This cannot be undone."
+msgstr "Trajno izbrisati odabrane stavke? Ovo se ne može poništiti."
+
+msgid "Deletion is permanent and runs in small batches. Unattached media and autoload are measured, never pruned: media needs your own review."
+msgstr "Brisanje je trajno i izvršava se u malim serijama. Nepovezani mediji i autoload samo se mjere, nikada se ne brišu: mediji zahtijevaju vašu vlastitu provjeru."
+
+msgid "Done"
+msgstr "Gotovo"
+
+msgid "Done editing"
+msgstr "Uređivanje završeno"
+
+msgid "Download"
+msgstr "Preuzmi"
+
+msgid "Download all"
+msgstr "Preuzmi sve"
+
+msgid "Download part"
+msgstr "Preuzmi dijel"
+
+msgid "Drop .mudrava files here"
+msgstr "Ovdje ispustite .mudrava datoteke"
+
+msgid "Duplicate parts selected: %s"
+msgstr "Odabrani duplicirani dijelovi: %s"
+
+msgid "Email alerts for failed backups or delivery"
+msgstr "E-mail upozorenja kada kopiranje ili isporuka ne uspiju"
+
+msgid "Encrypt backup with password"
+msgstr "Šifriraj kopiju lozinkom"
+
+msgid "Encrypted with XChaCha20-Poly1305 + Argon2id. Lost passwords cannot be recovered."
+msgstr "Šifrirano s XChaCha20-Poly1305 + Argon2id. Izgubljena lozinka nije obnovljiva."
+
+msgid "Enter the archive password to continue"
+msgstr "Unesite lozinku arhive za nastavak"
+
+msgid "Enter the archive password to continue."
+msgstr "Unesite lozinku arhive za nastavak."
+
+msgid "Environment"
+msgstr "Okružje"
+
+msgid "Everything included"
+msgstr "Sve uključeno"
+
+msgid "Everything is included by default. Uncheck only what you are sure this site does not need."
+msgstr "Zadano je uključeno sve. Odznačite samo ono za što ste sigurni da ovom web-mjestu ne treba."
+
+msgid "Excluded"
+msgstr "Izostavljeno"
+
+msgid "Explore Pro"
+msgstr "Pogledaj Pro"
+
+msgid "Export"
+msgstr "Izvoz"
+
+msgid "Export creates a .mudrava archive. If site cron is inactive, keep this tab open; the progress dialog shows whether it is safe to close."
+msgstr "Izvoz stvara .mudrava arhivu. Ako cron web-mjesta ne radi, držite ovu karticu otvorenom; dijalog napretka pokazuje smijete li je zatvoriti."
+
+msgid "Export this site"
+msgstr "Izvezi ovo web-mjesto"
+
+msgid "Extra paths to skip (optional)"
+msgstr "Dodatne putanje za preskočiti (neobavezno)"
+
+msgid "Failed"
+msgstr "Neuspjelo"
+
+msgid "Files"
+msgstr "Datoteke"
+
+msgid "Files from different archives are selected. Pick the parts of ONE archive."
+msgstr "Odabrane su datoteke iz različitih arhiva. Odaberite dijelove jedne arhive."
+
+msgid "Filter folders…"
+msgstr "Filtriraj mape…"
+
+msgid "Filter tables…"
+msgstr "Filtriraj tablice…"
+
+msgid "Found"
+msgstr "Pronađeno"
+
+msgid "Free provides manual migration and restore on unlimited sites. Pro adds automation."
+msgstr "Besplatna verzija radi ručne migracije i vraćanja na neograničenom broju web-mjesta. Pro dodaje automatizaciju."
+
+msgid "Free space in private storage. A safe restore needs room for the archive and a restore point."
+msgstr "Slobodan prostor u privatnom skladištu. Sigurno vraćanje treba prostor za arhivu i točku vraćanja."
+
+msgid "Free. Host limits apply"
+msgstr "Besplatno. Vrijede ograničenja hostinga"
+
+msgid "Hide password"
+msgstr "Sakrij lozinku"
+
+msgid "I understand: restore overwrites this site database and files, and I accept proceeding without a restore point."
+msgstr "Razumijem: vraćanje prepisuje bazu i datoteke ovog web-mjesta i prihvaćam nastavak bez točke vraćanja."
+
+msgid "Import"
+msgstr "Uvoz"
+
+msgid "Import an archive"
+msgstr "Vrati web-mjesto iz arhive"
+
+msgid "Individual parts"
+msgstr "Pojedinačni dijelovi"
+
+msgid "Item"
+msgstr "Stavka"
+
+msgid "Keep backup copies away from the WordPress server you are protecting."
+msgstr "Sigurnosne kopije držite odvojeno od WordPress poslužitelja koji štitite."
+
+msgid "Keep this tab open until the restore finishes - the restore only advances while this page is open."
+msgstr "Držite ovu karticu otvorenom dok vraćanje ne završi - napreduje samo dok je ova stranica otvorena."
+
+msgid "Know when a backup needs attention without checking every site manually."
+msgstr "Saznajte kada kopija treba pažnju bez ručne provjere svakog web-mjesta."
+
+msgid "MUDRAVA"
+msgstr "MUDRAVA"
+
+msgid "MUDRAVA Migration"
+msgstr "MUDRAVA Migracija"
+
+msgid "MUDRAVA Migration & Backup cannot run on this server: PHP 7.4+ (64-bit), zlib and JSON are required."
+msgstr "MUDRAVA Migration & Backup ne može raditi na ovom poslužitelju: potrebni su PHP 7.4+ (64-bit), zlib i JSON."
+
+msgid "MUDRAVA Migration & Backup requires PHP 7.4 or newer. Please upgrade PHP before activating."
+msgstr "MUDRAVA Migration & Backup zahtijeva PHP 7.4 ili noviji. Nadogradite PHP prije aktivacije."
+
+msgid "MUDRAVA Pro"
+msgstr "MUDRAVA Pro"
+
+msgid "MUDRAVA cannot write where it needs to. Check folder permissions."
+msgstr "MUDRAVA ne može pisati gdje treba. Provjerite dozvole mapa."
+
+msgid "Maintenance"
+msgstr "Održavanje"
+
+msgid "Measuring this site…"
+msgstr "Mjerim ovo web-mjesto…"
+
+msgid "Migration operations"
+msgstr "Radnje migracije"
+
+msgid "Migration paused because the disk is full."
+msgstr "Migracija pauzirana: disk je pun."
+
+msgid "Missed runs handled without creating a backlog"
+msgstr "Propuštena izvršavanja nadoknađuju se bez zaostataka"
+
+msgid "Multisite detected."
+msgstr "Otkrivena multisite mreža."
+
+msgid "Multisite migrations are not supported. MUDRAVA migrates single sites."
+msgstr "Migracije multisite mreža nisu podržane. MUDRAVA migrira samostalna web-mjesta."
+
+msgid "Network-wide migration is not supported in this release. MUDRAVA currently migrates single sites."
+msgstr "Migracija cijele mreže nije podržana u ovom izdanju. MUDRAVA trenutačno migrira samostalna web-mjesta."
+
+msgid "Next page"
+msgstr "Sljedeća stranica"
+
+msgid "No archives on this site yet."
+msgstr "Na ovom web-mjestu još nema arhiva."
+
+msgid "Not enough disk space for a restore point. A failed restore will need another backup to recover. Check the box to accept this risk."
+msgstr "Nema dovoljno prostora na disku za točku vraćanja. Neuspjelo vraćanje zahtijevalo bi drugu kopiju za oporavak. Označite kućicu da prihvatite ovaj rizik."
+
+msgid "Notifications"
+msgstr "Obavijesti"
+
+msgid "Off"
+msgstr "Isključeno"
+
+msgid "Off-site storage"
+msgstr "Vanjsko skladište"
+
+msgid "One of the parts belongs to a different backup."
+msgstr "Jedan od dijelova pripada drugoj kopiji."
+
+msgid "Only a running export can be cancelled."
+msgstr "Može se otkazati samo izvoz koji je u tijeku."
+
+msgid "Other files (wp-content root)"
+msgstr "Ostale datoteke (korijen wp-contenta)"
+
+msgid "Overlapping jobs prevented; safe review after imports"
+msgstr "Preklapanje poslova spriječeno; sigurna provjera nakon uvoza"
+
+msgid "Page"
+msgstr "Stranica"
+
+msgid "Part %s is not a valid continuation part (renamed or wrong file)."
+msgstr "Dio %s nije valjani nastavak (preimenovan ili pogrešna datoteka)."
+
+msgid "Part 1 of the set is missing: the plain .mudrava file (no .partNNNN suffix)."
+msgstr "Nedostaje dio 1 skupa: obična .mudrava datoteka (bez nastavka .partNNNN)."
+
+msgid "Part size unit"
+msgstr "Jedinica veličine dijela"
+
+msgid "Password"
+msgstr "Lozinka"
+
+msgid "Password encryption is unavailable on this PHP environment."
+msgstr "Šifriranje lozinkom nedostupno je u ovom PHP okružju."
+
+msgid "Password hint (optional)"
+msgstr "Podsjetnik lozinke (neobavezno)"
+
+msgid "Passwords do not match."
+msgstr "Lozinke se ne podudaraju."
+
+msgid "Pause writes during final export. Changes during the run can stop the export or leave unvisited files out of the backup."
+msgstr "Zaustavite upise tijekom završnog izvoza. Promjene tijekom izvršavanja mogu zaustaviti izvoz ili ostaviti neposjećene datoteke izvan kopije."
+
+msgid "Planned annual plans: $59 / 3 sites, $129 / 15 sites, $249 / 50 sites."
+msgstr "Planirani godišnji paketi: 59 USD / 3 web-mjesta, 129 USD / 15 web-mjesta, 249 USD / 50 web-mjesta."
+
+msgid "Plugins older here than on the source: %s."
+msgstr "Dodaci su ovdje stariji nego na izvoru: %s."
+
+msgid "Portable backups. Resumable exports. Optional encryption."
+msgstr "Prenosive kopije. Nastavljivi izvoz. Neobavezno šifriranje."
+
+msgid "Previous page"
+msgstr "Prethodna stranica"
+
+msgid "Private backup storage is unsafe or ambiguous. Set MUDRAVA_MB_STORAGE_DIR to one writable directory outside the web root."
+msgstr "Privatno skladište kopija nije sigurno ili je dvosmisleno. Postavite MUDRAVA_MB_STORAGE_DIR na jedan zapisiv direktorij izvan korijena web-mjesta."
+
+msgid "Pro"
+msgstr "Pro"
+
+msgid "Reload the live inventory"
+msgstr "Ponovno učitaj aktualni popis sadržaja"
+
+msgid "Removing files and tables created by the failed import"
+msgstr "Uklanjam datoteke i tablice stvorene neuspjelim uvozom"
+
+msgid "Repeat password"
+msgstr "Ponovite lozinku"
+
+msgid "Repeat the password"
+msgstr "Ponovite lozinku"
+
+msgid "Restore point reapplied"
+msgstr "Točka vraćanja ponovno primijenjena"
+
+msgid "Restore point reapplied; verify the site"
+msgstr "Točka vraćanja ponovno primijenjena; provjerite web-mjesto"
+
+msgid "Restore point saved"
+msgstr "Točka vraćanja spremljena"
+
+msgid "Restore point: recommended. There is enough free disk to keep a safety copy of this site before overwriting."
+msgstr "Točka vraćanja: preporučeno. Na disku ima dovoljno mjesta za sigurnosnu kopiju web-mjesta prije prepisivanja."
+
+msgid "Restore site"
+msgstr "Vrati web-mjesto"
+
+msgid "Restoring the previous site"
+msgstr "Vraćam prethodno web-mjesto"
+
+msgid "Restoring the previous site after an import error"
+msgstr "Vraćam prethodno web-mjesto nakon pogreške uvoza"
+
+msgid "Resuming the interrupted job…"
+msgstr "Nastavljam prekinuti posao…"
+
+msgid "Retention rules for older backup copies"
+msgstr "Pravila zadržavanja starijih kopija"
+
+msgid "Review"
+msgstr "Pregledaj"
+
+msgid "Revisions, spam and expired transients inflate every backup. This screen counts first; nothing is deleted until you apply what you pick."
+msgstr "Revizije, spam i istekli tranzijenti napuhuju svaku kopiju. Ovaj ekran prvo broji; ništa se ne briše dok ne primijenite svoj izbor."
+
+msgid "Rewriting URLs"
+msgstr "Prepisivanje URL-ova"
+
+msgid "S3 / S3-compatible storage"
+msgstr "S3 / S3 kompatibilno skladište"
+
+msgid "S3 and S3-compatible storage"
+msgstr "S3 i S3 kompatibilna skladišta"
+
+msgid "Safe to close this tab. The job continues on the server and resumes when you return."
+msgstr "Ovu karticu možete sigurno zatvoriti. Posao nastavlja na poslužitelju i nastavlja se kad se vratite."
+
+msgid "Same Pro features in every plan. Manual Free restore remains available after expiry."
+msgstr "U svakom paketu iste Pro značajke. Ručno besplatno vraćanje ostaje dostupno i nakon isteka."
+
+msgid "Same surface headless: wp mudrava maintenance --apply --items=revisions,transients"
+msgstr "Isto bez grafičkog sučelja: wp mudrava maintenance --apply --items=revisions,transients"
+
+msgid "Saving a restore point of this site"
+msgstr "Spremam točku vraćanja ovog web-mjesta"
+
+msgid "Schedule"
+msgstr "Raspored"
+
+msgid "Scheduled backups"
+msgstr "Planirane kopije"
+
+msgid "Scheduled backups, off-site storage, retention and notifications"
+msgstr "Planirane kopije, vanjsko skladište, zadržavanje i obavijesti"
+
+msgid "Scheduled exports"
+msgstr "Planirani izvozi"
+
+msgid "Security action required: %d old backup files remain in public wp-content. Move them to private storage."
+msgstr "Potrebna je sigurnosna mjera: %d starih kopija ostaje u javnom wp-contentu. Premjestite ih u privatno skladište."
+
+msgid "Select all"
+msgstr "Odaberi sve"
+
+msgid "Select at least one item to clean."
+msgstr "Odaberite barem jednu stavku za čišćenje."
+
+msgid "Set a backup routine and reduce repetitive work across your sites."
+msgstr "Postavite rutinu kopiranja i smanjite ponavljanje istog posla na svojim web-mjestima."
+
+msgid "Show password"
+msgstr "Prikaži lozinku"
+
+msgid "Site cron is not running. Without visitors, this job may pause until cron returns. Keep this tab open to be sure."
+msgstr "Cron web-mjesta ne radi. Bez posjetitelja ovaj posao može pauzirati dok cron ne vrati. Za svaki slučaj držite ovu karticu otvorenom."
+
+msgid "Sizes are approximate on very large sites."
+msgstr "Na vrlo velikim web-mjestima veličine su približne."
+
+msgid "Skip folders inside wp-content, separated by commas. Example: uploads/2023 skips media from 2023. Use the checkboxes above for whole groups."
+msgstr "Mape unutar wp-contenta, odvojene zarezima. Primjer: uploads/2023 preskače medije iz 2023. Za cijele skupine koristite kućice gore."
+
+msgid "Slot %s holds a file that belongs to a different archive or a different part."
+msgstr "Utor %s sadrži datoteku iz druge arhive ili drugog dijela."
+
+msgid "Some environment checks failed. Open the Environment tab for details."
+msgstr "Neke provjere okružja nisu uspjele. Otvorite karticu Okružje za pojedinosti."
+
+msgid "Some parts of this backup are missing."
+msgstr "Neki dijelovi ove kopije nedostaju."
+
+msgid "Source theme: %1$s. This site: %2$s."
+msgstr "Tema izvora: %1$s. Ovo web-mjesto: %2$s."
+
+msgid "Split archives to meet host file limits. Auto uses 7 GB parts. Off makes one file. Custom accepts a size in MB or GB."
+msgstr "Rastavite arhive prema ograničenjima veličine datoteke hostinga. Automatski radi dijelove od 7 GB. Isključeno daje jednu datoteku. Prilagođeno prima veličinu u MB ili GB."
+
+msgid "Split presets"
+msgstr "Unaprijed postavljene veličine"
+
+msgid "Storage"
+msgstr "Skladište"
+
+msgid "The JSON extension. It encodes archive metadata and job status. Without it, the engine cannot describe or resume an archive."
+msgstr "Proširenje JSON. Kodira metapodatke arhive i stanje posla. Bez njega pogon ne može opisati niti nastaviti arhivu."
+
+msgid "The PHP version of this site. PHP 7.4 or newer is required for streaming and crypto functions."
+msgstr "Verzija PHP-a ovog web-mjesta. Za strujanje i kriptografske funkcije potreban je PHP 7.4 ili noviji."
+
+msgid "The archive carries plugins this site does not have: %s. Install them before restoring, or builder content may not render."
+msgstr "Arhiva sadrži dodatke koje ovo web-mjesto nema: %s. Instalirajte ih prije vraćanja, inače se sadržaj graditelja možda neće prikazati."
+
+msgid "The archive contains a path that cannot be restored safely."
+msgstr "Arhiva sadrži putanju koja se ne može sigurno vratiti."
+
+msgid "The archive did not pass integrity verification."
+msgstr "Arhiva nije prošla provjeru integriteta."
+
+msgid "The archive is damaged and cannot be read safely."
+msgstr "Arhiva je oštećena i ne može se sigurno čitati."
+
+msgid "The archive is incomplete. The transfer may have been interrupted."
+msgstr "Arhiva je nepotpuna. Prijenos je možda prekinut."
+
+msgid "The backup file changed during verification or restore. Upload the original archive again."
+msgstr "Datoteka kopije promijenila se tijekom provjere ili vraćanja. Ponovno prenesite izvornu arhivu."
+
+msgid "The backup storage folder is not writable by the web server. Fix its ownership (it may have been created by a root shell)."
+msgstr "Web-poslužitelj ne može pisati u mapu skladišta. Ispravite vlasništvo (možda ju je stvorio root iz ljuske)."
+
+msgid "The database connection was lost."
+msgstr "Veza s bazom podataka izgubljena je."
+
+msgid "The encryption backend protects password-encrypted archives. Without it, unencrypted export still works."
+msgstr "Sustav šifriranja štiti arhive šifrirane lozinkom. Bez njega nešifrirani izvoz i dalje radi."
+
+msgid "The first file is not a valid .mudrava archive (bad header)."
+msgstr "Prva datoteka nije valjana .mudrava arhiva (neispravno zaglavlje)."
+
+msgid "The hint cannot be the password or part of it. Describe where it is kept instead, e.g. \"company vault\"."
+msgstr "Podsjetnik ne smije biti lozinka ni njezin dio. Radije opišite gdje se čuva, npr. „sef u tvrtki”."
+
+msgid "The last selected file is not the end of the archive - part %s is still missing."
+msgstr "Posljednja odabrana datoteka nije kraj arhive - dio %s još nedostaje."
+
+msgid "The migration could not be completed."
+msgstr "Migracija nije dovršena."
+
+msgid "The password is incorrect. The archive is still intact."
+msgstr "Lozinka je netočna. Sama arhiva je neoštećena."
+
+msgid "The remote server could not be reached."
+msgstr "Udaljeni poslužitelj nije dostupan."
+
+msgid "The remote server took too long to respond. You can resume."
+msgstr "Udaljeni poslužitelj predugo odgovara. Možete nastaviti."
+
+msgid "The set is incomplete - missing parts: %s"
+msgstr "Skup je nepotpun - nedostaju dijelovi: %s"
+
+msgid "The zlib extension compresses archive frames while streaming. Export requires it."
+msgstr "Proširenje zlib komprimira okvire arhive tijekom strujanja. Izvoz ga zahtijeva."
+
+msgid "These capabilities belong to the separate Pro add-on, currently in development. Purchasing is not open yet."
+msgstr "Ove značajke pripadaju zasebnom Pro dodatku koji je u razvoju. Kupnja još nije otvorena."
+
+msgid "This archive is encrypted. Enter its password to restore."
+msgstr "Ova je arhiva šifrirana. Unesite njezinu lozinku za vraćanje."
+
+msgid "This archive uses a newer format. Please update MUDRAVA first."
+msgstr "Ova arhiva koristi noviji format. Najprije ažurirajte MUDRAVA."
+
+msgid "This is part 1 of a split set, not a complete archive. Select the .mudrava file AND every .mudrava.partNNNN file of this set."
+msgstr "Ovo je dio 1 rastavljenog skupa, a ne cijela arhiva. Odaberite .mudrava datoteku I sve .mudrava.partNNNN datoteke ovog skupa."
+
+msgid "This job no longer exists."
+msgstr "Ovaj posao više ne postoji."
+
+msgid "This migration step needs more PHP memory than this server allows."
+msgstr "Ovom koraku migracije treba više PHP memorije nego što ovaj poslužitelj dopušta."
+
+msgid "This server cannot safely run large migrations."
+msgstr "Ovaj poslužitelj ne može sigurno izvršavati velike migracije."
+
+msgid "This server is missing requirements for the requested operation."
+msgstr "Ovom poslužitelju nedostaju preduvjeti za traženu radnju."
+
+msgid "This site (Free)"
+msgstr "Ovo web-mjesto (besplatno)"
+
+msgid "This site uses an external object cache: transients may live there and are invisible to this count."
+msgstr "Ovo web-mjesto koristi vanjsku predmemoriju objekata: tranzijenti možda žive tamo i nevidljivi su ovom prebrojavanju."
+
+msgid "This will overwrite the current site. Are you sure?"
+msgstr "Ovo će prepisati trenutačno web-mjesto. Jeste li sigurni?"
+
+msgid "Tidy before you migrate"
+msgstr "Pospremajte prije selidbe"
+
+msgid "Unattached media items: reported only. Use the media library to review before deleting."
+msgstr "Nepovezani mediji: samo prikazani. Pregledajte ih u biblioteci medija prije brisanja."
+
+msgid "Unrecognized files (must be *.mudrava or *.mudrava.partNNNN): %s"
+msgstr "Neprepoznate datoteke (moraju biti *.mudrava ili *.mudrava.partNNNN): %s"
+
+msgid "Upload a .mudrava archive (or every part of a split set) and restore it onto this site."
+msgstr "Prenesite .mudrava arhivu (ili sve dijelove skupa) i vratite je na ovo web-mjesto."
+
+msgid "Uploading"
+msgstr "Prijenos"
+
+msgid "Verified delivery with retries"
+msgstr "Provjerena isporuka s ponavljanjima"
+
+msgid "Verifying the restore point"
+msgstr "Provjeravam točku vraćanja"
+
+msgid "Visit MUDRAVA"
+msgstr "Posjeti MUDRAVA"
+
+msgid "What goes into the archive"
+msgstr "Što ide u arhivu"
+
+msgid "Whether PHP uses 64-bit integers. Without them, archives over 2 GB cannot be read or written safely."
+msgstr "Koristi li PHP 64-bitne cijele brojeve. Bez njih arhive veće od 2 GB nisu sigurne za čitanje ni pisanje."
+
+msgid "Whether the plugin can write to private storage. Archives and restore points need this directory."
+msgstr "Može li dodatak pisati u privatno skladište. Ovaj direktorij trebaju arhive i točke vraćanja."
+
+msgid "WordPress core table - always included"
+msgstr "Sustavska tablica WordPressa - uvijek uključena"
+
+msgid "Working…"
+msgstr "Radim…"
+
+msgid "You do not have permission to run migrations."
+msgstr "Nemate dozvolu za pokretanje migracija."
+
+msgid "all included"
+msgstr "sve uključeno"
+
+msgid "database"
+msgstr "baza podataka"
+
+msgid "e.g. company vault / migration"
+msgstr "npr. sef u tvrtki / selidba"
+
+msgid "encrypted"
+msgstr "šifrirano"
+
+msgid "files"
+msgstr "datoteke"
+
+msgid "finalize"
+msgstr "završetak"
+
+msgid "hint"
+msgstr "podsjetnik"
+
+msgid "job"
+msgstr "posao"
+
+msgid "missing parts"
+msgstr "nedostajući dijelovi"
+
+msgid "or click to browse. For split sets, select every part"
+msgstr "ili kliknite za pregled. Kod rastavljenih skupova odaberite sve dijelove"
+
+msgid "part"
+msgstr "dio"
+
+msgid "part(s)"
+msgstr "dio/dijelova"
+
+msgid "parts"
+msgstr "dijelovi"
+
+msgid "rows"
+msgstr "redaka"
+
+msgid "running"
+msgstr "u tijeku"
+
+msgid "set complete"
+msgstr "skup potpun"
+
+msgid "unknown"
+msgstr "nepoznato"
+
+msgid "upload incomplete"
+msgstr "prijenos nepotpun"
+
+msgid "uploads/2023, cache"
+msgstr "uploads/2023, predmemorija"
+
+msgid "wp-admin, wp-includes and root files are always included. A restored site needs them to run."
+msgstr "wp-admin, wp-includes i korijenske datoteke uvijek su uključeni. Vraćeno web-mjesto treba ih za rad."

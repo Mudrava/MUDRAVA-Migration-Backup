@@ -1,0 +1,709 @@
+# Greek translations for MUDRAVA Migration & Backup.
+# Copyright (C) 2026 MUDRAVA
+# This file is distributed under the GPL-2.0-or-later license.
+# Hand written by MUDRAVA, one string at a time.
+msgid ""
+msgstr ""
+"Project-Id-Version: MUDRAVA Migration & Backup 1.1.0\n"
+"Report-Msgid-Bugs-To: https://mudrava.com/en/\n"
+"POT-Creation-Date: 2026-11-22 00:00+0000\n"
+"PO-Revision-Date: 2026-11-22 00:00+0000\n"
+"Last-Translator: MUDRAVA <info@mudrava.com>\n"
+"Language-Team: Greek <el@li.org>\n"
+"Language: el\n"
+"PO-Revision-Date: 2026-11-22 00:00+0000\n"
+"Last-Translator: MUDRAVA <info@mudrava.com>\n"
+"Language-Team: Greek <el@li.org>\n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: mudrava-migration-backup\n"
+
+msgid "%1$s: %2$s rows, %3$s MB. "
+msgstr "%1$s: %2$s γραμμές, %3$s MB. "
+
+msgid "%1$s: %2$s. "
+msgstr "%1$s: %2$s. "
+
+msgid "A database operation failed during the migration."
+msgstr "Μια λειτουργία βάσης δεδομένων απέτυχε κατά τη μεταφορά."
+
+msgid "A database row is too large for the backup format. Reduce the row size and retry."
+msgstr "Μια γραμμή της βάσης είναι πολύ μεγάλη για τη μορφή αντιγράφου. Μικρύνετέ την και δοκιμάστε ξανά."
+
+msgid "A table without a primary key changed during the backup, so rows could be missed. Pause writes to it and re-run the backup."
+msgstr "Ένας πίνακας χωρίς πρωτεύον κλειδί άλλαξε κατά την αντιγραφή, οπότε μπορεί να χάθηκαν γραμμές. Διακόψτε τις εγγραφές σε αυτόν και επαναλάβετε την αντιγραφή."
+
+msgid "An upload chunk was rejected. Please retry."
+msgstr "Ένα τμήμα μεταφόρτωσης απορρίφθηκε. Δοκιμάστε ξανά."
+
+msgid "Another migration job is already running."
+msgstr "Εκτελείται ήδη άλλη εργασία μεταφοράς."
+
+msgid "Anyone who has this archive can read the password hint. Never put the password or part of it here."
+msgstr "Οποιοσδήποτε έχει αυτό το αρχείο μπορεί να διαβάσει την υπόδειξη κωδικού. Ποτέ μην γράφετε εδώ τον κωδικό ή μέρος του."
+
+msgid "Approximate size of site files. The database is measured when export starts. This helps estimate time and space."
+msgstr "Περίπου μέγεθος των αρχείων του ιστότοπου. Η βάση μετριέται κατά την έναρξη της εξαγωγής. Βοηθά στην εκτίμηση χρόνου και χώρου."
+
+msgid "Archive password"
+msgstr "Κωδικός αρχείου"
+
+msgid "Archive splitting"
+msgstr "Διαίρεση αρχείου"
+
+msgid "Archives"
+msgstr "Αρχεία"
+
+msgid "Archives on this site"
+msgstr "Αρχεία σε αυτόν τον ιστότοπο"
+
+msgid "Assembling archive"
+msgstr "Συγκρότηση αρχείου"
+
+msgid "Auto"
+msgstr "Αυτόματο"
+
+msgid "Autoloaded options read on every request: this many rows and bytes load before your code runs."
+msgstr "Οι ρυθμίσεις αυτόματης φόρτωσης διαβάζονται σε κάθε αίτημα: τόσες γραμμές και byte φορτώνουν πριν τρέξει ο κώδικάς σας."
+
+msgid "Automatic recovery failed; inspect the restore point"
+msgstr "Η αυτόματη αποκατάσταση απέτυχε· ελέγξτε το σημείο επαναφοράς"
+
+msgid "Backup and delivery reports"
+msgstr "Αναφορές αντιγράφων και παράδοσης"
+
+msgid "Backup notifications"
+msgstr "Ειδοποιήσεις αντιγράφων ασφαλείας"
+
+msgid "Cancel"
+msgstr "Άκυρο"
+
+msgid "Cancelled."
+msgstr "Ακυρώθηκε."
+
+msgid "Cancelling…"
+msgstr "Ακύρωση…"
+
+msgid "Change what is included"
+msgstr "Αλλαγή περιεχομένου"
+
+msgid "Choose a password, or turn off encryption to export unencrypted."
+msgstr "Επιλέξτε κωδικό ή απενεργοποιήστε την κρυπτογράφηση για εξαγωγή χωρίς κρυπτογράφηση."
+
+msgid "Choose a strong password"
+msgstr "Επιλέξτε έναν ισχυρό κωδικό"
+
+msgid "Choose archive files to upload"
+msgstr "Επιλέξτε τα αρχεία προς μεταφόρτωση"
+
+msgid "Choose where reports are sent"
+msgstr "Επιλέξτε πού στέλνονται οι αναφορές"
+
+msgid "Clean selected"
+msgstr "Καθαρισμός επιλεγμένων"
+
+msgid "Cleaned"
+msgstr "Καθαρίστηκε"
+
+msgid "Cleaned %s items"
+msgstr "Καθαρίστηκαν %s στοιχεία"
+
+msgid "Cleaning failed: %s"
+msgstr "Ο καθαρισμός απέτυχε: %s"
+
+msgid "Cleaning…"
+msgstr "Καθαρισμός…"
+
+msgid "Close"
+msgstr "Κλείσιμο"
+
+msgid "Cloud storage"
+msgstr "Αποθήκευση σε cloud"
+
+msgid "Completed"
+msgstr "Ολοκληρώθηκε"
+
+msgid "Continue"
+msgstr "Συνέχεια"
+
+msgid "Could not load the live inventory. Reload the page to try again."
+msgstr "Δεν ήταν δυνατή η φόρτωση της ζωντανής καταγραφής. Ανανεώστε τη σελίδα για νέα προσπάθεια."
+
+msgid "Could not read the selected files. Select them again."
+msgstr "Δεν ήταν δυνατή η ανάγνωση των επιλεγμένων αρχείων. Επιλέξτε τα ξανά."
+
+msgid "Count"
+msgstr "Πλήθος"
+
+msgid "Create backup"
+msgstr "Δημιουργία αντιγράφου"
+
+msgid "Custom"
+msgstr "Προσαρμοσμένο"
+
+msgid "Daily or weekly backups in your site timezone"
+msgstr "Ημερήσια ή εβδομαδιαία αντίγραφα στη ζώνη ώρας του ιστότοπού σας"
+
+msgid "Database"
+msgstr "Βάση δεδομένων"
+
+msgid "Delete the selected items permanently? This cannot be undone."
+msgstr "Να διαγραφούν οριστικά τα επιλεγμένα στοιχεία; Η ενέργεια δεν αναιρείται."
+
+msgid "Deletion is permanent and runs in small batches. Unattached media and autoload are measured, never pruned: media needs your own review."
+msgstr "Η διαγραφή είναι οριστική και εκτελείται σε μικρές παρτίδες. Τα μη συνημμένα μέσα και το autoload μόνο μετριούνται, ποτέ δεν διαγράφονται: τα μέσα απαιτούν τον δικό σας έλεγχο."
+
+msgid "Done"
+msgstr "Ολοκλήρωση"
+
+msgid "Done editing"
+msgstr "Τέλος επεξεργασίας"
+
+msgid "Download"
+msgstr "Λήψη"
+
+msgid "Download all"
+msgstr "Λήψη όλων"
+
+msgid "Download part"
+msgstr "Λήψη τμήματος"
+
+msgid "Drop .mudrava files here"
+msgstr "Αφήστε εδώ αρχεία .mudrava"
+
+msgid "Duplicate parts selected: %s"
+msgstr "Επιλέχθηκαν διπλότυπα τμήματα: %s"
+
+msgid "Email alerts for failed backups or delivery"
+msgstr "Ειδοποιήσεις email για αποτυχίες αντιγράφων ή παράδοσης"
+
+msgid "Encrypt backup with password"
+msgstr "Κρυπτογράφηση αντιγράφου με κωδικό"
+
+msgid "Encrypted with XChaCha20-Poly1305 + Argon2id. Lost passwords cannot be recovered."
+msgstr "Κρυπτογραφήθηκε με XChaCha20-Poly1305 + Argon2id. Ένας χαμένος κωδικός δεν ανακτάται."
+
+msgid "Enter the archive password to continue"
+msgstr "Εισάγετε τον κωδικό του αρχείου για συνέχεια"
+
+msgid "Enter the archive password to continue."
+msgstr "Εισάγετε τον κωδικό του αρχείου για συνέχεια."
+
+msgid "Environment"
+msgstr "Περιβάλλον"
+
+msgid "Everything included"
+msgstr "Όλα συμπεριλαμβάνονται"
+
+msgid "Everything is included by default. Uncheck only what you are sure this site does not need."
+msgstr "Εξ ορισμού περιλαμβάνεται τα πάντα. Αποεπιλέξτε μόνο ό,τι είστε σίγουροι ότι δεν χρειάζεται αυτός ο ιστότοπος."
+
+msgid "Excluded"
+msgstr "Εξαιρέθηκε"
+
+msgid "Explore Pro"
+msgstr "Δείτε το Pro"
+
+msgid "Export"
+msgstr "Εξαγωγή"
+
+msgid "Export creates a .mudrava archive. If site cron is inactive, keep this tab open; the progress dialog shows whether it is safe to close."
+msgstr "Η εξαγωγή δημιουργεί αρχείο .mudrava. Αν το cron του ιστότοπου δεν τρέχει, κρατήστε την καρτέλα ανοιχτή· ο διάλογος προόδου δείχνει αν κλείνει με ασφάλεια."
+
+msgid "Export this site"
+msgstr "Εξαγωγή αυτού του ιστότοπου"
+
+msgid "Extra paths to skip (optional)"
+msgstr "Επιπλέον διαδρομές για παράλειψη (προαιρετικό)"
+
+msgid "Failed"
+msgstr "Απέτυχε"
+
+msgid "Files"
+msgstr "Αρχεία"
+
+msgid "Files from different archives are selected. Pick the parts of ONE archive."
+msgstr "Έχουν επιλεγεί αρχεία από διαφορετικά архεία. Επιλέξτε τα τμήματα ΕΝΟΣ αρχείου."
+
+msgid "Filter folders…"
+msgstr "Φίλτρο φακέλων…"
+
+msgid "Filter tables…"
+msgstr "Φίλτρο πινάκων…"
+
+msgid "Found"
+msgstr "Βρέθηκε"
+
+msgid "Free provides manual migration and restore on unlimited sites. Pro adds automation."
+msgstr "Η δωρεάν έκδοση κάνει χειροκίνητες μεταφορές και επαναφορές σε απεριόριστους ιστότοπους. Το Pro προσíti αυτοματισμούς."
+
+msgid "Free space in private storage. A safe restore needs room for the archive and a restore point."
+msgstr "Ελεύθερος χώρος στην ιδιωτική αποθήκη. Μια ασφαλής επαναφορά χρειάζεται χώρο για το αρχείο και ένα σημείο επαναφοράς."
+
+msgid "Free. Host limits apply"
+msgstr "Δωρεάν. Ισχύουν όρια του hosting"
+
+msgid "Hide password"
+msgstr "Απόκρυψη κωδικού"
+
+msgid "I understand: restore overwrites this site database and files, and I accept proceeding without a restore point."
+msgstr "Κατανοώ: η επαναφορά διαγράφει τη βάση και τα αρχεία αυτού του ιστότοπου και αποδέχομαι τη συνέχεια χωρίς σημείο επαναφοράς."
+
+msgid "Import"
+msgstr "Εισαγωγή"
+
+msgid "Import an archive"
+msgstr "Επαναφορά από αρχείο"
+
+msgid "Individual parts"
+msgstr "Μεμονωμένα τμήματα"
+
+msgid "Item"
+msgstr "Στοιχείο"
+
+msgid "Keep backup copies away from the WordPress server you are protecting."
+msgstr "Φυλάσσετε τα αντίγραφα χώρια από τον διακομιστή WordPress που προστατεύετε."
+
+msgid "Keep this tab open until the restore finishes - the restore only advances while this page is open."
+msgstr "Κρατήστε την καρτέλα ανοιχτή έως ότου ολοκληρωθεί η επαναφορά - προχωρά μόνο όσο αυτή η σελίδα είναι ανοιχτή."
+
+msgid "Know when a backup needs attention without checking every site manually."
+msgstr "Μάθετε πότε ένα αντίγραφο χρειάζεται προσοχή χωρίς μη αυτόματο έλεγχο κάθε ιστότοπου."
+
+msgid "MUDRAVA"
+msgstr "MUDRAVA"
+
+msgid "MUDRAVA Migration"
+msgstr "MUDRAVA Μεταφορά"
+
+msgid "MUDRAVA Migration & Backup cannot run on this server: PHP 7.4+ (64-bit), zlib and JSON are required."
+msgstr "Το MUDRAVA Migration & Backup δεν μπορεί να τρέξει σε αυτόν τον διακομιστή: απαιτούνται PHP 7.4+ (64-bit), zlib και JSON."
+
+msgid "MUDRAVA Migration & Backup requires PHP 7.4 or newer. Please upgrade PHP before activating."
+msgstr "Το MUDRAVA Migration & Backup απαιτεί PHP 7.4 ή νεότερο. Αναβαθμίστε την PHP πριν την ενεργοποίηση."
+
+msgid "MUDRAVA Pro"
+msgstr "MUDRAVA Pro"
+
+msgid "MUDRAVA cannot write where it needs to. Check folder permissions."
+msgstr "Το MUDRAVA δεν μπορεί να γράψει όπου χρειάζεται. Ελέγξτε τα δικαιώματα φακέλων."
+
+msgid "Maintenance"
+msgstr "Συντήρηση"
+
+msgid "Measuring this site…"
+msgstr "Μέτρηση ιστότοπου…"
+
+msgid "Migration operations"
+msgstr "Λειτουργίες μεταφοράς"
+
+msgid "Migration paused because the disk is full."
+msgstr "Η μεταφορά σε παύση: ο δίσκος είναι γεμάτος."
+
+msgid "Missed runs handled without creating a backlog"
+msgstr "Οι χαμένες εκτελέσεις καλύπτονται χωρίς συσσώρευση"
+
+msgid "Multisite detected."
+msgstr "Εντοπίστηκε δίκτυο multisite."
+
+msgid "Multisite migrations are not supported. MUDRAVA migrates single sites."
+msgstr "Οι μεταφορές multisite δεν υποστηρίζονται. Το MUDRAVA μεταφέρει μεμονωμένους ιστότοπους."
+
+msgid "Network-wide migration is not supported in this release. MUDRAVA currently migrates single sites."
+msgstr "Η μεταφορά όλου του δικτύου δεν υποστηρίζεται σε αυτή την έκδοση. Το MUDRAVA προς το παρόν μεταφέρει μεμονωμένους ιστότοπους."
+
+msgid "Next page"
+msgstr "Επόμενη σελίδα"
+
+msgid "No archives on this site yet."
+msgstr "Δεν υπάρχουν ακόμη αρχεία σε αυτόν τον ιστότοπο."
+
+msgid "Not enough disk space for a restore point. A failed restore will need another backup to recover. Check the box to accept this risk."
+msgstr "Δεν υπάρχει χώρος δίσκου για σημείο επαναφοράς. Μια αποτυχημένη επαναφορά θα χρειαστεί άλλο αντίγραφο για επιστροφή. Ενεργοποιήστε την επιλογή για να αποδεχτείτε αυτόν τον κίνδυνο."
+
+msgid "Notifications"
+msgstr "Ειδοποιήσεις"
+
+msgid "Off"
+msgstr "Ανενεργό"
+
+msgid "Off-site storage"
+msgstr "Εξωτερική αποθήκη"
+
+msgid "One of the parts belongs to a different backup."
+msgstr "Ένα από τα τμήματα ανήκει σε διαφορετικό αντίγραφο."
+
+msgid "Only a running export can be cancelled."
+msgstr "Μόνο εξαγωγή σε εξέλιξη μπορεί να ακυρωθεί."
+
+msgid "Other files (wp-content root)"
+msgstr "Άλλα αρχεία (ρίζα wp-content)"
+
+msgid "Overlapping jobs prevented; safe review after imports"
+msgstr "Οι επικαλυπτόμενες εργασίες εμποδίζονται· ασφαλής έλεγχος μετά τις εισαγωγές"
+
+msgid "Page"
+msgstr "Σελίδα"
+
+msgid "Part %s is not a valid continuation part (renamed or wrong file)."
+msgstr "Το τμήμα %s δεν είναι έγκυρο τμήμα συνέχειας (μετονομασμένο ή λάθος αρχείο)."
+
+msgid "Part 1 of the set is missing: the plain .mudrava file (no .partNNNN suffix)."
+msgstr "Λείπει το τμήμα 1 του σετ: το κανονικό αρχείο .mudrava (χωρίς κατάληξη .partNNNN)."
+
+msgid "Part size unit"
+msgstr "Μονάδα μεγέθους τμήματος"
+
+msgid "Password"
+msgstr "Κωδικός πρόσβασης"
+
+msgid "Password encryption is unavailable on this PHP environment."
+msgstr "Η κρυπτογράφηση με κωδικό δεν είναι διαθέσιμη σε αυτό το περιβάλλον PHP."
+
+msgid "Password hint (optional)"
+msgstr "Υπόδειξη κωδικού (προαιρετική)"
+
+msgid "Passwords do not match."
+msgstr "Οι κωδικοί δεν ταιριάζουν."
+
+msgid "Pause writes during final export. Changes during the run can stop the export or leave unvisited files out of the backup."
+msgstr "Διακόψτε τις εγγραφές κατά την τελική εξαγωγή. Αλλαγές κατά την εκτέλεση μπορούν να σταματήσουν την εξαγωγή ή να αφήσουν μη επισκεφθέντα αρχεία εκτός αντιγράφου."
+
+msgid "Planned annual plans: $59 / 3 sites, $129 / 15 sites, $249 / 50 sites."
+msgstr "Προγραμματισμένα ετήσια πακέτα: 59 $ / 3 ιστότοποι, 129 $ / 15 ιστότοποι, 249 $ / 50 ιστότοποι."
+
+msgid "Plugins older here than on the source: %s."
+msgstr "Πρόσθετα παλαιότερα εδώ απ' ό,τι στην προέλευση: %s."
+
+msgid "Portable backups. Resumable exports. Optional encryption."
+msgstr "Φορητά αντίγραφα. Εξαγωγές που συνεχίζονται. Προαιρετική κρυπτογράφηση."
+
+msgid "Previous page"
+msgstr "Προηγούμενη σελίδα"
+
+msgid "Private backup storage is unsafe or ambiguous. Set MUDRAVA_MB_STORAGE_DIR to one writable directory outside the web root."
+msgstr "Η ιδιωτική αποθήκη αντιγράφων δεν είναι ασφαλής ή είναι διφορούμενη. Ορίστε το MUDRAVA_MB_STORAGE_DIR σε έναν εγγράψιμο φάκελο έξω από τη ρίζα ιστού."
+
+msgid "Pro"
+msgstr "Pro"
+
+msgid "Reload the live inventory"
+msgstr "Ανανέωση ζωντανής καταγραφής"
+
+msgid "Removing files and tables created by the failed import"
+msgstr "Αφαίρεση αρχείων και πινάκων που δημιούργησε η αποτυχημένη εισαγωγή"
+
+msgid "Repeat password"
+msgstr "Επαναλάβετε τον κωδικό"
+
+msgid "Repeat the password"
+msgstr "Επαναλάβετε τον κωδικό"
+
+msgid "Restore point reapplied"
+msgstr "Το σημείο επαναφοράς εφαρμόστηκε ξανά"
+
+msgid "Restore point reapplied; verify the site"
+msgstr "Το σημείο επαναφοράς εφαρμόστηκε ξανά· επαληθεύστε τον ιστότοπο"
+
+msgid "Restore point saved"
+msgstr "Το σημείο επαναφοράς αποθηκεύτηκε"
+
+msgid "Restore point: recommended. There is enough free disk to keep a safety copy of this site before overwriting."
+msgstr "Σημείο επαναφοράς: συνιστάται. Υπάρχει αρκετός ελεύθερος δίσκος για αντίγραφο ασφαλείας του ιστότοπου πριν την αντικατάσταση."
+
+msgid "Restore site"
+msgstr "Επαναφορά ιστότοπου"
+
+msgid "Restoring the previous site"
+msgstr "Επαναφορά του προηγούμενου ιστότοπου"
+
+msgid "Restoring the previous site after an import error"
+msgstr "Επαναφορά του προηγούμενου ιστότοπου μετά από σφάλμα εισαγωγής"
+
+msgid "Resuming the interrupted job…"
+msgstr "Συνέχεια της διακοπείσας εργασίας…"
+
+msgid "Retention rules for older backup copies"
+msgstr "Κανόνες διατήρησης για παλαιότερα αντίγραφα"
+
+msgid "Review"
+msgstr "Έλεγχος"
+
+msgid "Revisions, spam and expired transients inflate every backup. This screen counts first; nothing is deleted until you apply what you pick."
+msgstr "Αναθεωρήσεις, spam και ληγμένα transient φουσκώνουν κάθε αντίγραφο. Αυτή η οθόνη πρώτα μετράει· τίποτα δεν διαγράφεται έως ότου εφαρμόσετε την επιλογή σας."
+
+msgid "Rewriting URLs"
+msgstr "Ξαναγράψιμο διευθύνσεων URL"
+
+msgid "S3 / S3-compatible storage"
+msgstr "Αποθήκη S3 / συμβατή με S3"
+
+msgid "S3 and S3-compatible storage"
+msgstr "Αποθήκη S3 και συμβατή με S3"
+
+msgid "Safe to close this tab. The job continues on the server and resumes when you return."
+msgstr "Μπορείτε να κλείσετε την καρτέλα με ασφάλεια. Η εργασία συνεχίζει στον διακομιστή και συνεχίζει όταν επιστρέψετε."
+
+msgid "Same Pro features in every plan. Manual Free restore remains available after expiry."
+msgstr "Ίδιες Pro λειτουργίες σε κάθε πακέτο. Η χειροκίνητη δωρεάν επαναφορά παραμένει διαθέσιμη μετά τη λήξη."
+
+msgid "Same surface headless: wp mudrava maintenance --apply --items=revisions,transients"
+msgstr "Η ίδια επιφάνεια χωρίς διεπαφή: wp mudrava maintenance --apply --items=revisions,transients"
+
+msgid "Saving a restore point of this site"
+msgstr "Αποθήκευση σημείου επαναφοράς του ιστότοπου"
+
+msgid "Schedule"
+msgstr "Προγραμματισμός"
+
+msgid "Scheduled backups"
+msgstr "Προγραμματισμένα αντίγραφα"
+
+msgid "Scheduled backups, off-site storage, retention and notifications"
+msgstr "Προγραμματισμένα αντίγραφα, εξωτερική αποθήκη, διατήρηση και ειδοποιήσεις"
+
+msgid "Scheduled exports"
+msgstr "Προγραμματισμένες εξαγωγές"
+
+msgid "Security action required: %d old backup files remain in public wp-content. Move them to private storage."
+msgstr "Απαιτείται ενέργεια ασφαλείας: %d παλιά αντίγραφα παραμένουν σε δημόσιο wp-content. Μεταφέρετέ τα στην ιδιωτική αποθήκη."
+
+msgid "Select all"
+msgstr "Επιλογή όλων"
+
+msgid "Select at least one item to clean."
+msgstr "Επιλέξτε τουλάχιστον ένα στοιχείο για καθαρισμό."
+
+msgid "Set a backup routine and reduce repetitive work across your sites."
+msgstr "Ορίστε ρουτίνα αντιγράφων και μειώστε την επαναλαμβανόμενη εργασία στους ιστότοπούς σας."
+
+msgid "Show password"
+msgstr "Εμφάνιση κωδικού"
+
+msgid "Site cron is not running. Without visitors, this job may pause until cron returns. Keep this tab open to be sure."
+msgstr "Το cron του ιστότοπου δεν τρέχει. Χωρίς επισκέπτες, η εργασία μπορεί να παύσει έως ότου το cron επιστρέψει. Κρατήστε την καρτέλα ανοιχτή για σιγουριά."
+
+msgid "Sizes are approximate on very large sites."
+msgstr "Σε πολύ μεγάλους ιστότοπους τα μεγέθη είναι ενδεικτικά."
+
+msgid "Skip folders inside wp-content, separated by commas. Example: uploads/2023 skips media from 2023. Use the checkboxes above for whole groups."
+msgstr "Φάκελοι μέσα στο wp-content, χωρισμένοι με κόμματα. Παράδειγμα: uploads/2023 παραλείπει τα μέσα του 2023. Για ολόκληρες ομάδες χρησιμοποιήστε τα πλαίσια επιλογής πάνω."
+
+msgid "Slot %s holds a file that belongs to a different archive or a different part."
+msgstr "Η υποδοχή %s περιέχει αρχείο από διαφορετικό αρχείο ή διαφορετικό τμήμα."
+
+msgid "Some environment checks failed. Open the Environment tab for details."
+msgstr "Ορισμένοι έλεγχοι περιβάλλοντος απέτυχαν. Ανοίξτε την καρτέλα Περιβάλλον για λεπτομέρειες."
+
+msgid "Some parts of this backup are missing."
+msgstr "Λείπουν τμήματα αυτού του αντιγράφου."
+
+msgid "Source theme: %1$s. This site: %2$s."
+msgstr "Θέμα προέλευσης: %1$s. Αυτός ο ιστότοπος: %2$s."
+
+msgid "Split archives to meet host file limits. Auto uses 7 GB parts. Off makes one file. Custom accepts a size in MB or GB."
+msgstr "Χωρίστε αρχεία για να τηρείτε τα όρια αρχείων του hosting. Αυτόματο κάνει τμήματα 7 GB. Ανενεργό δίνει ένα αρχείο. Προσαρμοσμένο δέχεται μέγεθος σε MB ή GB."
+
+msgid "Split presets"
+msgstr "Προρυθμίσεις διαιρέσεων"
+
+msgid "Storage"
+msgstr "Αποθήκη"
+
+msgid "The JSON extension. It encodes archive metadata and job status. Without it, the engine cannot describe or resume an archive."
+msgstr "Η επέκταση JSON. Κωδικοποιεί μεταδεδομένα αρχείου και κατάσταση εργασίας. Χωρίς αυτήν, η μηχανή δεν μπορεί να περιγράψει ή να συνεχίσει ένα αρχείο."
+
+msgid "The PHP version of this site. PHP 7.4 or newer is required for streaming and crypto functions."
+msgstr "Η έκδοση PHP του ιστότοπου. Απαιτείται PHP 7.4 ή νεότερο για ροή δεδομένων και κρυπτογραφικές συναρτήσεις."
+
+msgid "The archive carries plugins this site does not have: %s. Install them before restoring, or builder content may not render."
+msgstr "Το αρχείο περιέχει πρόσθετα που δεν έχει αυτός ο ιστότοπος: %s. Εγκαταστήστε τα πριν την επαναφορά, αλλιώς το περιεχόμενο builders μπορεί να μην εμφανιστεί."
+
+msgid "The archive contains a path that cannot be restored safely."
+msgstr "Το αρχείο περιέχει διαδρομή που δεν μπορεί να αποκατασταθεί με ασφάλεια."
+
+msgid "The archive did not pass integrity verification."
+msgstr "Το αρχείο δεν πέρασε τον έλεγχο ακεραιότητας."
+
+msgid "The archive is damaged and cannot be read safely."
+msgstr "Το αρχείο είναι κατεστραμμένο και δεν διαβάζεται με ασφάλεια."
+
+msgid "The archive is incomplete. The transfer may have been interrupted."
+msgstr "Το αρχείο είναι ελλιπές. Η μεταφορά ίσως διακόπηκε."
+
+msgid "The backup file changed during verification or restore. Upload the original archive again."
+msgstr "Το αρχείο αντιγράφου άλλαξε κατά την επαλήθευση ή επαναφορά. Μεταφορτώστε ξανά το πρωτότυπο αρχείο."
+
+msgid "The backup storage folder is not writable by the web server. Fix its ownership (it may have been created by a root shell)."
+msgstr "Ο διακομιστής ιστού δεν μπορεί να γράψει στον φάκελο αποθήκης. Διορθώστε τον ιδιοκτήτη του (ίσως το δημιούργησε root μέσω shell)."
+
+msgid "The database connection was lost."
+msgstr "Η σύνδεση με τη βάση δεδομένων χάθηκε."
+
+msgid "The encryption backend protects password-encrypted archives. Without it, unencrypted export still works."
+msgstr "Η υποδομή κρυπτογράφησης προστατεύει αρχεία κρυπτογραφημένα με κωδικό. Χωρίς αυτήν, η μη κρυπτογραφημένη εξαγωγή λειτουργεί κανονικά."
+
+msgid "The first file is not a valid .mudrava archive (bad header)."
+msgstr "Το πρώτο αρχείο δεν είναι έγκυρο αρχείο .mudrava (ελαττωματική κεφαλίδα)."
+
+msgid "The hint cannot be the password or part of it. Describe where it is kept instead, e.g. \"company vault\"."
+msgstr "Η υπόδειξη δεν μπορεί να είναι ο κωδικός ή μέρος του. Περιγράψτε μάλλον πού φυλάσσεται, π.χ. \"θωρακισμένη ντουλάπα εταιρείας\"."
+
+msgid "The last selected file is not the end of the archive - part %s is still missing."
+msgstr "Το τελευταίο επιλεγμένο αρχείο δεν είναι το τέλος του αρχείου - λείπει ακόμα το τμήμα %s."
+
+msgid "The migration could not be completed."
+msgstr "Η μεταφορά δεν μπόρεσε να ολοκληρωθεί."
+
+msgid "The password is incorrect. The archive is still intact."
+msgstr "Ο κωδικός είναι λανθασμένος. Το αρχείο παραμένει άθικτο."
+
+msgid "The remote server could not be reached."
+msgstr "Ο απομακρυσμένος διακομιστής δεν ήταν προσβάσιμος."
+
+msgid "The remote server took too long to respond. You can resume."
+msgstr "Ο απομακρυσμένος διακομιστής καθυστερεί υπερβολικά. Μπορείτε να συνεχίσετε."
+
+msgid "The set is incomplete - missing parts: %s"
+msgstr "Το σετ είναι ελλιπές - λείπουν τα τμήματα: %s"
+
+msgid "The zlib extension compresses archive frames while streaming. Export requires it."
+msgstr "Η επέκταση zlib συμπιέζει τα πλαίσια του αρχείου εν ροή. Η εξαγωγή την απαιτεί."
+
+msgid "These capabilities belong to the separate Pro add-on, currently in development. Purchasing is not open yet."
+msgstr "Αυτές οι δυνατότητες ανήκουν στο ξεχωριστό πρόσθετο Pro, σε ανάπτυξη προς το παρόν. Η αγορά δεν έχει ανοίξει ακόμα."
+
+msgid "This archive is encrypted. Enter its password to restore."
+msgstr "Αυτό το αρχείο είναι κρυπτογραφημένο. Εισάγετε τον κωδικό του για επαναφορά."
+
+msgid "This archive uses a newer format. Please update MUDRAVA first."
+msgstr "Αυτό το αρχείο χρησιμοποιεί νεότερη μορφή. Ενημερώστε πρώτα το MUDRAVA."
+
+msgid "This is part 1 of a split set, not a complete archive. Select the .mudrava file AND every .mudrava.partNNNN file of this set."
+msgstr "Αυτό είναι το τμήμα 1 ενός σετ, όχι πλήρες αρχείο. Επιλέξτε το αρχείο .mudrava ΚΑΙ κάθε αρχείο .mudrava.partNNNN αυτού του σετ."
+
+msgid "This job no longer exists."
+msgstr "Αυτή η εργασία δεν υπάρχει πλέον."
+
+msgid "This migration step needs more PHP memory than this server allows."
+msgstr "Αυτό το βήμα μεταφοράς χρειάζεται περισσότερη μνήμη PHP απ' όση επιτρέπει ο διακομιστής."
+
+msgid "This server cannot safely run large migrations."
+msgstr "Αυτός ο διακομιστής δεν μπορεί να εκτελέσει με ασφάλεια μεγάλες μεταφορές."
+
+msgid "This server is missing requirements for the requested operation."
+msgstr "Σε αυτόν τον διακομιστή λείπουν απαιτήσεις για τη ζητούμενη λειτουργία."
+
+msgid "This site (Free)"
+msgstr "Αυτός ο ιστότοπος (δωρεάν)"
+
+msgid "This site uses an external object cache: transients may live there and are invisible to this count."
+msgstr "Ο ιστότοπος χρησιμοποιεί εξωτερική cache αντικειμένων: τα transient μπορεί να ζουν εκεί και να μην φαίνονται σε αυτή τη μέτρηση."
+
+msgid "This will overwrite the current site. Are you sure?"
+msgstr "Αυτό θα διαγράψει τον τρέχοντα ιστότοπο. Είστε σίγουροι;"
+
+msgid "Tidy before you migrate"
+msgstr "Τακτοποιήστε πριν τη μετακόμιση"
+
+msgid "Unattached media items: reported only. Use the media library to review before deleting."
+msgstr "Μη συνημμένα μέσα: μόνο αναφέρονται. Ελέγξτε τα στη βιβλιοθήκη μέσων πριν τα διαγράψετε."
+
+msgid "Unrecognized files (must be *.mudrava or *.mudrava.partNNNN): %s"
+msgstr "Μη αναγνωρισμένα αρχεία (πρέπει *.mudrava ή *.mudrava.partNNNN): %s"
+
+msgid "Upload a .mudrava archive (or every part of a split set) and restore it onto this site."
+msgstr "Μεταφορτώστε ένα αρχείο .mudrava (ή κάθε τμήμα ενός σετ) και επαναφέρετέ το σε αυτόν τον ιστότοπο."
+
+msgid "Uploading"
+msgstr "Μεταφόρτωση"
+
+msgid "Verified delivery with retries"
+msgstr "Επαληθευμένη παράδοση με επαναλήψεις"
+
+msgid "Verifying the restore point"
+msgstr "Επαλήθευση σημείου επαναφοράς"
+
+msgid "Visit MUDRAVA"
+msgstr "Επισκεφθείτε το MUDRAVA"
+
+msgid "What goes into the archive"
+msgstr "Τι μπαίνει στο αρχείο"
+
+msgid "Whether PHP uses 64-bit integers. Without them, archives over 2 GB cannot be read or written safely."
+msgstr "Αν η PHP χρησιμοποιεί 64bit ακέραιους. Χωρίς αυτούς, αρχεία άνω των 2 GB δεν διαβάζονται ούτε γράφονται με ασφάλεια."
+
+msgid "Whether the plugin can write to private storage. Archives and restore points need this directory."
+msgstr "Αν το πρόσθετο μπορεί να γράψει στην ιδιωτική αποθήκη. Τα αρχεία και τα σημεία επαναφοράς χρειάζονται αυτόν τον φάκελο."
+
+msgid "WordPress core table - always included"
+msgstr "Πίνακας πυρήνα WordPress - πάντα συμπεριλαμβάνεται"
+
+msgid "Working…"
+msgstr "Εργασία…"
+
+msgid "You do not have permission to run migrations."
+msgstr "Δεν έχετε δικαίωμα εκτέλεσης μεταφορών."
+
+msgid "all included"
+msgstr "όλα συμπεριλαμβάνονται"
+
+msgid "database"
+msgstr "βάση δεδομένων"
+
+msgid "e.g. company vault / migration"
+msgstr "π.χ. θωρακισμένη ντουλάπα εταιρείας / μεταφορά"
+
+msgid "encrypted"
+msgstr "κρυπτογραφημένο"
+
+msgid "files"
+msgstr "αρχεία"
+
+msgid "finalize"
+msgstr "ολοκλήρωση"
+
+msgid "hint"
+msgstr "υπόδειξη"
+
+msgid "job"
+msgstr "εργασία"
+
+msgid "missing parts"
+msgstr "λείπουν τμήματα"
+
+msgid "or click to browse. For split sets, select every part"
+msgstr "ή κάντε κλικ για περιήγηση. Στα σετ, επιλέξτε κάθε τμήμα"
+
+msgid "part"
+msgstr "τμήμα"
+
+msgid "part(s)"
+msgstr "τμήμα(τα)"
+
+msgid "parts"
+msgstr "τμήματα"
+
+msgid "rows"
+msgstr "γραμμές"
+
+msgid "running"
+msgstr "σε εκτέλεση"
+
+msgid "set complete"
+msgstr "σετ πλήρες"
+
+msgid "unknown"
+msgstr "άγνωστο"
+
+msgid "upload incomplete"
+msgstr "μεταφόρτωση ελλιπής"
+
+msgid "uploads/2023, cache"
+msgstr "uploads/2023, cache"
+
+msgid "wp-admin, wp-includes and root files are always included. A restored site needs them to run."
+msgstr "Τα wp-admin, wp-includes και τα αρχεία ρίζας περιλαμβάνονται πάντα. Ένας επαναφερόμενος ιστότοπος τα χρειάζεται για να τρέξει."

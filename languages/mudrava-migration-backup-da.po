@@ -1,0 +1,705 @@
+# Danish translations for MUDRAVA Migration & Backup.
+# Copyright (C) 2026 MUDRAVA
+# This file is distributed under the GPL-2.0-or-later license.
+# Hand written by MUDRAVA, one string at a time. Informal "du" address, matching Danish WP core.
+msgid ""
+msgstr ""
+"Project-Id-Version: MUDRAVA Migration & Backup 1.1.0\n"
+"Report-Msgid-Bugs-To: https://mudrava.com/en/\n"
+"POT-Creation-Date: 2026-11-22 00:00+0000\n"
+"PO-Revision-Date: 2026-11-22 00:00+0000\n"
+"Last-Translator: MUDRAVA <info@mudrava.com>\n"
+"Language-Team: Danish <da@li.org>\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: mudrava-migration-backup\n"
+
+msgid "%1$s: %2$s rows, %3$s MB. "
+msgstr "%1$s: %2$s rækker, %3$s MB. "
+
+msgid "%1$s: %2$s. "
+msgstr "%1$s: %2$s. "
+
+msgid "A database operation failed during the migration."
+msgstr "En databasehandling mislykkedes under migreringen."
+
+msgid "A database row is too large for the backup format. Reduce the row size and retry."
+msgstr "En databaserække er for stor til sikkerhedskopi-formatet. Gør rækken mindre, og prøv igen."
+
+msgid "A table without a primary key changed during the backup, so rows could be missed. Pause writes to it and re-run the backup."
+msgstr "En tabel uden primærnøgle ændrede sig under sikkerhedskopieringen, så rækker kan være gået glip af. Stop skrivninger til den, og kør sikkerhedskopieringen igen."
+
+msgid "An upload chunk was rejected. Please retry."
+msgstr "En upload-blok blev afvist. Prøv igen."
+
+msgid "Another migration job is already running."
+msgstr "Der kører allerede et andet migreringsjob."
+
+msgid "Anyone who has this archive can read the password hint. Never put the password or part of it here."
+msgstr "Alle med dette arkiv kan læse adgangskodehintet. Skriv aldrig adgangskoden eller en del af den her."
+
+msgid "Approximate size of site files. The database is measured when export starts. This helps estimate time and space."
+msgstr "Tilnærmet størrelse af webstedsfiler. Databasen måles, når eksporten starter. Det hjælper med at estimere tid og plads."
+
+msgid "Archive password"
+msgstr "Arkivets adgangskode"
+
+msgid "Archive splitting"
+msgstr "Opdeling af arkiv"
+
+msgid "Archives"
+msgstr "Arkiver"
+
+msgid "Archives on this site"
+msgstr "Arkiver på dette websted"
+
+msgid "Assembling archive"
+msgstr "Samler arkiv"
+
+msgid "Auto"
+msgstr "Auto"
+
+msgid "Autoloaded options read on every request: this many rows and bytes load before your code runs."
+msgstr "Autoindlæste indstillinger læses ved hver forespørgsel: så mange rækker og bytes indlæses, før din kode kører."
+
+msgid "Automatic recovery failed; inspect the restore point"
+msgstr "Automatisk gendannelse mislykkedes; undersøg gendannelsespunktet"
+
+msgid "Backup and delivery reports"
+msgstr "Rapporter om sikkerhedskopier og levering"
+
+msgid "Backup notifications"
+msgstr "Notifikationer om sikkerhedskopier"
+
+msgid "Cancel"
+msgstr "Annullér"
+
+msgid "Cancelled."
+msgstr "Annulleret."
+
+msgid "Cancelling…"
+msgstr "Annullerer…"
+
+msgid "Change what is included"
+msgstr "Ændr hvad der er med"
+
+msgid "Choose a password, or turn off encryption to export unencrypted."
+msgstr "Vælg en adgangskode, eller slå kryptering fra for at eksportere ukrypteret."
+
+msgid "Choose a strong password"
+msgstr "Vælg en stærk adgangskode"
+
+msgid "Choose archive files to upload"
+msgstr "Vælg arkivfiler der skal uploades"
+
+msgid "Choose where reports are sent"
+msgstr "Vælg hvor rapporter sendes hen"
+
+msgid "Clean selected"
+msgstr "Ryd det valgte"
+
+msgid "Cleaned"
+msgstr "Ryddet"
+
+msgid "Cleaned %s items"
+msgstr "Ryddede %s elementer"
+
+msgid "Cleaning failed: %s"
+msgstr "Rydning mislykkedes: %s"
+
+msgid "Cleaning…"
+msgstr "Rydder…"
+
+msgid "Close"
+msgstr "Luk"
+
+msgid "Cloud storage"
+msgstr "Cloudlager"
+
+msgid "Completed"
+msgstr "Fuldført"
+
+msgid "Continue"
+msgstr "Fortsæt"
+
+msgid "Could not load the live inventory. Reload the page to try again."
+msgstr "Kunne ikke indlæse den live optælling. Genindlæs siden for at prøve igen."
+
+msgid "Could not read the selected files. Select them again."
+msgstr "Kunne ikke læse de valgte filer. Vælg dem igen."
+
+msgid "Count"
+msgstr "Antal"
+
+msgid "Create backup"
+msgstr "Opret sikkerhedskopi"
+
+msgid "Custom"
+msgstr "Brugerdefineret"
+
+msgid "Daily or weekly backups in your site timezone"
+msgstr "Daglige eller ugentlige sikkerhedskopier i dit websteds tidszone"
+
+msgid "Database"
+msgstr "Database"
+
+msgid "Delete the selected items permanently? This cannot be undone."
+msgstr "Vil du slette de valgte elementer permanent? Dette kan ikke fortrydes."
+
+msgid "Deletion is permanent and runs in small batches. Unattached media and autoload are measured, never pruned: media needs your own review."
+msgstr "Sletning er permanent og kører i små hold. Ulagte medier og autoload bliver kun målt, aldrig slettet: medier kræver din egen gennemgang."
+
+msgid "Done"
+msgstr "Færdig"
+
+msgid "Done editing"
+msgstr "Færdig med redigering"
+
+msgid "Download"
+msgstr "Download"
+
+msgid "Download all"
+msgstr "Download alt"
+
+msgid "Download part"
+msgstr "Download del"
+
+msgid "Drop .mudrava files here"
+msgstr "Slip .mudrava-filer her"
+
+msgid "Duplicate parts selected: %s"
+msgstr "Dubletterede dele valgt: %s"
+
+msgid "Email alerts for failed backups or delivery"
+msgstr "E-mailpåmindelser ved fejlslagne sikkerhedskopier eller leveringer"
+
+msgid "Encrypt backup with password"
+msgstr "Kryptér sikkerhedskopi med adgangskode"
+
+msgid "Encrypted with XChaCha20-Poly1305 + Argon2id. Lost passwords cannot be recovered."
+msgstr "Krypteret med XChaCha20-Poly1305 + Argon2id. En tabt adgangskode kan ikke gendannes."
+
+msgid "Enter the archive password to continue"
+msgstr "Indtast arkivets adgangskode for at fortsætte"
+
+msgid "Enter the archive password to continue."
+msgstr "Indtast arkivets adgangskode for at fortsætte."
+
+msgid "Environment"
+msgstr "Miljø"
+
+msgid "Everything included"
+msgstr "Alt er med"
+
+msgid "Everything is included by default. Uncheck only what you are sure this site does not need."
+msgstr "Som standard er alt med. Fravælg kun det, du er sikker på at dette websted ikke har brug for."
+
+msgid "Excluded"
+msgstr "Udeladt"
+
+msgid "Explore Pro"
+msgstr "Se Pro"
+
+msgid "Export"
+msgstr "Eksportér"
+
+msgid "Export creates a .mudrava archive. If site cron is inactive, keep this tab open; the progress dialog shows whether it is safe to close."
+msgstr "Eksporten laver et .mudrava-arkiv. Hvis webstedets cron ikke kører, så hold denne fane åben; statusvinduet viser om den trygt kan lukkes."
+
+msgid "Export this site"
+msgstr "Eksportér dette websted"
+
+msgid "Extra paths to skip (optional)"
+msgstr "Flere stier der springes over (valgfrit)"
+
+msgid "Failed"
+msgstr "Mislykkedes"
+
+msgid "Files"
+msgstr "Filer"
+
+msgid "Files from different archives are selected. Pick the parts of ONE archive."
+msgstr "Der er valgt filer fra forskellige arkiver. Vælg delene fra ÉT arkiv."
+
+msgid "Filter folders…"
+msgstr "Filtrér mapper…"
+
+msgid "Filter tables…"
+msgstr "Filtrér tabeller…"
+
+msgid "Found"
+msgstr "Fundet"
+
+msgid "Free provides manual migration and restore on unlimited sites. Pro adds automation."
+msgstr "Gratis giver manuel migrering og gendannelse på ubegrænsede websteder. Pro tilføjer automatisering."
+
+msgid "Free space in private storage. A safe restore needs room for the archive and a restore point."
+msgstr "Ledig plads i det private lager. En sikker gendannelse skal bruge plads til arkivet og et gendannelsespunkt."
+
+msgid "Free. Host limits apply"
+msgstr "Gratis. Værtens grænser gælder"
+
+msgid "Hide password"
+msgstr "Skjul adgangskode"
+
+msgid "I understand: restore overwrites this site database and files, and I accept proceeding without a restore point."
+msgstr "Jeg forstår: gendannelse overskriver dette websteds database og filer, og jeg accepterer at køre uden gendannelsespunkt."
+
+msgid "Import"
+msgstr "Importér"
+
+msgid "Import an archive"
+msgstr "Gendan fra et arkiv"
+
+msgid "Individual parts"
+msgstr "Enkelte dele"
+
+msgid "Item"
+msgstr "Element"
+
+msgid "Keep backup copies away from the WordPress server you are protecting."
+msgstr "Opbevar sikkerhedskopier adskilt fra den WordPress-server du beskytter."
+
+msgid "Keep this tab open until the restore finishes - the restore only advances while this page is open."
+msgstr "Hold denne fane åben indtil gendannelsen er færdig - den skrider kun frem mens denne side er åben."
+
+msgid "Know when a backup needs attention without checking every site manually."
+msgstr "Ved hvornår en sikkerhedskopi kræver opmærksomhed uden at tjene hvert websted manuelt."
+
+msgid "MUDRAVA"
+msgstr "MUDRAVA"
+
+msgid "MUDRAVA Migration"
+msgstr "MUDRAVA Migrering"
+
+msgid "MUDRAVA Migration & Backup cannot run on this server: PHP 7.4+ (64-bit), zlib and JSON are required."
+msgstr "MUDRAVA Migration & Backup kan ikke køre på denne server: PHP 7.4+ (64-bit), zlib og JSON kræves."
+
+msgid "MUDRAVA Migration & Backup requires PHP 7.4 or newer. Please upgrade PHP before activating."
+msgstr "MUDRAVA Migration & Backup kræver PHP 7.4 eller nyere. Opgradér PHP før aktivering."
+
+msgid "MUDRAVA Pro"
+msgstr "MUDRAVA Pro"
+
+msgid "MUDRAVA cannot write where it needs to. Check folder permissions."
+msgstr "MUDRAVA kan ikke skrive hvor det skal. Tjek mappetilladelser."
+
+msgid "Maintenance"
+msgstr "Vedligeholdelse"
+
+msgid "Measuring this site…"
+msgstr "Måler dette websted…"
+
+msgid "Migration operations"
+msgstr "Migreringshandlingerne"
+
+msgid "Migration paused because the disk is full."
+msgstr "Migrering sat på pause: disken er fuld."
+
+msgid "Missed runs handled without creating a backlog"
+msgstr "Mistede kørsler bliver indhentet uden ophobning"
+
+msgid "Multisite detected."
+msgstr "Multisite opdaget."
+
+msgid "Multisite migrations are not supported. MUDRAVA migrates single sites."
+msgstr "Multisite-migreringer understøttes ikke. MUDRAVA migrerer enkelte websteder."
+
+msgid "Network-wide migration is not supported in this release. MUDRAVA currently migrates single sites."
+msgstr "Migrering af hele netværket understøttes ikke i denne udgave. MUDRAVA migrerer pt. enkelte websteder."
+
+msgid "Next page"
+msgstr "Næste side"
+
+msgid "No archives on this site yet."
+msgstr "Endnu ingen arkiver på dette websted."
+
+msgid "Not enough disk space for a restore point. A failed restore will need another backup to recover. Check the box to accept this risk."
+msgstr "Ikke nok diskplads til et gendannelsespunkt. En fejlslagen gendannelse ville kræve en ekstra sikkerhedskopi. Sæt kryds for at acceptere denne risiko."
+
+msgid "Notifications"
+msgstr "Notifikationer"
+
+msgid "Off"
+msgstr "Fra"
+
+msgid "Off-site storage"
+msgstr "Eksternt lager"
+
+msgid "One of the parts belongs to a different backup."
+msgstr "En af delene hører til en anden sikkerhedskopi."
+
+msgid "Only a running export can be cancelled."
+msgstr "Kun en kørende eksport kan annulleres."
+
+msgid "Other files (wp-content root)"
+msgstr "Andre filer (wp-content-roden)"
+
+msgid "Overlapping jobs prevented; safe review after imports"
+msgstr "Overlappende jobs forhindres; sikker gennemgang efter importeringer"
+
+msgid "Page"
+msgstr "Side"
+
+msgid "Part %s is not a valid continuation part (renamed or wrong file)."
+msgstr "Del %s er ikke en gyldig fortsættelsesdel (omdøbt eller forkert fil)."
+
+msgid "Part 1 of the set is missing: the plain .mudrava file (no .partNNNN suffix)."
+msgstr "Del 1 af sættet mangler: den almindelige .mudrava-fil (uden .partNNNN-endelse)."
+
+msgid "Part size unit"
+msgstr "Enhed for delstørrelse"
+
+msgid "Password"
+msgstr "Adgangskode"
+
+msgid "Password encryption is unavailable on this PHP environment."
+msgstr "Adgangskodekryptering er ikke tilgængelig i dette PHP-miljø."
+
+msgid "Password hint (optional)"
+msgstr "Adgangskodehint (valgfrit)"
+
+msgid "Passwords do not match."
+msgstr "Adgangskoderne er ikke ens."
+
+msgid "Pause writes during final export. Changes during the run can stop the export or leave unvisited files out of the backup."
+msgstr "Stop skrivninger under den afsluttende eksport. Ændringer under kørslen kan stoppe eksporten eller lade ubesøgte filer stå uden for sikkerhedskopien."
+
+msgid "Planned annual plans: $59 / 3 sites, $129 / 15 sites, $249 / 50 sites."
+msgstr "Planlagte årlige abonnementer: 59 $ / 3 websteder, 129 $ / 15 websteder, 249 $ / 50 websteder."
+
+msgid "Plugins older here than on the source: %s."
+msgstr "Plugins er her ældre end på kilden: %s."
+
+msgid "Portable backups. Resumable exports. Optional encryption."
+msgstr "Flytbare sikkerhedskopier. Genoptagelige eksporter. Valgfri kryptering."
+
+msgid "Previous page"
+msgstr "Forrige side"
+
+msgid "Private backup storage is unsafe or ambiguous. Set MUDRAVA_MB_STORAGE_DIR to one writable directory outside the web root."
+msgstr "Det private sikkerhedskopilager er utrygt eller tvetydigt. Sæt MUDRAVA_MB_STORAGE_DIR til én skrivbar mappe uden for webroden."
+
+msgid "Pro"
+msgstr "Pro"
+
+msgid "Reload the live inventory"
+msgstr "Genindlæs den live optælling"
+
+msgid "Removing files and tables created by the failed import"
+msgstr "Fjerner filer og tabeller oprettet af den fejlslagne import"
+
+msgid "Repeat password"
+msgstr "Gentag adgangskoden"
+
+msgid "Repeat the password"
+msgstr "Gentag adgangskoden"
+
+msgid "Restore point reapplied"
+msgstr "Gendannelsespunkt genanvendt"
+
+msgid "Restore point reapplied; verify the site"
+msgstr "Gendannelsespunkt genanvendt; verificér webstedet"
+
+msgid "Restore point saved"
+msgstr "Gendannelsespunkt gemt"
+
+msgid "Restore point: recommended. There is enough free disk to keep a safety copy of this site before overwriting."
+msgstr "Gendannelsespunkt: anbefalet. Der er nok ledig disk til en sikkerhedskopi af webstedet før overskrivning."
+
+msgid "Restore site"
+msgstr "Gendan websted"
+
+msgid "Restoring the previous site"
+msgstr "Gendanner det forrige websted"
+
+msgid "Restoring the previous site after an import error"
+msgstr "Gendanner det forrige websted efter en importfejl"
+
+msgid "Resuming the interrupted job…"
+msgstr "Genoptager det afbrudte job…"
+
+msgid "Retention rules for older backup copies"
+msgstr "Opbevaringsregler for ældre sikkerhedskopier"
+
+msgid "Review"
+msgstr "Gennemgå"
+
+msgid "Revisions, spam and expired transients inflate every backup. This screen counts first; nothing is deleted until you apply what you pick."
+msgstr "Revisioner, spam og udløbne transients oppuster hver eneste sikkerhedskopi. Denne skærm tæller først; intet slettes før du anvender dit valg."
+
+msgid "Rewriting URLs"
+msgstr "Omskriver URL'er"
+
+msgid "S3 / S3-compatible storage"
+msgstr "S3 / S3-kompatibelt lager"
+
+msgid "S3 and S3-compatible storage"
+msgstr "S3 og S3-kompatibelt lager"
+
+msgid "Safe to close this tab. The job continues on the server and resumes when you return."
+msgstr "Denne fane kan trygt lukkes. Jobbet kører videre på serveren og genoptages når du vender tilbage."
+
+msgid "Same Pro features in every plan. Manual Free restore remains available after expiry."
+msgstr "Samme Pro-funktioner i alle abonnementer. Manuel gratis-gendannelse bliver ved efter udløb."
+
+msgid "Same surface headless: wp mudrava maintenance --apply --items=revisions,transients"
+msgstr "Samme flade uden grafisk grænseflade: wp mudrava maintenance --apply --items=revisions,transients"
+
+msgid "Saving a restore point of this site"
+msgstr "Gemmer et gendannelsespunkt for dette websted"
+
+msgid "Schedule"
+msgstr "Tidsplan"
+
+msgid "Scheduled backups"
+msgstr "Planlagte sikkerhedskopier"
+
+msgid "Scheduled backups, off-site storage, retention and notifications"
+msgstr "Planlagte sikkerhedskopier, eksternt lager, opbevaring og notifikationer"
+
+msgid "Scheduled exports"
+msgstr "Planlagte eksporter"
+
+msgid "Security action required: %d old backup files remain in public wp-content. Move them to private storage."
+msgstr "Sikkerhedsforanstaltning kræves: %d gamle sikkerhedskopier ligger stadig i offentligt wp-content. Flyt dem til det private lager."
+
+msgid "Select all"
+msgstr "Vælg alle"
+
+msgid "Select at least one item to clean."
+msgstr "Vælg mindst ét element der skal ryddes."
+
+msgid "Set a backup routine and reduce repetitive work across your sites."
+msgstr "Sæt en sikkerhedskopi-rutine og reducer gentaget arbejde på tværs af dine websteder."
+
+msgid "Show password"
+msgstr "Vis adgangskode"
+
+msgid "Site cron is not running. Without visitors, this job may pause until cron returns. Keep this tab open to be sure."
+msgstr "Webstedets cron kører ikke. Uden besøgende kan dette job gå i pause indtil cronen vender tilbage. Hold denne fane åben for en sikkerheds skyld."
+
+msgid "Sizes are approximate on very large sites."
+msgstr "Størrelser er omtrentlige på meget store websteder."
+
+msgid "Skip folders inside wp-content, separated by commas. Example: uploads/2023 skips media from 2023. Use the checkboxes above for whole groups."
+msgstr "Mapper inden i wp-content, adskilt af kommaer. Eksempel: uploads/2023 springer medier fra 2023 over. Brug afkrydsningsfelterne ovenfor til hele grupper."
+
+msgid "Slot %s holds a file that belongs to a different archive or a different part."
+msgstr "Plads %s indeholder en fil fra et andet arkiv eller en anden del."
+
+msgid "Some environment checks failed. Open the Environment tab for details."
+msgstr "Nogle miljøkontroler fejlede. Åbn fanen Miljø for detaljer."
+
+msgid "Some parts of this backup are missing."
+msgstr "Nogle af denne sikkerhedkopis dele mangler."
+
+msgid "Source theme: %1$s. This site: %2$s."
+msgstr "Kildetema: %1$s. Dette websted: %2$s."
+
+msgid "Split archives to meet host file limits. Auto uses 7 GB parts. Off makes one file. Custom accepts a size in MB or GB."
+msgstr "Del arkiver op så de matcher værts filgrænser. Auto bruger dele på 7 GB. Fra giver én fil. Brugerdefineret tager en størrelse i MB eller GB."
+
+msgid "Split presets"
+msgstr "Forudindstillede delstørrelser"
+
+msgid "Storage"
+msgstr "Lager"
+
+msgid "The JSON extension. It encodes archive metadata and job status. Without it, the engine cannot describe or resume an archive."
+msgstr "JSON-udvidelsen. Den indkoderer arkivmetadata og jobstatus. Uden den kan motoren ikke beskrive eller genoptage et arkiv."
+
+msgid "The PHP version of this site. PHP 7.4 or newer is required for streaming and crypto functions."
+msgstr "PHP-versionen for dette websted. PHP 7.4 eller nyere kræves til streaming og krypteringsfunktioner."
+
+msgid "The archive carries plugins this site does not have: %s. Install them before restoring, or builder content may not render."
+msgstr "Arkivet indeholder plugins dette websted ikke har: %s. Installér dem før gendannelse, ellers vises builder-indhold muligvis ikke."
+
+msgid "The archive contains a path that cannot be restored safely."
+msgstr "Arkivet indeholder en sti der ikke kan gendannes sikkert."
+
+msgid "The archive did not pass integrity verification."
+msgstr "Arkivet bestod ikke integritetsverifikation."
+
+msgid "The archive is damaged and cannot be read safely."
+msgstr "Arkivet er beskadiget og kan ikke læses sikkert."
+
+msgid "The archive is incomplete. The transfer may have been interrupted."
+msgstr "Arkivet er ufuldstændigt. Overførslen er måske blevet afbrudt."
+
+msgid "The backup file changed during verification or restore. Upload the original archive again."
+msgstr "Sikkerhedskopifilen ændrede sig under verifikation eller gendannelse. Upload det oprindelige arkiv igen."
+
+msgid "The backup storage folder is not writable by the web server. Fix its ownership (it may have been created by a root shell)."
+msgstr "Webserveren kan ikke skrive til sikkerhedskopimappen. Fiks dens ejer (den er måske oprettet af en root-shell)."
+
+msgid "The database connection was lost."
+msgstr "Forbindelsen til databasen gik tabt."
+
+msgid "The encryption backend protects password-encrypted archives. Without it, unencrypted export still works."
+msgstr "Krypteringsmotoren beskytter adgangskodekrypterede arkiver. Uden den virker ukrypteret eksport stadig."
+
+msgid "The first file is not a valid .mudrava archive (bad header)."
+msgstr "Den første fil er ikke et gyldigt .mudrava-arkiv (ugyldig header)."
+
+msgid "The hint cannot be the password or part of it. Describe where it is kept instead, e.g. \"company vault\"."
+msgstr "Hintet må ikke være adgangskoden eller en del af den. Beskriv i stedet hvor den opbevares, f.eks. «virksomhedens boks»."
+
+msgid "The last selected file is not the end of the archive - part %s is still missing."
+msgstr "Den sidste valgte fil er ikke arkivets slutning - del %s mangler stadig."
+
+msgid "The migration could not be completed."
+msgstr "Migreringen kunne ikke fuldføres."
+
+msgid "The password is incorrect. The archive is still intact."
+msgstr "Adgangskoden er forkert. Selve arkivet er ubeskadiget."
+
+msgid "The remote server could not be reached."
+msgstr "Den eksterne server kunne ikke nås."
+
+msgid "The remote server took too long to respond. You can resume."
+msgstr "Den eksterne server svarer for langsomt. Du kan genoptage."
+
+msgid "The set is incomplete - missing parts: %s"
+msgstr "Sættet er ufuldstændigt - manglende dele: %s"
+
+msgid "The zlib extension compresses archive frames while streaming. Export requires it."
+msgstr "zlib-udvidelsen komprimerer arkivframes mens der streames. Eksporten kræver den."
+
+msgid "These capabilities belong to the separate Pro add-on, currently in development. Purchasing is not open yet."
+msgstr "Disse evner hører til det separate Pro-tillæg, som er under udvikling. Salg er ikke åbent endnu."
+
+msgid "This archive is encrypted. Enter its password to restore."
+msgstr "Dette arkiv er krypteret. Indtast dets adgangskode for at gendanne."
+
+msgid "This archive uses a newer format. Please update MUDRAVA first."
+msgstr "Dette arkiv bruger et nyere format. Opdatér MUDRAVA først."
+
+msgid "This is part 1 of a split set, not a complete archive. Select the .mudrava file AND every .mudrava.partNNNN file of this set."
+msgstr "Dette er del 1 af et opdelt sæt, ikke et komplet arkiv. Vælg .mudrava-filen OG alle .mudrava.partNNNN-filer i dette sæt."
+
+msgid "This job no longer exists."
+msgstr "Dette job findes ikke længere."
+
+msgid "This migration step needs more PHP memory than this server allows."
+msgstr "Dette migreringstrin har brug for mere PHP-hukommelse end denne server tillader."
+
+msgid "This server cannot safely run large migrations."
+msgstr "Denne server kan ikke køre store migreringer sikkert."
+
+msgid "This server is missing requirements for the requested operation."
+msgstr "Denne server mangler krav for den ønskede handling."
+
+msgid "This site (Free)"
+msgstr "Dette websted (gratis)"
+
+msgid "This site uses an external object cache: transients may live there and are invisible to this count."
+msgstr "Dette websted bruger en ekstern objektcache: transients bor måske der og er usynlige for denne optælling."
+
+msgid "This will overwrite the current site. Are you sure?"
+msgstr "Dette overskriver det nuværende websted. Er du sikker?"
+
+msgid "Tidy before you migrate"
+msgstr "Ryd op før du flytter"
+
+msgid "Unattached media items: reported only. Use the media library to review before deleting."
+msgstr "Ulagte medier: kun rapporteret. Gå dem gennem i mediebiblioteket før sletning."
+
+msgid "Unrecognized files (must be *.mudrava or *.mudrava.partNNNN): %s"
+msgstr "Ukendte filer (skal være *.mudrava eller *.mudrava.partNNNN): %s"
+
+msgid "Upload a .mudrava archive (or every part of a split set) and restore it onto this site."
+msgstr "Upload et .mudrava-arkiv (eller alle dele af et opdelt sæt) og gendan det på dette websted."
+
+msgid "Uploading"
+msgstr "Uploader"
+
+msgid "Verified delivery with retries"
+msgstr "Verificeret levering med forsøg igen"
+
+msgid "Verifying the restore point"
+msgstr "Verificerer gendannelsespunktet"
+
+msgid "Visit MUDRAVA"
+msgstr "Besøg MUDRAVA"
+
+msgid "What goes into the archive"
+msgstr "Hvad der kommer i arkivet"
+
+msgid "Whether PHP uses 64-bit integers. Without them, archives over 2 GB cannot be read or written safely."
+msgstr "Om PHP bruger 64-bit heltal. Uden dem kan arkiver over 2 GB ikke læses eller skrives sikkert."
+
+msgid "Whether the plugin can write to private storage. Archives and restore points need this directory."
+msgstr "Om pluginet kan skrive til det private lager. Arkiver og gendannelsespunkter har brug for denne mappe."
+
+msgid "WordPress core table - always included"
+msgstr "WordPress core-tabel - altid med"
+
+msgid "Working…"
+msgstr "Arbejder…"
+
+msgid "You do not have permission to run migrations."
+msgstr "Du har ikke tilladelse til at køre migreringer."
+
+msgid "all included"
+msgstr "alt med"
+
+msgid "database"
+msgstr "database"
+
+msgid "e.g. company vault / migration"
+msgstr "f.eks. virksomhedens boks / flytning"
+
+msgid "encrypted"
+msgstr "krypteret"
+
+msgid "files"
+msgstr "filer"
+
+msgid "finalize"
+msgstr "afslutning"
+
+msgid "hint"
+msgstr "hint"
+
+msgid "job"
+msgstr "job"
+
+msgid "missing parts"
+msgstr "manglende dele"
+
+msgid "or click to browse. For split sets, select every part"
+msgstr "eller klik for at gennemse. Vælg alle dele for opdeltede sæt"
+
+msgid "part"
+msgstr "del"
+
+msgid "part(s)"
+msgstr "del(e)"
+
+msgid "parts"
+msgstr "dele"
+
+msgid "rows"
+msgstr "rækker"
+
+msgid "running"
+msgstr "kører"
+
+msgid "set complete"
+msgstr "sæt komplet"
+
+msgid "unknown"
+msgstr "ukendt"
+
+msgid "upload incomplete"
+msgstr "upload ufuldstændig"
+
+msgid "uploads/2023, cache"
+msgstr "uploads/2023, cache"
+
+msgid "wp-admin, wp-includes and root files are always included. A restored site needs them to run."
+msgstr "wp-admin, wp-includes og rod-filer er altid med. Et gendannet websted skal bruge dem for at køre."

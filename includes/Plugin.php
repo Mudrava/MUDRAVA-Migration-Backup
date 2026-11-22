@@ -41,6 +41,17 @@ final class Plugin
 
     public function boot(): void
     {
+        // Load bundled translations explicitly: hosts with opcache and
+        // non-standard paths occasionally miss the default auto-load, and
+        // a maintenance screen in the operator's language is the point of
+        // shipping 27 locales in the first place.
+        add_action('plugins_loaded', static function (): void {
+            load_plugin_textdomain(
+                'mudrava-migration-backup',
+                false,
+                dirname(plugin_basename(MUDRAVA_MB_PLUGIN_FILE)) . '/languages'
+            );
+        }, 0);
         // Registered directly, not on 'init': a plugin activated via WP-CLI or
         // the REST API is loaded after 'init' has already fired, so an
         // init-hooked filter would never register and wp_schedule_event()
@@ -289,6 +300,24 @@ final class Plugin
                 'contentEditClose' => __('Done editing', 'mudrava-migration-backup'),
                 'contentAll'  => __('Everything included', 'mudrava-migration-backup'),
                 'contentExcluded' => __('Excluded', 'mudrava-migration-backup'),
+                // Maintenance tab actions (counts are server-rendered).
+                'maintPick'   => __('Select at least one item to clean.', 'mudrava-migration-backup'),
+                'maintConfirm' => __('Delete the selected items permanently? This cannot be undone.', 'mudrava-migration-backup'),
+                'maintWorking' => __('Cleaning…', 'mudrava-migration-backup'),
+                /* translators: %s: number of rows deleted. */
+                'maintDone'   => __('Cleaned %s items', 'mudrava-migration-backup'),
+                /* translators: %s: error code or message. */
+                'maintFailed' => __('Cleaning failed: %s', 'mudrava-migration-backup'),
+                // Environment diff shown before a restore overwrites.
+                /* translators: %1$s: source theme, %2$s: local theme. */
+                'envDiffTheme' => __('Source theme: %1$s. This site: %2$s.', 'mudrava-migration-backup'),
+                /* translators: %s: comma-separated list of missing plugins. */
+                'envDiffMissing' => __(
+                    'The archive carries plugins this site does not have: %s. Install them before restoring, or builder content may not render.',
+                    'mudrava-migration-backup'
+                ),
+                /* translators: %s: comma-separated list of plugins with older local versions. */
+                'envDiffOlder' => __('Plugins older here than on the source: %s.', 'mudrava-migration-backup'),
             ],
         ]);
     }

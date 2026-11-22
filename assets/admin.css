@@ -942,3 +942,11 @@ body.mudrava-modal-open { overflow: hidden; }
 }
 .mudrava-feature-list { margin: 24px 0; padding-left: 20px; list-style: disc; }
 .mudrava-feature-list li { margin: 0 0 12px; color: var(--mv-ink-2); line-height: 1.5; }
+
+/* Maintenance: live counts table, danger-adjacent but calm. */
+.mudrava-maint { width: 100%; max-width: 640px; border-collapse: collapse; margin: 16px 0; }
+.mudrava-maint th { text-align: left; font-size: 13px; color: var(--mv-ink-2); padding: 0 16px 8px 0; }
+.mudrava-maint td { padding: 8px 16px 8px 0; border-top: 1px solid #e5eaf2; font-size: 14px; }
+.mudrava-maint td[data-maint-count] { text-align: right; font-variant-numeric: tabular-nums; min-width: 90px; }
+.mudrava-maint th:nth-child(3) { text-align: right; }
+#mudrava-maint-status { margin-left: 12px; color: var(--mv-ink-2); font-size: 14px; }

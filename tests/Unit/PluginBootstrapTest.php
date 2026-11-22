@@ -80,6 +80,7 @@ final class PluginBootstrapTest extends TestCase
         $actions = array_column($GLOBALS['MUDRAVA_STUB_ACTIONS'], 'hook');
         $filters = array_column($GLOBALS['MUDRAVA_STUB_FILTERS'], 'hook');
         $this->assertSame([
+            'plugins_loaded',
             'rest_api_init',
             'admin_menu',
             'admin_enqueue_scripts',
@@ -88,7 +89,7 @@ final class PluginBootstrapTest extends TestCase
             'mudrava_cleanup_uploads',
             'wp_loaded',
         ], $actions);
-        $rewriteHook = $GLOBALS['MUDRAVA_STUB_ACTIONS'][6];
+        $rewriteHook = $GLOBALS['MUDRAVA_STUB_ACTIONS'][7];
         $this->assertSame(999, $rewriteHook['priority']);
         $this->assertContains('cron_schedules', $filters);
         $this->assertContains('map_meta_cap', $filters);

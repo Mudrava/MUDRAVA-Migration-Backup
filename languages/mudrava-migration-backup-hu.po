@@ -1,0 +1,705 @@
+# Hungarian translations for MUDRAVA Migration & Backup.
+# Copyright (C) 2026 MUDRAVA
+# This file is distributed under the GPL-2.0-or-later license.
+# Hand written by MUDRAVA, one string at a time. Formal address (magázódás).
+msgid ""
+msgstr ""
+"Project-Id-Version: MUDRAVA Migration & Backup 1.1.0\n"
+"Report-Msgid-Bugs-To: https://mudrava.com/en/\n"
+"POT-Creation-Date: 2026-11-22 00:00+0000\n"
+"PO-Revision-Date: 2026-11-22 00:00+0000\n"
+"Last-Translator: MUDRAVA <info@mudrava.com>\n"
+"Language-Team: Hungarian <hu@li.org>\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: mudrava-migration-backup\n"
+
+msgid "%1$s: %2$s rows, %3$s MB. "
+msgstr "%1$s: %2$s sor, %3$s MB. "
+
+msgid "%1$s: %2$s. "
+msgstr "%1$s: %2$s. "
+
+msgid "A database operation failed during the migration."
+msgstr "A migráció során egy adatbázis-művelet sikertelen volt."
+
+msgid "A database row is too large for the backup format. Reduce the row size and retry."
+msgstr "Egy adatbázis-sor túl nagy a mentés formátumához. Kicsinyítse a sort, és próbálja újra."
+
+msgid "A table without a primary key changed during the backup, so rows could be missed. Pause writes to it and re-run the backup."
+msgstr "Egy elsődleges kulcs nélküli tábla a mentés közben módosult, ezért sorok hiányozhatnak. Függesztse az írást bele, és indítsa újra a mentést."
+
+msgid "An upload chunk was rejected. Please retry."
+msgstr "A feltöltés egyik darabját elutasították. Próbálja újra."
+
+msgid "Another migration job is already running."
+msgstr "Már fut egy másik migrációs feladat."
+
+msgid "Anyone who has this archive can read the password hint. Never put the password or part of it here."
+msgstr "Bárki, aki hozzájut ehhez az archívumhoz, elolvashatja a jelszóemlékeztetőt. Ide soha ne írja a jelszót vagy annak egy részét."
+
+msgid "Approximate size of site files. The database is measured when export starts. This helps estimate time and space."
+msgstr "A webhely fájljainak hozzávetőleges mérete. Az adatbázis az export indulásakor kerül mérésre. Ez segít az idő és a hely becslésében."
+
+msgid "Archive password"
+msgstr "Archívum jelszava"
+
+msgid "Archive splitting"
+msgstr "Archívum felosztása"
+
+msgid "Archives"
+msgstr "Archívumok"
+
+msgid "Archives on this site"
+msgstr "Archívumok ezen a webhelyen"
+
+msgid "Assembling archive"
+msgstr "Archívum összeállítása"
+
+msgid "Auto"
+msgstr "Automatikus"
+
+msgid "Autoloaded options read on every request: this many rows and bytes load before your code runs."
+msgstr "Az autoload beállítások minden kérésnél beolvasódnak: ennyi sor és bájt töltődik be, mielőtt a kódja futna."
+
+msgid "Automatic recovery failed; inspect the restore point"
+msgstr "Az automatikus helyreállítás sikertelen; vizsgálja meg a visszaállítási pontot"
+
+msgid "Backup and delivery reports"
+msgstr "Jelentések a mentésekről és az átvitelről"
+
+msgid "Backup notifications"
+msgstr "Értesítések a mentésekről"
+
+msgid "Cancel"
+msgstr "Mégse"
+
+msgid "Cancelled."
+msgstr "Megszakítva."
+
+msgid "Cancelling…"
+msgstr "Megszakítás…"
+
+msgid "Change what is included"
+msgstr "A tartalom módosítása"
+
+msgid "Choose a password, or turn off encryption to export unencrypted."
+msgstr "Válasszon jelszót, vagy kapcsolja ki a titkosítást a titkosítatlan exporthoz."
+
+msgid "Choose a strong password"
+msgstr "Válasszon erős jelszót"
+
+msgid "Choose archive files to upload"
+msgstr "Jelölje ki a feltöltendő archívumfájlokat"
+
+msgid "Choose where reports are sent"
+msgstr "Adja meg, hová menjenek a jelentések"
+
+msgid "Clean selected"
+msgstr "Kijelölés tisztítása"
+
+msgid "Cleaned"
+msgstr "Megtisztítva"
+
+msgid "Cleaned %s items"
+msgstr "Megtisztítva: %s elem"
+
+msgid "Cleaning failed: %s"
+msgstr "A tisztítás sikertelen: %s"
+
+msgid "Cleaning…"
+msgstr "Tisztítás…"
+
+msgid "Close"
+msgstr "Bezárás"
+
+msgid "Cloud storage"
+msgstr "Felhőalapú tárhely"
+
+msgid "Completed"
+msgstr "Befejezve"
+
+msgid "Continue"
+msgstr "Folytatás"
+
+msgid "Could not load the live inventory. Reload the page to try again."
+msgstr "Nem sikerült betölteni a friss leltárt. Töltse újra az oldalt az újrapróbáláshoz."
+
+msgid "Could not read the selected files. Select them again."
+msgstr "Nem sikerült beolvasni a kijelölt fájlokat. Jelölje ki őket újra."
+
+msgid "Count"
+msgstr "Darabszám"
+
+msgid "Create backup"
+msgstr "Mentés készítése"
+
+msgid "Custom"
+msgstr "Egyéni"
+
+msgid "Daily or weekly backups in your site timezone"
+msgstr "Napi vagy heti mentések a webhely időzónájában"
+
+msgid "Database"
+msgstr "Adatbázis"
+
+msgid "Delete the selected items permanently? This cannot be undone."
+msgstr "Véglegesen törli a kijelölt elemeket? Ez nem vonható vissza."
+
+msgid "Deletion is permanent and runs in small batches. Unattached media and autoload are measured, never pruned: media needs your own review."
+msgstr "A törlés végleges, és kis adagokban fut. A nem rendelt médiafájlokat és az autoloadot csak méri, sosem törli: a médiafájlokat Önnek kell átnéznie."
+
+msgid "Done"
+msgstr "Kész"
+
+msgid "Done editing"
+msgstr "Szerkesztés kész"
+
+msgid "Download"
+msgstr "Letöltés"
+
+msgid "Download all"
+msgstr "Mind letöltése"
+
+msgid "Download part"
+msgstr "Rész letöltése"
+
+msgid "Drop .mudrava files here"
+msgstr "Ide ejtse a .mudrava fájlokat"
+
+msgid "Duplicate parts selected: %s"
+msgstr "Duplikált részek kijelölve: %s"
+
+msgid "Email alerts for failed backups or delivery"
+msgstr "E-mail figyelmeztetés sikertelen mentés vagy átvitel esetén"
+
+msgid "Encrypt backup with password"
+msgstr "Mentés titkosítása jelszóval"
+
+msgid "Encrypted with XChaCha20-Poly1305 + Argon2id. Lost passwords cannot be recovered."
+msgstr "Titkosítva: XChaCha20-Poly1305 + Argon2id. Az elvesztett jelszó nem visszanyerhető."
+
+msgid "Enter the archive password to continue"
+msgstr "A folytatáshoz adja meg az archívum jelszavát"
+
+msgid "Enter the archive password to continue."
+msgstr "A folytatáshoz adja meg az archívum jelszavát."
+
+msgid "Environment"
+msgstr "Környezet"
+
+msgid "Everything included"
+msgstr "Minden benne van"
+
+msgid "Everything is included by default. Uncheck only what you are sure this site does not need."
+msgstr "Alapértelmezés szerint minden be van kapcsolva. Csak azt vegye ki, amelyről biztos, hogy a webhelynek nem kell."
+
+msgid "Excluded"
+msgstr "Kizárva"
+
+msgid "Explore Pro"
+msgstr "Pro megtekintése"
+
+msgid "Export"
+msgstr "Export"
+
+msgid "Export creates a .mudrava archive. If site cron is inactive, keep this tab open; the progress dialog shows whether it is safe to close."
+msgstr "Az export .mudrava archívumot készít. Ha a webhely cronja nem aktív, tartsa nyitva ezt a fület; a folyamatpárbeszéd jelzi, biztonsággal bezárható-e."
+
+msgid "Export this site"
+msgstr "A webhely exportálása"
+
+msgid "Extra paths to skip (optional)"
+msgstr "További kihagyandó útvonalak (nem kötelező)"
+
+msgid "Failed"
+msgstr "Sikertelen"
+
+msgid "Files"
+msgstr "Fájlok"
+
+msgid "Files from different archives are selected. Pick the parts of ONE archive."
+msgstr "Különböző archívumok fájljai vannak kijelölve. Válassza ki EGY archívum részeit."
+
+msgid "Filter folders…"
+msgstr "Mappák szűrése…"
+
+msgid "Filter tables…"
+msgstr "Táblák szűrése…"
+
+msgid "Found"
+msgstr "Megtalálva"
+
+msgid "Free provides manual migration and restore on unlimited sites. Pro adds automation."
+msgstr "Az ingyenes verzió korlátlan webhelyen végez kézi migrációt és visszaállítást. A Pro automatizálással bővül."
+
+msgid "Free space in private storage. A safe restore needs room for the archive and a restore point."
+msgstr "Szabad hely a privát tárhelyen. A biztonságos visszaállításhoz hely kell az archívumnak és egy visszaállítási pontnak."
+
+msgid "Free. Host limits apply"
+msgstr "Ingyenes. A tárhely korlátai érvényesek"
+
+msgid "Hide password"
+msgstr "Jelszó elrejtése"
+
+msgid "I understand: restore overwrites this site database and files, and I accept proceeding without a restore point."
+msgstr "Értem: a visszaállítás felülírja a webhely adatbázisát és fájljait, és elfogadom, hogy visszaállítási pont nélkül folytatom."
+
+msgid "Import"
+msgstr "Import"
+
+msgid "Import an archive"
+msgstr "Archívum visszaállítása"
+
+msgid "Individual parts"
+msgstr "Egyedi részek"
+
+msgid "Item"
+msgstr "Elem"
+
+msgid "Keep backup copies away from the WordPress server you are protecting."
+msgstr "A mentéseket tartsa külön a védett WordPress-kiszolgálótól."
+
+msgid "Keep this tab open until the restore finishes - the restore only advances while this page is open."
+msgstr "Tartsa nyitva ezt a fület a visszaállítás befejezéséig - csak addig halad, amíg ez az oldal nyitva van."
+
+msgid "Know when a backup needs attention without checking every site manually."
+msgstr "Tudni fogja, mikor szorul mentés figyelemre, anélkül hogy minden webhelyet kézzel ellenőrizne."
+
+msgid "MUDRAVA"
+msgstr "MUDRAVA"
+
+msgid "MUDRAVA Migration"
+msgstr "MUDRAVA Migráció"
+
+msgid "MUDRAVA Migration & Backup cannot run on this server: PHP 7.4+ (64-bit), zlib and JSON are required."
+msgstr "A MUDRAVA Migration & Backup nem fut ezen a szerveren: PHP 7.4+ (64 bites), zlib és JSON szükséges."
+
+msgid "MUDRAVA Migration & Backup requires PHP 7.4 or newer. Please upgrade PHP before activating."
+msgstr "A MUDRAVA Migration & Backup PHP 7.4-et vagy újabbat igényel. Frissítse a PHP-t az aktiválás előtt."
+
+msgid "MUDRAVA Pro"
+msgstr "MUDRAVA Pro"
+
+msgid "MUDRAVA cannot write where it needs to. Check folder permissions."
+msgstr "A MUDRAVA nem tud oda írni, ahová kellene. Ellenőrizze a mappák jogosultságait."
+
+msgid "Maintenance"
+msgstr "Karbantartás"
+
+msgid "Measuring this site…"
+msgstr "Webhely mérése…"
+
+msgid "Migration operations"
+msgstr "Migrációs műveletek"
+
+msgid "Migration paused because the disk is full."
+msgstr "A migráció szünetel: a lemez megtelt."
+
+msgid "Missed runs handled without creating a backlog"
+msgstr "A kimaradt futások lemaradás nélkül pótlódnak"
+
+msgid "Multisite detected."
+msgstr "Multisite észlelve."
+
+msgid "Multisite migrations are not supported. MUDRAVA migrates single sites."
+msgstr "A multisite migrációk nem támogatottak. A MUDRAVA önálló webhelyeket migrál."
+
+msgid "Network-wide migration is not supported in this release. MUDRAVA currently migrates single sites."
+msgstr "Ebben a kiadásban a teljes hálózat migrálása nem támogatott. A MUDRAVA jelenleg önálló webhelyeket migrál."
+
+msgid "Next page"
+msgstr "Következő oldal"
+
+msgid "No archives on this site yet."
+msgstr "Ezen a webhelyen még nincs archívum."
+
+msgid "Not enough disk space for a restore point. A failed restore will need another backup to recover. Check the box to accept this risk."
+msgstr "Nincs elég lemezterület egy visszaállítási ponthoz. A sikertelen visszaállításhoz egy másik mentésre lenne szükség. Jelölje be a jelölőnégyzetet a kockázat elfogadásához."
+
+msgid "Notifications"
+msgstr "Értesítések"
+
+msgid "Off"
+msgstr "Ki"
+
+msgid "Off-site storage"
+msgstr "Külső tárhely"
+
+msgid "One of the parts belongs to a different backup."
+msgstr "Az egyik rész egy másik mentéshez tartozik."
+
+msgid "Only a running export can be cancelled."
+msgstr "Csak a futó export szakítható meg."
+
+msgid "Other files (wp-content root)"
+msgstr "Egyéb fájlok (wp-content gyökér)"
+
+msgid "Overlapping jobs prevented; safe review after imports"
+msgstr "Az átfedő feladatok gátlva vannak; biztonságos ellenőrzés az importok után"
+
+msgid "Page"
+msgstr "Oldal"
+
+msgid "Part %s is not a valid continuation part (renamed or wrong file)."
+msgstr "%s nem érvényes folytatás (átnevezett vagy rossz fájl)."
+
+msgid "Part 1 of the set is missing: the plain .mudrava file (no .partNNNN suffix)."
+msgstr "Hiányzik a készlet 1. része: a sima .mudrava fájl (.partNNNN utótag nélkül)."
+
+msgid "Part size unit"
+msgstr "Részméret mértékegysége"
+
+msgid "Password"
+msgstr "Jelszó"
+
+msgid "Password encryption is unavailable on this PHP environment."
+msgstr "A jelszavas titkosítás ebben a PHP-környezetben nem érhető el."
+
+msgid "Password hint (optional)"
+msgstr "Jelszóemlékeztető (nem kötelező)"
+
+msgid "Passwords do not match."
+msgstr "A jelszavak nem egyeznek."
+
+msgid "Pause writes during final export. Changes during the run can stop the export or leave unvisited files out of the backup."
+msgstr "Függesztse az írásokat a végső export alatt. A futás közbeni módosítások leállíthatják az exportot, vagy a még fel nem keresett fájlokat a mentésen kívül hagyhatják."
+
+msgid "Planned annual plans: $59 / 3 sites, $129 / 15 sites, $249 / 50 sites."
+msgstr "Tervezett éves csomagok: 59 USD / 3 webhely, 129 USD / 15 webhely, 249 USD / 50 webhely."
+
+msgid "Plugins older here than on the source: %s."
+msgstr "Régebbi bővítmények itt, mint a forrásban: %s."
+
+msgid "Portable backups. Resumable exports. Optional encryption."
+msgstr "Hordozható mentések. Folytatható exportok. Opcionális titkosítás."
+
+msgid "Previous page"
+msgstr "Előző oldal"
+
+msgid "Private backup storage is unsafe or ambiguous. Set MUDRAVA_MB_STORAGE_DIR to one writable directory outside the web root."
+msgstr "A privát mentéstár nem biztonságos vagy kétséges. Állítsa a MUDRAVA_MB_STORAGE_DIR-t egy írható könyvtárra a webgyökéren kívül."
+
+msgid "Pro"
+msgstr "Pro"
+
+msgid "Reload the live inventory"
+msgstr "Friss leltár újratöltése"
+
+msgid "Removing files and tables created by the failed import"
+msgstr "A sikertelen import által létrehozott fájlok és táblák eltávolítása"
+
+msgid "Repeat password"
+msgstr "Ismételje meg a jelszót"
+
+msgid "Repeat the password"
+msgstr "Ismételje meg a jelszót"
+
+msgid "Restore point reapplied"
+msgstr "Visszaállítási pont újrakapcsolva"
+
+msgid "Restore point reapplied; verify the site"
+msgstr "Visszaállítási pont újrakapcsolva; ellenőrizze a webhelyet"
+
+msgid "Restore point saved"
+msgstr "Visszaállítási pont elmentve"
+
+msgid "Restore point: recommended. There is enough free disk to keep a safety copy of this site before overwriting."
+msgstr "Visszaállítási pont: ajánlott. Van elég szabad lemez a webhely biztosítási mentéséhez a felülírás előtt."
+
+msgid "Restore site"
+msgstr "Webhely visszaállítása"
+
+msgid "Restoring the previous site"
+msgstr "Az előző webhely visszaállítása"
+
+msgid "Restoring the previous site after an import error"
+msgstr "Az előző webhely visszaállítása import hiba után"
+
+msgid "Resuming the interrupted job…"
+msgstr "A megszakított feladat folytatása…"
+
+msgid "Retention rules for older backup copies"
+msgstr "A régebbi mentések megőrzési szabályai"
+
+msgid "Review"
+msgstr "Áttekintés"
+
+msgid "Revisions, spam and expired transients inflate every backup. This screen counts first; nothing is deleted until you apply what you pick."
+msgstr "A revíziók, a spam és a lejárt transientek felpúfoznak minden mentést. Ez a képernyő először számol; semmi sem törlődik, amíg nem alkalmazza a választását."
+
+msgid "Rewriting URLs"
+msgstr "URL-ek átírása"
+
+msgid "S3 / S3-compatible storage"
+msgstr "S3 / S3-kompatibilis tárhely"
+
+msgid "S3 and S3-compatible storage"
+msgstr "S3 és S3-kompatibilis tárhelyek"
+
+msgid "Safe to close this tab. The job continues on the server and resumes when you return."
+msgstr "Biztonsággal bezárhatja ezt a fület. A feladat a szerveren folytatódik, és a visszatérésekor veszi újra a fonalat."
+
+msgid "Same Pro features in every plan. Manual Free restore remains available after expiry."
+msgstr "Minden csomagban ugyanazok a Pro funkciók. A kézi ingyenes visszaállítás a lejárta után is elérhető marad."
+
+msgid "Same surface headless: wp mudrava maintenance --apply --items=revisions,transients"
+msgstr "Ugyanez parancssorból: wp mudrava maintenance --apply --items=revisions,transients"
+
+msgid "Saving a restore point of this site"
+msgstr "A webhely visszaállítási pontjának mentése"
+
+msgid "Schedule"
+msgstr "Ütemezés"
+
+msgid "Scheduled backups"
+msgstr "Ütemezett mentések"
+
+msgid "Scheduled backups, off-site storage, retention and notifications"
+msgstr "Ütemezett mentések, külső tárhely, megőrzés és értesítések"
+
+msgid "Scheduled exports"
+msgstr "Ütemezett exportok"
+
+msgid "Security action required: %d old backup files remain in public wp-content. Move them to private storage."
+msgstr "Biztonsági intézkedés szükséges: %d régi mentés maradt nyilvános wp-contentben. Helyezze át őket privát tárhelyre."
+
+msgid "Select all"
+msgstr "Összes kijelölése"
+
+msgid "Select at least one item to clean."
+msgstr "Jelöljön ki legalább egy elemet a tisztításhoz."
+
+msgid "Set a backup routine and reduce repetitive work across your sites."
+msgstr "Állítson be mentési rutin, és csökkentse az ismétlődő munkát a webhelyein."
+
+msgid "Show password"
+msgstr "Jelszó megjelenítése"
+
+msgid "Site cron is not running. Without visitors, this job may pause until cron returns. Keep this tab open to be sure."
+msgstr "A webhely cronja nem fut. Látogatók nélkül a feladat szünetelhet, amíg a cron vissza nem tér. Biztonság kedvéért tartsa nyitva ezt a fület."
+
+msgid "Sizes are approximate on very large sites."
+msgstr "Nagyon nagy webhelyeken a méretek tájékoztató jellegűek."
+
+msgid "Skip folders inside wp-content, separated by commas. Example: uploads/2023 skips media from 2023. Use the checkboxes above for whole groups."
+msgstr "A wp-contenten belüli mappák, vesszővel elválasztva. Példa: uploads/2023 kihagyja a 2023-as médiafájlokat. Teljes csoportokhoz használja a fenti jelölőnégyzeteket."
+
+msgid "Slot %s holds a file that belongs to a different archive or a different part."
+msgstr "A(z) %s helyen egy másik archívumhoz vagy másik részhez tartozó fájl van."
+
+msgid "Some environment checks failed. Open the Environment tab for details."
+msgstr "Néhány környezetellenőrzés sikertelen. A részletekért nyissa meg a Környezet fület."
+
+msgid "Some parts of this backup are missing."
+msgstr "A mentés néhány része hiányzik."
+
+msgid "Source theme: %1$s. This site: %2$s."
+msgstr "Forrástéma: %1$s. Ez a webhely: %2$s."
+
+msgid "Split archives to meet host file limits. Auto uses 7 GB parts. Off makes one file. Custom accepts a size in MB or GB."
+msgstr "Ossza fel az archívumokat a tárhelyszolgáltató fájlméret-korlátaihoz igazodva. Az Automatikus 7 GB-os részeket használ. A Kikapcsolt egyetlen fájlt készít. Az Egyéni MB-ban vagy GB-ban megadott méretet fogad el."
+
+msgid "Split presets"
+msgstr "Előre beállított részméretek"
+
+msgid "Storage"
+msgstr "Tárhely"
+
+msgid "The JSON extension. It encodes archive metadata and job status. Without it, the engine cannot describe or resume an archive."
+msgstr "A JSON kiterjesztés. Ez kódolja az archívum metaadatait és a feladat állapotát. Nélküle a motor nem tud archívumot leírni vagy folytatni."
+
+msgid "The PHP version of this site. PHP 7.4 or newer is required for streaming and crypto functions."
+msgstr "A webhely PHP-verziója. A streameléshez és a titkosítási függvényekhez PHP 7.4 vagy újabb szükséges."
+
+msgid "The archive carries plugins this site does not have: %s. Install them before restoring, or builder content may not render."
+msgstr "Az archívum olyan bővítményeket tartalmaz, amelyek nincsenek meg ezen a webhelyen: %s. Telepítse őket a visszaállítás előtt, különben az oldalépítős tartalom nem jelenhet meg."
+
+msgid "The archive contains a path that cannot be restored safely."
+msgstr "Az archívum olyan útvonalat tartalmaz, amely nem állítható vissza biztonságosan."
+
+msgid "The archive did not pass integrity verification."
+msgstr "Az archívum nem állta ki az integritásellenőrzést."
+
+msgid "The archive is damaged and cannot be read safely."
+msgstr "Az archívum sérült, és nem olvasható biztonságosan."
+
+msgid "The archive is incomplete. The transfer may have been interrupted."
+msgstr "Az archívum hiányos. Az átvitel megszakadhatott."
+
+msgid "The backup file changed during verification or restore. Upload the original archive again."
+msgstr "A mentés fájlja változott az ellenőrzés vagy a visszaállítás alatt. Töltse fel újra az eredeti archívumot."
+
+msgid "The backup storage folder is not writable by the web server. Fix its ownership (it may have been created by a root shell)."
+msgstr "A webkiszolgáló nem tud írni a mentéstár mappájába. Javítsa a jogosultságokat (lehet, hogy root shell hozta létre)."
+
+msgid "The database connection was lost."
+msgstr "Az adatbázis-kapcsolat megszakadt."
+
+msgid "The encryption backend protects password-encrypted archives. Without it, unencrypted export still works."
+msgstr "A titkosítási motor védi a jelszóval titkosított archívumokat. Nélküle a titkosítatlan export továbbra is működik."
+
+msgid "The first file is not a valid .mudrava archive (bad header)."
+msgstr "Az első fájl nem érvényes .mudrava archívum (hibás fejléc)."
+
+msgid "The hint cannot be the password or part of it. Describe where it is kept instead, e.g. \"company vault\"."
+msgstr "Az emlékeztető nem lehet a jelszó vagy annak egy része. Írja inkább, hol őrizza, pl. „társasági páncélszekrény”."
+
+msgid "The last selected file is not the end of the archive - part %s is still missing."
+msgstr "Az utolsó kijelölt fájl nem az archívum vége - a(z) %s rész még mindig hiányzik."
+
+msgid "The migration could not be completed."
+msgstr "A migrációt nem sikerült befejezni."
+
+msgid "The password is incorrect. The archive is still intact."
+msgstr "A jelszó helytelen. Az archívum maga sértetlen."
+
+msgid "The remote server could not be reached."
+msgstr "A távoli szerver nem érhető el."
+
+msgid "The remote server took too long to respond. You can resume."
+msgstr "A távoli szerver túl lassan válaszol. Folytathatja."
+
+msgid "The set is incomplete - missing parts: %s"
+msgstr "A készlet hiányos - hiányzó részek: %s"
+
+msgid "The zlib extension compresses archive frames while streaming. Export requires it."
+msgstr "A zlib kiterjesztés a streamelés közben tömöríti az archívum kereteit. Az export megköveteli."
+
+msgid "These capabilities belong to the separate Pro add-on, currently in development. Purchasing is not open yet."
+msgstr "Ezek a képességek a különálló Pro kiegészítőhöz tartoznak, amely fejlesztés alatt áll. A vásárlás még nem indult el."
+
+msgid "This archive is encrypted. Enter its password to restore."
+msgstr "Ez az archívum titkosított. Adja meg a jelszavát a visszaállításhoz."
+
+msgid "This archive uses a newer format. Please update MUDRAVA first."
+msgstr "Ez az archívum újabb formátumot használ. Először frissítse a MUDRAVA-t."
+
+msgid "This is part 1 of a split set, not a complete archive. Select the .mudrava file AND every .mudrava.partNNNN file of this set."
+msgstr "Ez egy felosztott készlet 1. része, nem teljes archívum. Jelölje ki a .mudrava fájlt ÉS a készlet minden .mudrava.partNNNN fájlját."
+
+msgid "This job no longer exists."
+msgstr "Ez a feladat már nem létezik."
+
+msgid "This migration step needs more PHP memory than this server allows."
+msgstr "Ehhez a migrációs lépéshez több PHP memória kell, mint amit ez a szerver enged."
+
+msgid "This server cannot safely run large migrations."
+msgstr "Ez a szerver nem tud biztonságosan nagy migrációkat futtatni."
+
+msgid "This server is missing requirements for the requested operation."
+msgstr "Erről a szerverről hiányoznak a kért művelet követelményei."
+
+msgid "This site (Free)"
+msgstr "Ez a webhely (ingyenes)"
+
+msgid "This site uses an external object cache: transients may live there and are invisible to this count."
+msgstr "A webhely külső objektumgyorsítótárat használ: a transientek ott élhetnek, és e számolás számára láthatatlanok."
+
+msgid "This will overwrite the current site. Are you sure?"
+msgstr "Ez felülírja a jelenlegi webhelyet. Biztos benne?"
+
+msgid "Tidy before you migrate"
+msgstr "Szedjen rendet a költözés előtt"
+
+msgid "Unattached media items: reported only. Use the media library to review before deleting."
+msgstr "Nem rendelt médiafájlok: csak jelzés. Nézze át őket a médiatárban a törlés előtt."
+
+msgid "Unrecognized files (must be *.mudrava or *.mudrava.partNNNN): %s"
+msgstr "Fel nem ismert fájlok (csak *.mudrava vagy *.mudrava.partNNNN lehet): %s"
+
+msgid "Upload a .mudrava archive (or every part of a split set) and restore it onto this site."
+msgstr "Töltsön fel egy .mudrava archívumot (vagy egy felosztott készlet minden részét), és állítsa vissza erre a webhelyre."
+
+msgid "Uploading"
+msgstr "Feltöltés"
+
+msgid "Verified delivery with retries"
+msgstr "Ellenőrzött átvitel újrapróbálkozással"
+
+msgid "Verifying the restore point"
+msgstr "Visszaállítási pont ellenőrzése"
+
+msgid "Visit MUDRAVA"
+msgstr "Látogasson el a MUDRAVA oldalára"
+
+msgid "What goes into the archive"
+msgstr "Mi kerül az archívumba"
+
+msgid "Whether PHP uses 64-bit integers. Without them, archives over 2 GB cannot be read or written safely."
+msgstr "Hogy a PHP használ-e 64 bites egészeket. Nélkülük a 2 GB-nál nagyobb archívumok nem olvashatók és nem írhatók biztonságosan."
+
+msgid "Whether the plugin can write to private storage. Archives and restore points need this directory."
+msgstr "Hogy a bővítmény írhat-e a privát tárhelyre. Archívumoknak és visszaállítási pontoknak kell ez a könyvtár."
+
+msgid "WordPress core table - always included"
+msgstr "WordPress magtábla - mindig benne"
+
+msgid "Working…"
+msgstr "Dolgozom…"
+
+msgid "You do not have permission to run migrations."
+msgstr "Nincs joga migrációkat futtatni."
+
+msgid "all included"
+msgstr "minden benne"
+
+msgid "database"
+msgstr "adatbázis"
+
+msgid "e.g. company vault / migration"
+msgstr "pl. társasági páncélszekrény / költözés"
+
+msgid "encrypted"
+msgstr "titkosított"
+
+msgid "files"
+msgstr "fájlok"
+
+msgid "finalize"
+msgstr "befejezés"
+
+msgid "hint"
+msgstr "emlékeztető"
+
+msgid "job"
+msgstr "feladat"
+
+msgid "missing parts"
+msgstr "hiányzó részek"
+
+msgid "or click to browse. For split sets, select every part"
+msgstr "vagy kattintson a tallózáshoz. Felosztott készleteknél jelöljön ki minden részt"
+
+msgid "part"
+msgstr "rész"
+
+msgid "part(s)"
+msgstr "rész"
+
+msgid "parts"
+msgstr "részek"
+
+msgid "rows"
+msgstr "sor"
+
+msgid "running"
+msgstr "fut"
+
+msgid "set complete"
+msgstr "készlet teljes"
+
+msgid "unknown"
+msgstr "ismeretlen"
+
+msgid "upload incomplete"
+msgstr "feltöltés hiányos"
+
+msgid "uploads/2023, cache"
+msgstr "uploads/2023, gyorsítótár"
+
+msgid "wp-admin, wp-includes and root files are always included. A restored site needs them to run."
+msgstr "A wp-admin, a wp-includes és a gyökérfájlok mindig benne vannak. A visszaállított webhelynek ezek kellenek az induláshoz."

@@ -410,6 +410,54 @@ if (!function_exists('get_option')) {
     }
 }
 
+if (!function_exists('get_site_option')) {
+    /**
+     * @param string $name
+     * @param mixed $default
+     * @return mixed
+     */
+    function get_site_option($name, $default = false)
+    {
+        return $GLOBALS['MUDRAVA_STUB_OPTIONS'][$name] ?? $default;
+    }
+}
+
+if (!function_exists('get_plugins')) {
+    /** @return array<string,array<string,mixed>> */
+    function get_plugins(): array
+    {
+        return $GLOBALS['MUDRAVA_STUB_PLUGINS'] ?? [];
+    }
+}
+
+if (!class_exists('Mudrava_Stub_Theme')) {
+    class Mudrava_Stub_Theme
+    {
+        public function get(string $key): string
+        {
+            return (string) (($GLOBALS['MUDRAVA_STUB_THEME'][$key] ?? ''));
+        }
+
+        /** @return Mudrava_Stub_Theme */
+        public function parent()
+        {
+            return new self();
+        }
+
+        public function exists(): bool
+        {
+            return false;
+        }
+    }
+}
+
+if (!function_exists('wp_get_theme')) {
+    function wp_get_theme(): Mudrava_Stub_Theme
+    {
+        return new Mudrava_Stub_Theme();
+    }
+}
+
 if (!function_exists('update_option')) {
     /**
      * @param string $name

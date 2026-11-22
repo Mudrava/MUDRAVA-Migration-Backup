@@ -1,0 +1,705 @@
+# Czech translations for MUDRAVA Migration & Backup.
+# Copyright (C) 2026 MUDRAVA
+# This file is distributed under the GPL-2.0-or-later license.
+# Hand written by MUDRAVA, one string at a time.
+msgid ""
+msgstr ""
+"Project-Id-Version: MUDRAVA Migration & Backup 1.1.0\n"
+"Report-Msgid-Bugs-To: https://mudrava.com/en/\n"
+"POT-Creation-Date: 2026-11-22 00:00+0000\n"
+"PO-Revision-Date: 2026-11-22 00:00+0000\n"
+"Last-Translator: MUDRAVA <info@mudrava.com>\n"
+"Language-Team: Czech <cs@li.org>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Domain: mudrava-migration-backup\n"
+
+msgid "%1$s: %2$s rows, %3$s MB. "
+msgstr "%1$s: %2$s řádků, %3$s MB. "
+
+msgid "%1$s: %2$s. "
+msgstr "%1$s: %2$s. "
+
+msgid "A database operation failed during the migration."
+msgstr "Během migrace selhala operace s databází."
+
+msgid "A database row is too large for the backup format. Reduce the row size and retry."
+msgstr "Řádek databáze je příliš velký pro formát zálohy. Zmenšete jeho velikost a zkuste to znovu."
+
+msgid "A table without a primary key changed during the backup, so rows could be missed. Pause writes to it and re-run the backup."
+msgstr "Tabulka bez primárního klíče se během zálohování změnila, takže některé řádky mohly být přeskočeny. Zastavte do ní zápisy a zálohování spusťte znovu."
+
+msgid "An upload chunk was rejected. Please retry."
+msgstr "Blok nahrávání byl zamítnut. Zkuste to znovu."
+
+msgid "Another migration job is already running."
+msgstr "Jiná úloha migrace již běží."
+
+msgid "Anyone who has this archive can read the password hint. Never put the password or part of it here."
+msgstr "Kdokoli, kdo má tento archiv, si může přečíst nápovědu hesla. Nikdy sem heslo ani jeho část neuvádějte."
+
+msgid "Approximate size of site files. The database is measured when export starts. This helps estimate time and space."
+msgstr "Přibližná velikost souborů webu. Databáze se měří při spuštění exportu. Pomáhá odhadnout čas a potřebné místo."
+
+msgid "Archive password"
+msgstr "Heslo archivu"
+
+msgid "Archive splitting"
+msgstr "Rozdělení archivu"
+
+msgid "Archives"
+msgstr "Archivy"
+
+msgid "Archives on this site"
+msgstr "Archivy na tomto webu"
+
+msgid "Assembling archive"
+msgstr "Sestavování archivu"
+
+msgid "Auto"
+msgstr "Auto"
+
+msgid "Autoloaded options read on every request: this many rows and bytes load before your code runs."
+msgstr "Automaticky načítané možnosti se čtou při každém požadavku: tolik řádků a bajtů se načte, než spustí váš kód."
+
+msgid "Automatic recovery failed; inspect the restore point"
+msgstr "Automatické obnovení selhalo; zkontrolujte bod obnovení"
+
+msgid "Backup and delivery reports"
+msgstr "Reporty o zálohách a doručení"
+
+msgid "Backup notifications"
+msgstr "Oznámení o zálohách"
+
+msgid "Cancel"
+msgstr "Zrušit"
+
+msgid "Cancelled."
+msgstr "Zrušeno."
+
+msgid "Cancelling…"
+msgstr "Rušení…"
+
+msgid "Change what is included"
+msgstr "Změnit obsah"
+
+msgid "Choose a password, or turn off encryption to export unencrypted."
+msgstr "Zvolte heslo, nebo vypněte šifrování, abyste exportovali nešifrovaně."
+
+msgid "Choose a strong password"
+msgstr "Zvolte silné heslo"
+
+msgid "Choose archive files to upload"
+msgstr "Vyberte soubory archivu k nahrání"
+
+msgid "Choose where reports are sent"
+msgstr "Zvolte, kam se mají reporty posílat"
+
+msgid "Clean selected"
+msgstr "Vyčistit výběr"
+
+msgid "Cleaned"
+msgstr "Vyčištěno"
+
+msgid "Cleaned %s items"
+msgstr "Vyčištěno položek: %s"
+
+msgid "Cleaning failed: %s"
+msgstr "Čištění selhalo: %s"
+
+msgid "Cleaning…"
+msgstr "Čištění…"
+
+msgid "Close"
+msgstr "Zavřít"
+
+msgid "Cloud storage"
+msgstr "Cloudové úložiště"
+
+msgid "Completed"
+msgstr "Dokončeno"
+
+msgid "Continue"
+msgstr "Pokračovat"
+
+msgid "Could not load the live inventory. Reload the page to try again."
+msgstr "Nelze načíst živý přehled obsahu. Načtěte stránku znovu a zkuste to znovu."
+
+msgid "Could not read the selected files. Select them again."
+msgstr "Vybrané soubory nelze přečíst. Vyberte je znovu."
+
+msgid "Count"
+msgstr "Počet"
+
+msgid "Create backup"
+msgstr "Vytvořit zálohu"
+
+msgid "Custom"
+msgstr "Vlastní"
+
+msgid "Daily or weekly backups in your site timezone"
+msgstr "Denní nebo týdenní zálohy v časovém pásmu vašeho webu"
+
+msgid "Database"
+msgstr "Databáze"
+
+msgid "Delete the selected items permanently? This cannot be undone."
+msgstr "Trvale smazat vybrané položky? Tuto akci nelze vrátit zpět."
+
+msgid "Deletion is permanent and runs in small batches. Unattached media and autoload are measured, never pruned: media needs your own review."
+msgstr "Mazání je nevratné a probíhá v malých dávkách. Nepřiřazená média a autoload se pouze měří, nikdy nemažou: média vyžadují vaši vlastní kontrolu."
+
+msgid "Done"
+msgstr "Hotovo"
+
+msgid "Done editing"
+msgstr "Hotovo"
+
+msgid "Download"
+msgstr "Stáhnout"
+
+msgid "Download all"
+msgstr "Stáhnout vše"
+
+msgid "Download part"
+msgstr "Stáhnout část"
+
+msgid "Drop .mudrava files here"
+msgstr "Sem přetáhněte soubory .mudrava"
+
+msgid "Duplicate parts selected: %s"
+msgstr "Vybrány duplicitní části: %s"
+
+msgid "Email alerts for failed backups or delivery"
+msgstr "E-mailová upozornění na neúspěšné zálohy nebo doručení"
+
+msgid "Encrypt backup with password"
+msgstr "Šifrovat zálohu heslem"
+
+msgid "Encrypted with XChaCha20-Poly1305 + Argon2id. Lost passwords cannot be recovered."
+msgstr "Šifrováno pomocí XChaCha20-Poly1305 + Argon2id. Zapomenuté heslo nelze obnovit."
+
+msgid "Enter the archive password to continue"
+msgstr "Pro pokračování zadejte heslo archivu"
+
+msgid "Enter the archive password to continue."
+msgstr "Pro pokračování zadejte heslo archivu."
+
+msgid "Environment"
+msgstr "Prostředí"
+
+msgid "Everything included"
+msgstr "Vše zahrnuto"
+
+msgid "Everything is included by default. Uncheck only what you are sure this site does not need."
+msgstr "Ve výchozím nastavení je vše zahrnuto. Odškrtněte pouze to, u čeho jste si jisti, že tento web nepotřebuje."
+
+msgid "Excluded"
+msgstr "Vyloučeno"
+
+msgid "Explore Pro"
+msgstr "Prohlédnout Pro"
+
+msgid "Export"
+msgstr "Export"
+
+msgid "Export creates a .mudrava archive. If site cron is inactive, keep this tab open; the progress dialog shows whether it is safe to close."
+msgstr "Export vytvoří archiv .mudrava. Pokud cron webu neběží, nechte tuto kartu otevřenou; dialog průběhu ukáže, zda ji lze bezpečně zavřít."
+
+msgid "Export this site"
+msgstr "Exportovat tento web"
+
+msgid "Extra paths to skip (optional)"
+msgstr "Další cesty k přeskočení (volitelné)"
+
+msgid "Failed"
+msgstr "Selhalo"
+
+msgid "Files"
+msgstr "Soubory"
+
+msgid "Files from different archives are selected. Pick the parts of ONE archive."
+msgstr "Vybrané soubory pocházejí z různých archivů. Zvolte části jednoho archivu."
+
+msgid "Filter folders…"
+msgstr "Filtrovat složky…"
+
+msgid "Filter tables…"
+msgstr "Filtrovat tabulky…"
+
+msgid "Found"
+msgstr "Nalezeno"
+
+msgid "Free provides manual migration and restore on unlimited sites. Pro adds automation."
+msgstr "Bezplatná verze provádí ruční migrace a obnovení na libovolném počtu webů. Pro přidává automatizaci."
+
+msgid "Free space in private storage. A safe restore needs room for the archive and a restore point."
+msgstr "Volné místo v soukromém úložišti. Bezpečné obnovení potřebuje místo pro archiv a bod obnovení."
+
+msgid "Free. Host limits apply"
+msgstr "Zdarma. Platí limity hostingu"
+
+msgid "Hide password"
+msgstr "Skrýt heslo"
+
+msgid "I understand: restore overwrites this site database and files, and I accept proceeding without a restore point."
+msgstr "Rozumím: obnovení přepíše databázi a soubory tohoto webu a přijímám pokračování bez bodu obnovení."
+
+msgid "Import"
+msgstr "Import"
+
+msgid "Import an archive"
+msgstr "Obnovit z archivu"
+
+msgid "Individual parts"
+msgstr "Jednotlivé části"
+
+msgid "Item"
+msgstr "Položka"
+
+msgid "Keep backup copies away from the WordPress server you are protecting."
+msgstr "Zálohy uchovávejte odděleně od chráněného WordPress serveru."
+
+msgid "Keep this tab open until the restore finishes - the restore only advances while this page is open."
+msgstr "Nechte tuto kartu otevřenou, dokud obnovení neskončí - postupuje pouze tehdy, když je tato stránka otevřená."
+
+msgid "Know when a backup needs attention without checking every site manually."
+msgstr "Zjistěte, kdy záloha potřebuje pozornost, aniž byste každý web kontrolovali ručně."
+
+msgid "MUDRAVA"
+msgstr "MUDRAVA"
+
+msgid "MUDRAVA Migration"
+msgstr "MUDRAVA Migrace"
+
+msgid "MUDRAVA Migration & Backup cannot run on this server: PHP 7.4+ (64-bit), zlib and JSON are required."
+msgstr "MUDRAVA Migration & Backup nelze na tomto serveru spustit: vyžadováno je PHP 7.4+ (64bitové), zlib a JSON."
+
+msgid "MUDRAVA Migration & Backup requires PHP 7.4 or newer. Please upgrade PHP before activating."
+msgstr "MUDRAVA Migration & Backup vyžaduje PHP 7.4 nebo novější. Před aktivací aktualizujte PHP."
+
+msgid "MUDRAVA Pro"
+msgstr "MUDRAVA Pro"
+
+msgid "MUDRAVA cannot write where it needs to. Check folder permissions."
+msgstr "MUDRAVA nemůže zapisovat tam, kde potřebuje. Zkontrolujte oprávnění složek."
+
+msgid "Maintenance"
+msgstr "Údržba"
+
+msgid "Measuring this site…"
+msgstr "Měřím tento web…"
+
+msgid "Migration operations"
+msgstr "Operace migrace"
+
+msgid "Migration paused because the disk is full."
+msgstr "Migrace pozastavena: disk je plný."
+
+msgid "Missed runs handled without creating a backlog"
+msgstr "Zmeškaná spuštění se dohnají bez hromadění fronty"
+
+msgid "Multisite detected."
+msgstr "Zjištěna multisite síť."
+
+msgid "Multisite migrations are not supported. MUDRAVA migrates single sites."
+msgstr "Migrace multisite sítí nejsou podporovány. MUDRAVA migruje samostatné weby."
+
+msgid "Network-wide migration is not supported in this release. MUDRAVA currently migrates single sites."
+msgstr "Migrace celé sítě není v této verzi podporována. MUDRAVA zatím migruje samostatné weby."
+
+msgid "Next page"
+msgstr "Další strana"
+
+msgid "No archives on this site yet."
+msgstr "Na tomto webu zatím nejsou žádné archivy."
+
+msgid "Not enough disk space for a restore point. A failed restore will need another backup to recover. Check the box to accept this risk."
+msgstr "Na disku není dostatek místa pro bod obnovení. K obnově neúspěšného obnovení bude potřeba jiná záloha. Zaškrtnutím políčka přijmete toto riziko."
+
+msgid "Notifications"
+msgstr "Oznámení"
+
+msgid "Off"
+msgstr "Vypnuto"
+
+msgid "Off-site storage"
+msgstr "Externí úložiště"
+
+msgid "One of the parts belongs to a different backup."
+msgstr "Jedna z částí patří k jiné záloze."
+
+msgid "Only a running export can be cancelled."
+msgstr "Zrušit lze pouze běžící export."
+
+msgid "Other files (wp-content root)"
+msgstr "Ostatní soubory (kořen wp-content)"
+
+msgid "Overlapping jobs prevented; safe review after imports"
+msgstr "Překrývání úloh je znemožněno; bezpečná kontrola po importech"
+
+msgid "Page"
+msgstr "Strana"
+
+msgid "Part %s is not a valid continuation part (renamed or wrong file)."
+msgstr "Část %s není platné pokračování (přejmenovaná nebo špatný soubor)."
+
+msgid "Part 1 of the set is missing: the plain .mudrava file (no .partNNNN suffix)."
+msgstr "V sadě chybí část 1: obyčejný soubor .mudrava (bez přípony .partNNNN)."
+
+msgid "Part size unit"
+msgstr "Jednotka velikosti části"
+
+msgid "Password"
+msgstr "Heslo"
+
+msgid "Password encryption is unavailable on this PHP environment."
+msgstr "Šifrování heslem není v tomto prostředí PHP dostupné."
+
+msgid "Password hint (optional)"
+msgstr "Nápověda hesla (volitelná)"
+
+msgid "Passwords do not match."
+msgstr "Hesla se neshodují."
+
+msgid "Pause writes during final export. Changes during the run can stop the export or leave unvisited files out of the backup."
+msgstr "Během závěrečného exportu přerušte zápisy. Změny během běhu mohou export zastavit nebo nechat nenavštívené soubory mimo zálohu."
+
+msgid "Planned annual plans: $59 / 3 sites, $129 / 15 sites, $249 / 50 sites."
+msgstr "Plánované roční tarify: 59 USD / 3 weby, 129 USD / 15 webů, 249 USD / 50 webů."
+
+msgid "Plugins older here than on the source: %s."
+msgstr "Pluginy jsou zde starší než na zdrojovém webu: %s."
+
+msgid "Portable backups. Resumable exports. Optional encryption."
+msgstr "Přenosné zálohy. Restartovatelné exporty. Volitelné šifrování."
+
+msgid "Previous page"
+msgstr "Předchozí strana"
+
+msgid "Private backup storage is unsafe or ambiguous. Set MUDRAVA_MB_STORAGE_DIR to one writable directory outside the web root."
+msgstr "Soukromé úložiště záloh je nezabezpečené nebo nejednoznačné. Nastavte MUDRAVA_MB_STORAGE_DIR na jeden zapisovatelný adresář mimo kořen webu."
+
+msgid "Pro"
+msgstr "Pro"
+
+msgid "Reload the live inventory"
+msgstr "Znovu načíst živý přehled obsahu"
+
+msgid "Removing files and tables created by the failed import"
+msgstr "Odstraňuji soubory a tabulky vytvořené neúspěšným importem"
+
+msgid "Repeat password"
+msgstr "Zopakujte heslo"
+
+msgid "Repeat the password"
+msgstr "Zopakujte heslo"
+
+msgid "Restore point reapplied"
+msgstr "Bod obnovení znovu použit"
+
+msgid "Restore point reapplied; verify the site"
+msgstr "Bod obnovení znovu použit; zkontrolujte web"
+
+msgid "Restore point saved"
+msgstr "Bod obnovení uložen"
+
+msgid "Restore point: recommended. There is enough free disk to keep a safety copy of this site before overwriting."
+msgstr "Bod obnovení: doporučeno. Na disku je dost místa na pojistnou kopii webu před přepsáním."
+
+msgid "Restore site"
+msgstr "Obnovit web"
+
+msgid "Restoring the previous site"
+msgstr "Obnovuji předchozí web"
+
+msgid "Restoring the previous site after an import error"
+msgstr "Obnovuji předchozí web po chybě importu"
+
+msgid "Resuming the interrupted job…"
+msgstr "Pokračuji v přerušené úloze…"
+
+msgid "Retention rules for older backup copies"
+msgstr "Pravidla uchovávání starších záloh"
+
+msgid "Review"
+msgstr "Zkontrolovat"
+
+msgid "Revisions, spam and expired transients inflate every backup. This screen counts first; nothing is deleted until you apply what you pick."
+msgstr "Revize, spam a prošlé transients nafukují každou zálohu. Tato obrazovka nejprve počítá; nic se nemaže, dokud nepoužijete to, co vyberete."
+
+msgid "Rewriting URLs"
+msgstr "Přepisují se adresy URL"
+
+msgid "S3 / S3-compatible storage"
+msgstr "S3 / S3 kompatibilní úložiště"
+
+msgid "S3 and S3-compatible storage"
+msgstr "S3 a S3 kompatibilní úložiště"
+
+msgid "Safe to close this tab. The job continues on the server and resumes when you return."
+msgstr "Tuto kartu můžete bezpečně zavřít. Úloha pokračuje na serveru a po návratu naváže."
+
+msgid "Same Pro features in every plan. Manual Free restore remains available after expiry."
+msgstr "Ve všech tarify stejné funkce Pro. Ruční bezplatné obnovení zůstává dostupné i po vypršení."
+
+msgid "Same surface headless: wp mudrava maintenance --apply --items=revisions,transients"
+msgstr "Stejné rozhraní bez grafiky: wp mudrava maintenance --apply --items=revisions,transients"
+
+msgid "Saving a restore point of this site"
+msgstr "Ukládám bod obnovení tohoto webu"
+
+msgid "Schedule"
+msgstr "Plán"
+
+msgid "Scheduled backups"
+msgstr "Plánované zálohy"
+
+msgid "Scheduled backups, off-site storage, retention and notifications"
+msgstr "Plánované zálohy, externí úložiště, doba uchovávání a oznámení"
+
+msgid "Scheduled exports"
+msgstr "Plánované exporty"
+
+msgid "Security action required: %d old backup files remain in public wp-content. Move them to private storage."
+msgstr "Je nutný bezpečnostní zásah: %d starých záloh zůstává ve veřejném wp-content. Přesuňte je do soukromého úložiště."
+
+msgid "Select all"
+msgstr "Vybrat vše"
+
+msgid "Select at least one item to clean."
+msgstr "Vyberte alespoň jednu položku k vyčištění."
+
+msgid "Set a backup routine and reduce repetitive work across your sites."
+msgstr "Nastavte rutinu zálohování a omezte opakovanou práci na svých webech."
+
+msgid "Show password"
+msgstr "Zobrazit heslo"
+
+msgid "Site cron is not running. Without visitors, this job may pause until cron returns. Keep this tab open to be sure."
+msgstr "Cron webu neběží. Bez návštěvníků se úloha může pozastavit, až než cron naběhne. Pro jistotu nechte tuto kartu otevřenou."
+
+msgid "Sizes are approximate on very large sites."
+msgstr "U velmi velkých webů jsou velikosti přibližné."
+
+msgid "Skip folders inside wp-content, separated by commas. Example: uploads/2023 skips media from 2023. Use the checkboxes above for whole groups."
+msgstr "Složky uvnitř wp-content oddělené čárkami. Příklad: uploads/2023 přeskočí média z roku 2023. Celé skupiny vypínejte zaškrtávací políčka nahoře."
+
+msgid "Slot %s holds a file that belongs to a different archive or a different part."
+msgstr "Slot %s obsahuje soubor z jiného archivu nebo z jiné části."
+
+msgid "Some environment checks failed. Open the Environment tab for details."
+msgstr "Některé kontroly prostředí selhaly. Podrobnosti najdete na kartě Prostředí."
+
+msgid "Some parts of this backup are missing."
+msgstr "Některé části této zálohy chybí."
+
+msgid "Source theme: %1$s. This site: %2$s."
+msgstr "Šablona zdroje: %1$s. Tento web: %2$s."
+
+msgid "Split archives to meet host file limits. Auto uses 7 GB parts. Off makes one file. Custom accepts a size in MB or GB."
+msgstr "Rozdělujte archivy podle limitů hostingu na velikost souboru. Auto používá části po 7 GB. Vypnuto vytvoří jeden soubor. Vlastní přijímá velikost v MB nebo GB."
+
+msgid "Split presets"
+msgstr "Přednastavené velikosti"
+
+msgid "Storage"
+msgstr "Úložiště"
+
+msgid "The JSON extension. It encodes archive metadata and job status. Without it, the engine cannot describe or resume an archive."
+msgstr "Rozšíření JSON. Kóduje metadata archivu a stav úlohy. Bez něj nemůže engine popsat ani pokračovat v archivu."
+
+msgid "The PHP version of this site. PHP 7.4 or newer is required for streaming and crypto functions."
+msgstr "Verze PHP tohoto webu. Pro proudové přenosy a kryptografické funkce je vyžadováno PHP 7.4 nebo novější."
+
+msgid "The archive carries plugins this site does not have: %s. Install them before restoring, or builder content may not render."
+msgstr "Archiv obsahuje pluginy, které tento web nemá: %s. Nainstalujte je před obnovením, jinak se obsah page builderů nemusí zobrazit."
+
+msgid "The archive contains a path that cannot be restored safely."
+msgstr "Archiv obsahuje cestu, kterou nelze bezpečně obnovit."
+
+msgid "The archive did not pass integrity verification."
+msgstr "Archiv neprošel kontrolou integrit."
+
+msgid "The archive is damaged and cannot be read safely."
+msgstr "Archiv je poškozen a nelze jej bezpečně číst."
+
+msgid "The archive is incomplete. The transfer may have been interrupted."
+msgstr "Archiv je neúplný. Přenos se pravděpodobně přerušil."
+
+msgid "The backup file changed during verification or restore. Upload the original archive again."
+msgstr "Soubor zálohy se během kontroly nebo obnovy změnil. Nahrajte původní archiv znovu."
+
+msgid "The backup storage folder is not writable by the web server. Fix its ownership (it may have been created by a root shell)."
+msgstr "Webový server nemůže zapisovat do složky úložiště. Opravte jejího vlastníka (možná ji vytvořil root ze shellu)."
+
+msgid "The database connection was lost."
+msgstr "Spojení s databází bylo ztraceno."
+
+msgid "The encryption backend protects password-encrypted archives. Without it, unencrypted export still works."
+msgstr "Šifrovací podpůrná vrstva chrání archivy šifrované heslem. I bez ní nešifrovaný export stále funguje."
+
+msgid "The first file is not a valid .mudrava archive (bad header)."
+msgstr "První soubor není platný archiv .mudrava (chybná hlavička)."
+
+msgid "The hint cannot be the password or part of it. Describe where it is kept instead, e.g. \"company vault\"."
+msgstr "Nápověda nesmí být heslem ani jeho částí. Raději popište, kde se uchovává, např. „firemní trezor“."
+
+msgid "The last selected file is not the end of the archive - part %s is still missing."
+msgstr "Poslední vybraný soubor není konec archivu - část %s stále chybí."
+
+msgid "The migration could not be completed."
+msgstr "Migraci nelze dokončit."
+
+msgid "The password is incorrect. The archive is still intact."
+msgstr "Heslo je nesprávné. Archiv je stále nepoškozený."
+
+msgid "The remote server could not be reached."
+msgstr "Vzdálený server není dostupný."
+
+msgid "The remote server took too long to respond. You can resume."
+msgstr "Vzdálený server odpovídá příliš pomalu. Můžete pokračovat."
+
+msgid "The set is incomplete - missing parts: %s"
+msgstr "Sada je neúplná - chybějící části: %s"
+
+msgid "The zlib extension compresses archive frames while streaming. Export requires it."
+msgstr "Rozšíření zlib komprimuje rámy archivu za letu. Export jej vyžaduje."
+
+msgid "These capabilities belong to the separate Pro add-on, currently in development. Purchasing is not open yet."
+msgstr "Tyto funkce patří do samostatného doplňku Pro, který je nyní ve vývoji. Nákup ještě není otevřen."
+
+msgid "This archive is encrypted. Enter its password to restore."
+msgstr "Tento archiv je šifrovaný. Pro obnovení zadejte jeho heslo."
+
+msgid "This archive uses a newer format. Please update MUDRAVA first."
+msgstr "Tento archiv používá novější formát. Nejprve aktualizujte MUDRAVA."
+
+msgid "This is part 1 of a split set, not a complete archive. Select the .mudrava file AND every .mudrava.partNNNN file of this set."
+msgstr "Toto je část 1 rozdělené sady, nikoli celý archiv. Vyberte soubor .mudrava A všechny soubory .mudrava.partNNNN této sady."
+
+msgid "This job no longer exists."
+msgstr "Tato úloha již neexistuje."
+
+msgid "This migration step needs more PHP memory than this server allows."
+msgstr "Tento krok migrace potřebuje více paměti PHP, než tento server povoluje."
+
+msgid "This server cannot safely run large migrations."
+msgstr "Tento server nemůže bezpečně provádět velké migrace."
+
+msgid "This server is missing requirements for the requested operation."
+msgstr "Tomuto serveru chybí požadavky pro požadovanou operaci."
+
+msgid "This site (Free)"
+msgstr "Tento web (zdarma)"
+
+msgid "This site uses an external object cache: transients may live there and are invisible to this count."
+msgstr "Tento web používá externí objektovou mezipaměť: transients mohou sídlit tam a tomuto počtu jsou neviditelné."
+
+msgid "This will overwrite the current site. Are you sure?"
+msgstr "Toto přepíše současný web. Opravdu?"
+
+msgid "Tidy before you migrate"
+msgstr "Ukliďte před stěhování"
+
+msgid "Unattached media items: reported only. Use the media library to review before deleting."
+msgstr "Nepřiřazená média: pouze hlášena. Než je smažete, projděte je v mediální knihovně."
+
+msgid "Unrecognized files (must be *.mudrava or *.mudrava.partNNNN): %s"
+msgstr "Nerozpoznané soubory (musí být *.mudrava nebo *.mudrava.partNNNN): %s"
+
+msgid "Upload a .mudrava archive (or every part of a split set) and restore it onto this site."
+msgstr "Nahrajte archiv .mudrava (nebo všechny části rozdělené sady) a obnovte jej na tento web."
+
+msgid "Uploading"
+msgstr "Nahrávání"
+
+msgid "Verified delivery with retries"
+msgstr "Ověřené doručení s opakováními"
+
+msgid "Verifying the restore point"
+msgstr "Ověřuji bod obnovení"
+
+msgid "Visit MUDRAVA"
+msgstr "Navštívit MUDRAVA"
+
+msgid "What goes into the archive"
+msgstr "Co jde do archivu"
+
+msgid "Whether PHP uses 64-bit integers. Without them, archives over 2 GB cannot be read or written safely."
+msgstr "Zda PHP používá 64bitová celá čísla. Bez nich nelze bezpečně číst ani zapisovat archivy větší než 2 GB."
+
+msgid "Whether the plugin can write to private storage. Archives and restore points need this directory."
+msgstr "Zda plugin může zapisovat do soukromého úložiště. Tento adresář potřebují archivy i body obnovení."
+
+msgid "WordPress core table - always included"
+msgstr "Systémová tabulka WordPress - vždy zahrnuta"
+
+msgid "Working…"
+msgstr "Pracuji…"
+
+msgid "You do not have permission to run migrations."
+msgstr "Nemáte oprávnění spouštět migrace."
+
+msgid "all included"
+msgstr "vše zahrnuto"
+
+msgid "database"
+msgstr "databáze"
+
+msgid "e.g. company vault / migration"
+msgstr "např. firemní trezor / stěhování"
+
+msgid "encrypted"
+msgstr "šifrováno"
+
+msgid "files"
+msgstr "soubory"
+
+msgid "finalize"
+msgstr "dokončení"
+
+msgid "hint"
+msgstr "nápověda"
+
+msgid "job"
+msgstr "úloha"
+
+msgid "missing parts"
+msgstr "chybějící části"
+
+msgid "or click to browse. For split sets, select every part"
+msgstr "nebo klikněte a vyberte. U rozdělených sad vyberte všechny části"
+
+msgid "part"
+msgstr "část"
+
+msgid "part(s)"
+msgstr "části"
+
+msgid "parts"
+msgstr "částí"
+
+msgid "rows"
+msgstr "řádků"
+
+msgid "running"
+msgstr "běží"
+
+msgid "set complete"
+msgstr "sada kompletní"
+
+msgid "unknown"
+msgstr "neznámé"
+
+msgid "upload incomplete"
+msgstr "nahrávání nedokončeno"
+
+msgid "uploads/2023, cache"
+msgstr "uploads/2023, cache"
+
+msgid "wp-admin, wp-includes and root files are always included. A restored site needs them to run."
+msgstr "wp-admin, wp-includes a kořenové soubory jsou vždy zahrnuty. Obnovený web je potřebuje ke spuštění."

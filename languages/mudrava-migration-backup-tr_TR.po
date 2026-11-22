@@ -1,0 +1,705 @@
+# Turkish translations for MUDRAVA Migration & Backup.
+# Copyright (C) 2026 MUDRAVA
+# This file is distributed under the GPL-2.0-or-later license.
+# Hand written by MUDRAVA, one string at a time. Formal "siz", matching Turkish WP core.
+msgid ""
+msgstr ""
+"Project-Id-Version: MUDRAVA Migration & Backup 1.1.0\n"
+"Report-Msgid-Bugs-To: https://mudrava.com/en/\n"
+"POT-Creation-Date: 2026-11-22 00:00+0000\n"
+"PO-Revision-Date: 2026-11-22 00:00+0000\n"
+"Last-Translator: MUDRAVA <info@mudrava.com>\n"
+"Language-Team: Turkish <tr@li.org>\n"
+"Language: tr_TR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Domain: mudrava-migration-backup\n"
+
+msgid "%1$s: %2$s rows, %3$s MB. "
+msgstr "%1$s: %2$s satır, %3$s MB. "
+
+msgid "%1$s: %2$s. "
+msgstr "%1$s: %2$s. "
+
+msgid "A database operation failed during the migration."
+msgstr "Taşıma sırasında bir veritabanı işlemi başarısız oldu."
+
+msgid "A database row is too large for the backup format. Reduce the row size and retry."
+msgstr "Bir veritabanı satırı yedek biçimi için çok büyük. Satırı küçültüp yeniden deneyin."
+
+msgid "A table without a primary key changed during the backup, so rows could be missed. Pause writes to it and re-run the backup."
+msgstr "Birincil anahtarı olmayan bir tablo yedekleme sırasında değişti, bazı satırlar eksik kalabilir. Bu tabloya yazmayı durdurup yedeklemeyi yeniden çalıştırın."
+
+msgid "An upload chunk was rejected. Please retry."
+msgstr "Yükleme parçalarından biri reddedildi. Lütfen yeniden deneyin."
+
+msgid "Another migration job is already running."
+msgstr "Zaten başka bir taşıma görevi çalışıyor."
+
+msgid "Anyone who has this archive can read the password hint. Never put the password or part of it here."
+msgstr "Bu arşive sahip olan herkes parola ipucunu okuyabilir. Parolayı ya da bir parçasını asla buraya yazmayın."
+
+msgid "Approximate size of site files. The database is measured when export starts. This helps estimate time and space."
+msgstr "Site dosyalarının yaklaşık boyutu. Veritabanı dışa aktarım başlarken ölçülür. Zaman ve yer tahmini için yardımcı olur."
+
+msgid "Archive password"
+msgstr "Arşiv parolası"
+
+msgid "Archive splitting"
+msgstr "Arşivin bölünmesi"
+
+msgid "Archives"
+msgstr "Arşivler"
+
+msgid "Archives on this site"
+msgstr "Bu sitedeki arşivler"
+
+msgid "Assembling archive"
+msgstr "Arşiv birleştiriliyor"
+
+msgid "Auto"
+msgstr "Otomatik"
+
+msgid "Autoloaded options read on every request: this many rows and bytes load before your code runs."
+msgstr "Otomatik yüklenen seçenekler her istekte okunur: kodunuz çalışmadan önce bu kadar satır ve bayt yüklenir."
+
+msgid "Automatic recovery failed; inspect the restore point"
+msgstr "Otomatik kurtarma başarısız oldu; geri yükleme noktasını inceleyin"
+
+msgid "Backup and delivery reports"
+msgstr "Yedek ve teslim raporları"
+
+msgid "Backup notifications"
+msgstr "Yedek bildirimleri"
+
+msgid "Cancel"
+msgstr "İptal"
+
+msgid "Cancelled."
+msgstr "İptal edildi."
+
+msgid "Cancelling…"
+msgstr "İptal ediliyor…"
+
+msgid "Change what is included"
+msgstr "Nelerin dahil olduğunu değiştirin"
+
+msgid "Choose a password, or turn off encryption to export unencrypted."
+msgstr "Bir parola seçin ya da şifresiz dışa aktarmak için şifrelemeyi kapatın."
+
+msgid "Choose a strong password"
+msgstr "Güçlü bir parola seçin"
+
+msgid "Choose archive files to upload"
+msgstr "Yüklenecek arşiv dosyalarını seçin"
+
+msgid "Choose where reports are sent"
+msgstr "Raporların nereye gönderileceğini seçin"
+
+msgid "Clean selected"
+msgstr "Seçilenleri temizle"
+
+msgid "Cleaned"
+msgstr "Temizlendi"
+
+msgid "Cleaned %s items"
+msgstr "%s öge temizlendi"
+
+msgid "Cleaning failed: %s"
+msgstr "Temizleme başarısız: %s"
+
+msgid "Cleaning…"
+msgstr "Temizleniyor…"
+
+msgid "Close"
+msgstr "Kapat"
+
+msgid "Cloud storage"
+msgstr "Bulut depolama"
+
+msgid "Completed"
+msgstr "Tamamlandı"
+
+msgid "Continue"
+msgstr "Sürdür"
+
+msgid "Could not load the live inventory. Reload the page to try again."
+msgstr "Güncel döküm yüklenemedi. Yeniden denemek için sayfayı yenileyin."
+
+msgid "Could not read the selected files. Select them again."
+msgstr "Seçilen dosyalar okunamadı. Onları yeniden seçin."
+
+msgid "Count"
+msgstr "Sayı"
+
+msgid "Create backup"
+msgstr "Yedek oluştur"
+
+msgid "Custom"
+msgstr "Özel"
+
+msgid "Daily or weekly backups in your site timezone"
+msgstr "Site saat diliminizde günlük ya da haftalık yedekler"
+
+msgid "Database"
+msgstr "Veritabanı"
+
+msgid "Delete the selected items permanently? This cannot be undone."
+msgstr "Seçilen ögeler kalıcı olarak silinsin mi? Bu geri alınamaz."
+
+msgid "Deletion is permanent and runs in small batches. Unattached media and autoload are measured, never pruned: media needs your own review."
+msgstr "Silme kalıcıdır ve küçük partiler hâlinde çalışır. İlişkisiz medya ve otomatik yükleme yalnızca ölçülür, asla silinmez: medya sizin kendi değerlendirmenizi ister."
+
+msgid "Done"
+msgstr "Bitti"
+
+msgid "Done editing"
+msgstr "Düzenleme bitti"
+
+msgid "Download"
+msgstr "İndir"
+
+msgid "Download all"
+msgstr "Tümünü indir"
+
+msgid "Download part"
+msgstr "Parçayı indir"
+
+msgid "Drop .mudrava files here"
+msgstr ".mudrava dosyalarını buraya bırakın"
+
+msgid "Duplicate parts selected: %s"
+msgstr "Yinelenen parçalar seçildi: %s"
+
+msgid "Email alerts for failed backups or delivery"
+msgstr "Başarısız yedek ya da teslim için e-posta uyarıları"
+
+msgid "Encrypt backup with password"
+msgstr "Yedeği parolayla şifrele"
+
+msgid "Encrypted with XChaCha20-Poly1305 + Argon2id. Lost passwords cannot be recovered."
+msgstr "XChaCha20-Poly1305 + Argon2id ile şifrelendi. Kaybolan parola geri getirilemez."
+
+msgid "Enter the archive password to continue"
+msgstr "Devam etmek için arşiv parolasını girin"
+
+msgid "Enter the archive password to continue."
+msgstr "Devam etmek için arşiv parolasını girin."
+
+msgid "Environment"
+msgstr "Ortam"
+
+msgid "Everything included"
+msgstr "Her şey dahil"
+
+msgid "Everything is included by default. Uncheck only what you are sure this site does not need."
+msgstr "Varsayılan olarak her şey dahil. Bu sitenin ihtiyacı olmayan olduğundan emin olduğunuz şeylerin işaretini kaldırın."
+
+msgid "Excluded"
+msgstr "Dışlandı"
+
+msgid "Explore Pro"
+msgstr "Pro'ya bakın"
+
+msgid "Export"
+msgstr "Dışa aktar"
+
+msgid "Export creates a .mudrava archive. If site cron is inactive, keep this tab open; the progress dialog shows whether it is safe to close."
+msgstr "Dışa aktarım bir .mudrava arşivi oluşturur. Site cron'u çalışmıyorsa bu sekmeyi açık tutun; ilerleme penceresi kapatmanın güvenli olup olmadığını gösterir."
+
+msgid "Export this site"
+msgstr "Bu siteyi dışa aktar"
+
+msgid "Extra paths to skip (optional)"
+msgstr "Atlanacak ek yollar (isteğe bağlı)"
+
+msgid "Failed"
+msgstr "Başarısız"
+
+msgid "Files"
+msgstr "Dosyalar"
+
+msgid "Files from different archives are selected. Pick the parts of ONE archive."
+msgstr "Farklı arşivlerden dosyalar seçildi. TEK bir arşivin parçalarını seçin."
+
+msgid "Filter folders…"
+msgstr "Klasörleri süz…"
+
+msgid "Filter tables…"
+msgstr "Tabloları süz…"
+
+msgid "Found"
+msgstr "Bulundu"
+
+msgid "Free provides manual migration and restore on unlimited sites. Pro adds automation."
+msgstr "Ücretsiz sürüm sınırsız sitede elle taşıma ve geri yükleme yapar. Pro otomasyonu ekler."
+
+msgid "Free space in private storage. A safe restore needs room for the archive and a restore point."
+msgstr "Özel depolamada boş alan. Güvenli bir geri yükleme, arşiv ve geri yükleme noktası için yer ister."
+
+msgid "Free. Host limits apply"
+msgstr "Ücretsiz. Barındırma sınırları geçerli"
+
+msgid "Hide password"
+msgstr "Parolayı gizle"
+
+msgid "I understand: restore overwrites this site database and files, and I accept proceeding without a restore point."
+msgstr "Anlıyorum: geri yükleme bu sitenin veritabanının ve dosyalarının üzerine yazar ve geri yükleme noktası olmadan devam etmeyi kabul ediyorum."
+
+msgid "Import"
+msgstr "İçe aktar"
+
+msgid "Import an archive"
+msgstr "Bir arşivi geri yükle"
+
+msgid "Individual parts"
+msgstr "Tek tek parçalar"
+
+msgid "Item"
+msgstr "Öge"
+
+msgid "Keep backup copies away from the WordPress server you are protecting."
+msgstr "Yedekleri koruduğunuz WordPress sunucusundan ayrı saklayın."
+
+msgid "Keep this tab open until the restore finishes - the restore only advances while this page is open."
+msgstr "Geri yükleme bitene kadar bu sekmeyi açık tutun - yalnızca bu sayfa açıkken ilerler."
+
+msgid "Know when a backup needs attention without checking every site manually."
+msgstr "Her siteyi elle kontrol etmeden hangi yedeğin ilgi istediğini bilin."
+
+msgid "MUDRAVA"
+msgstr "MUDRAVA"
+
+msgid "MUDRAVA Migration"
+msgstr "MUDRAVA Taşıma"
+
+msgid "MUDRAVA Migration & Backup cannot run on this server: PHP 7.4+ (64-bit), zlib and JSON are required."
+msgstr "MUDRAVA Migration & Backup bu sunucuda çalışamaz: PHP 7.4+ (64-bit), zlib ve JSON gerekir."
+
+msgid "MUDRAVA Migration & Backup requires PHP 7.4 or newer. Please upgrade PHP before activating."
+msgstr "MUDRAVA Migration & Backup PHP 7.4 ya da yenisi ister. Etkinleştirmeden önce PHP'yi yükseltin."
+
+msgid "MUDRAVA Pro"
+msgstr "MUDRAVA Pro"
+
+msgid "MUDRAVA cannot write where it needs to. Check folder permissions."
+msgstr "MUDRAVA gereken yere yazamıyor. Klasör izinlerini denetleyin."
+
+msgid "Maintenance"
+msgstr "Bakım"
+
+msgid "Measuring this site…"
+msgstr "Bu site ölçülüyor…"
+
+msgid "Migration operations"
+msgstr "Taşıma işlemleri"
+
+msgid "Migration paused because the disk is full."
+msgstr "Taşıma duraklatıldı: disk dolu."
+
+msgid "Missed runs handled without creating a backlog"
+msgstr "Kaçan çalışmalar birikme yaratmadan telafi edilir"
+
+msgid "Multisite detected."
+msgstr "Çoklu site saptandı."
+
+msgid "Multisite migrations are not supported. MUDRAVA migrates single sites."
+msgstr "Çoklu site taşımaları desteklenmez. MUDRAVA tekil siteleri taşır."
+
+msgid "Network-wide migration is not supported in this release. MUDRAVA currently migrates single sites."
+msgstr "Bu sürümde tüm ağın taşınması desteklenmez. MUDRAVA şimdilik tekil siteleri taşır."
+
+msgid "Next page"
+msgstr "Sonraki sayfa"
+
+msgid "No archives on this site yet."
+msgstr "Bu sitede henüz arşiv yok."
+
+msgid "Not enough disk space for a restore point. A failed restore will need another backup to recover. Check the box to accept this risk."
+msgstr "Geri yükleme noktası için diskte yer yok. Başarısız bir geri yükleme dönmek için başka bir yedek ister. Bu riski kabul etmek için kutuyu işaretleyin."
+
+msgid "Notifications"
+msgstr "Bildirimler"
+
+msgid "Off"
+msgstr "Kapalı"
+
+msgid "Off-site storage"
+msgstr "Sunucu dışı depolama"
+
+msgid "One of the parts belongs to a different backup."
+msgstr "Parçalardan biri başka bir yedeğe ait."
+
+msgid "Only a running export can be cancelled."
+msgstr "Yalnızca süren bir dışa aktarım iptal edilebilir."
+
+msgid "Other files (wp-content root)"
+msgstr "Diğer dosyalar (wp-content kökü)"
+
+msgid "Overlapping jobs prevented; safe review after imports"
+msgstr "Çakışan görevler engellenir; içe aktarımlardan sonra güvenli denetim"
+
+msgid "Page"
+msgstr "Sayfa"
+
+msgid "Part %s is not a valid continuation part (renamed or wrong file)."
+msgstr "%s parçası geçerli bir devam parçası değil (yeniden adlandırılmış ya da yanlış dosya)."
+
+msgid "Part 1 of the set is missing: the plain .mudrava file (no .partNNNN suffix)."
+msgstr "Takımın 1. parçası eksik: düz .mudrava dosyası (.partNNNN soneki olmayan)."
+
+msgid "Part size unit"
+msgstr "Parça boyutu birimi"
+
+msgid "Password"
+msgstr "Parola"
+
+msgid "Password encryption is unavailable on this PHP environment."
+msgstr "Parolayla şifreleme bu PHP ortamında kullanılamıyor."
+
+msgid "Password hint (optional)"
+msgstr "Parola ipucu (isteğe bağlı)"
+
+msgid "Passwords do not match."
+msgstr "Parolalar eşleşmiyor."
+
+msgid "Pause writes during final export. Changes during the run can stop the export or leave unvisited files out of the backup."
+msgstr "Son dışa aktarım sırasında yazmayı durdurun. Çalışma sırasındaki değişiklikler dışa aktarımı durdurabilir ya da uğranmayan dosyaları yedeğin dışında bırakabilir."
+
+msgid "Planned annual plans: $59 / 3 sites, $129 / 15 sites, $249 / 50 sites."
+msgstr "Planlanan yıllık tarifeler: 59 USD / 3 site, 129 USD / 15 site, 249 USD / 50 site."
+
+msgid "Plugins older here than on the source: %s."
+msgstr "Eklentiler burada kaynaktakinden eski: %s."
+
+msgid "Portable backups. Resumable exports. Optional encryption."
+msgstr "Taşınabilir yedekler. Sürdürülebilir dışa aktarımlar. İsteğe bağlı şifreleme."
+
+msgid "Previous page"
+msgstr "Önceki sayfa"
+
+msgid "Private backup storage is unsafe or ambiguous. Set MUDRAVA_MB_STORAGE_DIR to one writable directory outside the web root."
+msgstr "Özel yedek deposu güvensiz ya da belirsiz. MUDRAVA_MB_STORAGE_DIR değerini web kökü dışında yazılabilir tek bir dizine ayarlayın."
+
+msgid "Pro"
+msgstr "Pro"
+
+msgid "Reload the live inventory"
+msgstr "Güncel dökümü yeniden yükle"
+
+msgid "Removing files and tables created by the failed import"
+msgstr "Başarısız içe aktarımın oluşturduğu dosya ve tablolar kaldırılıyor"
+
+msgid "Repeat password"
+msgstr "Parolayı yineleyin"
+
+msgid "Repeat the password"
+msgstr "Parolayı yineleyin"
+
+msgid "Restore point reapplied"
+msgstr "Geri yükleme noktası yeniden uygulandı"
+
+msgid "Restore point reapplied; verify the site"
+msgstr "Geri yükleme noktası yeniden uygulandı; siteyi doğrulayın"
+
+msgid "Restore point saved"
+msgstr "Geri yükleme noktası kaydedildi"
+
+msgid "Restore point: recommended. There is enough free disk to keep a safety copy of this site before overwriting."
+msgstr "Geri yükleme noktası: önerilir. Üzerine yazmadan önce sitenin bir emniyet kopyasını tutacak boş disk var."
+
+msgid "Restore site"
+msgstr "Siteyi geri yükle"
+
+msgid "Restoring the previous site"
+msgstr "Önceki site geri yükleniyor"
+
+msgid "Restoring the previous site after an import error"
+msgstr "Bir içe aktarım hatasından sonra önceki site geri yükleniyor"
+
+msgid "Resuming the interrupted job…"
+msgstr "Yarım kalan göreve devam ediliyor…"
+
+msgid "Retention rules for older backup copies"
+msgstr "Eski yedeklerin saklama kuralları"
+
+msgid "Review"
+msgstr "Denetle"
+
+msgid "Revisions, spam and expired transients inflate every backup. This screen counts first; nothing is deleted until you apply what you pick."
+msgstr "Yeni sürümler, spam ve süresi dolan geçici veriler her yedeği şişirir. Bu ekran önce sayar; seçiminizi uygulayana dek hiçbir şey silinmez."
+
+msgid "Rewriting URLs"
+msgstr "URL'ler yeniden yazılıyor"
+
+msgid "S3 / S3-compatible storage"
+msgstr "S3 / S3 uyumlu depolama"
+
+msgid "S3 and S3-compatible storage"
+msgstr "S3 ve S3 uyumlu depolama"
+
+msgid "Safe to close this tab. The job continues on the server and resumes when you return."
+msgstr "Bu sekmeyi kapatmanız güvenli. Görev sunucuda sürer ve döndüğünüzde kaldığı yerden devam eder."
+
+msgid "Same Pro features in every plan. Manual Free restore remains available after expiry."
+msgstr "Her tarifede aynı Pro özellikleri. Ücretsiz elle geri yükleme, süre bitiminde de kullanılabilir kalır."
+
+msgid "Same surface headless: wp mudrava maintenance --apply --items=revisions,transients"
+msgstr "Arayüzsüz aynı işlev: wp mudrava maintenance --apply --items=revisions,transients"
+
+msgid "Saving a restore point of this site"
+msgstr "Bu sitenin geri yükleme noktası kaydediliyor"
+
+msgid "Schedule"
+msgstr "Zamanlama"
+
+msgid "Scheduled backups"
+msgstr "Zamanlanmış yedekler"
+
+msgid "Scheduled backups, off-site storage, retention and notifications"
+msgstr "Zamanlanmış yedekler, sunucu dışı depolama, saklama ve bildirimler"
+
+msgid "Scheduled exports"
+msgstr "Zamanlanmış dışa aktarımlar"
+
+msgid "Security action required: %d old backup files remain in public wp-content. Move them to private storage."
+msgstr "Güvenlik adımı gerekiyor: %d eski yedek herkese açık wp-content içinde duruyor. Onları özel depoya taşıyın."
+
+msgid "Select all"
+msgstr "Tümünü seç"
+
+msgid "Select at least one item to clean."
+msgstr "Temizlemek için en az bir öge seçin."
+
+msgid "Set a backup routine and reduce repetitive work across your sites."
+msgstr "Bir yedek rutini kurun ve sitelerinizdeki yineleyen işi azaltın."
+
+msgid "Show password"
+msgstr "Parolayı göster"
+
+msgid "Site cron is not running. Without visitors, this job may pause until cron returns. Keep this tab open to be sure."
+msgstr "Site cron'u çalışmıyor. Ziyaretçi olmadan bu görev cron dönene dek durabilir. Kesin olsun diye bu sekmeyi açık tutun."
+
+msgid "Sizes are approximate on very large sites."
+msgstr "Çok büyük sitelerde boyutlar yaklaşıktır."
+
+msgid "Skip folders inside wp-content, separated by commas. Example: uploads/2023 skips media from 2023. Use the checkboxes above for whole groups."
+msgstr "wp-content içindeki klasörler, virgülle ayrılır. Örnek: uploads/2023, 2023 medyasını atlar. Tüm gruplar için yukarıdaki kutuları kullanın."
+
+msgid "Slot %s holds a file that belongs to a different archive or a different part."
+msgstr "%s yuvası başka bir arşive ya da başka bir parçaya ait dosya tutuyor."
+
+msgid "Some environment checks failed. Open the Environment tab for details."
+msgstr "Bazı ortam denetimleri başarısız oldu. Ayrıntılar için Ortam sekmesini açın."
+
+msgid "Some parts of this backup are missing."
+msgstr "Bu yedeğin bazı parçaları eksik."
+
+msgid "Source theme: %1$s. This site: %2$s."
+msgstr "Kaynak tema: %1$s. Bu site: %2$s."
+
+msgid "Split archives to meet host file limits. Auto uses 7 GB parts. Off makes one file. Custom accepts a size in MB or GB."
+msgstr "Barındırma dosya sınırlarına uymak için arşivleri bölün. Otomatik 7 GB'lık parçalar kullanır. Kapalı tek dosya yapar. Özel, MB ya da GB cinsinden boyut alır."
+
+msgid "Split presets"
+msgstr "Hazır bölme boyutları"
+
+msgid "Storage"
+msgstr "Depolama"
+
+msgid "The JSON extension. It encodes archive metadata and job status. Without it, the engine cannot describe or resume an archive."
+msgstr "JSON eklentisi. Arşiv üst verilerini ve görev durumunu kodlar. Onsuz motor bir arşivi açıklayamaz ya da sürdüremez."
+
+msgid "The PHP version of this site. PHP 7.4 or newer is required for streaming and crypto functions."
+msgstr "Bu sitenin PHP sürümü. Akış ve kripto işlevleri için PHP 7.4 ya da yenisi gerekir."
+
+msgid "The archive carries plugins this site does not have: %s. Install them before restoring, or builder content may not render."
+msgstr "Arşiv, bu sitenin sahip olmadığı eklentileri taşıyor: %s. Geri yüklemeden önce kurun, yoksa sayfa kurucu içeriği görünmeyebilir."
+
+msgid "The archive contains a path that cannot be restored safely."
+msgstr "Arşiv, güvenli biçimde geri yüklenemeyen bir yol içeriyor."
+
+msgid "The archive did not pass integrity verification."
+msgstr "Arşiv bütünlük doğrulamasından geçmedi."
+
+msgid "The archive is damaged and cannot be read safely."
+msgstr "Arşiv hasarlı ve güvenle okunamıyor."
+
+msgid "The archive is incomplete. The transfer may have been interrupted."
+msgstr "Arşiv eksik. Aktarım yarıda kalmış olabilir."
+
+msgid "The backup file changed during verification or restore. Upload the original archive again."
+msgstr "Yedek dosyası doğrulama ya da geri yükleme sırasında değişti. Asıl arşivi yeniden yükleyin."
+
+msgid "The backup storage folder is not writable by the web server. Fix its ownership (it may have been created by a root shell)."
+msgstr "Web sunucusu yedek deposu klasörüne yazamıyor. Sahipliği düzeltin (belki bir root kabuğuyla oluşturuldu)."
+
+msgid "The database connection was lost."
+msgstr "Veritabanı bağlantısı yitirildi."
+
+msgid "The encryption backend protects password-encrypted archives. Without it, unencrypted export still works."
+msgstr "Şifreleme motoru parolayla şifrelenmiş arşivleri korur. Onsuz şifresiz dışa aktarım yine çalışır."
+
+msgid "The first file is not a valid .mudrava archive (bad header)."
+msgstr "İlk dosya geçerli bir .mudrava arşivi değil (başlık bozuk)."
+
+msgid "The hint cannot be the password or part of it. Describe where it is kept instead, e.g. \"company vault\"."
+msgstr "İpucu parolanın kendisi ya da bir parçası olamaz. Bunun yerine nerede saklandığını anlatın, ör. \"firma kasası\"."
+
+msgid "The last selected file is not the end of the archive - part %s is still missing."
+msgstr "Son seçilen dosya arşivin sonu değil - %s parçası hâlâ eksik."
+
+msgid "The migration could not be completed."
+msgstr "Taşıma tamamlanamadı."
+
+msgid "The password is incorrect. The archive is still intact."
+msgstr "Parola yanlış. Arşivin kendisi duruyor."
+
+msgid "The remote server could not be reached."
+msgstr "Uzak sunucuya ulaşılamadı."
+
+msgid "The remote server took too long to respond. You can resume."
+msgstr "Uzak sunucu çok yavaş yanıt veriyor. Sürdürebilirsiniz."
+
+msgid "The set is incomplete - missing parts: %s"
+msgstr "Takım eksik - olmayan parçalar: %s"
+
+msgid "The zlib extension compresses archive frames while streaming. Export requires it."
+msgstr "zlib eklentisi akış sırasında arşiv karelerini sıkıştırır. Dışa aktarım onu ister."
+
+msgid "These capabilities belong to the separate Pro add-on, currently in development. Purchasing is not open yet."
+msgstr "Bu yetenekler ayrı Pro ek modülüne aittir, şu anda geliştiriliyor. Satış henüz açık değil."
+
+msgid "This archive is encrypted. Enter its password to restore."
+msgstr "Bu arşiv şifreli. Geri yüklemek için parolasını girin."
+
+msgid "This archive uses a newer format. Please update MUDRAVA first."
+msgstr "Bu arşiv daha yeni bir biçim kullanıyor. Lütfen önce MUDRAVA'yı güncelleyin."
+
+msgid "This is part 1 of a split set, not a complete archive. Select the .mudrava file AND every .mudrava.partNNNN file of this set."
+msgstr "Bu, bölünmüş bir takımın 1. parçası, eksiksiz arşiv değil. .mudrava dosyasını VE bu takımın tüm .mudrava.partNNNN dosyalarını seçin."
+
+msgid "This job no longer exists."
+msgstr "Bu görev artık yok."
+
+msgid "This migration step needs more PHP memory than this server allows."
+msgstr "Bu taşıma adımı sunucunun izin verdiğinden çok PHP belleği ister."
+
+msgid "This server cannot safely run large migrations."
+msgstr "Bu sunucu büyük taşımaları güvenle çalıştıramaz."
+
+msgid "This server is missing requirements for the requested operation."
+msgstr "Bu sunucuda istenen işlem için gerekenler eksik."
+
+msgid "This site (Free)"
+msgstr "Bu site (Ücretsiz)"
+
+msgid "This site uses an external object cache: transients may live there and are invisible to this count."
+msgstr "Bu site dış bir nesne önbelleği kullanıyor: geçici veriler orada olabilir ve bu sayıma görünmez."
+
+msgid "This will overwrite the current site. Are you sure?"
+msgstr "Bu, geçerli sitenin üzerine yazacak. Emin misiniz?"
+
+msgid "Tidy before you migrate"
+msgstr "Taşınmadan önce toplayın"
+
+msgid "Unattached media items: reported only. Use the media library to review before deleting."
+msgstr "İlişkisiz medya ögeleri: yalnızca bildirilir. Silmeden önce medya kitabığında gözden geçirin."
+
+msgid "Unrecognized files (must be *.mudrava or *.mudrava.partNNNN): %s"
+msgstr "Tanınmayan dosyalar (*.mudrava ya da *.mudrava.partNNNN olmalı): %s"
+
+msgid "Upload a .mudrava archive (or every part of a split set) and restore it onto this site."
+msgstr "Bir .mudrava arşivi (ya da bölünmüş takımın her parçasını) yükleyin ve bu siteye geri yükleyin."
+
+msgid "Uploading"
+msgstr "Yükleniyor"
+
+msgid "Verified delivery with retries"
+msgstr "Yeniden denemeli doğrulanmış teslim"
+
+msgid "Verifying the restore point"
+msgstr "Geri yükleme noktası doğrulanıyor"
+
+msgid "Visit MUDRAVA"
+msgstr "MUDRAVA'yı ziyaret edin"
+
+msgid "What goes into the archive"
+msgstr "Arşive ne girer"
+
+msgid "Whether PHP uses 64-bit integers. Without them, archives over 2 GB cannot be read or written safely."
+msgstr "PHP'nin 64-bit tamsayı kullanıp kullanmadığı. Onsuz 2 GB üzeri arşivler güvenle okunamaz ya da yazılamaz."
+
+msgid "Whether the plugin can write to private storage. Archives and restore points need this directory."
+msgstr "Eklentinin özel depoya yazıp yazamadığı. Arşivler ve geri yükleme noktaları bu dizini ister."
+
+msgid "WordPress core table - always included"
+msgstr "WordPress çekirdek tablosu - her zaman dahil"
+
+msgid "Working…"
+msgstr "Çalışıyor…"
+
+msgid "You do not have permission to run migrations."
+msgstr "Taşıma çalıştırmak için izniniz yok."
+
+msgid "all included"
+msgstr "hepsi dahil"
+
+msgid "database"
+msgstr "veritabanı"
+
+msgid "e.g. company vault / migration"
+msgstr "ör. firma kasası / taşıma"
+
+msgid "encrypted"
+msgstr "şifreli"
+
+msgid "files"
+msgstr "dosyalar"
+
+msgid "finalize"
+msgstr "sonlandırma"
+
+msgid "hint"
+msgstr "ipucu"
+
+msgid "job"
+msgstr "görev"
+
+msgid "missing parts"
+msgstr "eksik parçalar"
+
+msgid "or click to browse. For split sets, select every part"
+msgstr "ya da göz atmak için tıklayın. Bölünmüş takımlarda her parçayı seçin"
+
+msgid "part"
+msgstr "parça"
+
+msgid "part(s)"
+msgstr "parça"
+
+msgid "parts"
+msgstr "parça"
+
+msgid "rows"
+msgstr "satır"
+
+msgid "running"
+msgstr "sürüyor"
+
+msgid "set complete"
+msgstr "takım eksiksiz"
+
+msgid "unknown"
+msgstr "bilinmiyor"
+
+msgid "upload incomplete"
+msgstr "yükleme eksik"
+
+msgid "uploads/2023, cache"
+msgstr "uploads/2023, önbellek"
+
+msgid "wp-admin, wp-includes and root files are always included. A restored site needs them to run."
+msgstr "wp-admin, wp-includes ve kök dosyalar her zaman dahildir. Geri yüklenen bir site çalışmak için onları gerek duyar."

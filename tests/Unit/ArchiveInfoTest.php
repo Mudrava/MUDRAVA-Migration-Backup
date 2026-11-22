@@ -55,6 +55,9 @@ final class ArchiveInfoTest extends TestCase
             'encrypted' => false,
             'hint' => '',
             'unreadable' => false,
+            // Pre-1.1 archives carry no software block: honest empty,
+            // never a fabricated inventory.
+            'software' => [],
         ], ArchiveInfo::peek($path));
     }
 

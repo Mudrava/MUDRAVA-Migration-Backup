@@ -119,6 +119,12 @@ final class Preflight
             'php_version'  => PHP_VERSION,
             'producer'     => 'mudrava-migration-backup ' . MUDRAVA_MB_VERSION,
             'created_at'   => time(),
+            // v1.1: the software this site runs. Carried inside the
+            // archive so the destination can diff its own inventory
+            // against the source before the first destructive write.
+            // JSON addition inside SITE_METADATA: old readers ignore it,
+            // the frame layout is untouched.
+            'software'     => Software::current(),
         ];
     }
 

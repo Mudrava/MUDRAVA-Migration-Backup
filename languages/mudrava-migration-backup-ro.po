@@ -1,0 +1,705 @@
+# Romanian translations for MUDRAVA Migration & Backup.
+# Copyright (C) 2026 MUDRAVA
+# This file is distributed under the GPL-2.0-or-later license.
+# Hand written by MUDRAVA, one string at a time.
+msgid ""
+msgstr ""
+"Project-Id-Version: MUDRAVA Migration & Backup 1.1.0\n"
+"Report-Msgid-Bugs-To: https://mudrava.com/en/\n"
+"POT-Creation-Date: 2026-11-22 00:00+0000\n"
+"PO-Revision-Date: 2026-11-22 00:00+0000\n"
+"Last-Translator: MUDRAVA <info@mudrava.com>\n"
+"Language-Team: Romanian <ro@li.org>\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < 20)) ? 1 : 2);\n"
+"X-Domain: mudrava-migration-backup\n"
+
+msgid "%1$s: %2$s rows, %3$s MB. "
+msgstr "%1$s: %2$s rânduri, %3$s MB. "
+
+msgid "%1$s: %2$s. "
+msgstr "%1$s: %2$s. "
+
+msgid "A database operation failed during the migration."
+msgstr "O operațiune pe baza de date a eșuat în timpul migrării."
+
+msgid "A database row is too large for the backup format. Reduce the row size and retry."
+msgstr "Un rând din baza de date este prea mare pentru formatul copiei de rezervă. Reduceți dimensiunea rândului și reîncercați."
+
+msgid "A table without a primary key changed during the backup, so rows could be missed. Pause writes to it and re-run the backup."
+msgstr "Un tabel fără cheie primară s-a modificat în timpul copierii, așa că unele rânduri ar fi putut fi omise. Opriți scrierile în el și reluați copierea."
+
+msgid "An upload chunk was rejected. Please retry."
+msgstr "O bucată din încărcare a fost respinsă. Reîncercați."
+
+msgid "Another migration job is already running."
+msgstr "O altă sarcină de migrare rulează deja."
+
+msgid "Anyone who has this archive can read the password hint. Never put the password or part of it here."
+msgstr "Oricine are această arhivă poate citi indiciul parolei. Nu scrieți niciodată aici parola sau o parte din ea."
+
+msgid "Approximate size of site files. The database is measured when export starts. This helps estimate time and space."
+msgstr "Dimensiunea aproximativă a fișierelor site-ului. Baza de date este măsurată la pornirea exportului. Ajută la estimarea timpului și spațiului."
+
+msgid "Archive password"
+msgstr "Parola arhivei"
+
+msgid "Archive splitting"
+msgstr "Împărțirea arhivei"
+
+msgid "Archives"
+msgstr "Arhive"
+
+msgid "Archives on this site"
+msgstr "Arhive pe acest site"
+
+msgid "Assembling archive"
+msgstr "Asamblarea arhivei"
+
+msgid "Auto"
+msgstr "Automat"
+
+msgid "Autoloaded options read on every request: this many rows and bytes load before your code runs."
+msgstr "Opțiunile încărcate automat sunt citite la fiecare cerere: atâtea rânduri și byte-uri se încarcă înainte să ruleze codul dumneavoastră."
+
+msgid "Automatic recovery failed; inspect the restore point"
+msgstr "Recuperarea automată a eșuat; verificați punctul de restaurare"
+
+msgid "Backup and delivery reports"
+msgstr "Rapoarte privind copiile și livrarea"
+
+msgid "Backup notifications"
+msgstr "Notificări privind copiile de rezervă"
+
+msgid "Cancel"
+msgstr "Anulare"
+
+msgid "Cancelled."
+msgstr "Anulat."
+
+msgid "Cancelling…"
+msgstr "Se anulează…"
+
+msgid "Change what is included"
+msgstr "Modificați ce este inclus"
+
+msgid "Choose a password, or turn off encryption to export unencrypted."
+msgstr "Alegeți o parolă sau dezactivați criptarea pentru a exporta necriptat."
+
+msgid "Choose a strong password"
+msgstr "Alegeți o parolă puternică"
+
+msgid "Choose archive files to upload"
+msgstr "Alegeți fișierele arhivei de încărcat"
+
+msgid "Choose where reports are sent"
+msgstr "Alegeți unde se trimit rapoartele"
+
+msgid "Clean selected"
+msgstr "Curăță selecția"
+
+msgid "Cleaned"
+msgstr "Curățat"
+
+msgid "Cleaned %s items"
+msgstr "%s elemente curățate"
+
+msgid "Cleaning failed: %s"
+msgstr "Curățarea a eșuat: %s"
+
+msgid "Cleaning…"
+msgstr "Se curăță…"
+
+msgid "Close"
+msgstr "Închide"
+
+msgid "Cloud storage"
+msgstr "Stocare în cloud"
+
+msgid "Completed"
+msgstr "Finalizat"
+
+msgid "Continue"
+msgstr "Continuă"
+
+msgid "Could not load the live inventory. Reload the page to try again."
+msgstr "Nu s-a putut încărca inventarul actualizat. Reîncărcați pagina pentru a reîncerca."
+
+msgid "Could not read the selected files. Select them again."
+msgstr "Nu s-au putut citi fișierele selectate. Selectați-le din nou."
+
+msgid "Count"
+msgstr "Număr"
+
+msgid "Create backup"
+msgstr "Creează copie de rezervă"
+
+msgid "Custom"
+msgstr "Personalizat"
+
+msgid "Daily or weekly backups in your site timezone"
+msgstr "Copii zilnice sau săptămânale în fusul orar al site-ului dumneavoastră"
+
+msgid "Database"
+msgstr "Bază de date"
+
+msgid "Delete the selected items permanently? This cannot be undone."
+msgstr "Ștergeți definitiv elementele selectate? Acțiunea nu poate fi anulată."
+
+msgid "Deletion is permanent and runs in small batches. Unattached media and autoload are measured, never pruned: media needs your own review."
+msgstr "Ștergerea este definitivă și rulează în loturi mici. Mediile fără atașament și autoload sunt doar măsurate, niciodată șterse: mediile cer propria dumneavoastră verificare."
+
+msgid "Done"
+msgstr "Gata"
+
+msgid "Done editing"
+msgstr "Editare încheiată"
+
+msgid "Download"
+msgstr "Descarcă"
+
+msgid "Download all"
+msgstr "Descarcă tot"
+
+msgid "Download part"
+msgstr "Descarcă partea"
+
+msgid "Drop .mudrava files here"
+msgstr "Trageți aici fișierele .mudrava"
+
+msgid "Duplicate parts selected: %s"
+msgstr "Părți duplicate selectate: %s"
+
+msgid "Email alerts for failed backups or delivery"
+msgstr "Alerte pe e-mail când copiile sau livrarea eșuează"
+
+msgid "Encrypt backup with password"
+msgstr "Criptează copia cu parolă"
+
+msgid "Encrypted with XChaCha20-Poly1305 + Argon2id. Lost passwords cannot be recovered."
+msgstr "Criptat cu XChaCha20-Poly1305 + Argon2id. O parolă pierdută nu poate fi recuperată."
+
+msgid "Enter the archive password to continue"
+msgstr "Introduceți parola arhivei pentru a continua"
+
+msgid "Enter the archive password to continue."
+msgstr "Introduceți parola arhivei pentru a continua."
+
+msgid "Environment"
+msgstr "Mediu"
+
+msgid "Everything included"
+msgstr "Tot inclus"
+
+msgid "Everything is included by default. Uncheck only what you are sure this site does not need."
+msgstr "Implicit este inclus totul. Debifați doar de ce sunteți sigur că acest site nu are nevoie."
+
+msgid "Excluded"
+msgstr "Exclus"
+
+msgid "Explore Pro"
+msgstr "Vezi Pro"
+
+msgid "Export"
+msgstr "Export"
+
+msgid "Export creates a .mudrava archive. If site cron is inactive, keep this tab open; the progress dialog shows whether it is safe to close."
+msgstr "Exportul creează o arhivă .mudrava. Dacă cron-ul site-ului nu rulează, țineți această filă deschisă; dialogul de progres arată dacă o puteți închide în siguranță."
+
+msgid "Export this site"
+msgstr "Exportă acest site"
+
+msgid "Extra paths to skip (optional)"
+msgstr "Căi suplimentare de sărit (opțional)"
+
+msgid "Failed"
+msgstr "Eșuat"
+
+msgid "Files"
+msgstr "Fișiere"
+
+msgid "Files from different archives are selected. Pick the parts of ONE archive."
+msgstr "Sunt selectate fișiere din arhive diferite. Alegeți părțile dintr-o singură arhivă."
+
+msgid "Filter folders…"
+msgstr "Filtrează folderele…"
+
+msgid "Filter tables…"
+msgstr "Filtrează tabelele…"
+
+msgid "Found"
+msgstr "Găsit"
+
+msgid "Free provides manual migration and restore on unlimited sites. Pro adds automation."
+msgstr "Versiunea gratuită oferă migrare și restaurare manuale pe orice număr de site-uri. Pro adaugă automatizare."
+
+msgid "Free space in private storage. A safe restore needs room for the archive and a restore point."
+msgstr "Spațiu liber în stocarea privată. O restaurare sigură are nevoie de loc pentru arhivă și un punct de restaurare."
+
+msgid "Free. Host limits apply"
+msgstr "Gratuit. Se aplică limitele găzduirii"
+
+msgid "Hide password"
+msgstr "Ascunde parola"
+
+msgid "I understand: restore overwrites this site database and files, and I accept proceeding without a restore point."
+msgstr "Înțeleg: restaurarea suprascrie baza de date și fișierele acestui site și accept să continui fără punct de restaurare."
+
+msgid "Import"
+msgstr "Import"
+
+msgid "Import an archive"
+msgstr "Restaurează din arhivă"
+
+msgid "Individual parts"
+msgstr "Părți individuale"
+
+msgid "Item"
+msgstr "Element"
+
+msgid "Keep backup copies away from the WordPress server you are protecting."
+msgstr "Păstrați copiile de rezervă separat de serverul WordPress pe care îl protejați."
+
+msgid "Keep this tab open until the restore finishes - the restore only advances while this page is open."
+msgstr "Țineți această filă deschisă până se termină restaurarea - aceasta avansează doar cât timp pagina este deschisă."
+
+msgid "Know when a backup needs attention without checking every site manually."
+msgstr "Aflați când o copie are nevoie de atenție fără să verificați manual fiecare site."
+
+msgid "MUDRAVA"
+msgstr "MUDRAVA"
+
+msgid "MUDRAVA Migration"
+msgstr "Migrare MUDRAVA"
+
+msgid "MUDRAVA Migration & Backup cannot run on this server: PHP 7.4+ (64-bit), zlib and JSON are required."
+msgstr "MUDRAVA Migration & Backup nu poate rula pe acest server: sunt necesare PHP 7.4+ (64 de biți), zlib și JSON."
+
+msgid "MUDRAVA Migration & Backup requires PHP 7.4 or newer. Please upgrade PHP before activating."
+msgstr "MUDRAVA Migration & Backup necesită PHP 7.4 sau mai nou. Actualizați PHP înainte de activare."
+
+msgid "MUDRAVA Pro"
+msgstr "MUDRAVA Pro"
+
+msgid "MUDRAVA cannot write where it needs to. Check folder permissions."
+msgstr "MUDRAVA nu poate scrie unde trebuie. Verificați permisiunile folderelor."
+
+msgid "Maintenance"
+msgstr "Întreținere"
+
+msgid "Measuring this site…"
+msgstr "Măsoară acest site…"
+
+msgid "Migration operations"
+msgstr "Operațiuni de migrare"
+
+msgid "Migration paused because the disk is full."
+msgstr "Migrare întreruptă: discul este plin."
+
+msgid "Missed runs handled without creating a backlog"
+msgstr "Rulările pierdute sunt recuperate fără coadă de așteptare"
+
+msgid "Multisite detected."
+msgstr "Rețea multisite detectată."
+
+msgid "Multisite migrations are not supported. MUDRAVA migrates single sites."
+msgstr "Migrările multisite nu sunt acceptate. MUDRAVA migrează site-uri individuale."
+
+msgid "Network-wide migration is not supported in this release. MUDRAVA currently migrates single sites."
+msgstr "Migrarea întregii rețele nu este acceptată în această versiune. Momentan MUDRAVA migrează site-uri individuale."
+
+msgid "Next page"
+msgstr "Pagina următoare"
+
+msgid "No archives on this site yet."
+msgstr "Încă nu există arhive pe acest site."
+
+msgid "Not enough disk space for a restore point. A failed restore will need another backup to recover. Check the box to accept this risk."
+msgstr "Nu există suficient spațiu pe disc pentru un punct de restaurare. O restaurare eșuată ar avea nevoie de altă copie pentru recuperare. Bifați căsuța pentru a accepta acest risc."
+
+msgid "Notifications"
+msgstr "Notificări"
+
+msgid "Off"
+msgstr "Oprit"
+
+msgid "Off-site storage"
+msgstr "Stocare externă"
+
+msgid "One of the parts belongs to a different backup."
+msgstr "Una dintre părți aparține unei alte copii de rezervă."
+
+msgid "Only a running export can be cancelled."
+msgstr "Doar un export în curs poate fi anulat."
+
+msgid "Other files (wp-content root)"
+msgstr "Alte fișiere (rădăcina wp-content)"
+
+msgid "Overlapping jobs prevented; safe review after imports"
+msgstr "Suprapunerile de sarcini sunt blocate; verificare sigură după importuri"
+
+msgid "Page"
+msgstr "Pagină"
+
+msgid "Part %s is not a valid continuation part (renamed or wrong file)."
+msgstr "Partea %s nu este o continuare validă (redenumită sau fișier greșit)."
+
+msgid "Part 1 of the set is missing: the plain .mudrava file (no .partNNNN suffix)."
+msgstr "Lipsește partea 1 a setului: fișierul .mudrava simplu (fără sufix .partNNNN)."
+
+msgid "Part size unit"
+msgstr "Unitatea dimensiunii părții"
+
+msgid "Password"
+msgstr "Parolă"
+
+msgid "Password encryption is unavailable on this PHP environment."
+msgstr "Criptarea cu parolă nu este disponibilă în acest mediu PHP."
+
+msgid "Password hint (optional)"
+msgstr "Indiciul parolei (opțional)"
+
+msgid "Passwords do not match."
+msgstr "Parolele nu se potrivesc."
+
+msgid "Pause writes during final export. Changes during the run can stop the export or leave unvisited files out of the backup."
+msgstr "Opriți scrierile în timpul exportului final. Modificările din timpul rulării pot opri exportul sau pot lăsa fișierele nevizitate în afara copiei."
+
+msgid "Planned annual plans: $59 / 3 sites, $129 / 15 sites, $249 / 50 sites."
+msgstr "Planuri anuale preconizate: 59 USD / 3 site-uri, 129 USD / 15 site-uri, 249 USD / 50 de site-uri."
+
+msgid "Plugins older here than on the source: %s."
+msgstr "Pluginuri mai vechi aici decât în sursă: %s."
+
+msgid "Portable backups. Resumable exports. Optional encryption."
+msgstr "Copii portabile. Exporturi reluabile. Criptare opțională."
+
+msgid "Previous page"
+msgstr "Pagina anterioară"
+
+msgid "Private backup storage is unsafe or ambiguous. Set MUDRAVA_MB_STORAGE_DIR to one writable directory outside the web root."
+msgstr "Stocarea privată a copiilor nu este sigură sau este ambiguă. Indreptați MUDRAVA_MB_STORAGE_DIR către un singur director inscriptibil în afara rădăcinii web."
+
+msgid "Pro"
+msgstr "Pro"
+
+msgid "Reload the live inventory"
+msgstr "Reîncarcă inventarul actualizat"
+
+msgid "Removing files and tables created by the failed import"
+msgstr "Se elimină fișierele și tabelele create de importul eșuat"
+
+msgid "Repeat password"
+msgstr "Repetați parola"
+
+msgid "Repeat the password"
+msgstr "Repetați parola"
+
+msgid "Restore point reapplied"
+msgstr "Punct de restaurare reaplicat"
+
+msgid "Restore point reapplied; verify the site"
+msgstr "Punct de restaurare reaplicat; verificați site-ul"
+
+msgid "Restore point saved"
+msgstr "Punct de restaurare salvat"
+
+msgid "Restore point: recommended. There is enough free disk to keep a safety copy of this site before overwriting."
+msgstr "Punct de restaurare: recomandat. Există spațiu suficient pe disc pentru o copie de siguranță a site-ului înainte de suprascriere."
+
+msgid "Restore site"
+msgstr "Restaurează site-ul"
+
+msgid "Restoring the previous site"
+msgstr "Se restaurează site-ul anterior"
+
+msgid "Restoring the previous site after an import error"
+msgstr "Se restaurează site-ul anterior după o eroare de import"
+
+msgid "Resuming the interrupted job…"
+msgstr "Se reia sarcina întreruptă…"
+
+msgid "Retention rules for older backup copies"
+msgstr "Reguli de păstrare pentru copiile mai vechi"
+
+msgid "Review"
+msgstr "Verifică"
+
+msgid "Revisions, spam and expired transients inflate every backup. This screen counts first; nothing is deleted until you apply what you pick."
+msgstr "Reviziile, spamul și transienții expirați umflă fiecare copie. Acest ecran întâi numără; nimic nu se șterge până nu aplicați ce alegeți."
+
+msgid "Rewriting URLs"
+msgstr "Se rescriu URL-urile"
+
+msgid "S3 / S3-compatible storage"
+msgstr "Stocare S3 / compatibilă S3"
+
+msgid "S3 and S3-compatible storage"
+msgstr "Stocare S3 și compatibilă S3"
+
+msgid "Safe to close this tab. The job continues on the server and resumes when you return."
+msgstr "Puteți închide în siguranță această filă. Sarcina continuă pe server și reia la întoarcerea dumneavoastră."
+
+msgid "Same Pro features in every plan. Manual Free restore remains available after expiry."
+msgstr "Aceleași funcții Pro în orice plan. Restaurarea manuală gratuită rămâne disponibilă după expirare."
+
+msgid "Same surface headless: wp mudrava maintenance --apply --items=revisions,transients"
+msgstr "Aceeași suprafață fără interfață: wp mudrava maintenance --apply --items=revisions,transients"
+
+msgid "Saving a restore point of this site"
+msgstr "Se salvează un punct de restaurare al acestui site"
+
+msgid "Schedule"
+msgstr "Programare"
+
+msgid "Scheduled backups"
+msgstr "Copii programate"
+
+msgid "Scheduled backups, off-site storage, retention and notifications"
+msgstr "Copii programate, stocare externă, păstrare și notificări"
+
+msgid "Scheduled exports"
+msgstr "Exporturi programate"
+
+msgid "Security action required: %d old backup files remain in public wp-content. Move them to private storage."
+msgstr "Este necesară o acțiune de securitate: %d copii vechi rămân într-un wp-content public. Mutați-le în stocarea privată."
+
+msgid "Select all"
+msgstr "Selectează tot"
+
+msgid "Select at least one item to clean."
+msgstr "Selectați cel puțin un element de curățat."
+
+msgid "Set a backup routine and reduce repetitive work across your sites."
+msgstr "Stabiliți o rutină de copii și reduceți munca repetitivă pe site-urile dumneavoastră."
+
+msgid "Show password"
+msgstr "Arată parola"
+
+msgid "Site cron is not running. Without visitors, this job may pause until cron returns. Keep this tab open to be sure."
+msgstr "Cron-ul site-ului nu rulează. Fără vizitatori, această sarcină se poate opri până revine cron-ul. Țineți această filă deschisă pentru siguranță."
+
+msgid "Sizes are approximate on very large sites."
+msgstr "Pe site-urile foarte mari dimensiunile sunt aproximative."
+
+msgid "Skip folders inside wp-content, separated by commas. Example: uploads/2023 skips media from 2023. Use the checkboxes above for whole groups."
+msgstr "Foldere din wp-content, separate prin virgule. Exemplu: uploads/2023 omite mediile din 2023. Pentru grupuri întregi folosiți căsuțele de mai sus."
+
+msgid "Slot %s holds a file that belongs to a different archive or a different part."
+msgstr "Slotul %s conține un fișier dintr-o altă arhivă sau din altă parte."
+
+msgid "Some environment checks failed. Open the Environment tab for details."
+msgstr "Unele verificări de mediu au eșuat. Deschideți fila Mediu pentru detalii."
+
+msgid "Some parts of this backup are missing."
+msgstr "Lipsesc părți din această copie."
+
+msgid "Source theme: %1$s. This site: %2$s."
+msgstr "Tema sursei: %1$s. Acest site: %2$s."
+
+msgid "Split archives to meet host file limits. Auto uses 7 GB parts. Off makes one file. Custom accepts a size in MB or GB."
+msgstr "Împărțiți arhivele pentru a respecta limitele de fișier ale găzduirii. Automat folosește părți de 7 GB. Oprit produce un singur fișier. Personalizat acceptă o dimensiune în MB sau GB."
+
+msgid "Split presets"
+msgstr "Dimensiuni prestabilite"
+
+msgid "Storage"
+msgstr "Stocare"
+
+msgid "The JSON extension. It encodes archive metadata and job status. Without it, the engine cannot describe or resume an archive."
+msgstr "Extensia JSON. Codifică metadatele arhivei și starea sarcinii. Fără ea, motorul nu poate descrie sau relua o arhivă."
+
+msgid "The PHP version of this site. PHP 7.4 or newer is required for streaming and crypto functions."
+msgstr "Versiunea PHP a acestui site. Este necesar PHP 7.4 sau mai nou pentru streaming și funcții criptografice."
+
+msgid "The archive carries plugins this site does not have: %s. Install them before restoring, or builder content may not render."
+msgstr "Arhiva conține pluginuri pe care acest site nu le are: %s. Instalați-le înainte de restaurare, altfel conținutul construitoarelor s-ar putea să nu se afișeze."
+
+msgid "The archive contains a path that cannot be restored safely."
+msgstr "Arhiva conține o cale care nu poate fi restaurată în siguranță."
+
+msgid "The archive did not pass integrity verification."
+msgstr "Arhiva nu a trecut verificarea de integritate."
+
+msgid "The archive is damaged and cannot be read safely."
+msgstr "Arhiva este deteriorată și nu poate fi citită în siguranță."
+
+msgid "The archive is incomplete. The transfer may have been interrupted."
+msgstr "Arhiva este incompletă. Transferul s-ar fi puteare să fi fost întrerupt."
+
+msgid "The backup file changed during verification or restore. Upload the original archive again."
+msgstr "Fișierul copiei s-a modificat în timpul verificării sau restaurării. Încărcați din nou arhiva originală."
+
+msgid "The backup storage folder is not writable by the web server. Fix its ownership (it may have been created by a root shell)."
+msgstr "Serverul web nu poate scrie în folderul de stocare. Corectați proprietarul (ar putea fi creat dintr-un shell root)."
+
+msgid "The database connection was lost."
+msgstr "Conexiunea la baza de date s-a pierdut."
+
+msgid "The encryption backend protects password-encrypted archives. Without it, unencrypted export still works."
+msgstr "Motorul de criptare protejează arhivele criptate cu parolă. Fără el, exportul necriptat funcționează în continuare."
+
+msgid "The first file is not a valid .mudrava archive (bad header)."
+msgstr "Primul fișier nu este o arhivă .mudrava validă (antet greșit)."
+
+msgid "The hint cannot be the password or part of it. Describe where it is kept instead, e.g. \"company vault\"."
+msgstr "Indiciul nu poate fi parola sau o parte din ea. Descrieți mai degrabă unde este păstrată, de exemplu „seiful firmei”."
+
+msgid "The last selected file is not the end of the archive - part %s is still missing."
+msgstr "Ultimul fișier selectat nu este sfârșitul arhivei - partea %s încă lipsește."
+
+msgid "The migration could not be completed."
+msgstr "Migrarea nu a putut fi finalizată."
+
+msgid "The password is incorrect. The archive is still intact."
+msgstr "Parola este incorectă. Arhiva în sine este intactă."
+
+msgid "The remote server could not be reached."
+msgstr "Serverul la distanță nu a putut fi contactat."
+
+msgid "The remote server took too long to respond. You can resume."
+msgstr "Serverul la distanță răspunde prea lent. Puteți relua."
+
+msgid "The set is incomplete - missing parts: %s"
+msgstr "Setul este incomplet - părți lipsă: %s"
+
+msgid "The zlib extension compresses archive frames while streaming. Export requires it."
+msgstr "Extensia zlib comprimă cadrele arhivei în streaming. Exportul o cere."
+
+msgid "These capabilities belong to the separate Pro add-on, currently in development. Purchasing is not open yet."
+msgstr "Aceste capabilități aparțin suplimentului Pro separat, aflat în dezvoltare. Achiziția nu este încă deschisă."
+
+msgid "This archive is encrypted. Enter its password to restore."
+msgstr "Această arhivă este criptată. Introduceți parola ei pentru restaurare."
+
+msgid "This archive uses a newer format. Please update MUDRAVA first."
+msgstr "Această arhivă folosește un format mai nou. Actualizați mai întâi MUDRAVA."
+
+msgid "This is part 1 of a split set, not a complete archive. Select the .mudrava file AND every .mudrava.partNNNN file of this set."
+msgstr "Aceasta este partea 1 a unui set împărțit, nu o arhivă completă. Selectați fișierul .mudrava ȘI fiecare fișier .mudrava.partNNNN al acestui set."
+
+msgid "This job no longer exists."
+msgstr "Această sarcină nu mai există."
+
+msgid "This migration step needs more PHP memory than this server allows."
+msgstr "Acest pas al migrării cere mai multă memorie PHP decât permite acest server."
+
+msgid "This server cannot safely run large migrations."
+msgstr "Acest server nu poate rula în siguranță migrări mari."
+
+msgid "This server is missing requirements for the requested operation."
+msgstr "Acestui server îi lipsesc cerințele pentru operațiunea cerută."
+
+msgid "This site (Free)"
+msgstr "Acest site (gratuit)"
+
+msgid "This site uses an external object cache: transients may live there and are invisible to this count."
+msgstr "Acest site folosește un cache extern de obiecte: transienții pot locui acolo și nu apar în această numărare."
+
+msgid "This will overwrite the current site. Are you sure?"
+msgstr "Aceasta va suprascrie site-ul actual. Sigur continuați?"
+
+msgid "Tidy before you migrate"
+msgstr "Faceți ordine înainte de mutare"
+
+msgid "Unattached media items: reported only. Use the media library to review before deleting."
+msgstr "Medii fără atașament: doar semnalate. Recenziați-le în biblioteca media înainte de ștergere."
+
+msgid "Unrecognized files (must be *.mudrava or *.mudrava.partNNNN): %s"
+msgstr "Fișiere nerecunoscute (trebuie să fie *.mudrava sau *.mudrava.partNNNN): %s"
+
+msgid "Upload a .mudrava archive (or every part of a split set) and restore it onto this site."
+msgstr "Încărcați o arhivă .mudrava (sau toate părțile unui set împărțit) și restaurați-o pe acest site."
+
+msgid "Uploading"
+msgstr "Se încarcă"
+
+msgid "Verified delivery with retries"
+msgstr "Livrare verificată cu reîncercări"
+
+msgid "Verifying the restore point"
+msgstr "Se verifică punctul de restaurare"
+
+msgid "Visit MUDRAVA"
+msgstr "Vizitează MUDRAVA"
+
+msgid "What goes into the archive"
+msgstr "Ce intră în arhivă"
+
+msgid "Whether PHP uses 64-bit integers. Without them, archives over 2 GB cannot be read or written safely."
+msgstr "Dacă PHP folosește numere întregi pe 64 de biți. Fără ele, arhivele peste 2 GB nu pot fi citite sau scrise în siguranță."
+
+msgid "Whether the plugin can write to private storage. Archives and restore points need this directory."
+msgstr "Dacă pluginul poate scrie în stocarea privată. Arhivele și punctele de restaurare au nevoie de acest director."
+
+msgid "WordPress core table - always included"
+msgstr "Tabel de bază WordPress - întotdeauna inclus"
+
+msgid "Working…"
+msgstr "Lucrez…"
+
+msgid "You do not have permission to run migrations."
+msgstr "Nu aveți permisiunea de a rula migrări."
+
+msgid "all included"
+msgstr "tot inclus"
+
+msgid "database"
+msgstr "bază de date"
+
+msgid "e.g. company vault / migration"
+msgstr "ex. seiful firmei / mutare"
+
+msgid "encrypted"
+msgstr "criptat"
+
+msgid "files"
+msgstr "fișiere"
+
+msgid "finalize"
+msgstr "finalizare"
+
+msgid "hint"
+msgstr "indiciu"
+
+msgid "job"
+msgstr "sarcină"
+
+msgid "missing parts"
+msgstr "părți lipsă"
+
+msgid "or click to browse. For split sets, select every part"
+msgstr "sau clic pentru a naviga. La seturile împărțite, selectați fiecare parte"
+
+msgid "part"
+msgstr "parte"
+
+msgid "part(s)"
+msgstr "parte/părți"
+
+msgid "parts"
+msgstr "părți"
+
+msgid "rows"
+msgstr "rânduri"
+
+msgid "running"
+msgstr "rulează"
+
+msgid "set complete"
+msgstr "set complet"
+
+msgid "unknown"
+msgstr "necunoscut"
+
+msgid "upload incomplete"
+msgstr "încărcare incompletă"
+
+msgid "uploads/2023, cache"
+msgstr "uploads/2023, cache"
+
+msgid "wp-admin, wp-includes and root files are always included. A restored site needs them to run."
+msgstr "wp-admin, wp-includes și fișierele din rădăcină sunt mereu incluse. Un site restaurat are nevoie de ele ca să pornească."

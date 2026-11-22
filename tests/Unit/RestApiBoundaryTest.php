@@ -49,7 +49,7 @@ final class RestApiBoundaryTest extends TestCase
         RestApi::register();
         $routes = $GLOBALS['MUDRAVA_STUB_ROUTES'];
 
-        $this->assertCount(15, $routes);
+        $this->assertCount(17, $routes);
         foreach ($routes as $route) {
             $this->assertSame(RestApi::NS, $route['namespace']);
             $this->assertSame([RestApi::class, 'can'], $route['args']['permission_callback']);
@@ -303,7 +303,9 @@ final class RestApiBoundaryTest extends TestCase
 
         $missing = RestApi::startImport(new \WP_REST_Request(['archive_id' => '']));
         $this->assertSame(400, $missing->get_status());
-        $this->assertSame(['code' => 'MUDRAVA_ARCHIVE_NOT_FOUND'], $missing->get_data());
+        // The typed refusal now also carries the honest message (1.1):
+        // a client sees the same MUDRAVA_* string at every boundary.
+        $this->assertSame(['code' => 'MUDRAVA_ARCHIVE_NOT_FOUND', 'message' => 'MUDRAVA_ARCHIVE_NOT_FOUND'], $missing->get_data());
 
         $id = 'rest-' . bin2hex(random_bytes(5));
         $path = $this->createArchive($id);
@@ -314,7 +316,10 @@ final class RestApiBoundaryTest extends TestCase
                 'proceed_unsafe' => false,
             ]));
             $this->assertSame(409, $unsafe->get_status());
-            $this->assertSame(['code' => 'MUDRAVA_RESTORE_POINT_REQUIRED'], $unsafe->get_data());
+            $this->assertSame(
+                ['code' => 'MUDRAVA_RESTORE_POINT_REQUIRED', 'message' => 'MUDRAVA_RESTORE_POINT_REQUIRED'],
+                $unsafe->get_data()
+            );
         } finally {
             @unlink($path);
         }

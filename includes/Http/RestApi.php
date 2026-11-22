@@ -36,6 +36,16 @@ final class RestApi
             'callback'            => [self::class, 'preflight'],
             'permission_callback' => [self::class, 'can'],
         ]);
+        register_rest_route(self::NS, '/maintenance', [
+            'methods'             => 'GET',
+            'callback'            => [self::class, 'maintenance'],
+            'permission_callback' => [self::class, 'can'],
+        ]);
+        register_rest_route(self::NS, '/maintenance', [
+            'methods'             => 'POST',
+            'callback'            => [self::class, 'maintenanceApply'],
+            'permission_callback' => [self::class, 'can'],
+        ]);
         register_rest_route(self::NS, '/inventory', [
             'methods'             => 'GET',
             'callback'            => [self::class, 'inventory'],
@@ -147,6 +157,40 @@ final class RestApi
     }
 
     /**
+     * Maintenance dry run: counts only, nothing deleted. The mutating half
+     * lives in maintenanceApply and needs the same capability plus an
+     * explicit item list, so a stray GET can never sweep a site.
+     */
+    public static function maintenance(): \WP_REST_Response
+    {
+        return rest_ensure_response([
+            'report' => \Mudrava\Migration\Support\Maintenance::report(),
+            'advisories' => \Mudrava\Migration\Support\Maintenance::advisories(),
+        ]);
+    }
+
+    public static function maintenanceApply(\WP_REST_Request $req): \WP_REST_Response
+    {
+        $requested = array_values(array_filter(
+            (array) $req->get_param('items'),
+            static fn ($v) => is_string($v)
+        ));
+        $items = array_values(array_intersect(
+            \Mudrava\Migration\Support\Maintenance::CLEANABLE,
+            $requested
+        ));
+        if ($items === []) {
+            return new \WP_REST_Response(['code' => 'MUDRAVA_VALIDATION'], 400);
+        }
+        try {
+            $result = \Mudrava\Migration\Support\Maintenance::apply($items);
+        } catch (\Throwable $e) {
+            return new \WP_REST_Response(['code' => JobRunner::safeError($e)], 500);
+        }
+        return rest_ensure_response($result);
+    }
+
+    /**
      * Live content inventory for the export pickers: every real table and
      * every real wp-content folder with honest size measurements. Read-
      * only, so a plain authenticated GET is enough.
@@ -252,62 +296,31 @@ final class RestApi
     public static function startImport(\WP_REST_Request $req): \WP_REST_Response
     {
         $archiveId = sanitize_key((string) $req->get_param('archive_id'));
-        if ($archiveId === '') {
-            return new \WP_REST_Response(['code' => 'MUDRAVA_ARCHIVE_NOT_FOUND'], 400);
-        }
         $expected = (int) $req->get_param('expected_parts');
-        // Pre-flight BEFORE anything destructive is scheduled or any rollback
-        // decision is recorded: the set must be provably complete and
-        // self-consistent on disk first, so the restore never starts a DROP
-        // only to discover a missing part in the middle of the site.
-        $paths = new Paths();
-        $base = $paths->storageDir() . '/' . $archiveId . '.mudrava';
-        try {
-            SplitSetSource::assertSetReadable($base, $expected);
-        } catch (\Throwable $e) {
-            $safe = JobRunner::safeError($e);
-            $code = (string) (strpos($safe, 'MUDRAVA_') === 0 ? strtok($safe . ':', ':') : 'MUDRAVA_INTERNAL');
-            return new \WP_REST_Response(['code' => $code, 'message' => $safe], 400);
-        }
         $rewrite = (array) $req->get_param('url_rewrite');
-        // A safe restore requires the immediately preceding, completed export
-        // of this destination. A client cannot claim one using an arbitrary
-        // archive ID. The unsafe path needs an explicit acknowledgement.
-        $headroom = \Mudrava\Migration\Rollback\RestorePoint::headroom();
         $proceedUnsafe = $req->get_param('proceed_unsafe') === true;
         $restorePointId = sanitize_key((string) $req->get_param('restore_point_archive_id'));
-        $previousJob = JobRunner::load();
-        $restorePointValid = $restorePointId !== ''
-            && is_array($previousJob)
-            && ($previousJob['kind'] ?? '') === JobRunner::KIND_EXPORT
-            && ($previousJob['purpose'] ?? '') === 'restore_point'
-            && ($previousJob['state'] ?? '') === 'done'
-            && ($previousJob['archive_id'] ?? '') === $restorePointId
-            && (int) ($previousJob['created_at'] ?? 0) >= time() - HOUR_IN_SECONDS
-            && $restorePointId !== $archiveId;
-        if ($restorePointValid) {
-            $pointBase = $paths->storageDir() . '/' . $restorePointId . '.mudrava';
-            try {
-                SplitSetSource::assertSetReadable($pointBase, 1);
-            } catch (\Throwable $e) {
-                $restorePointValid = false;
-            }
-        }
-        if (!$restorePointValid && !$proceedUnsafe) {
-            return new \WP_REST_Response(['code' => 'MUDRAVA_RESTORE_POINT_REQUIRED'], 409);
-        }
+        // Every honest gate (set completeness, restore-point truth, unsafe
+        // acknowledgement) lives in ImportOps, shared verbatim with the
+        // WP-CLI bridge so a headless restore cannot skip a browser gate.
         try {
-            \Mudrava\Migration\Rollback\RestorePoint::record($headroom, $proceedUnsafe, $restorePointValid ? $restorePointId : '');
-            $job = JobRunner::startImportJob([
-                'archive_id'  => $archiveId,
-                'restore_point_archive_id' => $restorePointValid ? $restorePointId : '',
-                'url_rewrite' => [
+            $job = \Mudrava\Migration\Migration\ImportOps::start(
+                $archiveId,
+                $expected,
+                [
                     'search'  => esc_url_raw((string) ($rewrite['search'] ?? '')),
                     'replace' => esc_url_raw((string) ($rewrite['replace'] ?? '')),
                 ],
-            ]);
-        } catch (\RuntimeException $e) {
-            return new \WP_REST_Response(['code' => JobRunner::safeError($e)], 409);
+                $proceedUnsafe,
+                $restorePointId
+            );
+        } catch (\Throwable $e) {
+            $safe = JobRunner::safeError($e);
+            $code = (string) (strpos($safe, 'MUDRAVA_') === 0 ? strtok($safe . ':', ':') : 'MUDRAVA_INTERNAL');
+            return new \WP_REST_Response(
+                ['code' => $code, 'message' => $safe],
+                \Mudrava\Migration\Migration\ImportOps::statusForCode($code)
+            );
         }
         $response = rest_ensure_response(self::publicJob($job));
         // Issue a restore-scoped token so ticks keep authenticating after the
@@ -405,7 +418,59 @@ final class RestApi
             return new \WP_REST_Response(['code' => 'MUDRAVA_ARCHIVE_NOT_FOUND'], 404);
         }
         $info = \Mudrava\Migration\Archive\ArchiveInfo::peek($base, $password !== '' ? $password : null);
+        // Environment diff for the restore screen: every plugin the SOURCE
+        // ran that this site does not have installed is a page-builder-sized
+        // hole waiting to appear as blank pages after a successful restore.
+        // Saying it BEFORE the first destructive write is the whole point.
+        if (is_array($info['software'] ?? null) && $info['software'] !== []) {
+            $info['environment'] = self::environmentDiff((array) $info['software']);
+        }
         return rest_ensure_response($info);
+    }
+
+    /**
+     * Compare an archive's SITE_METADATA software block against this
+     * installation. Reports missing plugins (not installed here at all)
+     * and version drift for the ones that are. The theme is shown as a
+     * single row: a restore without its theme renders the archive's data
+     * in the wrong skin, which the operator should hear about upfront.
+     *
+     * @param array<string,mixed> $software
+     * @return array{missing:list<array<string,string>>,older:list<array<string,string>>,theme:array<string,string>}
+     */
+    public static function environmentDiff(array $software): array
+    {
+        if (!function_exists('get_plugins')) {
+            $file = ABSPATH . 'wp-admin/includes/plugin.php';
+            if (is_readable($file)) {
+                require_once $file;
+            }
+        }
+        $installed = function_exists('get_plugins') ? get_plugins() : [];
+        $missing = [];
+        $older = [];
+        $sourcePlugins = (array) ($software['plugins'] ?? []);
+        foreach ($sourcePlugins as $path => $meta) {
+            $path = (string) $path;
+            $meta = is_array($meta) ? $meta : [];
+            $name = (string) ($meta['name'] ?? $path);
+            $version = (string) ($meta['version'] ?? '');
+            if (!isset($installed[$path])) {
+                $missing[] = ['path' => $path, 'name' => $name, 'version' => $version];
+                continue;
+            }
+            $local = (string) ($installed[$path]['Version'] ?? '');
+            if ($version !== '' && $local !== '' && version_compare($local, $version, '<')) {
+                $older[] = ['path' => $path, 'name' => $name, 'version' => $version, 'installed' => $local];
+            }
+        }
+        $theme = (array) ($software['theme'] ?? []);
+        $localTheme = function_exists('wp_get_theme') ? wp_get_theme() : null;
+        $themeOut = [
+            'source' => trim(((string) ($theme['name'] ?? '')) . ' ' . ((string) ($theme['version'] ?? ''))),
+            'installed' => $localTheme !== null ? trim(((string) $localTheme->get('Name')) . ' ' . ((string) $localTheme->get('Version'))) : '',
+        ];
+        return ['missing' => $missing, 'older' => $older, 'theme' => $themeOut];
     }
 
     /**
@@ -506,7 +571,7 @@ final class RestApi
      * @param array<string,mixed> $job
      * @return array<string,mixed>
      */
-    private static function publicJob(array $job): array
+    public static function publicJob(array $job): array
     {
         return [
             'kind'            => $job['kind'] ?? '',

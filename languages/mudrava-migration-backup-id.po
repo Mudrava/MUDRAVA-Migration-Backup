@@ -1,0 +1,705 @@
+# Indonesian translations for MUDRAVA Migration & Backup.
+# Copyright (C) 2026 MUDRAVA
+# This file is distributed under the GPL-2.0-or-later license.
+# Hand written by MUDRAVA, one string at a time.
+msgid ""
+msgstr ""
+"Project-Id-Version: MUDRAVA Migration & Backup 1.1.0\n"
+"Report-Msgid-Bugs-To: https://mudrava.com/en/\n"
+"POT-Creation-Date: 2026-11-22 00:00+0000\n"
+"PO-Revision-Date: 2026-11-22 00:00+0000\n"
+"Last-Translator: MUDRAVA <info@mudrava.com>\n"
+"Language-Team: Indonesian <id@li.org>\n"
+"Language: id\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: mudrava-migration-backup\n"
+
+msgid "%1$s: %2$s rows, %3$s MB. "
+msgstr "%1$s: %2$s baris, %3$s MB. "
+
+msgid "%1$s: %2$s. "
+msgstr "%1$s: %2$s. "
+
+msgid "A database operation failed during the migration."
+msgstr "Operasi basis data gagal selama migrasi."
+
+msgid "A database row is too large for the backup format. Reduce the row size and retry."
+msgstr "Satu baris basis data terlalu besar untuk format cadangan. Perkecil baris tersebut lalu coba lagi."
+
+msgid "A table without a primary key changed during the backup, so rows could be missed. Pause writes to it and re-run the backup."
+msgstr "Sebuah tabel tanpa kunci utama berubah selama pencadangan, sehingga ada baris yang mungkin terlewat. Hentikan penulisan ke tabel itu lalu jalankan ulang pencadangan."
+
+msgid "An upload chunk was rejected. Please retry."
+msgstr "Satu potongan unggahan ditolak. Silakan coba lagi."
+
+msgid "Another migration job is already running."
+msgstr "Pekerjaan migrasi lain sudah berjalan."
+
+msgid "Anyone who has this archive can read the password hint. Never put the password or part of it here."
+msgstr "Siapa pun yang memiliki arsip ini dapat membaca petunjuk sandi. Jangan pernah menuliskan sandi atau bagiannya di sini."
+
+msgid "Approximate size of site files. The database is measured when export starts. This helps estimate time and space."
+msgstr "Perkiraan ukuran berkas situs. Basis data diukur saat ekspor dimulai. Ini membantu memperkirakan waktu dan ruang."
+
+msgid "Archive password"
+msgstr "Sandi arsip"
+
+msgid "Archive splitting"
+msgstr "Pemecahan arsip"
+
+msgid "Archives"
+msgstr "Arsip"
+
+msgid "Archives on this site"
+msgstr "Arsip di situs ini"
+
+msgid "Assembling archive"
+msgstr "Menyusun arsip"
+
+msgid "Auto"
+msgstr "Otomatis"
+
+msgid "Autoloaded options read on every request: this many rows and bytes load before your code runs."
+msgstr "Opsi yang dimuat otomatis dibaca pada setiap permintaan: sejumlah baris dan byte ini dimuat sebelum kode Anda berjalan."
+
+msgid "Automatic recovery failed; inspect the restore point"
+msgstr "Pemulihan otomatis gagal; periksa titik pemulihan"
+
+msgid "Backup and delivery reports"
+msgstr "Laporan cadangan dan pengiriman"
+
+msgid "Backup notifications"
+msgstr "Notifikasi pencadangan"
+
+msgid "Cancel"
+msgstr "Batal"
+
+msgid "Cancelled."
+msgstr "Dibatalkan."
+
+msgid "Cancelling…"
+msgstr "Membatalkan…"
+
+msgid "Change what is included"
+msgstr "Ubah yang disertakan"
+
+msgid "Choose a password, or turn off encryption to export unencrypted."
+msgstr "Pilih sandi, atau matikan enkripsi untuk mengekspor tanpa enkripsi."
+
+msgid "Choose a strong password"
+msgstr "Pilih sandi yang kuat"
+
+msgid "Choose archive files to upload"
+msgstr "Pilih berkas arsip untuk diunggah"
+
+msgid "Choose where reports are sent"
+msgstr "Pilih tujuan pengiriman laporan"
+
+msgid "Clean selected"
+msgstr "Bersihkan yang dipilih"
+
+msgid "Cleaned"
+msgstr "Dibersihkan"
+
+msgid "Cleaned %s items"
+msgstr "%s item dibersihkan"
+
+msgid "Cleaning failed: %s"
+msgstr "Pembersihan gagal: %s"
+
+msgid "Cleaning…"
+msgstr "Membersihkan…"
+
+msgid "Close"
+msgstr "Tutup"
+
+msgid "Cloud storage"
+msgstr "Penyimpanan awan"
+
+msgid "Completed"
+msgstr "Selesai"
+
+msgid "Continue"
+msgstr "Lanjutkan"
+
+msgid "Could not load the live inventory. Reload the page to try again."
+msgstr "Tidak dapat memuat daftar isi terkini. Muat ulang halaman untuk mencoba lagi."
+
+msgid "Could not read the selected files. Select them again."
+msgstr "Tidak dapat membaca berkas yang dipilih. Pilih ulang berkas tersebut."
+
+msgid "Count"
+msgstr "Jumlah"
+
+msgid "Create backup"
+msgstr "Buat cadangan"
+
+msgid "Custom"
+msgstr "Kustom"
+
+msgid "Daily or weekly backups in your site timezone"
+msgstr "Cadangan harian atau mingguan menurut zona waktu situs Anda"
+
+msgid "Database"
+msgstr "Basis data"
+
+msgid "Delete the selected items permanently? This cannot be undone."
+msgstr "Hapus item terpilih secara permanen? Tindakan ini tidak dapat dibatalkan."
+
+msgid "Deletion is permanent and runs in small batches. Unattached media and autoload are measured, never pruned: media needs your own review."
+msgstr "Penghapusan bersifat permanen dan berjalan dalam kelompok kecil. Media tanpa lampiran dan autoload hanya diukur, tidak pernah dihapus: media perlu Anda periksa sendiri."
+
+msgid "Done"
+msgstr "Selesai"
+
+msgid "Done editing"
+msgstr "Selesai mengedit"
+
+msgid "Download"
+msgstr "Unduh"
+
+msgid "Download all"
+msgstr "Unduh semua"
+
+msgid "Download part"
+msgstr "Unduh bagian"
+
+msgid "Drop .mudrava files here"
+msgstr "Letakkan berkas .mudrava di sini"
+
+msgid "Duplicate parts selected: %s"
+msgstr "Bagian ganda terpilih: %s"
+
+msgid "Email alerts for failed backups or delivery"
+msgstr "Peringatan email saat cadangan atau pengiriman gagal"
+
+msgid "Encrypt backup with password"
+msgstr "Enkripsi cadangan dengan sandi"
+
+msgid "Encrypted with XChaCha20-Poly1305 + Argon2id. Lost passwords cannot be recovered."
+msgstr "Dienkripsi dengan XChaCha20-Poly1305 + Argon2id. Sandi yang hilang tidak dapat dipulihkan."
+
+msgid "Enter the archive password to continue"
+msgstr "Masukkan sandi arsip untuk melanjutkan"
+
+msgid "Enter the archive password to continue."
+msgstr "Masukkan sandi arsip untuk melanjutkan."
+
+msgid "Environment"
+msgstr "Lingkungan"
+
+msgid "Everything included"
+msgstr "Semua disertakan"
+
+msgid "Everything is included by default. Uncheck only what you are sure this site does not need."
+msgstr "Secara bawaan semuanya disertakan. Kosongkan hanya yang Anda yakini tidak dibutuhkan situs ini."
+
+msgid "Excluded"
+msgstr "Dikecualikan"
+
+msgid "Explore Pro"
+msgstr "Lihat Pro"
+
+msgid "Export"
+msgstr "Ekspor"
+
+msgid "Export creates a .mudrava archive. If site cron is inactive, keep this tab open; the progress dialog shows whether it is safe to close."
+msgstr "Ekspor membuat arsip .mudrava. Jika cron situs tidak aktif, biarkan tab ini terbuka; dialog kemajuan menunjukkan apakah tab boleh ditutup dengan aman."
+
+msgid "Export this site"
+msgstr "Ekspor situs ini"
+
+msgid "Extra paths to skip (optional)"
+msgstr "Path tambahan untuk dilewati (opsional)"
+
+msgid "Failed"
+msgstr "Gagal"
+
+msgid "Files"
+msgstr "Berkas"
+
+msgid "Files from different archives are selected. Pick the parts of ONE archive."
+msgstr "Terpilih berkas dari arsip yang berbeda. Ambil bagian dari SATU arsip."
+
+msgid "Filter folders…"
+msgstr "Saring folder…"
+
+msgid "Filter tables…"
+msgstr "Saring tabel…"
+
+msgid "Found"
+msgstr "Ditemukan"
+
+msgid "Free provides manual migration and restore on unlimited sites. Pro adds automation."
+msgstr "Versi gratis menyediakan migrasi dan pemulihan manual di jumlah situs tak terbatas. Pro menambahkan otomatisasi."
+
+msgid "Free space in private storage. A safe restore needs room for the archive and a restore point."
+msgstr "Ruang kosong di penyimpanan privat. Pemulihan yang aman membutuhkan ruang untuk arsip dan titik pemulihan."
+
+msgid "Free. Host limits apply"
+msgstr "Gratis. Batasan hosting berlaku"
+
+msgid "Hide password"
+msgstr "Sembunyikan sandi"
+
+msgid "I understand: restore overwrites this site database and files, and I accept proceeding without a restore point."
+msgstr "Saya paham: pemulihan menimpa basis data dan berkas situs ini, dan saya menerima untuk lanjut tanpa titik pemulihan."
+
+msgid "Import"
+msgstr "Impor"
+
+msgid "Import an archive"
+msgstr "Pulihkan dari arsip"
+
+msgid "Individual parts"
+msgstr "Bagian satuan"
+
+msgid "Item"
+msgstr "Item"
+
+msgid "Keep backup copies away from the WordPress server you are protecting."
+msgstr "Simpan salinan cadangan terpisah dari server WordPress yang Anda lindungi."
+
+msgid "Keep this tab open until the restore finishes - the restore only advances while this page is open."
+msgstr "Biarkan tab ini terbuka sampai pemulihan selesai - pemulihan hanya berjalan selama halaman ini terbuka."
+
+msgid "Know when a backup needs attention without checking every site manually."
+msgstr "Ketahui kapan cadangan perlu perhatian tanpa memeriksa setiap situs secara manual."
+
+msgid "MUDRAVA"
+msgstr "MUDRAVA"
+
+msgid "MUDRAVA Migration"
+msgstr "Migrasi MUDRAVA"
+
+msgid "MUDRAVA Migration & Backup cannot run on this server: PHP 7.4+ (64-bit), zlib and JSON are required."
+msgstr "MUDRAVA Migration & Backup tidak dapat berjalan di server ini: dibutuhkan PHP 7.4+ (64-bit), zlib, dan JSON."
+
+msgid "MUDRAVA Migration & Backup requires PHP 7.4 or newer. Please upgrade PHP before activating."
+msgstr "MUDRAVA Migration & Backup membutuhkan PHP 7.4 atau lebih baru. Tingkatkan PHP sebelum aktivasi."
+
+msgid "MUDRAVA Pro"
+msgstr "MUDRAVA Pro"
+
+msgid "MUDRAVA cannot write where it needs to. Check folder permissions."
+msgstr "MUDRAVA tidak dapat menulis ke tempat yang dibutuhkan. Periksa izin folder."
+
+msgid "Maintenance"
+msgstr "Pemeliharaan"
+
+msgid "Measuring this site…"
+msgstr "Mengukur situs ini…"
+
+msgid "Migration operations"
+msgstr "Operasi migrasi"
+
+msgid "Migration paused because the disk is full."
+msgstr "Migrasi dijeda: disk penuh."
+
+msgid "Missed runs handled without creating a backlog"
+msgstr "Jadwal yang terlewat ditangani tanpa menimbulkan antrean"
+
+msgid "Multisite detected."
+msgstr "Multisite terdeteksi."
+
+msgid "Multisite migrations are not supported. MUDRAVA migrates single sites."
+msgstr "Migrasi multisite tidak didukung. MUDRAVA memigrasi situs tunggal."
+
+msgid "Network-wide migration is not supported in this release. MUDRAVA currently migrates single sites."
+msgstr "Migrasi seluruh jaringan belum didukung pada rilis ini. Saat ini MUDRAVA memigrasi situs tunggal."
+
+msgid "Next page"
+msgstr "Halaman berikutnya"
+
+msgid "No archives on this site yet."
+msgstr "Belum ada arsip di situs ini."
+
+msgid "Not enough disk space for a restore point. A failed restore will need another backup to recover. Check the box to accept this risk."
+msgstr "Ruang disk tidak cukup untuk titik pemulihan. Pemulihan yang gagal akan butuh cadangan lain untuk pulih. Centang kotak untuk menerima risiko ini."
+
+msgid "Notifications"
+msgstr "Notifikasi"
+
+msgid "Off"
+msgstr "Nonaktif"
+
+msgid "Off-site storage"
+msgstr "Penyimpanan eksternal"
+
+msgid "One of the parts belongs to a different backup."
+msgstr "Salah satu bagian milik cadangan yang berbeda."
+
+msgid "Only a running export can be cancelled."
+msgstr "Hanya ekspor yang sedang berjalan yang dapat dibatalkan."
+
+msgid "Other files (wp-content root)"
+msgstr "Berkas lain (root wp-content)"
+
+msgid "Overlapping jobs prevented; safe review after imports"
+msgstr "Pekerjaan yang tumpang tindih dicegah; peninjauan aman setelah impor"
+
+msgid "Page"
+msgstr "Halaman"
+
+msgid "Part %s is not a valid continuation part (renamed or wrong file)."
+msgstr "Bagian %s bukan lanjutan yang sah (diganti nama atau berkas salah)."
+
+msgid "Part 1 of the set is missing: the plain .mudrava file (no .partNNNN suffix)."
+msgstr "Bagian 1 dari set tidak ada: berkas .mudrava biasa (tanpa akhiran .partNNNN)."
+
+msgid "Part size unit"
+msgstr "Satuan ukuran bagian"
+
+msgid "Password"
+msgstr "Sandi"
+
+msgid "Password encryption is unavailable on this PHP environment."
+msgstr "Enkripsi dengan sandi tidak tersedia di lingkungan PHP ini."
+
+msgid "Password hint (optional)"
+msgstr "Petunjuk sandi (opsional)"
+
+msgid "Passwords do not match."
+msgstr "Sandi tidak cocok."
+
+msgid "Pause writes during final export. Changes during the run can stop the export or leave unvisited files out of the backup."
+msgstr "Hentikan penulisan selama ekspor akhir. Perubahan saat proses berjalan dapat menghentikan ekspor atau membuat berkas yang belum dikunjungi tidak ikut masuk cadangan."
+
+msgid "Planned annual plans: $59 / 3 sites, $129 / 15 sites, $249 / 50 sites."
+msgstr "Paket tahunan yang direncanakan: $59 / 3 situs, $129 / 15 situs, $249 / 50 situs."
+
+msgid "Plugins older here than on the source: %s."
+msgstr "Plug-in di sini lebih lama daripada di sumber: %s."
+
+msgid "Portable backups. Resumable exports. Optional encryption."
+msgstr "Cadangan portabel. Ekspor dapat dilanjutkan. Enkripsi opsional."
+
+msgid "Previous page"
+msgstr "Halaman sebelumnya"
+
+msgid "Private backup storage is unsafe or ambiguous. Set MUDRAVA_MB_STORAGE_DIR to one writable directory outside the web root."
+msgstr "Penyimpanan cadangan privat tidak aman atau tidak jelas. Arahkan MUDRAVA_MB_STORAGE_DIR ke satu direktori yang dapat ditulis di luar root web."
+
+msgid "Pro"
+msgstr "Pro"
+
+msgid "Reload the live inventory"
+msgstr "Muat ulang daftar isi terkini"
+
+msgid "Removing files and tables created by the failed import"
+msgstr "Menghapus berkas dan tabel yang dibuat impor yang gagal"
+
+msgid "Repeat password"
+msgstr "Ulangi sandi"
+
+msgid "Repeat the password"
+msgstr "Ulangi sandi"
+
+msgid "Restore point reapplied"
+msgstr "Titik pemulihan diterapkan ulang"
+
+msgid "Restore point reapplied; verify the site"
+msgstr "Titik pemulihan diterapkan ulang; periksa situs"
+
+msgid "Restore point saved"
+msgstr "Titik pemulihan disimpan"
+
+msgid "Restore point: recommended. There is enough free disk to keep a safety copy of this site before overwriting."
+msgstr "Titik pemulihan: dianjurkan. Ruang disk cukup untuk menyimpan salinan pengaman situs ini sebelum ditimpa."
+
+msgid "Restore site"
+msgstr "Pulihkan situs"
+
+msgid "Restoring the previous site"
+msgstr "Memulihkan situs sebelumnya"
+
+msgid "Restoring the previous site after an import error"
+msgstr "Memulihkan situs sebelumnya setelah galat impor"
+
+msgid "Resuming the interrupted job…"
+msgstr "Melanjutkan pekerjaan yang terputus…"
+
+msgid "Retention rules for older backup copies"
+msgstr "Aturan retensi untuk cadangan lama"
+
+msgid "Review"
+msgstr "Tinjau"
+
+msgid "Revisions, spam and expired transients inflate every backup. This screen counts first; nothing is deleted until you apply what you pick."
+msgstr "Revisi, spam, dan transients kedaluwarsa menggembungkan setiap cadangan. Layar ini menghitung dulu; tidak ada yang dihapus sampai Anda menerapkan pilihan Anda."
+
+msgid "Rewriting URLs"
+msgstr "Menulis ulang URL"
+
+msgid "S3 / S3-compatible storage"
+msgstr "Penyimpanan S3 / kompatibel S3"
+
+msgid "S3 and S3-compatible storage"
+msgstr "Penyimpanan S3 dan kompatibel S3"
+
+msgid "Safe to close this tab. The job continues on the server and resumes when you return."
+msgstr "Tab ini aman ditutup. Pekerjaan lanjut di server dan melanjutkan saat Anda kembali."
+
+msgid "Same Pro features in every plan. Manual Free restore remains available after expiry."
+msgstr "Fitur Pro sama di semua paket. Pemulihan manual gratis tetap tersedia setelah masa berlaku habis."
+
+msgid "Same surface headless: wp mudrava maintenance --apply --items=revisions,transients"
+msgstr "Kemampuan yang sama tanpa antarmuka: wp mudrava maintenance --apply --items=revisions,transients"
+
+msgid "Saving a restore point of this site"
+msgstr "Menyimpan titik pemulihan situs ini"
+
+msgid "Schedule"
+msgstr "Jadwal"
+
+msgid "Scheduled backups"
+msgstr "Cadangan terjadwal"
+
+msgid "Scheduled backups, off-site storage, retention and notifications"
+msgstr "Cadangan terjadwal, penyimpanan eksternal, retensi, dan notifikasi"
+
+msgid "Scheduled exports"
+msgstr "Ekspor terjadwal"
+
+msgid "Security action required: %d old backup files remain in public wp-content. Move them to private storage."
+msgstr "Perlu tindakan keamanan: %d berkas cadangan lama masih ada di wp-content publik. Pindahkan ke penyimpanan privat."
+
+msgid "Select all"
+msgstr "Pilih semua"
+
+msgid "Select at least one item to clean."
+msgstr "Pilih setidaknya satu item untuk dibersihkan."
+
+msgid "Set a backup routine and reduce repetitive work across your sites."
+msgstr "Tetapkan rutinitas cadangan dan kurangi kerja berulang di seluruh situs Anda."
+
+msgid "Show password"
+msgstr "Tampilkan sandi"
+
+msgid "Site cron is not running. Without visitors, this job may pause until cron returns. Keep this tab open to be sure."
+msgstr "Cron situs tidak berjalan. Tanpa pengunjung, pekerjaan ini bisa tertahan sampai cron kembali. Biarkan tab ini terbuka supaya aman."
+
+msgid "Sizes are approximate on very large sites."
+msgstr "Pada situs sangat besar, ukuran hanyalah perkiraan."
+
+msgid "Skip folders inside wp-content, separated by commas. Example: uploads/2023 skips media from 2023. Use the checkboxes above for whole groups."
+msgstr "Folder di dalam wp-content, dipisahkan koma. Contoh: uploads/2023 melewati media tahun 2023. Gunakan kotak centang di atas untuk seluruh grup."
+
+msgid "Slot %s holds a file that belongs to a different archive or a different part."
+msgstr "Slot %s berisi berkas dari arsip lain atau bagian lain."
+
+msgid "Some environment checks failed. Open the Environment tab for details."
+msgstr "Sejumlah pemeriksaan lingkungan gagal. Buka tab Lingkungan untuk rinciannya."
+
+msgid "Some parts of this backup are missing."
+msgstr "Beberapa bagian cadangan ini tidak ada."
+
+msgid "Source theme: %1$s. This site: %2$s."
+msgstr "Tema sumber: %1$s. Situs ini: %2$s."
+
+msgid "Split archives to meet host file limits. Auto uses 7 GB parts. Off makes one file. Custom accepts a size in MB or GB."
+msgstr "Pecah arsip sesuai batas ukuran berkas hosting. Otomatis memakai bagian 7 GB. Nonaktif menghasilkan satu berkas. Kustom menerima ukuran dalam MB atau GB."
+
+msgid "Split presets"
+msgstr "Prasetel ukuran bagian"
+
+msgid "Storage"
+msgstr "Penyimpanan"
+
+msgid "The JSON extension. It encodes archive metadata and job status. Without it, the engine cannot describe or resume an archive."
+msgstr "Ekstensi JSON. Menyandi metadata arsip dan status pekerjaan. Tanpanya, mesin tidak dapat mendeskripsikan atau melanjutkan arsip."
+
+msgid "The PHP version of this site. PHP 7.4 or newer is required for streaming and crypto functions."
+msgstr "Versi PHP situs ini. PHP 7.4 atau lebih baru dibutuhkan untuk streaming dan fungsi kriptografi."
+
+msgid "The archive carries plugins this site does not have: %s. Install them before restoring, or builder content may not render."
+msgstr "Arsip memuat plug-in yang tidak ada di situs ini: %s. Pasang sebelum memulihkan, jika tidak konten page builder mungkin tidak tampil."
+
+msgid "The archive contains a path that cannot be restored safely."
+msgstr "Arsip berisi path yang tidak dapat dipulihkan dengan aman."
+
+msgid "The archive did not pass integrity verification."
+msgstr "Arsip tidak lolos verifikasi integritas."
+
+msgid "The archive is damaged and cannot be read safely."
+msgstr "Arsip rusak dan tidak dapat dibaca dengan aman."
+
+msgid "The archive is incomplete. The transfer may have been interrupted."
+msgstr "Arsip tidak lengkap. Transfer mungkin terputus."
+
+msgid "The backup file changed during verification or restore. Upload the original archive again."
+msgstr "Berkas cadangan berubah selama verifikasi atau pemulihan. Unggah ulang arsip aslinya."
+
+msgid "The backup storage folder is not writable by the web server. Fix its ownership (it may have been created by a root shell)."
+msgstr "Server web tidak dapat menulis ke folder penyimpanan cadangan. Perbaiki pemiliknya (mungkin dibuat oleh shell root)."
+
+msgid "The database connection was lost."
+msgstr "Koneksi ke basis data hilang."
+
+msgid "The encryption backend protects password-encrypted archives. Without it, unencrypted export still works."
+msgstr "Mesin enkripsi melindungi arsip bersandi. Tanpanya, ekspor tanpa enkripsi tetap berfungsi."
+
+msgid "The first file is not a valid .mudrava archive (bad header)."
+msgstr "Berkas pertama bukan arsip .mudrava yang sah (kepala rusak)."
+
+msgid "The hint cannot be the password or part of it. Describe where it is kept instead, e.g. \"company vault\"."
+msgstr "Petunjuk tidak boleh berisi sandi atau bagiannya. Jelaskan saja tempat penyimpanannya, misalnya \"brankas kantor\"."
+
+msgid "The last selected file is not the end of the archive - part %s is still missing."
+msgstr "Berkas terakhir yang dipilih bukan akhir arsip - bagian %s masih kurang."
+
+msgid "The migration could not be completed."
+msgstr "Migrasi tidak dapat diselesaikan."
+
+msgid "The password is incorrect. The archive is still intact."
+msgstr "Sandi salah. Arsipnya sendiri tetap utuh."
+
+msgid "The remote server could not be reached."
+msgstr "Server jarak jauh tidak dapat dihubungi."
+
+msgid "The remote server took too long to respond. You can resume."
+msgstr "Server jarak jauh merespons terlalu lama. Anda dapat melanjutkan."
+
+msgid "The set is incomplete - missing parts: %s"
+msgstr "Set tidak lengkap - bagian yang kurang: %s"
+
+msgid "The zlib extension compresses archive frames while streaming. Export requires it."
+msgstr "Ekstensi zlib memampatkan bingkai arsip saat streaming. Ekspor membutuhkannya."
+
+msgid "These capabilities belong to the separate Pro add-on, currently in development. Purchasing is not open yet."
+msgstr "Kemampuan ini milik pengaya Pro tersendiri yang masih dalam pengembangan. Pembelian belum dibuka."
+
+msgid "This archive is encrypted. Enter its password to restore."
+msgstr "Arsip ini terenkripsi. Masukkan sandinya untuk memulihkan."
+
+msgid "This archive uses a newer format. Please update MUDRAVA first."
+msgstr "Arsip ini memakai format yang lebih baru. Perbarui MUDRAVA terlebih dahulu."
+
+msgid "This is part 1 of a split set, not a complete archive. Select the .mudrava file AND every .mudrava.partNNNN file of this set."
+msgstr "Ini bagian 1 dari set yang dipecah, bukan arsip lengkap. Pilih berkas .mudrava DAN semua berkas .mudrava.partNNNN dari set ini."
+
+msgid "This job no longer exists."
+msgstr "Pekerjaan ini sudah tidak ada."
+
+msgid "This migration step needs more PHP memory than this server allows."
+msgstr "Langkah migrasi ini butuh memori PHP lebih besar daripada yang diizinkan server ini."
+
+msgid "This server cannot safely run large migrations."
+msgstr "Server ini tidak dapat menjalankan migrasi besar dengan aman."
+
+msgid "This server is missing requirements for the requested operation."
+msgstr "Server ini tidak memenuhi prasyarat untuk operasi yang diminta."
+
+msgid "This site (Free)"
+msgstr "Situs ini (Gratis)"
+
+msgid "This site uses an external object cache: transients may live there and are invisible to this count."
+msgstr "Situs ini memakai cache objek eksternal: transients bisa berada di sana dan tidak terlihat oleh hitungan ini."
+
+msgid "This will overwrite the current site. Are you sure?"
+msgstr "Ini akan menimpa situs saat ini. Yakin?"
+
+msgid "Tidy before you migrate"
+msgstr "Beres-beres sebelum pindah"
+
+msgid "Unattached media items: reported only. Use the media library to review before deleting."
+msgstr "Media tanpa lampiran: hanya dilaporkan. Tinjau di pustaka media sebelum menghapus."
+
+msgid "Unrecognized files (must be *.mudrava or *.mudrava.partNNNN): %s"
+msgstr "Berkas tidak dikenal (harus *.mudrava atau *.mudrava.partNNNN): %s"
+
+msgid "Upload a .mudrava archive (or every part of a split set) and restore it onto this site."
+msgstr "Unggah arsip .mudrava (atau semua bagian dari set yang dipecah) dan pulihkan ke situs ini."
+
+msgid "Uploading"
+msgstr "Mengunggah"
+
+msgid "Verified delivery with retries"
+msgstr "Pengiriman terverifikasi dengan percobaan ulang"
+
+msgid "Verifying the restore point"
+msgstr "Memverifikasi titik pemulihan"
+
+msgid "Visit MUDRAVA"
+msgstr "Kunjungi MUDRAVA"
+
+msgid "What goes into the archive"
+msgstr "Apa yang masuk ke arsip"
+
+msgid "Whether PHP uses 64-bit integers. Without them, archives over 2 GB cannot be read or written safely."
+msgstr "Apakah PHP memakai bilangan bulat 64-bit. Tanpanya, arsip di atas 2 GB tidak dapat dibaca atau ditulis dengan aman."
+
+msgid "Whether the plugin can write to private storage. Archives and restore points need this directory."
+msgstr "Apakah plug-in dapat menulis ke penyimpanan privat. Arsip dan titik pemulihan membutuhkan direktori ini."
+
+msgid "WordPress core table - always included"
+msgstr "Tabel inti WordPress - selalu disertakan"
+
+msgid "Working…"
+msgstr "Bekerja…"
+
+msgid "You do not have permission to run migrations."
+msgstr "Anda tidak punya izin untuk menjalankan migrasi."
+
+msgid "all included"
+msgstr "semua disertakan"
+
+msgid "database"
+msgstr "basis data"
+
+msgid "e.g. company vault / migration"
+msgstr "mis. brankas kantor / migrasi"
+
+msgid "encrypted"
+msgstr "terenkripsi"
+
+msgid "files"
+msgstr "berkas"
+
+msgid "finalize"
+msgstr "penyelesaian"
+
+msgid "hint"
+msgstr "petunjuk"
+
+msgid "job"
+msgstr "pekerjaan"
+
+msgid "missing parts"
+msgstr "bagian kurang"
+
+msgid "or click to browse. For split sets, select every part"
+msgstr "atau klik untuk memilih. Untuk set terpecah, pilih semua bagian"
+
+msgid "part"
+msgstr "bagian"
+
+msgid "part(s)"
+msgstr "bagian"
+
+msgid "parts"
+msgstr "bagian"
+
+msgid "rows"
+msgstr "baris"
+
+msgid "running"
+msgstr "berjalan"
+
+msgid "set complete"
+msgstr "set lengkap"
+
+msgid "unknown"
+msgstr "tidak diketahui"
+
+msgid "upload incomplete"
+msgstr "unggahan tidak lengkap"
+
+msgid "uploads/2023, cache"
+msgstr "uploads/2023, cache"
+
+msgid "wp-admin, wp-includes and root files are always included. A restored site needs them to run."
+msgstr "wp-admin, wp-includes, dan berkas root selalu disertakan. Situs yang dipulihkan membutuhkannya untuk berjalan."

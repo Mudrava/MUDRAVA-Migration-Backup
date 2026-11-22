@@ -1,0 +1,705 @@
+# Ukrainian translations for MUDRAVA Migration & Backup.
+# Copyright (C) 2026 MUDRAVA
+# This file is distributed under the GPL-2.0-or-later license.
+# Hand written by MUDRAVA, one string at a time.
+msgid ""
+msgstr ""
+"Project-Id-Version: MUDRAVA Migration & Backup 1.1.0\n"
+"Report-Msgid-Bugs-To: https://mudrava.com/en/\n"
+"POT-Creation-Date: 2026-11-22 00:00+0000\n"
+"PO-Revision-Date: 2026-11-22 00:00+0000\n"
+"Last-Translator: MUDRAVA <info@mudrava.com>\n"
+"Language-Team: Ukrainian\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Domain: mudrava-migration-backup\n"
+
+msgid "%1$s: %2$s rows, %3$s MB. "
+msgstr "%1$s: %2$s рядків, %3$s МБ. "
+
+msgid "%1$s: %2$s. "
+msgstr "%1$s: %2$s. "
+
+msgid "A database operation failed during the migration."
+msgstr "Під час міграції сталася помилка операції з базою даних."
+
+msgid "A database row is too large for the backup format. Reduce the row size and retry."
+msgstr "Рядок бази даних завеликий для формату резервної копії. Зменшіть його розмір і повторіть спробу."
+
+msgid "A table without a primary key changed during the backup, so rows could be missed. Pause writes to it and re-run the backup."
+msgstr "Таблиця без первинного ключа змінилася під час копіювання, тому її рядки могли бути пропущені. Зупиніть запис у неї та запустіть копіювання заново."
+
+msgid "An upload chunk was rejected. Please retry."
+msgstr "Фрагмент завантаження відхилено. Повторіть спробу."
+
+msgid "Another migration job is already running."
+msgstr "Інше завдання міграції вже виконується."
+
+msgid "Anyone who has this archive can read the password hint. Never put the password or part of it here."
+msgstr "Кожен, хто має цей архів, побачить підказку пароля. Ніколи не пишіть тут пароль або його частину."
+
+msgid "Approximate size of site files. The database is measured when export starts. This helps estimate time and space."
+msgstr "Орієнтовний розмір файлів сайту. Базу даних вимірюється на старті експорту. Це допомагає оцінити час і потрібне місце."
+
+msgid "Archive password"
+msgstr "Пароль архіву"
+
+msgid "Archive splitting"
+msgstr "Розділення архіву"
+
+msgid "Archives"
+msgstr "Архіви"
+
+msgid "Archives on this site"
+msgstr "Архіви на цьому сайті"
+
+msgid "Assembling archive"
+msgstr "Збирання архіву"
+
+msgid "Auto"
+msgstr "Авто"
+
+msgid "Autoloaded options read on every request: this many rows and bytes load before your code runs."
+msgstr "Автозавантажувані налаштування читаються на кожен запит: стільки рядків і байтів завантажується до запуску вашого коду."
+
+msgid "Automatic recovery failed; inspect the restore point"
+msgstr "Автоматичне відновлення не вдалося; перевірте точку відновлення"
+
+msgid "Backup and delivery reports"
+msgstr "Звіти про резервні копії та доставку"
+
+msgid "Backup notifications"
+msgstr "Сповіщення про резервні копії"
+
+msgid "Cancel"
+msgstr "Скасувати"
+
+msgid "Cancelled."
+msgstr "Скасовано."
+
+msgid "Cancelling…"
+msgstr "Скасовую…"
+
+msgid "Change what is included"
+msgstr "Змінити склад"
+
+msgid "Choose a password, or turn off encryption to export unencrypted."
+msgstr "Придумайте пароль або вимкніть шифрування, щоб вивантажити без шифру."
+
+msgid "Choose a strong password"
+msgstr "Придумайте надійний пароль"
+
+msgid "Choose archive files to upload"
+msgstr "Оберіть файли архіву для завантаження"
+
+msgid "Choose where reports are sent"
+msgstr "Оберіть, куди надсилати звіти"
+
+msgid "Clean selected"
+msgstr "Очистити вибране"
+
+msgid "Cleaned"
+msgstr "Вичищено"
+
+msgid "Cleaned %s items"
+msgstr "Вичищено об'єктів: %s"
+
+msgid "Cleaning failed: %s"
+msgstr "Очищення не вдалося: %s"
+
+msgid "Cleaning…"
+msgstr "Очищення…"
+
+msgid "Close"
+msgstr "Закрити"
+
+msgid "Cloud storage"
+msgstr "Хмарне сховище"
+
+msgid "Completed"
+msgstr "Завершено"
+
+msgid "Continue"
+msgstr "Продовжити"
+
+msgid "Could not load the live inventory. Reload the page to try again."
+msgstr "Не вдалося завантажити актуальний перелік вмісту. Оновіть сторінку й спробуйте ще раз."
+
+msgid "Could not read the selected files. Select them again."
+msgstr "Не вдалося прочитати вибрані файли. Оберіть їх заново."
+
+msgid "Count"
+msgstr "Кількість"
+
+msgid "Create backup"
+msgstr "Створити резервну копію"
+
+msgid "Custom"
+msgstr "Вручну"
+
+msgid "Daily or weekly backups in your site timezone"
+msgstr "Щоденні чи щотижневі копії в часовому поясі сайту"
+
+msgid "Database"
+msgstr "База даних"
+
+msgid "Delete the selected items permanently? This cannot be undone."
+msgstr "Видалити вибрані об'єкти безповоротно? Скасувати це буде неможливо."
+
+msgid "Deletion is permanent and runs in small batches. Unattached media and autoload are measured, never pruned: media needs your own review."
+msgstr "Видалення безповоротне й виконується невеликими пачками. Незакріплені медіафайли та автозавантаження лише вимірюємо, але не видаляємо: медіа потребують вашої особистої перевірки."
+
+msgid "Done"
+msgstr "Готово"
+
+msgid "Done editing"
+msgstr "Готово"
+
+msgid "Download"
+msgstr "Завантажити"
+
+msgid "Download all"
+msgstr "Завантажити все"
+
+msgid "Download part"
+msgstr "Завантажити частину"
+
+msgid "Drop .mudrava files here"
+msgstr "Перетягніть сюди файли .mudrava"
+
+msgid "Duplicate parts selected: %s"
+msgstr "Вибрано повторювані частини: %s"
+
+msgid "Email alerts for failed backups or delivery"
+msgstr "Листи-сповіщення про збої копіювання чи доставки"
+
+msgid "Encrypt backup with password"
+msgstr "Зашифрувати копію паролем"
+
+msgid "Encrypted with XChaCha20-Poly1305 + Argon2id. Lost passwords cannot be recovered."
+msgstr "Шифрування XChaCha20-Poly1305 + Argon2id. Забутий пароль відновити неможливо."
+
+msgid "Enter the archive password to continue"
+msgstr "Введіть пароль архіву, щоб продовжити"
+
+msgid "Enter the archive password to continue."
+msgstr "Введіть пароль архіву, щоб продовжити."
+
+msgid "Environment"
+msgstr "Середовище"
+
+msgid "Everything included"
+msgstr "Увімкнено все"
+
+msgid "Everything is included by default. Uncheck only what you are sure this site does not need."
+msgstr "У типовому стані увімкнено все. Знімайте позначку лише з того, в непотрібності чого ви впевнені."
+
+msgid "Excluded"
+msgstr "Виключено"
+
+msgid "Explore Pro"
+msgstr "Переглянути Pro"
+
+msgid "Export"
+msgstr "Експорт"
+
+msgid "Export creates a .mudrava archive. If site cron is inactive, keep this tab open; the progress dialog shows whether it is safe to close."
+msgstr "Експорт створює архів .mudrava. Якщо cron сайту не працює, тримайте цю вкладку відкритою: діалог прогресу покаже, чи можна її закривати."
+
+msgid "Export this site"
+msgstr "Вивантажити цей сайт"
+
+msgid "Extra paths to skip (optional)"
+msgstr "Додаткові шляхи для пропуску (необов'язково)"
+
+msgid "Failed"
+msgstr "Збій"
+
+msgid "Files"
+msgstr "Файли"
+
+msgid "Files from different archives are selected. Pick the parts of ONE archive."
+msgstr "Вибрано файли з різних архівів. Візьміть частини одного архіву."
+
+msgid "Filter folders…"
+msgstr "Фільтр тек…"
+
+msgid "Filter tables…"
+msgstr "Фільтр таблиць…"
+
+msgid "Found"
+msgstr "Знайдено"
+
+msgid "Free provides manual migration and restore on unlimited sites. Pro adds automation."
+msgstr "Безкоштовна версія робить ручні міграції та відновлення на будь-якій кількості сайтів. Pro додає автоматизацію."
+
+msgid "Free space in private storage. A safe restore needs room for the archive and a restore point."
+msgstr "Вільне місце в приватному сховищі. Безпечне відновлення потребує місця під архів і точку відновлення."
+
+msgid "Free. Host limits apply"
+msgstr "Безкоштовно. Діють ліміти хостингу"
+
+msgid "Hide password"
+msgstr "Сховати пароль"
+
+msgid "I understand: restore overwrites this site database and files, and I accept proceeding without a restore point."
+msgstr "Я розумію: відновлення перезапише базу й файли цього сайту, і я погоджуються продовжити без точки відновлення."
+
+msgid "Import"
+msgstr "Імпорт"
+
+msgid "Import an archive"
+msgstr "Відновити з архіву"
+
+msgid "Individual parts"
+msgstr "Окремі частини"
+
+msgid "Item"
+msgstr "Об'єкт"
+
+msgid "Keep backup copies away from the WordPress server you are protecting."
+msgstr "Зберігайте резервні копії окремо від захищуваного сервера WordPress."
+
+msgid "Keep this tab open until the restore finishes - the restore only advances while this page is open."
+msgstr "Тримайте цю вкладку відкритою до кінця відновлення: воно рухається лише доки сторінка відкрита."
+
+msgid "Know when a backup needs attention without checking every site manually."
+msgstr "Дізнавайтеся про проблеми з копіями, не перевіряючи кожен сайт вручну."
+
+msgid "MUDRAVA"
+msgstr "MUDRAVA"
+
+msgid "MUDRAVA Migration"
+msgstr "MUDRAVA Міграція"
+
+msgid "MUDRAVA Migration & Backup cannot run on this server: PHP 7.4+ (64-bit), zlib and JSON are required."
+msgstr "MUDRAVA Migration & Backup не може працювати на цьому сервері: потрібні PHP 7.4+ (64-біт), zlib і JSON."
+
+msgid "MUDRAVA Migration & Backup requires PHP 7.4 or newer. Please upgrade PHP before activating."
+msgstr "MUDRAVA Migration & Backup потребує PHP 7.4 або новіший. Оновіть PHP перед активацією."
+
+msgid "MUDRAVA Pro"
+msgstr "MUDRAVA Pro"
+
+msgid "MUDRAVA cannot write where it needs to. Check folder permissions."
+msgstr "MUDRAVA не може записувати туди, куди потрібно. Перевірте права на теки."
+
+msgid "Maintenance"
+msgstr "Обслуговування"
+
+msgid "Measuring this site…"
+msgstr "Міряю цей сайт…"
+
+msgid "Migration operations"
+msgstr "Завдання міграції"
+
+msgid "Migration paused because the disk is full."
+msgstr "Міграцію призупинено: на диску закінчилося місце."
+
+msgid "Missed runs handled without creating a backlog"
+msgstr "Пропущені запуски відпрацьовуються без завалу"
+
+msgid "Multisite detected."
+msgstr "Виявлено мультисайтову мережу."
+
+msgid "Multisite migrations are not supported. MUDRAVA migrates single sites."
+msgstr "Міграції мультисайтових мереж не підтримуються. MUDRAVA переносить одинарні сайти."
+
+msgid "Network-wide migration is not supported in this release. MUDRAVA currently migrates single sites."
+msgstr "Перенесення всієї мережі в цій версії не підтримується. Наразі MUDRAVA переносить одинарні сайти."
+
+msgid "Next page"
+msgstr "Наступна сторінка"
+
+msgid "No archives on this site yet."
+msgstr "На цьому сайті поки немає архівів."
+
+msgid "Not enough disk space for a restore point. A failed restore will need another backup to recover. Check the box to accept this risk."
+msgstr "На диску бракує місця для точки відновлення. Впале відновлення доведеться відкочувати іншою копією. Поставте позначку, якщо приймаєте цей ризик."
+
+msgid "Notifications"
+msgstr "Сповіщення"
+
+msgid "Off"
+msgstr "Вимк"
+
+msgid "Off-site storage"
+msgstr "Зовнішнє сховище"
+
+msgid "One of the parts belongs to a different backup."
+msgstr "Одна з частин належить іншій копії."
+
+msgid "Only a running export can be cancelled."
+msgstr "Скасувати можна лише виконуваний експорт."
+
+msgid "Other files (wp-content root)"
+msgstr "Інші файли (корінь wp-content)"
+
+msgid "Overlapping jobs prevented; safe review after imports"
+msgstr "Накладання завдань заборонено; безпечна перевірка після імпорту"
+
+msgid "Page"
+msgstr "Сторінка"
+
+msgid "Part %s is not a valid continuation part (renamed or wrong file)."
+msgstr "Частина %s не є коректним продовженням (перейменована або не той файл)."
+
+msgid "Part 1 of the set is missing: the plain .mudrava file (no .partNNNN suffix)."
+msgstr "У наборі немає частини 1: звичайного файла .mudrava (без суфікса .partNNNN)."
+
+msgid "Part size unit"
+msgstr "Одиниця розміру частини"
+
+msgid "Password"
+msgstr "Пароль"
+
+msgid "Password encryption is unavailable on this PHP environment."
+msgstr "Шифрування паролем недоступне в цьому середовищі PHP."
+
+msgid "Password hint (optional)"
+msgstr "Підказка пароля (необов'язково)"
+
+msgid "Passwords do not match."
+msgstr "Паролі не збігаються."
+
+msgid "Pause writes during final export. Changes during the run can stop the export or leave unvisited files out of the backup."
+msgstr "Призупиніть запис на час фінального експорту. Зміни під час роботи можуть зупинити експорт або залишити невідвідані файли поза межами копії."
+
+msgid "Planned annual plans: $59 / 3 sites, $129 / 15 sites, $249 / 50 sites."
+msgstr "Планові річні тарифи: $59 / 3 сайти, $129 / 15 сайтів, $249 / 50 сайтів."
+
+msgid "Plugins older here than on the source: %s."
+msgstr "Плагіни тут старіші, ніж на вихідному сайті: %s."
+
+msgid "Portable backups. Resumable exports. Optional encryption."
+msgstr "Переносні копії. Відновлюваний експорт. Шифрування на бажання."
+
+msgid "Previous page"
+msgstr "Попередня сторінка"
+
+msgid "Private backup storage is unsafe or ambiguous. Set MUDRAVA_MB_STORAGE_DIR to one writable directory outside the web root."
+msgstr "Приватне сховище копій небезпечне або невизначене. Вкажіть MUDRAVA_MB_STORAGE_DIR на одну записувану теку поза коренем сайту."
+
+msgid "Pro"
+msgstr "Pro"
+
+msgid "Reload the live inventory"
+msgstr "Оновити актуальний перелік"
+
+msgid "Removing files and tables created by the failed import"
+msgstr "Видаляю файли та таблиці, створені впалим імпортом"
+
+msgid "Repeat password"
+msgstr "Повторіть пароль"
+
+msgid "Repeat the password"
+msgstr "Повторіть пароль"
+
+msgid "Restore point reapplied"
+msgstr "Точку відновлення застосовано"
+
+msgid "Restore point reapplied; verify the site"
+msgstr "Точку відновлення застосовано; перевірте сайт"
+
+msgid "Restore point saved"
+msgstr "Точку відновлення збережено"
+
+msgid "Restore point: recommended. There is enough free disk to keep a safety copy of this site before overwriting."
+msgstr "Точка відновлення: рекомендовано. Диску вистачає, щоб зберегти страхувальну копію сайту перед перезаписом."
+
+msgid "Restore site"
+msgstr "Відновити сайт"
+
+msgid "Restoring the previous site"
+msgstr "Відновлюю попередній сайт"
+
+msgid "Restoring the previous site after an import error"
+msgstr "Откачування попередній сайт після збою імпорту"
+
+msgid "Resuming the interrupted job…"
+msgstr "Відновлюю перерване завдання…"
+
+msgid "Retention rules for older backup copies"
+msgstr "Правила зберігання старих копій"
+
+msgid "Review"
+msgstr "Перевірити"
+
+msgid "Revisions, spam and expired transients inflate every backup. This screen counts first; nothing is deleted until you apply what you pick."
+msgstr "Ревізії, спам і прострочені транзіенти роздувають кожну копію. Тут спершу рахуємо: нічого не видаляється, доки ви не застосуєте обраний вами набір."
+
+msgid "Rewriting URLs"
+msgstr "Переписую адреси"
+
+msgid "S3 / S3-compatible storage"
+msgstr "S3 / S3-сумісне сховище"
+
+msgid "S3 and S3-compatible storage"
+msgstr "S3 та S3-сумісні сховища"
+
+msgid "Safe to close this tab. The job continues on the server and resumes when you return."
+msgstr "Цю вкладку можна закрити. Завдання продовжується на сервері й підхопиться, коли ви повернетеся."
+
+msgid "Same Pro features in every plan. Manual Free restore remains available after expiry."
+msgstr "В усіх тарифах однакові Pro-можливості. Ручне безкоштовне відновлення лишається й після закінчення підписки."
+
+msgid "Same surface headless: wp mudrava maintenance --apply --items=revisions,transients"
+msgstr "Те саме без інтерфейсу: wp mudrava maintenance --apply --items=revisions,transients"
+
+msgid "Saving a restore point of this site"
+msgstr "Зберігаю точку відновлення цього сайту"
+
+msgid "Schedule"
+msgstr "Розклад"
+
+msgid "Scheduled backups"
+msgstr "Копії за розкладом"
+
+msgid "Scheduled backups, off-site storage, retention and notifications"
+msgstr "Копії за розкладом, зовнішнє сховище, строк зберігання та сповіщення"
+
+msgid "Scheduled exports"
+msgstr "Експорт за розкладом"
+
+msgid "Security action required: %d old backup files remain in public wp-content. Move them to private storage."
+msgstr "Потрібні дії безпеки: %d старих копій лежать у загальнодоступному wp-content. Перенесіть їх у приватне сховище."
+
+msgid "Select all"
+msgstr "Вибрати все"
+
+msgid "Select at least one item to clean."
+msgstr "Виберіть хоча б один об'єкт для очищення."
+
+msgid "Set a backup routine and reduce repetitive work across your sites."
+msgstr "Задайте порядок копіювання і менше повторюйте те саме на своїх сайтах."
+
+msgid "Show password"
+msgstr "Показати пароль"
+
+msgid "Site cron is not running. Without visitors, this job may pause until cron returns. Keep this tab open to be sure."
+msgstr "Cron сайту не працює. Без відвідувачів завдання може стати до повернення крона. Тримайте цю вкладку відкритою для певності."
+
+msgid "Sizes are approximate on very large sites."
+msgstr "На дуже великих сайтах розміри орієнтовні."
+
+msgid "Skip folders inside wp-content, separated by commas. Example: uploads/2023 skips media from 2023. Use the checkboxes above for whole groups."
+msgstr "Теки всередині wp-content через кому. Приклад: uploads/2023 пропустить медіа 2023 року. Цілі групи знімайте позначками вище."
+
+msgid "Slot %s holds a file that belongs to a different archive or a different part."
+msgstr "У слоті %s файл з іншого архіву або іншої частини."
+
+msgid "Some environment checks failed. Open the Environment tab for details."
+msgstr "Частину перевірок середовища не пройдено. Відкрийте вкладку «Середовище»."
+
+msgid "Some parts of this backup are missing."
+msgstr "У цієї копії бракує кількох частин."
+
+msgid "Source theme: %1$s. This site: %2$s."
+msgstr "Тема джерела: %1$s. Цей сайт: %2$s."
+
+msgid "Split archives to meet host file limits. Auto uses 7 GB parts. Off makes one file. Custom accepts a size in MB or GB."
+msgstr "Розбивайте архіви під ліміти хостингу на розмір файлу. Авто робить частини по 7 ГБ. Вимк залишає один файл. Вручну задає розмір у МБ або ГБ."
+
+msgid "Split presets"
+msgstr "Готові розміри частин"
+
+msgid "Storage"
+msgstr "Сховище"
+
+msgid "The JSON extension. It encodes archive metadata and job status. Without it, the engine cannot describe or resume an archive."
+msgstr "Розширення JSON. У нього кодуються метадані архіву і стан завдання. Без нього рушій не зможе описати архів або продовжити його."
+
+msgid "The PHP version of this site. PHP 7.4 or newer is required for streaming and crypto functions."
+msgstr "Версія PHP цього сайту. Для потокової передачі й криптофункцій потрібен PHP 7.4 або новіший."
+
+msgid "The archive carries plugins this site does not have: %s. Install them before restoring, or builder content may not render."
+msgstr "В архіві є плагіни, яких немає на цьому сайті: %s. Установіть їх до відновлення, інакше вміст конструкторів може не відобразитися."
+
+msgid "The archive contains a path that cannot be restored safely."
+msgstr "Архів містить шлях, який неможливо безпечно відновити."
+
+msgid "The archive did not pass integrity verification."
+msgstr "Архів не пройшов перевірку цілісності."
+
+msgid "The archive is damaged and cannot be read safely."
+msgstr "Архів пошкоджено, безпечне читання неможливе."
+
+msgid "The archive is incomplete. The transfer may have been interrupted."
+msgstr "Архів неповний. Передача, схоже, перервалася."
+
+msgid "The backup file changed during verification or restore. Upload the original archive again."
+msgstr "Файл копії змінився під час перевірки або відновлення. Завантажте початковий архів заново."
+
+msgid "The backup storage folder is not writable by the web server. Fix its ownership (it may have been created by a root shell)."
+msgstr "Вебсервер не може записувати в теку сховища. Виправте її власника: можливо, її створив root з консолі."
+
+msgid "The database connection was lost."
+msgstr "З'єднання з базою даних втрачено."
+
+msgid "The encryption backend protects password-encrypted archives. Without it, unencrypted export still works."
+msgstr "Криптопідкладка захищає зашифровані архіви. Без неї незашифрований експорт усе одно працює."
+
+msgid "The first file is not a valid .mudrava archive (bad header)."
+msgstr "Перший файл не є коректним архівом .mudrava (битий заголовок)."
+
+msgid "The hint cannot be the password or part of it. Describe where it is kept instead, e.g. \"company vault\"."
+msgstr "Підказка не повинна бути паролем чи його частиною. Опишіть краще, де він лежить: наприклад, «корпоративний сейф»."
+
+msgid "The last selected file is not the end of the archive - part %s is still missing."
+msgstr "Останній вибраний файл не є кінцем архіву: частина %s досі відсутня."
+
+msgid "The migration could not be completed."
+msgstr "Міграцію не вдалося завершити."
+
+msgid "The password is incorrect. The archive is still intact."
+msgstr "Пароль хибний. Сам архів цілий."
+
+msgid "The remote server could not be reached."
+msgstr "Віддалений сервер не відповідає."
+
+msgid "The remote server took too long to respond. You can resume."
+msgstr "Віддалений сервер відповідає надто довго. Можна продовжити з місця зупинки."
+
+msgid "The set is incomplete - missing parts: %s"
+msgstr "Набір неповний: бракує частин %s"
+
+msgid "The zlib extension compresses archive frames while streaming. Export requires it."
+msgstr "Розширення zlib стискає кадри архіву на літу. Експорту воно необхідне."
+
+msgid "These capabilities belong to the separate Pro add-on, currently in development. Purchasing is not open yet."
+msgstr "Ці можливості належать до окремого додатка Pro, який нині в розробці. Покупка ще не відкрита."
+
+msgid "This archive is encrypted. Enter its password to restore."
+msgstr "Цей архів зашифровано. Для відновлення введіть його пароль."
+
+msgid "This archive uses a newer format. Please update MUDRAVA first."
+msgstr "Архів використовує новіший формат. Спершу оновіть MUDRAVA."
+
+msgid "This is part 1 of a split set, not a complete archive. Select the .mudrava file AND every .mudrava.partNNNN file of this set."
+msgstr "Це частина 1 набору, а не цілий архів. Виберіть файл .mudrava і всі файли .mudrava.partNNNN цього набору."
+
+msgid "This job no longer exists."
+msgstr "Це завдання більше не існує."
+
+msgid "This migration step needs more PHP memory than this server allows."
+msgstr "Цьому кроку міграції потрібно більше пам'яті PHP, ніж дозволяє сервер."
+
+msgid "This server cannot safely run large migrations."
+msgstr "Цей сервер не може безпечно виконувати великі міграції."
+
+msgid "This server is missing requirements for the requested operation."
+msgstr "На цьому сервері бракує вимог для запитаної операції."
+
+msgid "This site (Free)"
+msgstr "Цей сайт (безкоштовно)"
+
+msgid "This site uses an external object cache: transients may live there and are invisible to this count."
+msgstr "Сайт використовує зовнішній об'єктний кеш: транзіенти можуть жити в ньому і не бути видимими цьому підрахунку."
+
+msgid "This will overwrite the current site. Are you sure?"
+msgstr "Це перезапише поточний сайт. Ви впевнені?"
+
+msgid "Tidy before you migrate"
+msgstr "Приберіться перед переїздом"
+
+msgid "Unattached media items: reported only. Use the media library to review before deleting."
+msgstr "Незакріплені медіафайли: лише показуємо. Перевіряйте їх у бібліотеці перед видаленням."
+
+msgid "Unrecognized files (must be *.mudrava or *.mudrava.partNNNN): %s"
+msgstr "Непізнані файли (потрібні *.mudrava або *.mudrava.partNNNN): %s"
+
+msgid "Upload a .mudrava archive (or every part of a split set) and restore it onto this site."
+msgstr "Завантажте архів .mudrava (або всі частини набору) та відновіть його на цей сайт."
+
+msgid "Uploading"
+msgstr "Завантаження"
+
+msgid "Verified delivery with retries"
+msgstr "Перевірена доставка з повторами"
+
+msgid "Verifying the restore point"
+msgstr "Перевіряю точку відновлення"
+
+msgid "Visit MUDRAVA"
+msgstr "Відвідати MUDRAVA"
+
+msgid "What goes into the archive"
+msgstr "Що потрапляє в архів"
+
+msgid "Whether PHP uses 64-bit integers. Without them, archives over 2 GB cannot be read or written safely."
+msgstr "Чи використовує PHP 64-бітні цілі. Без них архіви понад 2 ГБ неможливо безпечно читати й записувати."
+
+msgid "Whether the plugin can write to private storage. Archives and restore points need this directory."
+msgstr "Чи може плагін писати в приватне сховище. Ця тека потрібна архівам і точкам відновлення."
+
+msgid "WordPress core table - always included"
+msgstr "Системна таблиця WordPress: завжди увімкнена"
+
+msgid "Working…"
+msgstr "Працюю…"
+
+msgid "You do not have permission to run migrations."
+msgstr "У вас немає прав на запуск міграцій."
+
+msgid "all included"
+msgstr "все увімкнено"
+
+msgid "database"
+msgstr "база даних"
+
+msgid "e.g. company vault / migration"
+msgstr "наприклад, корпоративний сейф / переїзд"
+
+msgid "encrypted"
+msgstr "зашифровано"
+
+msgid "files"
+msgstr "файли"
+
+msgid "finalize"
+msgstr "завершення"
+
+msgid "hint"
+msgstr "підказка"
+
+msgid "job"
+msgstr "завдання"
+
+msgid "missing parts"
+msgstr "бракує частин"
+
+msgid "or click to browse. For split sets, select every part"
+msgstr "або натисніть для вибору. Для наборів обирайте всі частини"
+
+msgid "part"
+msgstr "частина"
+
+msgid "part(s)"
+msgstr "част."
+
+msgid "parts"
+msgstr "частини"
+
+msgid "rows"
+msgstr "рядків"
+
+msgid "running"
+msgstr "виконується"
+
+msgid "set complete"
+msgstr "набір повний"
+
+msgid "unknown"
+msgstr "невідомо"
+
+msgid "upload incomplete"
+msgstr "завантаження не завершено"
+
+msgid "uploads/2023, cache"
+msgstr "uploads/2023, cache"
+
+msgid "wp-admin, wp-includes and root files are always included. A restored site needs them to run."
+msgstr "wp-admin, wp-includes і файли кореня завжди увімкнені. Без них відновлений сайт не запуститься."

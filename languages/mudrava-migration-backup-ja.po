@@ -1,0 +1,705 @@
+# Japanese translations for MUDRAVA Migration & Backup.
+# Copyright (C) 2026 MUDRAVA
+# This file is distributed under the GPL-2.0-or-later license.
+# Hand written by MUDRAVA, one string at a time. Polite forms (です/ます).
+msgid ""
+msgstr ""
+"Project-Id-Version: MUDRAVA Migration & Backup 1.1.0\n"
+"Report-Msgid-Bugs-To: https://mudrava.com/en/\n"
+"POT-Creation-Date: 2026-11-22 00:00+0000\n"
+"PO-Revision-Date: 2026-11-22 00:00+0000\n"
+"Last-Translator: MUDRAVA <info@mudrava.com>\n"
+"Language-Team: Japanese <ja@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Domain: mudrava-migration-backup\n"
+
+msgid "%1$s: %2$s rows, %3$s MB. "
+msgstr "%1$s: %2$s行、%3$s MB。"
+
+msgid "%1$s: %2$s. "
+msgstr "%1$s: %2$s。"
+
+msgid "A database operation failed during the migration."
+msgstr "移行中にデータベース操作が失敗しました。"
+
+msgid "A database row is too large for the backup format. Reduce the row size and retry."
+msgstr "データベースの行が大きすぎてバックアップ形式に対応できません。行を小さくしてから再試行してください。"
+
+msgid "A table without a primary key changed during the backup, so rows could be missed. Pause writes to it and re-run the backup."
+msgstr "主キーのないテーブルがバックアップ中に変更されたため、行が取り込まれていない可能性があります。書き込みを止めてバックアップを再実行してください。"
+
+msgid "An upload chunk was rejected. Please retry."
+msgstr "アップロードの一部が拒否されました。再試行してください。"
+
+msgid "Another migration job is already running."
+msgstr "別の移行ジョブがすでに実行中です。"
+
+msgid "Anyone who has this archive can read the password hint. Never put the password or part of it here."
+msgstr "このアーカイブを持つ人なら誰でもパスワードのヒントを読めます。パスワードやその一部をここに入力しないでください。"
+
+msgid "Approximate size of site files. The database is measured when export starts. This helps estimate time and space."
+msgstr "サイトファイルのおおよそのサイズです。データベースはエクスポート開始時に計測されます。時間と容量の見積もりに役立ちます。"
+
+msgid "Archive password"
+msgstr "アーカイブのパスワード"
+
+msgid "Archive splitting"
+msgstr "アーカイブの分割"
+
+msgid "Archives"
+msgstr "アーカイブ"
+
+msgid "Archives on this site"
+msgstr "このサイト上のアーカイブ"
+
+msgid "Assembling archive"
+msgstr "アーカイブを構築中"
+
+msgid "Auto"
+msgstr "自動"
+
+msgid "Autoloaded options read on every request: this many rows and bytes load before your code runs."
+msgstr "autoload 設定はリクエストごとに読み込まれます。コード実行前にこれだけの行数とバイトが読み込まれています。"
+
+msgid "Automatic recovery failed; inspect the restore point"
+msgstr "自動復旧に失敗しました。復元ポイントを確認してください"
+
+msgid "Backup and delivery reports"
+msgstr "バックアップと転送のレポート"
+
+msgid "Backup notifications"
+msgstr "バックアップの通知"
+
+msgid "Cancel"
+msgstr "キャンセル"
+
+msgid "Cancelled."
+msgstr "キャンセルしました。"
+
+msgid "Cancelling…"
+msgstr "キャンセル中…"
+
+msgid "Change what is included"
+msgstr "含める内容を変更"
+
+msgid "Choose a password, or turn off encryption to export unencrypted."
+msgstr "パスワードを設定するか、暗号化をオフにして無暗号でエクスポートしてください。"
+
+msgid "Choose a strong password"
+msgstr "強力なパスワードを設定してください"
+
+msgid "Choose archive files to upload"
+msgstr "アップロードするアーカイブファイルを選択"
+
+msgid "Choose where reports are sent"
+msgstr "レポートの送信先を選択してください"
+
+msgid "Clean selected"
+msgstr "選択分をクリーンアップ"
+
+msgid "Cleaned"
+msgstr "クリーンアップ済み"
+
+msgid "Cleaned %s items"
+msgstr "%s件をクリーンアップしました"
+
+msgid "Cleaning failed: %s"
+msgstr "クリーンアップに失敗しました: %s"
+
+msgid "Cleaning…"
+msgstr "クリーンアップ中…"
+
+msgid "Close"
+msgstr "閉じる"
+
+msgid "Cloud storage"
+msgstr "クラウドストレージ"
+
+msgid "Completed"
+msgstr "完了"
+
+msgid "Continue"
+msgstr "続行"
+
+msgid "Could not load the live inventory. Reload the page to try again."
+msgstr "最新の内容一覧を読み込めませんでした。ページを再読み込みして再試行してください。"
+
+msgid "Could not read the selected files. Select them again."
+msgstr "選択したファイルを読み込めませんでした。もう一度選択してください。"
+
+msgid "Count"
+msgstr "件数"
+
+msgid "Create backup"
+msgstr "バックアップを作成"
+
+msgid "Custom"
+msgstr "カスタム"
+
+msgid "Daily or weekly backups in your site timezone"
+msgstr "サイトのタイムゾーンで毎日または毎週のバックアップ"
+
+msgid "Database"
+msgstr "データベース"
+
+msgid "Delete the selected items permanently? This cannot be undone."
+msgstr "選択した項目を完全に削除しますか。この操作は取り消せません。"
+
+msgid "Deletion is permanent and runs in small batches. Unattached media and autoload are measured, never pruned: media needs your own review."
+msgstr "削除は完全で、小さなバッチに分けて実行されます。未添付メディアと autoload は計測のみで削除しません。メディアはご自身の判断で確認してください。"
+
+msgid "Done"
+msgstr "完了"
+
+msgid "Done editing"
+msgstr "編集完了"
+
+msgid "Download"
+msgstr "ダウンロード"
+
+msgid "Download all"
+msgstr "すべてダウンロード"
+
+msgid "Download part"
+msgstr "パーツをダウンロード"
+
+msgid "Drop .mudrava files here"
+msgstr "ここに .mudrava ファイルをドロップ"
+
+msgid "Duplicate parts selected: %s"
+msgstr "重複したパーツが選択されています: %s"
+
+msgid "Email alerts for failed backups or delivery"
+msgstr "バックアップや転送の失敗をメールで通知"
+
+msgid "Encrypt backup with password"
+msgstr "パスワードでバックアップを暗号化"
+
+msgid "Encrypted with XChaCha20-Poly1305 + Argon2id. Lost passwords cannot be recovered."
+msgstr "XChaCha20-Poly1305 + Argon2id で暗号化。失ったパスワードは復元できません。"
+
+msgid "Enter the archive password to continue"
+msgstr "続行するにはアーカイブのパスワードを入力"
+
+msgid "Enter the archive password to continue."
+msgstr "続行するにはアーカイブのパスワードを入力してください。"
+
+msgid "Environment"
+msgstr "環境"
+
+msgid "Everything included"
+msgstr "すべて含める"
+
+msgid "Everything is included by default. Uncheck only what you are sure this site does not need."
+msgstr "既定ですべて含まれます。このサイトに不要だと確かなものだけチェックを外してください。"
+
+msgid "Excluded"
+msgstr "除外済み"
+
+msgid "Explore Pro"
+msgstr "Pro を見る"
+
+msgid "Export"
+msgstr "エクスポート"
+
+msgid "Export creates a .mudrava archive. If site cron is inactive, keep this tab open; the progress dialog shows whether it is safe to close."
+msgstr "エクスポートは .mudrava アーカイブを作成します。サイトの cron が動いていない場合はこのタブを開けたままにしてください。閉じて安全かどうかは進捗ダイアログに表示されます。"
+
+msgid "Export this site"
+msgstr "このサイトをエクスポート"
+
+msgid "Extra paths to skip (optional)"
+msgstr "スキップする追加パス (任意)"
+
+msgid "Failed"
+msgstr "失敗"
+
+msgid "Files"
+msgstr "ファイル"
+
+msgid "Files from different archives are selected. Pick the parts of ONE archive."
+msgstr "異なるアーカイブのファイルが選択されています。1つのアーカイブのパーツだけを指定してください。"
+
+msgid "Filter folders…"
+msgstr "フォルダーを絞り込み…"
+
+msgid "Filter tables…"
+msgstr "テーブルを絞り込み…"
+
+msgid "Found"
+msgstr "検出"
+
+msgid "Free provides manual migration and restore on unlimited sites. Pro adds automation."
+msgstr "無料版はサイト数無制限で手動の移行と復元を利用できます。Pro は自動化を追加します。"
+
+msgid "Free space in private storage. A safe restore needs room for the archive and a restore point."
+msgstr "プライベートストレージの空き容量です。安全な復元にはアーカイブと復元ポイントの分の容量が必要です。"
+
+msgid "Free. Host limits apply"
+msgstr "無料。ホストの制限が適用されます"
+
+msgid "Hide password"
+msgstr "パスワードを隠す"
+
+msgid "I understand: restore overwrites this site database and files, and I accept proceeding without a restore point."
+msgstr "理解しました: 復元はこのサイトのデータベースとファイルを上書きし、復元ポイントなしで続行することに同意します。"
+
+msgid "Import"
+msgstr "インポート"
+
+msgid "Import an archive"
+msgstr "アーカイブから復元"
+
+msgid "Individual parts"
+msgstr "個別のパーツ"
+
+msgid "Item"
+msgstr "項目"
+
+msgid "Keep backup copies away from the WordPress server you are protecting."
+msgstr "バックアップは保護対象の WordPress サーバーとは別の場所に置いてください。"
+
+msgid "Keep this tab open until the restore finishes - the restore only advances while this page is open."
+msgstr "復元が終わるまでこのタブを開けてください。このページが開いている間だけ復元は進みます。"
+
+msgid "Know when a backup needs attention without checking every site manually."
+msgstr "すべてのサイトを手動で確認しなくても、バックアップの異常に気づけます。"
+
+msgid "MUDRAVA"
+msgstr "MUDRAVA"
+
+msgid "MUDRAVA Migration"
+msgstr "MUDRAVA 移行"
+
+msgid "MUDRAVA Migration & Backup cannot run on this server: PHP 7.4+ (64-bit), zlib and JSON are required."
+msgstr "このサーバーでは MUDRAVA Migration & Backup を実行できません。PHP 7.4以上 (64ビット)、zlib、JSON が必要です。"
+
+msgid "MUDRAVA Migration & Backup requires PHP 7.4 or newer. Please upgrade PHP before activating."
+msgstr "MUDRAVA Migration & Backup には PHP 7.4以降が必要です。有効化する前に PHP をアップグレードしてください。"
+
+msgid "MUDRAVA Pro"
+msgstr "MUDRAVA Pro"
+
+msgid "MUDRAVA cannot write where it needs to. Check folder permissions."
+msgstr "MUDRAVA が書き込みすべき場所に書き込めません。フォルダーの権限を確認してください。"
+
+msgid "Maintenance"
+msgstr "メンテナンス"
+
+msgid "Measuring this site…"
+msgstr "このサイトを計測中…"
+
+msgid "Migration operations"
+msgstr "移行操作"
+
+msgid "Migration paused because the disk is full."
+msgstr "ディスクが満杯のため移行を一時停止しました。"
+
+msgid "Missed runs handled without creating a backlog"
+msgstr "取り逃した実行も滞留なく処理されます"
+
+msgid "Multisite detected."
+msgstr "マルチサイトを検出しました。"
+
+msgid "Multisite migrations are not supported. MUDRAVA migrates single sites."
+msgstr "マルチサイトの移行には対応していません。MUDRAVA は単一サイトを移行します。"
+
+msgid "Network-wide migration is not supported in this release. MUDRAVA currently migrates single sites."
+msgstr "このバージョンではネットワーク全体の移行には対応していません。MUDRAVA は現在単一サイトのみ移行します。"
+
+msgid "Next page"
+msgstr "次のページ"
+
+msgid "No archives on this site yet."
+msgstr "このサイトにはまだアーカイブがありません。"
+
+msgid "Not enough disk space for a restore point. A failed restore will need another backup to recover. Check the box to accept this risk."
+msgstr "復元ポイント用のディスク空き容量が不足しています。復元に失敗した場合、別のバックアップで戻すことになります。このリスクに同意する場合のみチェックしてください。"
+
+msgid "Notifications"
+msgstr "通知"
+
+msgid "Off"
+msgstr "オフ"
+
+msgid "Off-site storage"
+msgstr "オフサイトストレージ"
+
+msgid "One of the parts belongs to a different backup."
+msgstr "パーツの1つが別のバックアップに属しています。"
+
+msgid "Only a running export can be cancelled."
+msgstr "キャンセルできるのは実行中のエクスポートだけです。"
+
+msgid "Other files (wp-content root)"
+msgstr "その他のファイル (wp-content 直下)"
+
+msgid "Overlapping jobs prevented; safe review after imports"
+msgstr "ジョブの重複を実行させず、インポート後に安全な確認を行います"
+
+msgid "Page"
+msgstr "ページ"
+
+msgid "Part %s is not a valid continuation part (renamed or wrong file)."
+msgstr "パーツ %s は有効な続きのパーツではありません (改名または別ファイル)。"
+
+msgid "Part 1 of the set is missing: the plain .mudrava file (no .partNNNN suffix)."
+msgstr "セットのパート1 (.partNNNN 接尾語のない .mudrava ファイル) がありません。"
+
+msgid "Part size unit"
+msgstr "パーツサイズの単位"
+
+msgid "Password"
+msgstr "パスワード"
+
+msgid "Password encryption is unavailable on this PHP environment."
+msgstr "この PHP 環境ではパスワード暗号化は利用できません。"
+
+msgid "Password hint (optional)"
+msgstr "パスワードのヒント (任意)"
+
+msgid "Passwords do not match."
+msgstr "パスワードが一致しません。"
+
+msgid "Pause writes during final export. Changes during the run can stop the export or leave unvisited files out of the backup."
+msgstr "最終エクスポート中は書き込みを止めてください。実行中の変更はエクスポートを停止させたり、まだ走査していないファイルをバックアップから抜け落ちさせたりします。"
+
+msgid "Planned annual plans: $59 / 3 sites, $129 / 15 sites, $249 / 50 sites."
+msgstr "予定している年間プラン: $59 / 3サイト、$129 / 15サイト、$249 / 50サイト。"
+
+msgid "Plugins older here than on the source: %s."
+msgstr "移行元より古いプラグインがこのサイトにあります: %s。"
+
+msgid "Portable backups. Resumable exports. Optional encryption."
+msgstr "持ち運べるバックアップ。中断から再開できるエクスポート。任意で暗号化。"
+
+msgid "Previous page"
+msgstr "前のページ"
+
+msgid "Private backup storage is unsafe or ambiguous. Set MUDRAVA_MB_STORAGE_DIR to one writable directory outside the web root."
+msgstr "プライベートバックアップストレージが安全でないか不明確です。MUDRAVA_MB_STORAGE_DIR を Web ルート外の書き込み可能な1つのディレクトリに設定してください。"
+
+msgid "Pro"
+msgstr "Pro"
+
+msgid "Reload the live inventory"
+msgstr "最新の内容一覧を更新"
+
+msgid "Removing files and tables created by the failed import"
+msgstr "失敗したインポートが作成したファイルとテーブルを削除しています"
+
+msgid "Repeat password"
+msgstr "パスワードを再入力"
+
+msgid "Repeat the password"
+msgstr "パスワードを再入力してください"
+
+msgid "Restore point reapplied"
+msgstr "復元ポイントを再適用しました"
+
+msgid "Restore point reapplied; verify the site"
+msgstr "復元ポイントを再適用しました。サイトを確認してください"
+
+msgid "Restore point saved"
+msgstr "復元ポイントを保存しました"
+
+msgid "Restore point: recommended. There is enough free disk to keep a safety copy of this site before overwriting."
+msgstr "復元ポイント: 推奨。上書き前にこのサイトの保険用コピーを置けるだけの空き容量があります。"
+
+msgid "Restore site"
+msgstr "サイトを復元"
+
+msgid "Restoring the previous site"
+msgstr "以前のサイトを復元しています"
+
+msgid "Restoring the previous site after an import error"
+msgstr "インポートエラーのため以前のサイトを復元しています"
+
+msgid "Resuming the interrupted job…"
+msgstr "中断されたジョブを再開しています…"
+
+msgid "Retention rules for older backup copies"
+msgstr "古いバックアップの保存規則"
+
+msgid "Review"
+msgstr "確認"
+
+msgid "Revisions, spam and expired transients inflate every backup. This screen counts first; nothing is deleted until you apply what you pick."
+msgstr "リビジョン、スパム、期限切れトランジェントはバックアップを肥大させます。この画面はまず件数を出します。選択を適用するまで何も削除されません。"
+
+msgid "Rewriting URLs"
+msgstr "URL を書き換えています"
+
+msgid "S3 / S3-compatible storage"
+msgstr "S3 / S3 互換ストレージ"
+
+msgid "S3 and S3-compatible storage"
+msgstr "S3 および S3 互換ストレージ"
+
+msgid "Safe to close this tab. The job continues on the server and resumes when you return."
+msgstr "このタブは閉じて大丈夫です。ジョブはサーバー上で続き、戻ったときに再開されます。"
+
+msgid "Same Pro features in every plan. Manual Free restore remains available after expiry."
+msgstr "どのプランも Pro 機能は同一です。期限切れ後も手動の無料復元は引き続き利用できます。"
+
+msgid "Same surface headless: wp mudrava maintenance --apply --items=revisions,transients"
+msgstr "同じ操作をコマンドラインでも: wp mudrava maintenance --apply --items=revisions,transients"
+
+msgid "Saving a restore point of this site"
+msgstr "このサイトの復元ポイントを保存しています"
+
+msgid "Schedule"
+msgstr "スケジュール"
+
+msgid "Scheduled backups"
+msgstr "定期バックアップ"
+
+msgid "Scheduled backups, off-site storage, retention and notifications"
+msgstr "定期バックアップ、オフサイト保存、保存規則、通知"
+
+msgid "Scheduled exports"
+msgstr "定期エクスポート"
+
+msgid "Security action required: %d old backup files remain in public wp-content. Move them to private storage."
+msgstr "セキュリティ対応が必要です: %d個の古いバックアップが公開 wp-content に残っています。プライベートストレージへ移してください。"
+
+msgid "Select all"
+msgstr "すべて選択"
+
+msgid "Select at least one item to clean."
+msgstr "クリーンアップする項目を少なくとも1つ選択してください。"
+
+msgid "Set a backup routine and reduce repetitive work across your sites."
+msgstr "バックアップの定型を決めて、複数サイトの反復作業を減らしてください。"
+
+msgid "Show password"
+msgstr "パスワードを表示"
+
+msgid "Site cron is not running. Without visitors, this job may pause until cron returns. Keep this tab open to be sure."
+msgstr "サイトの cron が動いていません。訪問者がいないと cron が戻るまでジョブが止まる可能性があります。念のためこのタブを開けてください。"
+
+msgid "Sizes are approximate on very large sites."
+msgstr "非常に大きなサイトではサイズは概算です。"
+
+msgid "Skip folders inside wp-content, separated by commas. Example: uploads/2023 skips media from 2023. Use the checkboxes above for whole groups."
+msgstr "wp-content 内のフォルダーをカンマ区切りで指定します。例: uploads/2023 は2023年のメディアをスキップします。グループ全体は上のチェックボックスを使ってください。"
+
+msgid "Slot %s holds a file that belongs to a different archive or a different part."
+msgstr "スロット %s に別のアーカイブまたは別のパーツのファイルが入っています。"
+
+msgid "Some environment checks failed. Open the Environment tab for details."
+msgstr "一部の環境チェックに失敗しました。詳細は「環境」タブを開いてください。"
+
+msgid "Some parts of this backup are missing."
+msgstr "このバックアップには一部のパーツがありません。"
+
+msgid "Source theme: %1$s. This site: %2$s."
+msgstr "移行元のテーマ: %1$s。このサイト: %2$s。"
+
+msgid "Split archives to meet host file limits. Auto uses 7 GB parts. Off makes one file. Custom accepts a size in MB or GB."
+msgstr "ホストのファイルサイズ制限に合わせてアーカイブを分割します。自動は7 GBのパーツ。オフは1ファイル。カスタムは MB または GB でサイズを指定します。"
+
+msgid "Split presets"
+msgstr "分割サイズプリセット"
+
+msgid "Storage"
+msgstr "ストレージ"
+
+msgid "The JSON extension. It encodes archive metadata and job status. Without it, the engine cannot describe or resume an archive."
+msgstr "JSON 拡張機能。アーカイブのメタデータとジョブ状態をエンコードします。これがなければエンジンはアーカイブを記述も再開もできません。"
+
+msgid "The PHP version of this site. PHP 7.4 or newer is required for streaming and crypto functions."
+msgstr "このサイトの PHP バージョン。ストリーミングと暗号機能に PHP 7.4以上が必要です。"
+
+msgid "The archive carries plugins this site does not have: %s. Install them before restoring, or builder content may not render."
+msgstr "アーカイブにはこのサイトにないプラグインが含まれています: %s。復元前にインストールしないとビルダーの表示が崩れる可能性があります。"
+
+msgid "The archive contains a path that cannot be restored safely."
+msgstr "アーカイブに安全に復元できないパスが含まれています。"
+
+msgid "The archive did not pass integrity verification."
+msgstr "アーカイブは完全性検証を通過しませんでした。"
+
+msgid "The archive is damaged and cannot be read safely."
+msgstr "アーカイブが破損しており、安全に読み込めません。"
+
+msgid "The archive is incomplete. The transfer may have been interrupted."
+msgstr "アーカイブが不完全です。転送が中断された可能性があります。"
+
+msgid "The backup file changed during verification or restore. Upload the original archive again."
+msgstr "検証または復元中にバックアップファイルが変更されました。元のアーカイブを再アップロードしてください。"
+
+msgid "The backup storage folder is not writable by the web server. Fix its ownership (it may have been created by a root shell)."
+msgstr "Webサーバーがバックアップ保存フォルダーに書き込めません。所有者を修正してください (root シェルで作られた可能性があります)。"
+
+msgid "The database connection was lost."
+msgstr "データベース接続が失われました。"
+
+msgid "The encryption backend protects password-encrypted archives. Without it, unencrypted export still works."
+msgstr "暗号化バックエンドはパスワード暗号化アーカイブを守ります。なくても無暗号のエクスポートは動きます。"
+
+msgid "The first file is not a valid .mudrava archive (bad header)."
+msgstr "最初のファイルは有効な .mudrava アーカイブではありません (ヘッダー不正)。"
+
+msgid "The hint cannot be the password or part of it. Describe where it is kept instead, e.g. \"company vault\"."
+msgstr "ヒントにパスワードやその一部は使えません。保管場所を伝えてください。例:「会社の金庫」。"
+
+msgid "The last selected file is not the end of the archive - part %s is still missing."
+msgstr "最後に選択したファイルはアーカイブの末尾ではありません。パーツ %s がまだありません。"
+
+msgid "The migration could not be completed."
+msgstr "移行を完了できませんでした。"
+
+msgid "The password is incorrect. The archive is still intact."
+msgstr "パスワードが正しくありません。アーカイブ自体は無傷です。"
+
+msgid "The remote server could not be reached."
+msgstr "リモートサーバーに接続できませんでした。"
+
+msgid "The remote server took too long to respond. You can resume."
+msgstr "リモートサーバーの応答が遅すぎます。再開できます。"
+
+msgid "The set is incomplete - missing parts: %s"
+msgstr "セットが不完全です。不足パーツ: %s"
+
+msgid "The zlib extension compresses archive frames while streaming. Export requires it."
+msgstr "zlib 拡張はストリーミング中にアーカイブフレームを圧縮します。エクスポートに必須です。"
+
+msgid "These capabilities belong to the separate Pro add-on, currently in development. Purchasing is not open yet."
+msgstr "これらの機能は開発中の別売り Pro アドオンに属します。購入はまだ受け付けていません。"
+
+msgid "This archive is encrypted. Enter its password to restore."
+msgstr "このアーカイブは暗号化されています。復元にはパスワードを入力してください。"
+
+msgid "This archive uses a newer format. Please update MUDRAVA first."
+msgstr "このアーカイブはより新しい形式です。まず MUDRAVA を更新してください。"
+
+msgid "This is part 1 of a split set, not a complete archive. Select the .mudrava file AND every .mudrava.partNNNN file of this set."
+msgstr "これは分割セットのパート1で、完全なアーカイブではありません。このセットの .mudrava ファイルとすべての .mudrava.partNNNN ファイルを選択してください。"
+
+msgid "This job no longer exists."
+msgstr "このジョブはもう存在しません。"
+
+msgid "This migration step needs more PHP memory than this server allows."
+msgstr "この移行ステップはサーバーが許す以上の PHP メモリを必要とします。"
+
+msgid "This server cannot safely run large migrations."
+msgstr "このサーバーは大規模な移行を安全に実行できません。"
+
+msgid "This server is missing requirements for the requested operation."
+msgstr "このサーバーは要求された操作の要件を満たしていません。"
+
+msgid "This site (Free)"
+msgstr "このサイト (無料)"
+
+msgid "This site uses an external object cache: transients may live there and are invisible to this count."
+msgstr "このサイトは外部オブジェクトキャッシュを使っています。トランジェントはそこにあり、この集計には見えません。"
+
+msgid "This will overwrite the current site. Are you sure?"
+msgstr "現在のサイトを上書きします。本当に実行しますか。"
+
+msgid "Tidy before you migrate"
+msgstr "引越し前に片付け"
+
+msgid "Unattached media items: reported only. Use the media library to review before deleting."
+msgstr "未添付メディア: 表示のみです。削除前にメディアライブラリで確認してください。"
+
+msgid "Unrecognized files (must be *.mudrava or *.mudrava.partNNNN): %s"
+msgstr "認識できないファイル (*.mudrava または *.mudrava.partNNNN のみ): %s"
+
+msgid "Upload a .mudrava archive (or every part of a split set) and restore it onto this site."
+msgstr ".mudrava アーカイブ (または分割セットの全パーツ) をアップロードしてこのサイトに復元します。"
+
+msgid "Uploading"
+msgstr "アップロード中"
+
+msgid "Verified delivery with retries"
+msgstr "検証付きの転送と自動リトライ"
+
+msgid "Verifying the restore point"
+msgstr "復元ポイントを検証しています"
+
+msgid "Visit MUDRAVA"
+msgstr "MUDRAVA を訪問"
+
+msgid "What goes into the archive"
+msgstr "アーカイブに含めるもの"
+
+msgid "Whether PHP uses 64-bit integers. Without them, archives over 2 GB cannot be read or written safely."
+msgstr "PHP が64ビット整数を使うかどうか。2 GB超のアーカイブは64ビットなしでは安全に読み書きできません。"
+
+msgid "Whether the plugin can write to private storage. Archives and restore points need this directory."
+msgstr "プラグインがプライベートストレージに書き込めるかどうか。アーカイブと復元ポイントがこのディレクトリを必要とします。"
+
+msgid "WordPress core table - always included"
+msgstr "WordPress コアテーブル - 常に含みます"
+
+msgid "Working…"
+msgstr "作業中…"
+
+msgid "You do not have permission to run migrations."
+msgstr "移行を実行する権限がありません。"
+
+msgid "all included"
+msgstr "すべて含む"
+
+msgid "database"
+msgstr "データベース"
+
+msgid "e.g. company vault / migration"
+msgstr "例: 会社の金庫 / 引っ越し"
+
+msgid "encrypted"
+msgstr "暗号化済み"
+
+msgid "files"
+msgstr "ファイル"
+
+msgid "finalize"
+msgstr "仕上げ"
+
+msgid "hint"
+msgstr "ヒント"
+
+msgid "job"
+msgstr "ジョブ"
+
+msgid "missing parts"
+msgstr "不足パーツ"
+
+msgid "or click to browse. For split sets, select every part"
+msgstr "またはクリックして選択。分割セットはすべてのパーツを選んでください"
+
+msgid "part"
+msgstr "パーツ"
+
+msgid "part(s)"
+msgstr "パーツ"
+
+msgid "parts"
+msgstr "パーツ"
+
+msgid "rows"
+msgstr "行"
+
+msgid "running"
+msgstr "実行中"
+
+msgid "set complete"
+msgstr "セット完了"
+
+msgid "unknown"
+msgstr "不明"
+
+msgid "upload incomplete"
+msgstr "アップロード未完了"
+
+msgid "uploads/2023, cache"
+msgstr "uploads/2023, cache"
+
+msgid "wp-admin, wp-includes and root files are always included. A restored site needs them to run."
+msgstr "wp-admin、wp-includes、直下のファイルは常に含まれます。復元後のサイトの動作に不可欠です。"
