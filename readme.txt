@@ -1,14 +1,14 @@
 === MUDRAVA Migration & Backup ===
 Contributors: mudrava
-Tags: migration, backup, restore, clone, staging, wp-cli, database cleanup, database backup, site migration
+Tags: migration, backup, restore, site migration, database backup
 Requires at least: 6.0
 Tested up to: 7.1.5
 Requires PHP: 7.4
-Stable tag: 1.1.0
+Stable tag: 1.1.1
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Free WordPress migration, backup and restore with a WP-CLI bridge. Resumable exports, database cleanup, software inventory, optional encryption, 27 languages and no paid archive size cap.
+Free WordPress migration, backup and restore. Resumable, encrypted, split archives with no size cap, database cleanup and a WP-CLI bridge.
 
 == Description ==
 
@@ -145,6 +145,9 @@ No. This release provides the local manual migration and backup workflow. It can
 5. Browse local archives, including saved destination restore points.
 
 == Changelog ==
+
+= 1.1.1 =
+* Fixed: WordPress.org listing metadata now fits the directory limits. Tags are trimmed to five relevant terms (previously nine were supplied, so the last four - including the intended WP-CLI and database tags - were silently ignored), and the short description is now 138 characters (previously 187, so it was truncated on import). No functional or format change; archives from 1.0.x remain byte-compatible.
 
 = 1.1.0 =
 * Added: `wp mudrava` WP-CLI bridge: preflight, inventory, maintenance, export, import, status, resume, abort, archives and a single machine-readable `report` for automation, through the same safety gates as the browser (proven set completeness, restore point when disk affords it, explicit `--proceed-unsafe` acknowledgement otherwise). JSON output by default, CI-friendly exit codes.

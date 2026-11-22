@@ -4,6 +4,22 @@ All notable changes to this project are documented here. The format
 follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and
 the project adheres to [Semantic Versioning](https://semver.org/).
 
+## [1.1.1] - 2026-11-22
+
+### Fixed
+
+- WordPress.org listing metadata now fits the directory limits. `readme.txt`
+  supplied nine tags, but the directory honors only the first five, so the
+  last four - including the intended `wp-cli`, `database cleanup`,
+  `database backup` and `site migration` - were silently dropped while weaker
+  `clone`/`staging` were kept. Tags are now the five relevant terms
+  (`migration, backup, restore, site migration, database backup`). The short
+  description was 187 characters and got truncated at 150; it is now a
+  138-character line that still names the resumable, encrypted, no-size-cap,
+  cleanup and WP-CLI story. The distribution ZIP is rebuilt so the committed
+  `readme.txt` is the one WordPress.org reads. No functional or format change;
+  archives from 1.0.x remain byte-compatible.
+
 ## [1.1.0] - 2026-11-22
 
 ### Added
